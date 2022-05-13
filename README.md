@@ -1,5 +1,15 @@
 # flutter_notebook_20th_story
 
+### EP1151
+
+- E-Course App
+- by Farrel Putra
+- https://dribbble.com/shots/18198474-E-Course-App/attachments/13399537?mode=media
+
+<img
+src="https://cdn.dribbble.com/users/2744859/screenshots/18198474/media/6c13dd92077745f16561acc729bc30ec.png"
+width="400px"/>
+
 A new Flutter project.
 
 ## Getting Started
