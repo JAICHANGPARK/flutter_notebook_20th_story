@@ -17,7 +17,7 @@ class _BookingHomePageState extends State<BookingHomePage> {
             Positioned(
               left: 16,
               right: 0,
-              bottom: 0,
+              bottom: 48,
               top: 24,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -25,13 +25,29 @@ class _BookingHomePageState extends State<BookingHomePage> {
                   Text("Hello"),
                   Text("Let's find the best"),
                   Text("hotel for you"),
-
-                  SizedBox(
-                    height: 320,
-                    child: Card(
-                      child: Center(),
+                  Padding(
+                    padding: EdgeInsets.symmetric(vertical: 16),
+                    child: SizedBox(
+                      height: 320,
+                      child: Card(
+                        child: Center(),
+                      ),
                     ),
                   ),
+                  Row(
+                    children: [
+                      Text("Top Searches Hotel"),
+                      Spacer(),
+                      Text("See All"),
+                      Icon(
+                        Icons.keyboard_arrow_right,
+                      )
+                    ],
+                  ),
+                  SizedBox(
+                    height: 16,
+                  ),
+                  Expanded(child: Placeholder()),
                 ],
               ),
             ),
