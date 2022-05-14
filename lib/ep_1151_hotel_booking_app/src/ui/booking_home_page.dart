@@ -184,6 +184,61 @@ class _BookingHomePageState extends State<BookingHomePage> {
                     topRight: Radius.circular(24),
                   ),
                 ),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: [
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Icon(Ionicons.home_outline),
+                        SizedBox(
+                          height: 4,
+                        ),
+                        Text("Home")
+                      ],
+                    ),
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Icon(Ionicons.home_outline),
+                        SizedBox(
+                          height: 4,
+                        ),
+                        Text("Favorites")
+                      ],
+                    ),
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Icon(Ionicons.notifications_outline),
+                        SizedBox(
+                          height: 4,
+                        ),
+                        Text("Notification")
+                      ],
+                    ),
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Icon(Ionicons.bookmark_outline),
+                        SizedBox(
+                          height: 4,
+                        ),
+                        Text("Booking")
+                      ],
+                    ),
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Icon(Ionicons.person_outline),
+                        SizedBox(
+                          height: 4,
+                        ),
+                        Text("Profile", style: TextStyle(),)
+                      ],
+                    )
+                  ],
+                ),
               ),
             ),
             Positioned(
