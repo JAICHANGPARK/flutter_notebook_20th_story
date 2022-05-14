@@ -35,22 +35,62 @@ class _BookingHomePageState extends State<BookingHomePage> {
                   ),
                   const Text(
                     "Let's find the best",
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                    ),
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                  ),
+                  const SizedBox(
+                    height: 8,
                   ),
                   const Text(
                     "hotel for you",
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                    ),
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
                   ),
-                  const Padding(
+                  Padding(
                     padding: EdgeInsets.symmetric(vertical: 16),
                     child: SizedBox(
                       height: 320,
                       child: Card(
-                        child: Center(),
+                        child: Column(
+                          children: [
+                            Container(
+                              child: TextField(),
+                            ),
+                            SizedBox(
+                              height: 16,
+                            ),
+                            Row(
+                              children: [
+                                Expanded(
+                                    child: Container(
+                                  child: TextField(),
+                                )),
+                                SizedBox(
+                                  width: 16,
+                                ),
+                                Expanded(
+                                    child: Container(
+                                  child: TextField(),
+                                ))
+                              ],
+                            ),
+                            SizedBox(
+                              height: 16,
+                            ),
+                            Container(
+                              child: TextField(),
+                            ),
+                            SizedBox(
+                              height: 16,
+                            ),
+                            Container(
+                              width: double.infinity,
+                              child: Center(
+                                child: Text(
+                                  "search hotel".toUpperCase(),
+                                ),
+                              ),
+                            )
+                          ],
+                        ),
                       ),
                     ),
                   ),
@@ -87,15 +127,20 @@ class _BookingHomePageState extends State<BookingHomePage> {
               ),
             ),
             Positioned(
-                right: 16,
-                top: 16,
-                child: Row(
-                  children: [
-                    Badge(
-                      child: Icon(Ionicons.notifications_outline),
-                    ),
-                  ],
-                ))
+              right: 16,
+              top: 16,
+              child: Row(
+                children: [
+                  Badge(
+                    child: Icon(Ionicons.notifications_outline),
+                  ),
+                  SizedBox(
+                    width: 16,
+                  ),
+                  CircleAvatar()
+                ],
+              ),
+            )
           ],
         ),
       ),
