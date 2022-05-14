@@ -49,47 +49,71 @@ class _BookingHomePageState extends State<BookingHomePage> {
                     child: SizedBox(
                       height: 320,
                       child: Card(
-                        child: Column(
-                          children: [
-                            Container(
-                              child: TextField(),
-                            ),
-                            SizedBox(
-                              height: 16,
-                            ),
-                            Row(
-                              children: [
-                                Expanded(
-                                    child: Container(
-                                  child: TextField(),
-                                )),
-                                SizedBox(
-                                  width: 16,
+                        child: Padding(
+                          padding: const EdgeInsets.all(16.0),
+                          child: Column(
+                            children: [
+                              Container(
+                                decoration: BoxDecoration(
+                                  color: Colors.grey[100],
                                 ),
-                                Expanded(
-                                    child: Container(
-                                  child: TextField(),
-                                ))
-                              ],
-                            ),
-                            SizedBox(
-                              height: 16,
-                            ),
-                            Container(
-                              child: TextField(),
-                            ),
-                            SizedBox(
-                              height: 16,
-                            ),
-                            Container(
-                              width: double.infinity,
-                              child: Center(
-                                child: Text(
-                                  "search hotel".toUpperCase(),
-                                ),
+                                child: TextField(),
                               ),
-                            )
-                          ],
+                              SizedBox(
+                                height: 16,
+                              ),
+                              Row(
+                                children: [
+                                  Expanded(
+                                      child: Container(
+                                    decoration: BoxDecoration(
+                                      color: Colors.grey[100],
+                                    ),
+                                    child: TextField(),
+                                  )),
+                                  SizedBox(
+                                    width: 16,
+                                  ),
+                                  Expanded(
+                                      child: Container(
+                                    decoration: BoxDecoration(
+                                      color: Colors.grey[100],
+                                    ),
+                                    child: TextField(),
+                                  ))
+                                ],
+                              ),
+                              SizedBox(
+                                height: 16,
+                              ),
+                              Container(
+                                decoration: BoxDecoration(
+                                  color: Colors.grey[100],
+                                ),
+                                child: TextField(),
+                              ),
+                              SizedBox(
+                                height: 16,
+                              ),
+                              Container(
+                                width: double.infinity,
+                                padding: EdgeInsets.symmetric(vertical: 20),
+                                decoration: BoxDecoration(
+                                  color: Colors.indigoAccent[100],
+                                  borderRadius: BorderRadius.circular(8),
+                                ),
+                                child: Center(
+                                  child: Text(
+                                    "search hotel".toUpperCase(),
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      color: Colors.white,
+                                    ),
+                                  ),
+                                ),
+                              )
+                            ],
+                          ),
                         ),
                       ),
                     ),
