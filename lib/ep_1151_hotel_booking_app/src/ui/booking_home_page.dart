@@ -1,4 +1,6 @@
+import 'package:badges/badges.dart';
 import 'package:flutter/material.dart';
+import 'package:ionicons/ionicons.dart';
 
 class BookingHomePage extends StatefulWidget {
   const BookingHomePage({Key? key}) : super(key: key);
@@ -22,23 +24,28 @@ class _BookingHomePageState extends State<BookingHomePage> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
+                  const Text(
                     "Hello, Dreamwalker",
                     style: TextStyle(
                       color: Colors.grey,
                     ),
                   ),
-                  SizedBox(height: 16,),
-                  Text(
+                  const SizedBox(
+                    height: 16,
+                  ),
+                  const Text(
                     "Let's find the best",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                     ),
                   ),
-                  Text("hotel for you",style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                  ),),
-                  Padding(
+                  const Text(
+                    "hotel for you",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  const Padding(
                     padding: EdgeInsets.symmetric(vertical: 16),
                     child: SizedBox(
                       height: 320,
@@ -49,18 +56,18 @@ class _BookingHomePageState extends State<BookingHomePage> {
                   ),
                   Row(
                     children: [
-                      Text("Top Searches Hotel"),
-                      Spacer(),
-                      Text("See All"),
-                      Icon(
+                      const Text("Top Searches Hotel"),
+                      const Spacer(),
+                      const Text("See All"),
+                      const Icon(
                         Icons.keyboard_arrow_right,
                       )
                     ],
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 16,
                   ),
-                  Expanded(child: Placeholder()),
+                  const Expanded(child: Placeholder()),
                 ],
               ),
             ),
@@ -70,7 +77,7 @@ class _BookingHomePageState extends State<BookingHomePage> {
               right: 0,
               child: Container(
                 height: 72,
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(24),
@@ -78,7 +85,17 @@ class _BookingHomePageState extends State<BookingHomePage> {
                   ),
                 ),
               ),
-            )
+            ),
+            Positioned(
+                right: 16,
+                top: 16,
+                child: Row(
+                  children: [
+                    Badge(
+                      child: Icon(Ionicons.notifications_outline),
+                    ),
+                  ],
+                ))
           ],
         ),
       ),
