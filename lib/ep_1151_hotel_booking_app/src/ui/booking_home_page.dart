@@ -52,7 +52,7 @@ class _BookingHomePageState extends State<BookingHomePage> {
                     ),
                   ),
                   Padding(
-                    padding: EdgeInsets.symmetric(vertical: 16),
+                    padding: const EdgeInsets.symmetric(vertical: 16),
                     child: Card(
                       child: Padding(
                         padding: const EdgeInsets.all(16.0),
@@ -63,41 +63,55 @@ class _BookingHomePageState extends State<BookingHomePage> {
                                 color: Colors.grey[100],
                                 borderRadius: BorderRadius.circular(8),
                               ),
-                              padding: EdgeInsets.all(8),
-                              child: TextField(
+                              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+                              child: const TextField(
                                 decoration: InputDecoration(
                                     border: InputBorder.none,
                                     icon: Icon(Ionicons.search_outline),
                                     hintText: "Enter your destination"),
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               height: 16,
                             ),
                             Row(
                               children: [
                                 Expanded(
-                                    child: Container(
-                                  decoration: BoxDecoration(
-                                    color: Colors.grey[100],
-                                    borderRadius: BorderRadius.circular(8),
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                      color: Colors.grey[100],
+                                      borderRadius: BorderRadius.circular(8),
+                                    ),
+                                    padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+                                    child: const TextField(
+                                      decoration: InputDecoration(
+                                          border: InputBorder.none,
+                                          icon: Icon(Ionicons.calendar_outline),
+                                          hintText: "Dates"),
+                                    ),
                                   ),
-                                  child: TextField(),
-                                )),
-                                SizedBox(
+                                ),
+                                const SizedBox(
                                   width: 16,
                                 ),
                                 Expanded(
-                                    child: Container(
-                                  decoration: BoxDecoration(
-                                    color: Colors.grey[100],
-                                    borderRadius: BorderRadius.circular(8),
+                                  child: Container(
+                                    padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+                                    decoration: BoxDecoration(
+                                      color: Colors.grey[100],
+                                      borderRadius: BorderRadius.circular(8),
+                                    ),
+                                    child: const TextField(
+                                      decoration: InputDecoration(
+                                          border: InputBorder.none,
+                                          icon: Icon(Ionicons.apps_outline),
+                                          hintText: "Rooms"),
+                                    ),
                                   ),
-                                  child: TextField(),
-                                ))
+                                )
                               ],
                             ),
-                            SizedBox(
+                            const SizedBox(
                               height: 16,
                             ),
                             Container(
@@ -105,14 +119,22 @@ class _BookingHomePageState extends State<BookingHomePage> {
                                 color: Colors.grey[100],
                                 borderRadius: BorderRadius.circular(8),
                               ),
-                              child: TextField(),
+                              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+                              child: const TextField(
+                                decoration: InputDecoration(
+                                    border: InputBorder.none,
+                                    icon: Icon(
+                                      Ionicons.people_outline,
+                                    ),
+                                    hintText: "Guest"),
+                              ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               height: 16,
                             ),
                             Container(
                               width: double.infinity,
-                              padding: EdgeInsets.symmetric(vertical: 20),
+                              padding: const EdgeInsets.symmetric(vertical: 20),
                               decoration: BoxDecoration(
                                 color: Colors.indigoAccent[100],
                                 borderRadius: BorderRadius.circular(8),
@@ -120,7 +142,7 @@ class _BookingHomePageState extends State<BookingHomePage> {
                               child: Center(
                                 child: Text(
                                   "search hotel".toUpperCase(),
-                                  style: TextStyle(
+                                  style: const TextStyle(
                                     fontWeight: FontWeight.bold,
                                     color: Colors.white,
                                   ),
@@ -170,12 +192,12 @@ class _BookingHomePageState extends State<BookingHomePage> {
               child: Row(
                 children: [
                   Badge(
-                    child: Icon(Ionicons.notifications_outline),
+                    child: const Icon(Ionicons.notifications_outline),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 16,
                   ),
-                  CircleAvatar()
+                  const CircleAvatar()
                 ],
               ),
             )
