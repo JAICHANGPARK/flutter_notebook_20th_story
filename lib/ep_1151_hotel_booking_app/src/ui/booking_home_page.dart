@@ -194,17 +194,21 @@ class _BookingHomePageState extends State<BookingHomePage> {
                         SizedBox(
                           height: 4,
                         ),
-                        Text("Home")
+                        Text("Home", style: TextStyle(
+                            fontSize: 12
+                        ),)
                       ],
                     ),
                     Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Icon(Ionicons.home_outline),
+                        Icon(Ionicons.heart_outline),
                         SizedBox(
                           height: 4,
                         ),
-                        Text("Favorites")
+                        Text("Favorites", style: TextStyle(
+                            fontSize: 12
+                        ),)
                       ],
                     ),
                     Column(
@@ -214,7 +218,9 @@ class _BookingHomePageState extends State<BookingHomePage> {
                         SizedBox(
                           height: 4,
                         ),
-                        Text("Notification")
+                        Text("Notification", style: TextStyle(
+                            fontSize: 12
+                        ),)
                       ],
                     ),
                     Column(
@@ -224,7 +230,9 @@ class _BookingHomePageState extends State<BookingHomePage> {
                         SizedBox(
                           height: 4,
                         ),
-                        Text("Booking")
+                        Text("Booking", style: TextStyle(
+                            fontSize: 12
+                        ),)
                       ],
                     ),
                     Column(
@@ -234,7 +242,9 @@ class _BookingHomePageState extends State<BookingHomePage> {
                         SizedBox(
                           height: 4,
                         ),
-                        Text("Profile", style: TextStyle(),)
+                        Text("Profile", style: TextStyle(
+                          fontSize: 12
+                        ),)
                       ],
                     )
                   ],
