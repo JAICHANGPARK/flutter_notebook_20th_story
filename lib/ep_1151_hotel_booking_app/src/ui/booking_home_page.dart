@@ -46,74 +46,71 @@ class _BookingHomePageState extends State<BookingHomePage> {
                   ),
                   Padding(
                     padding: EdgeInsets.symmetric(vertical: 16),
-                    child: SizedBox(
-                      height: 320,
-                      child: Card(
-                        child: Padding(
-                          padding: const EdgeInsets.all(16.0),
-                          child: Column(
-                            children: [
-                              Container(
-                                decoration: BoxDecoration(
-                                  color: Colors.grey[100],
-                                ),
-                                child: TextField(),
+                    child: Card(
+                      child: Padding(
+                        padding: const EdgeInsets.all(16.0),
+                        child: Column(
+                          children: [
+                            Container(
+                              decoration: BoxDecoration(
+                                color: Colors.grey[100],
                               ),
-                              SizedBox(
-                                height: 16,
-                              ),
-                              Row(
-                                children: [
-                                  Expanded(
-                                      child: Container(
-                                    decoration: BoxDecoration(
-                                      color: Colors.grey[100],
-                                    ),
-                                    child: TextField(),
-                                  )),
-                                  SizedBox(
-                                    width: 16,
+                              child: TextField(),
+                            ),
+                            SizedBox(
+                              height: 16,
+                            ),
+                            Row(
+                              children: [
+                                Expanded(
+                                    child: Container(
+                                  decoration: BoxDecoration(
+                                    color: Colors.grey[100],
                                   ),
-                                  Expanded(
-                                      child: Container(
-                                    decoration: BoxDecoration(
-                                      color: Colors.grey[100],
-                                    ),
-                                    child: TextField(),
-                                  ))
-                                ],
-                              ),
-                              SizedBox(
-                                height: 16,
-                              ),
-                              Container(
-                                decoration: BoxDecoration(
-                                  color: Colors.grey[100],
+                                  child: TextField(),
+                                )),
+                                SizedBox(
+                                  width: 16,
                                 ),
-                                child: TextField(),
+                                Expanded(
+                                    child: Container(
+                                  decoration: BoxDecoration(
+                                    color: Colors.grey[100],
+                                  ),
+                                  child: TextField(),
+                                ))
+                              ],
+                            ),
+                            SizedBox(
+                              height: 16,
+                            ),
+                            Container(
+                              decoration: BoxDecoration(
+                                color: Colors.grey[100],
                               ),
-                              SizedBox(
-                                height: 16,
+                              child: TextField(),
+                            ),
+                            SizedBox(
+                              height: 16,
+                            ),
+                            Container(
+                              width: double.infinity,
+                              padding: EdgeInsets.symmetric(vertical: 20),
+                              decoration: BoxDecoration(
+                                color: Colors.indigoAccent[100],
+                                borderRadius: BorderRadius.circular(8),
                               ),
-                              Container(
-                                width: double.infinity,
-                                padding: EdgeInsets.symmetric(vertical: 20),
-                                decoration: BoxDecoration(
-                                  color: Colors.indigoAccent[100],
-                                  borderRadius: BorderRadius.circular(8),
-                                ),
-                                child: Center(
-                                  child: Text(
-                                    "search hotel".toUpperCase(),
-                                    style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.white,
-                                    ),
+                              child: Center(
+                                child: Text(
+                                  "search hotel".toUpperCase(),
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.white,
                                   ),
                                 ),
-                              )
-                            ],
-                          ),
+                              ),
+                            )
+                          ],
                         ),
                       ),
                     ),
