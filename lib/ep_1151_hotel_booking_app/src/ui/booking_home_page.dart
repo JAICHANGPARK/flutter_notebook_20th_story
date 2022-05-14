@@ -22,9 +22,22 @@ class _BookingHomePageState extends State<BookingHomePage> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text("Hello"),
-                  Text("Let's find the best"),
-                  Text("hotel for you"),
+                  Text(
+                    "Hello, Dreamwalker",
+                    style: TextStyle(
+                      color: Colors.grey,
+                    ),
+                  ),
+                  SizedBox(height: 16,),
+                  Text(
+                    "Let's find the best",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  Text("hotel for you",style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                  ),),
                   Padding(
                     padding: EdgeInsets.symmetric(vertical: 16),
                     child: SizedBox(
