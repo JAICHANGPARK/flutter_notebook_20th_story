@@ -12,6 +12,8 @@ dependencies:
     sdk: flutter
 
   cupertino_icons: ^1.0.4
+  ionicons: any
+  badges: any
 
 dev_dependencies:
   flutter_test:
