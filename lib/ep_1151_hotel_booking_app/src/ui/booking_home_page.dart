@@ -13,6 +13,7 @@ class _BookingHomePageState extends State<BookingHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       body: SafeArea(
         child: Stack(
           children: [
@@ -35,14 +36,20 @@ class _BookingHomePageState extends State<BookingHomePage> {
                   ),
                   const Text(
                     "Let's find the best",
-                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 20,
+                    ),
                   ),
                   const SizedBox(
                     height: 8,
                   ),
                   const Text(
                     "hotel for you",
-                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 20,
+                    ),
                   ),
                   Padding(
                     padding: EdgeInsets.symmetric(vertical: 16),
@@ -94,8 +101,10 @@ class _BookingHomePageState extends State<BookingHomePage> {
                               height: 16,
                             ),
                             Container(
-                              decoration:
-                                  BoxDecoration(color: Colors.grey[100], borderRadius: BorderRadius.circular(8)),
+                              decoration: BoxDecoration(
+                                color: Colors.grey[100],
+                                borderRadius: BorderRadius.circular(8),
+                              ),
                               child: TextField(),
                             ),
                             SizedBox(
