@@ -156,7 +156,13 @@ class _BookingHomePageState extends State<BookingHomePage> {
                   ),
                   Row(
                     children: [
-                      const Text("Top Searches Hotel"),
+                      const Text(
+                        "Top Searches Hotel",
+                        style: TextStyle(
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
                       const Spacer(),
                       const Text("See All"),
                       const Icon(
@@ -167,7 +173,9 @@ class _BookingHomePageState extends State<BookingHomePage> {
                   const SizedBox(
                     height: 16,
                   ),
-                  const Expanded(child: Placeholder()),
+                  const Expanded(
+                    child: Placeholder(),
+                  ),
                 ],
               ),
             ),
@@ -194,9 +202,10 @@ class _BookingHomePageState extends State<BookingHomePage> {
                         SizedBox(
                           height: 4,
                         ),
-                        Text("Home", style: TextStyle(
-                            fontSize: 12
-                        ),)
+                        Text(
+                          "Home",
+                          style: TextStyle(fontSize: 12),
+                        )
                       ],
                     ),
                     Column(
@@ -206,9 +215,10 @@ class _BookingHomePageState extends State<BookingHomePage> {
                         SizedBox(
                           height: 4,
                         ),
-                        Text("Favorites", style: TextStyle(
-                            fontSize: 12
-                        ),)
+                        Text(
+                          "Favorites",
+                          style: TextStyle(fontSize: 12),
+                        )
                       ],
                     ),
                     Column(
@@ -218,9 +228,10 @@ class _BookingHomePageState extends State<BookingHomePage> {
                         SizedBox(
                           height: 4,
                         ),
-                        Text("Notification", style: TextStyle(
-                            fontSize: 12
-                        ),)
+                        Text(
+                          "Notification",
+                          style: TextStyle(fontSize: 12),
+                        )
                       ],
                     ),
                     Column(
@@ -230,9 +241,10 @@ class _BookingHomePageState extends State<BookingHomePage> {
                         SizedBox(
                           height: 4,
                         ),
-                        Text("Booking", style: TextStyle(
-                            fontSize: 12
-                        ),)
+                        Text(
+                          "Booking",
+                          style: TextStyle(fontSize: 12),
+                        )
                       ],
                     ),
                     Column(
@@ -242,9 +254,10 @@ class _BookingHomePageState extends State<BookingHomePage> {
                         SizedBox(
                           height: 4,
                         ),
-                        Text("Profile", style: TextStyle(
-                          fontSize: 12
-                        ),)
+                        Text(
+                          "Profile",
+                          style: TextStyle(fontSize: 12),
+                        )
                       ],
                     )
                   ],
