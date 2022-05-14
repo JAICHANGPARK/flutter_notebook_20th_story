@@ -54,8 +54,15 @@ class _BookingHomePageState extends State<BookingHomePage> {
                             Container(
                               decoration: BoxDecoration(
                                 color: Colors.grey[100],
+                                borderRadius: BorderRadius.circular(8),
                               ),
-                              child: TextField(),
+                              padding: EdgeInsets.all(8),
+                              child: TextField(
+                                decoration: InputDecoration(
+                                    border: InputBorder.none,
+                                    icon: Icon(Ionicons.search_outline),
+                                    hintText: "Enter your destination"),
+                              ),
                             ),
                             SizedBox(
                               height: 16,
@@ -66,6 +73,7 @@ class _BookingHomePageState extends State<BookingHomePage> {
                                     child: Container(
                                   decoration: BoxDecoration(
                                     color: Colors.grey[100],
+                                    borderRadius: BorderRadius.circular(8),
                                   ),
                                   child: TextField(),
                                 )),
@@ -76,6 +84,7 @@ class _BookingHomePageState extends State<BookingHomePage> {
                                     child: Container(
                                   decoration: BoxDecoration(
                                     color: Colors.grey[100],
+                                    borderRadius: BorderRadius.circular(8),
                                   ),
                                   child: TextField(),
                                 ))
@@ -85,9 +94,8 @@ class _BookingHomePageState extends State<BookingHomePage> {
                               height: 16,
                             ),
                             Container(
-                              decoration: BoxDecoration(
-                                color: Colors.grey[100],
-                              ),
+                              decoration:
+                                  BoxDecoration(color: Colors.grey[100], borderRadius: BorderRadius.circular(8)),
                               child: TextField(),
                             ),
                             SizedBox(
