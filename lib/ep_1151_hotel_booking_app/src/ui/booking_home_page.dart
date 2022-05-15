@@ -189,6 +189,29 @@ class _BookingHomePageState extends State<BookingHomePage> {
                             child: Column(
                               children: [
                                 Expanded(child: Placeholder()),
+                                Padding(
+                                  padding: const EdgeInsets.all(16.0),
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      Text("Carden Inn Times Square"),
+                                      Row(
+                                        children: [
+                                          Icon(Icons.location_on_outlined, color: Colors.blueGrey),
+                                          SizedBox(
+                                            width: 8,
+                                          ),
+                                          Text(
+                                            "New York, NY(LAG)",
+                                            style: TextStyle(
+                                              color: Colors.blueGrey,
+                                            ),
+                                          ),
+                                        ],
+                                      )
+                                    ],
+                                  ),
+                                )
                               ],
                             ),
                           ),
