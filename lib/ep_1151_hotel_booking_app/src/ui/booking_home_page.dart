@@ -199,7 +199,7 @@ class _BookingHomePageState extends State<BookingHomePage> {
                                         fit: BoxFit.cover,
                                       ),
                                     ),
-                                    padding: EdgeInsets.all(16),
+                                    padding: EdgeInsets.all(8),
                                     child: Column(
                                       children: [
                                         Row(
@@ -209,8 +209,9 @@ class _BookingHomePageState extends State<BookingHomePage> {
                                             Container(
                                               padding: EdgeInsets.symmetric(horizontal: 6, vertical: 4),
                                               decoration: BoxDecoration(
-                                                  color: Colors.indigoAccent[100],
-                                                  borderRadius: BorderRadius.circular(4)),
+                                                color: Colors.indigoAccent[100],
+                                                borderRadius: BorderRadius.circular(4),
+                                              ),
                                               child: Center(
                                                 child: Text(
                                                   "10%",
@@ -219,6 +220,14 @@ class _BookingHomePageState extends State<BookingHomePage> {
                                                     fontWeight: FontWeight.bold,
                                                   ),
                                                 ),
+                                              ),
+                                            ),
+                                            CircleAvatar(
+                                              backgroundColor: Colors.white,
+                                              radius: 18,
+                                              foregroundColor: Colors.indigoAccent[200],
+                                              child: Icon(
+                                                Icons.favorite,
                                               ),
                                             )
                                           ],
