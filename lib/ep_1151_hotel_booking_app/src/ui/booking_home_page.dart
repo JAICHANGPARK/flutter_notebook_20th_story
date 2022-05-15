@@ -189,12 +189,18 @@ class _BookingHomePageState extends State<BookingHomePage> {
                             child: Column(
                               children: [
                                 Expanded(
-                                    child: Container(
-                                  decoration: BoxDecoration(
-                                    color: Colors.blueGrey[200],
-                                    borderRadius: BorderRadius.circular(8),
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                      color: Colors.blueGrey[200],
+                                      borderRadius: BorderRadius.circular(8),
+                                      image: DecorationImage(
+                                        image: NetworkImage(
+                                            "https://cdn.pixabay.com/photo/2021/10/06/15/05/bedroom-6686061_960_720.jpg"),
+                                        fit: BoxFit.cover,
+                                      ),
+                                    ),
                                   ),
-                                )),
+                                ),
                                 Padding(
                                   padding: const EdgeInsets.all(16.0),
                                   child: Column(
