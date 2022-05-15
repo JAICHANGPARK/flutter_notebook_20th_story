@@ -173,8 +173,19 @@ class _BookingHomePageState extends State<BookingHomePage> {
                   const SizedBox(
                     height: 16,
                   ),
-                  const Expanded(
-                    child: Placeholder(),
+                  Expanded(
+                    child: ListView.builder(
+                      itemBuilder: (context, index) {
+                        return Container(
+                          width: 160,
+                          decoration: BoxDecoration(
+                            color: Colors.blue,
+                          ),
+                        );
+                      },
+                      itemCount: 16,
+                      scrollDirection: Axis.horizontal,
+                    ),
                   ),
                 ],
               ),
