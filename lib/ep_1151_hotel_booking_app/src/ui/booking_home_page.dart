@@ -200,23 +200,29 @@ class _BookingHomePageState extends State<BookingHomePage> {
                                       ),
                                     ),
                                     padding: EdgeInsets.all(16),
-                                    child: Row(
-                                      crossAxisAlignment: CrossAxisAlignment.start,
-                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                    child: Column(
                                       children: [
-                                        Container(
-                                          decoration: BoxDecoration(
-                                            color: Colors.indigoAccent[100]
-                                          ),
-                                          child: Center(
-                                            child: Text(
-                                              "10%",
-                                              style: TextStyle(
-                                                color: Colors.white,
+                                        Row(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                          children: [
+                                            Container(
+                                              padding: EdgeInsets.symmetric(horizontal: 6, vertical: 4),
+                                              decoration: BoxDecoration(
+                                                  color: Colors.indigoAccent[100],
+                                                  borderRadius: BorderRadius.circular(4)),
+                                              child: Center(
+                                                child: Text(
+                                                  "10%",
+                                                  style: TextStyle(
+                                                    color: Colors.white,
+                                                    fontWeight: FontWeight.bold,
+                                                  ),
+                                                ),
                                               ),
-                                            ),
-                                          ),
-                                        )
+                                            )
+                                          ],
+                                        ),
                                       ],
                                     ),
                                   ),
