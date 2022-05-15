@@ -183,15 +183,16 @@ class _BookingHomePageState extends State<BookingHomePage> {
                           child: Container(
                             width: 240,
                             decoration: BoxDecoration(
-
+                              color: Colors.white,
                               borderRadius: BorderRadius.circular(8),
                             ),
                             child: Column(
                               children: [
-                                Expanded(child: Container(
+                                Expanded(
+                                    child: Container(
                                   decoration: BoxDecoration(
                                     color: Colors.blueGrey[200],
-                                    borderRadius: BorderRadius.circular(8)
+                                    borderRadius: BorderRadius.circular(8),
                                   ),
                                 )),
                                 Padding(
@@ -200,7 +201,9 @@ class _BookingHomePageState extends State<BookingHomePage> {
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
                                       Text("Carden Inn Times Square"),
-                                      SizedBox(height: 8,),
+                                      SizedBox(
+                                        height: 8,
+                                      ),
                                       Row(
                                         children: [
                                           Icon(
