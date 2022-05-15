@@ -20,7 +20,7 @@ class _BookingHomePageState extends State<BookingHomePage> {
             Positioned(
               left: 16,
               right: 0,
-              bottom: 48,
+              bottom: 64,
               top: 24,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -175,16 +175,25 @@ class _BookingHomePageState extends State<BookingHomePage> {
                   ),
                   Expanded(
                     child: ListView.builder(
+                      itemCount: 16,
+                      scrollDirection: Axis.horizontal,
                       itemBuilder: (context, index) {
-                        return Container(
-                          width: 160,
-                          decoration: BoxDecoration(
-                            color: Colors.blue,
+                        return Padding(
+                          padding: const EdgeInsets.only(right: 16),
+                          child: Container(
+                            width: 240,
+                            decoration: BoxDecoration(
+                              color: Colors.blue,
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                            child: Column(
+                              children: [
+                                Expanded(child: Placeholder()),
+                              ],
+                            ),
                           ),
                         );
                       },
-                      itemCount: 16,
-                      scrollDirection: Axis.horizontal,
                     ),
                   ),
                 ],
