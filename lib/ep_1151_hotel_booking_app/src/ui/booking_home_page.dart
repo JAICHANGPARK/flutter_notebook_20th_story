@@ -199,6 +199,26 @@ class _BookingHomePageState extends State<BookingHomePage> {
                                         fit: BoxFit.cover,
                                       ),
                                     ),
+                                    padding: EdgeInsets.all(16),
+                                    child: Row(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                      children: [
+                                        Container(
+                                          decoration: BoxDecoration(
+                                            color: Colors.indigoAccent[100]
+                                          ),
+                                          child: Center(
+                                            child: Text(
+                                              "10%",
+                                              style: TextStyle(
+                                                color: Colors.white,
+                                              ),
+                                            ),
+                                          ),
+                                        )
+                                      ],
+                                    ),
                                   ),
                                 ),
                                 Padding(
