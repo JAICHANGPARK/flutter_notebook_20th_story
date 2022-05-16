@@ -14,37 +14,47 @@ class _HousingHomePageState extends State<HousingHomePage> {
       body: SafeArea(
         child: Column(
           children: [
-            Row(
-              children: [
-                CircleAvatar(),
-                Expanded(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text("Location"),
-                      Row(
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Row(
+                children: [
+                  CircleAvatar(),
+                  Expanded(
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 16),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Icon(
-                            Icons.location_on,
-                            color: Colors.indigo,
+                          Text("Location"),
+                          SizedBox(
+                            height: 8,
                           ),
-                          Text("Semarang City")
+                          Row(
+                            children: [
+                              Icon(
+                                Icons.location_on,
+                                color: Colors.indigo,
+                                size: 16,
+                              ),
+                              Text("Semarang City")
+                            ],
+                          ),
                         ],
                       ),
-                    ],
-                  ),
-                ),
-                Container(
-                  height: 48,
-                  width: 48,
-                  decoration: BoxDecoration(
-                    border: Border.all(
-                      color: Colors.grey,
                     ),
-                    shape: BoxShape.circle,
                   ),
-                )
-              ],
+                  Container(
+                    height: 48,
+                    width: 48,
+                    decoration: BoxDecoration(
+                      border: Border.all(
+                        color: Colors.grey,
+                      ),
+                      shape: BoxShape.circle,
+                    ),
+                  )
+                ],
+              ),
             ),
             Expanded(child: Placeholder()),
             Container(
