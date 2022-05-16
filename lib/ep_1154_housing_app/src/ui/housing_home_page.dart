@@ -14,7 +14,7 @@ class _HousingHomePageState extends State<HousingHomePage> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    _pageController = PageController(viewportFraction: 0.7, initialPage: 0);
+    _pageController = PageController(viewportFraction: 0.5, initialPage: 0);
   }
 
   @override
