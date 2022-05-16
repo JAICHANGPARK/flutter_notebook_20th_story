@@ -52,15 +52,33 @@ class _HousingHomePageState extends State<HousingHomePage> {
                       ),
                       shape: BoxShape.circle,
                     ),
+                    child: Center(
+                      child: Icon(
+                        Icons.apps,
+                      ),
+                    ),
                   )
                 ],
               ),
             ),
-            Expanded(child: Placeholder()),
-            Container(
-              height: 72,
-              decoration: BoxDecoration(
-                color: Colors.black,
+            Expanded(
+              child: Padding(
+                padding: const EdgeInsets.only(
+                  top: 16,
+                  left: 16,
+                  bottom: 16,
+                ),
+                child: Placeholder(),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Container(
+                height: 78,
+                decoration: BoxDecoration(
+                  color: Colors.blsaack,
+                  borderRadius: BorderRadius.circular(48)
+                ),
               ),
             )
           ],
