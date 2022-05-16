@@ -8,6 +8,15 @@ class HousingHomePage extends StatefulWidget {
 }
 
 class _HousingHomePageState extends State<HousingHomePage> {
+  PageController? _pageController;
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    _pageController = PageController(viewportFraction: 0.7, initialPage: 0);
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -76,8 +85,8 @@ class _HousingHomePageState extends State<HousingHomePage> {
               child: Container(
                 height: 78,
                 decoration: BoxDecoration(
-                  color: Colors.blsaack,
-                  borderRadius: BorderRadius.circular(48)
+                  color: Colors.black,
+                  borderRadius: BorderRadius.circular(48),
                 ),
               ),
             )
