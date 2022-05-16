@@ -103,9 +103,28 @@ class _HousingHomePageState extends State<HousingHomePage> {
                   color: Colors.black,
                   borderRadius: BorderRadius.circular(48),
                 ),
+                padding: EdgeInsets.symmetric(horizontal: 24),
                 child: Row(
                   children: [
-                    
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Icon(
+                          Icons.compass_calibration,
+                          color: Colors.white,
+                        ),
+                        SizedBox(
+                          height: 4,
+                        ),
+                        Container(
+                          height: 3,
+                          width: 32,
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                          ),
+                        )
+                      ],
+                    )
                   ],
                 ),
               ),
