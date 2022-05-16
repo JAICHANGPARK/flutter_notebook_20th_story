@@ -105,6 +105,7 @@ class _HousingHomePageState extends State<HousingHomePage> {
                 ),
                 padding: EdgeInsets.symmetric(horizontal: 24),
                 child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     Column(
                       mainAxisAlignment: MainAxisAlignment.center,
@@ -121,6 +122,63 @@ class _HousingHomePageState extends State<HousingHomePage> {
                           width: 24,
                           decoration: BoxDecoration(
                             color: Colors.white,
+                          ),
+                        )
+                      ],
+                    ),
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Icon(
+                          Icons.map_outlined,
+                          color: Colors.grey,
+                        ),
+                        SizedBox(
+                          height: 8,
+                        ),
+                        Container(
+                          height: 2,
+                          width: 24,
+                          decoration: BoxDecoration(
+                            color: Colors.transparent,
+                          ),
+                        )
+                      ],
+                    ),
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Icon(
+                          Icons.search,
+                          color: Colors.grey,
+                        ),
+                        SizedBox(
+                          height: 8,
+                        ),
+                        Container(
+                          height: 2,
+                          width: 24,
+                          decoration: BoxDecoration(
+                            color: Colors.transparent,
+                          ),
+                        )
+                      ],
+                    ),
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Icon(
+                          Icons.chat_outlined,
+                          color: Colors.grey,
+                        ),
+                        SizedBox(
+                          height: 8,
+                        ),
+                        Container(
+                          height: 2,
+                          width: 24,
+                          decoration: BoxDecoration(
+                            color: Colors.transparent,
                           ),
                         )
                       ],
