@@ -114,11 +114,11 @@ class _HousingHomePageState extends State<HousingHomePage> {
                           color: Colors.white,
                         ),
                         SizedBox(
-                          height: 4,
+                          height: 8,
                         ),
                         Container(
-                          height: 3,
-                          width: 32,
+                          height: 2,
+                          width: 24,
                           decoration: BoxDecoration(
                             color: Colors.white,
                           ),
