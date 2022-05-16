@@ -77,7 +77,16 @@ class _HousingHomePageState extends State<HousingHomePage> {
                   left: 16,
                   bottom: 16,
                 ),
-                child: Placeholder(),
+                child: PageView(
+                  children: [
+                    Card(
+                      child: Center(),
+                    ),
+                    Card(
+                      child: Center(),
+                    )
+                  ],
+                ),
               ),
             ),
             Padding(
