@@ -14,7 +14,10 @@ class _HousingHomePageState extends State<HousingHomePage> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    _pageController = PageController(viewportFraction: 0.5, initialPage: 0);
+    _pageController = PageController(
+      viewportFraction: 0.5,
+      initialPage: 0,
+    );
   }
 
   @override
@@ -79,8 +82,11 @@ class _HousingHomePageState extends State<HousingHomePage> {
                 ),
                 child: PageView(
                   children: [
-                    Card(
-                      child: Center(),
+                    Padding(
+                      padding: const EdgeInsets.only(right: 16),
+                      child: Card(
+                        child: Center(),
+                      ),
                     ),
                     Card(
                       child: Center(),
