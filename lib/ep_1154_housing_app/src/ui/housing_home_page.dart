@@ -124,14 +124,17 @@ class _HousingHomePageState extends State<HousingHomePage> {
                                           color: Colors.grey,
                                         ),
                                       ),
-
                                     ],
                                   ),
                                   Spacer(),
                                   CircleAvatar(
                                     radius: 12,
-                                    child: Icon(Icons.more_horiz,
-                                    size: 14,),
+                                    backgroundColor: Colors.white,
+                                    foregroundColor: Colors.black,
+                                    child: Icon(
+                                      Icons.more_horiz,
+                                      size: 14,
+                                    ),
                                   )
                                 ],
                               ),
