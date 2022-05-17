@@ -98,7 +98,29 @@ class _HousingHomePageState extends State<HousingHomePage> {
                           children: [
                             Positioned(
                               child: Row(
-                                children: [],
+                                children: [
+                                  Container(
+                                    decoration: BoxDecoration(
+                                      color: Colors.white.withOpacity(0.1)
+                                    ),
+                                    padding: EdgeInsets.all(8),
+                                    child: Row(
+                                      children: [
+                                        CircleAvatar(),
+                                        Text(
+                                          "Edi Pangabean",
+                                          style: TextStyle(
+                                            color: Colors.white,
+                                          ),
+                                        )
+                                      ],
+                                    ),
+                                  ),
+                                  Spacer(),
+                                  CircleAvatar(
+
+                                  ),
+                                ],
                               ),
                             ),
                             Positioned(
