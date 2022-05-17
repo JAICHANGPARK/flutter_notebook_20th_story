@@ -18,19 +18,25 @@ class _HousingDetailPageState extends State<HousingDetailPage> {
               left: 16,
               top: 16,
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Container(
-                    decoration: BoxDecoration(
-                      border: Border.all(
-                        color: Colors.grey,
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.of(context).pop();
+                    },
+                    child: Container(
+                      decoration: BoxDecoration(
+                        border: Border.all(
+                          color: Colors.grey,
+                        ),
+                        shape: BoxShape.circle,
                       ),
-                      shape: BoxShape.circle,
-                    ),
-                    padding: EdgeInsets.all(8),
-                    child: Center(
-                      child: Icon(
-                        Icons.arrow_back_ios,
-                        size: 16,
+                      padding: EdgeInsets.all(8),
+                      child: Center(
+                        child: Icon(
+                          Icons.arrow_back_ios,
+                          size: 16,
+                        ),
                       ),
                     ),
                   ),
@@ -41,10 +47,7 @@ class _HousingDetailPageState extends State<HousingDetailPage> {
                     children: [
                       CircleAvatar(),
                       Column(
-                        children: [
-                          Text("Bedroom"),
-                          Text("6 bedroom")
-                        ],
+                        children: [Text("Bedroom"), Text("6 bedroom")],
                       )
                     ],
                   )
