@@ -108,12 +108,30 @@ class _HousingHomePageState extends State<HousingHomePage> {
                               child: Row(
                                 children: [
                                   Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
-                                      Text("Blue Lagoon Living"),
-                                      
-                                      Text("Tembalang. Semeyeng", )
+                                      Text(
+                                        "Blue Lagoon Living",
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                          color: Colors.black,
+                                        ),
+                                      ),
+                                      Text(
+                                        "Tembalang. Semeyeng",
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                          color: Colors.grey,
+                                        ),
+                                      ),
 
                                     ],
+                                  ),
+                                  Spacer(),
+                                  CircleAvatar(
+                                    radius: 12,
+                                    child: Icon(Icons.more_horiz,
+                                    size: 14,),
                                   )
                                 ],
                               ),
