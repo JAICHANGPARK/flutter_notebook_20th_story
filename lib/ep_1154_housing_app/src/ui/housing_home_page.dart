@@ -84,8 +84,42 @@ class _HousingHomePageState extends State<HousingHomePage> {
                   children: [
                     Padding(
                       padding: const EdgeInsets.only(right: 16),
-                      child: Card(
-                        child: Center(),
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: Colors.blue,
+                          borderRadius: BorderRadius.circular(16),
+                          image: DecorationImage(
+                            image: NetworkImage(
+                                "https://cdn.pixabay.com/photo/2017/03/28/12/13/chairs-2181968_960_720.jpg"),
+                            fit: BoxFit.cover,
+                          ),
+                        ),
+                        child: Stack(
+                          children: [
+                            Positioned(
+                              child: Row(
+                                children: [],
+                              ),
+                            ),
+                            Positioned(
+                              left: 16,
+                              right: 16,
+                              bottom: 16,
+                              child: Row(
+                                children: [
+                                  Column(
+                                    children: [
+                                      Text("Blue Lagoon Living"),
+                                      
+                                      Text("Tembalang. Semeyeng", )
+
+                                    ],
+                                  )
+                                ],
+                              ),
+                            )
+                          ],
+                        ),
                       ),
                     ),
                     Card(
@@ -100,7 +134,7 @@ class _HousingHomePageState extends State<HousingHomePage> {
               child: Container(
                 height: 78,
                 decoration: BoxDecoration(
-                  color: Colors.black,
+                  color: Color.fromRGBO(42, 42, 42, 1),
                   borderRadius: BorderRadius.circular(48),
                 ),
                 padding: EdgeInsets.symmetric(horizontal: 24),
