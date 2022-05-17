@@ -114,14 +114,19 @@ class _HousingHomePageState extends State<HousingHomePage> {
                                         "Blue Lagoon Living",
                                         style: TextStyle(
                                           fontWeight: FontWeight.bold,
-                                          color: Colors.black,
+                                          color: Colors.white,
+                                          fontSize: 20,
                                         ),
+                                      ),
+                                      SizedBox(
+                                        height: 8,
                                       ),
                                       Text(
                                         "Tembalang. Semeyeng",
                                         style: TextStyle(
                                           fontWeight: FontWeight.bold,
                                           color: Colors.grey,
+                                          fontSize: 12,
                                         ),
                                       ),
                                     ],
