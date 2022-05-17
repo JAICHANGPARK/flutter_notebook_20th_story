@@ -97,16 +97,23 @@ class _HousingHomePageState extends State<HousingHomePage> {
                         child: Stack(
                           children: [
                             Positioned(
+                              left: 16,
+                              top: 16,
+                              right: 16,
+
                               child: Row(
                                 children: [
                                   Container(
-                                    decoration: BoxDecoration(
-                                      color: Colors.white.withOpacity(0.1)
-                                    ),
+                                    decoration: BoxDecoration(color: Colors.white.withOpacity(0.1)),
                                     padding: EdgeInsets.all(8),
                                     child: Row(
                                       children: [
-                                        CircleAvatar(),
+                                        CircleAvatar(
+                                          radius: 20,
+                                        ),
+                                        SizedBox(
+                                          width: 8,
+                                        ),
                                         Text(
                                           "Edi Pangabean",
                                           style: TextStyle(
@@ -118,7 +125,9 @@ class _HousingHomePageState extends State<HousingHomePage> {
                                   ),
                                   Spacer(),
                                   CircleAvatar(
-
+                                    backgroundColor: Colors.grey[200],
+                                    foregroundColor: Colors.black,
+                                    child: Icon(Icons.bookmark,),
                                   ),
                                 ],
                               ),
