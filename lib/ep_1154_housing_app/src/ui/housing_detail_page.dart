@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
 class HousingDetailPage extends StatefulWidget {
-  const HousingDetailPage({Key? key}) : super(key: key);
+  String? img;
+
+  HousingDetailPage({Key? key, this.img}) : super(key: key);
 
   @override
   State<HousingDetailPage> createState() => _HousingDetailPageState();
@@ -143,15 +145,27 @@ class _HousingDetailPageState extends State<HousingDetailPage> {
               ),
             ),
             Positioned(
-              top: 0,
+              top: 16,
               right: 0,
-              child: Container(
-
-                width: 180,
-                height: MediaQuery.of(context).size.height / 2,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.only(),
-                  color: Colors.blue,
+              child: Hero(
+                tag: "item_0",
+                child: Material(
+                  child: Container(
+                    width: 180,
+                    height: MediaQuery.of(context).size.height / 2,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.only(
+                        topLeft: Radius.circular(16),
+                        bottomLeft: Radius.circular(16),
+                      ),
+                      color: Colors.blue,
+                      image: DecorationImage(
+                          image: NetworkImage(
+                            widget.img ?? "",
+                          ),
+                          fit: BoxFit.cover),
+                    ),
+                  ),
                 ),
               ),
             ),
