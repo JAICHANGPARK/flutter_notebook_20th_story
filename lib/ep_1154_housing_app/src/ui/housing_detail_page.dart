@@ -55,13 +55,19 @@ class _HousingDetailPageState extends State<HousingDetailPage> {
                               "Bedroom",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
-
+                                fontSize: 16
                               ),
                             ),
                             SizedBox(
                               height: 4,
                             ),
-                            Text("6 bedroom"),
+                            Text(
+                              "6 bedroom",
+                              style: TextStyle(
+                                color: Colors.grey[500],
+                                fontSize: 12,
+                              ),
+                            ),
                           ],
                         ),
                       )
