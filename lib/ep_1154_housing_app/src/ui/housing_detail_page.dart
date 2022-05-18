@@ -181,12 +181,18 @@ class _HousingDetailPageState extends State<HousingDetailPage> {
               ),
             ),
             Positioned(
-              right: 0,
+              right: 32,
               bottom: MediaQuery.of(context).size.height / 2.5,
               child: Container(
-                color: Colors.red,
-                width: 180,
+                padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                color: Colors.white,
                 height: 48,
+                child: Center(
+                  child: Text(
+                    "More pic",
+                    style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+                  ),
+                ),
               ),
             )
           ],
