@@ -162,6 +162,30 @@ class _HousingDetailPageState extends State<HousingDetailPage> {
                         fontSize: 24,
                         color: Colors.indigo,
                       ),
+                    ),
+                    Text("Blue Lagoon Living"),
+                    Text("Tembalang. Semeyeng"),
+                    Text(
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "),
+                    Row(
+                      children: [
+                        CircleAvatar(),
+                        Text("Edi Pangabean"),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        Container(
+                          decoration: BoxDecoration(
+                            border: Border.all(),
+                            color: Colors.white,
+                            shape: BoxShape.circle,l
+                          ),
+                          child: Icon(
+                            Icons.chat_outlined,
+                          ),
+                        )
+                      ],
                     )
                   ],
                 ),
