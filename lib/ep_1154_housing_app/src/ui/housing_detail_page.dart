@@ -46,8 +46,24 @@ class _HousingDetailPageState extends State<HousingDetailPage> {
                   Row(
                     children: [
                       CircleAvatar(),
-                      Column(
-                        children: [Text("Bedroom"), Text("6 bedroom")],
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              "Bedroom",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+
+                              ),
+                            ),
+                            SizedBox(
+                              height: 4,
+                            ),
+                            Text("6 bedroom"),
+                          ],
+                        ),
                       )
                     ],
                   )
