@@ -147,7 +147,7 @@ class _HousingDetailPageState extends State<HousingDetailPage> {
                     topLeft: Radius.circular(16),
                   ),
                 ),
-                height: MediaQuery.of(context).size.height / 2,
+                height: MediaQuery.of(context).size.height / 2.1,
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -165,26 +165,43 @@ class _HousingDetailPageState extends State<HousingDetailPage> {
                     ),
                     Text("Blue Lagoon Living"),
                     Text("Tembalang. Semeyeng"),
+                    SizedBox(
+                      height: 42,
+                    ),
                     Text(
                         "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "),
+                    SizedBox(
+                      height: 16,
+                    ),
                     Row(
                       children: [
                         CircleAvatar(),
                         Text("Edi Pangabean"),
                       ],
                     ),
+                    Spacer(),
                     Row(
                       children: [
                         Container(
+                          padding: EdgeInsets.all(8),
                           decoration: BoxDecoration(
-                            border: Border.all(),
+                            border: Border.all(
+                              color: Colors.grey[400]!,
+                            ),
                             color: Colors.white,
-                            shape: BoxShape.circle,l
+                            shape: BoxShape.circle,
                           ),
                           child: Icon(
                             Icons.chat_outlined,
                           ),
-                        )
+                        ),
+                        Expanded(
+                            child: Container(
+                          decoration: BoxDecoration(
+                            color: Colors.black,
+                          ),
+                          child: Text("Buy Now"),
+                        ))
                       ],
                     )
                   ],
@@ -238,11 +255,17 @@ class _HousingDetailPageState extends State<HousingDetailPage> {
               child: Container(
                 padding: EdgeInsets.symmetric(horizontal: 16, vertical: 4),
                 height: 48,
-                decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(24)),
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(24),
+                ),
                 child: Center(
                   child: Text(
                     "More pic",
-                    style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+                    style: TextStyle(
+                      fontSize: 15,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                 ),
               ),
