@@ -150,8 +150,9 @@ class _HousingDetailPageState extends State<HousingDetailPage> {
               child: Hero(
                 tag: "item_0",
                 child: Material(
+                  color: Colors.transparent,
                   child: Container(
-                    width: 180,
+                    width: 160,
                     height: MediaQuery.of(context).size.height / 2,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.only(
@@ -172,6 +173,10 @@ class _HousingDetailPageState extends State<HousingDetailPage> {
                           top: 16,
                           child: CircleAvatar(
                             backgroundColor: Colors.grey[200],
+                            foregroundColor: Colors.black,
+                            child: Icon(
+                              Icons.bookmark,
+                            ),
                           ),
                         )
                       ],
@@ -184,9 +189,9 @@ class _HousingDetailPageState extends State<HousingDetailPage> {
               right: 32,
               bottom: MediaQuery.of(context).size.height / 2.5,
               child: Container(
-                padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                color: Colors.white,
+                padding: EdgeInsets.symmetric(horizontal: 16, vertical: 4),
                 height: 48,
+                decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(24)),
                 child: Center(
                   child: Text(
                     "More pic",
