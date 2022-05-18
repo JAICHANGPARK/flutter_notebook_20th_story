@@ -89,7 +89,9 @@ class _HousingHomePageState extends State<HousingHomePage> {
                         onTap: () {
                           Navigator.of(context).push(
                             MaterialPageRoute(
-                              builder: (context) => HousingDetailPage(),
+                              builder: (context) => HousingDetailPage(
+                                img: "https://cdn.pixabay.com/photo/2017/03/28/12/13/chairs-2181968_960_720.jpg"
+                              ),
                             ),
                           );
                         },
