@@ -140,8 +140,31 @@ class _HousingDetailPageState extends State<HousingDetailPage> {
               bottom: 0,
               right: 0,
               child: Container(
-                color: Colors.grey,
+                padding: EdgeInsets.all(24),
+                decoration: BoxDecoration(
+                  color: Colors.grey[200],
+                  borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(16),
+                  ),
+                ),
                 height: MediaQuery.of(context).size.height / 2,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text("Current Price"),
+                    SizedBox(
+                      height: 16,
+                    ),
+                    Text(
+                      "\$45,000",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 24,
+                        color: Colors.indigo,
+                      ),
+                    )
+                  ],
+                ),
               ),
             ),
             Positioned(
@@ -152,7 +175,7 @@ class _HousingDetailPageState extends State<HousingDetailPage> {
                 child: Material(
                   color: Colors.transparent,
                   child: Container(
-                    width: 160,
+                    width: 180,
                     height: MediaQuery.of(context).size.height / 2,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.only(
@@ -186,8 +209,8 @@ class _HousingDetailPageState extends State<HousingDetailPage> {
               ),
             ),
             Positioned(
-              right: 32,
-              bottom: MediaQuery.of(context).size.height / 2.5,
+              right: 42,
+              bottom: MediaQuery.of(context).size.height / 2.6,
               child: Container(
                 padding: EdgeInsets.symmetric(horizontal: 16, vertical: 4),
                 height: 48,
