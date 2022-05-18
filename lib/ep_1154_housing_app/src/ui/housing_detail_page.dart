@@ -45,7 +45,9 @@ class _HousingDetailPageState extends State<HousingDetailPage> {
                   ),
                   Row(
                     children: [
-                      CircleAvatar(),
+                      CircleAvatar(
+                        backgroundColor: Colors.grey,
+                      ),
                       Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: Column(
@@ -53,10 +55,7 @@ class _HousingDetailPageState extends State<HousingDetailPage> {
                           children: [
                             Text(
                               "Bedroom",
-                              style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                                fontSize: 16
-                              ),
+                              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
                             ),
                             SizedBox(
                               height: 4,
@@ -72,36 +71,98 @@ class _HousingDetailPageState extends State<HousingDetailPage> {
                         ),
                       )
                     ],
+                  ),
+                  Row(
+                    children: [
+                      CircleAvatar(
+                        backgroundColor: Colors.grey,
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              "Bathroom",
+                              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                            ),
+                            SizedBox(
+                              height: 4,
+                            ),
+                            Text(
+                              "3 bathroom",
+                              style: TextStyle(
+                                color: Colors.grey[500],
+                                fontSize: 12,
+                              ),
+                            ),
+                          ],
+                        ),
+                      )
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      CircleAvatar(
+                        backgroundColor: Colors.grey,
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              "Kitchen",
+                              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                            ),
+                            SizedBox(
+                              height: 4,
+                            ),
+                            Text(
+                              "2 kitchen",
+                              style: TextStyle(
+                                color: Colors.grey[500],
+                                fontSize: 12,
+                              ),
+                            ),
+                          ],
+                        ),
+                      )
+                    ],
                   )
                 ],
               ),
             ),
             Positioned(
+              left: 16,
+              bottom: 0,
+              right: 0,
               child: Container(
                 color: Colors.grey,
                 height: MediaQuery.of(context).size.height / 2,
               ),
-              left: 16,
-              bottom: 0,
-              right: 0,
             ),
             Positioned(
-              child: Container(
-                color: Colors.blue,
-                width: 180,
-                height: MediaQuery.of(context).size.height / 2,
-              ),
               top: 0,
               right: 0,
+              child: Container(
+
+                width: 180,
+                height: MediaQuery.of(context).size.height / 2,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.only(),
+                  color: Colors.blue,
+                ),
+              ),
             ),
             Positioned(
+              right: 0,
+              bottom: MediaQuery.of(context).size.height / 2.5,
               child: Container(
                 color: Colors.red,
                 width: 180,
                 height: 48,
               ),
-              bottom: MediaQuery.of(context).size.height / 2.5,
-              right: 0,
             )
           ],
         ),
