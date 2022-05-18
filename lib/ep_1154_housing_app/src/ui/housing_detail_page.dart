@@ -195,12 +195,24 @@ class _HousingDetailPageState extends State<HousingDetailPage> {
                             Icons.chat_outlined,
                           ),
                         ),
+                        SizedBox(
+                          width: 16,
+                        ),
                         Expanded(
                             child: Container(
                           decoration: BoxDecoration(
                             color: Colors.black,
+                            borderRadius: BorderRadius.circular(24),
                           ),
-                          child: Text("Buy Now"),
+                          padding: EdgeInsets.symmetric(vertical: 16),
+                          child: Center(
+                            child: Text(
+                              "Buy Now",
+                              style: TextStyle(
+                                color: Colors.white,
+                              ),
+                            ),
+                          ),
                         ))
                       ],
                     )
