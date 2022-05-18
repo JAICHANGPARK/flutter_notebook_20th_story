@@ -165,6 +165,17 @@ class _HousingDetailPageState extends State<HousingDetailPage> {
                           ),
                           fit: BoxFit.cover),
                     ),
+                    child: Stack(
+                      children: [
+                        Positioned(
+                          right: 16,
+                          top: 16,
+                          child: CircleAvatar(
+                            backgroundColor: Colors.grey[200],
+                          ),
+                        )
+                      ],
+                    ),
                   ),
                 ),
               ),
