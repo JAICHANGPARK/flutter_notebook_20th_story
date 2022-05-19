@@ -110,6 +110,97 @@ class DeliveryFirstStepPage extends StatelessWidget {
                   ),
                 ),
               ),
+              Text(
+                "Package",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.symmetric(vertical: 16),
+                child: Row(
+                  children: [
+                    Expanded(
+                      flex: 4,
+                      child: SizedBox(
+                        height: 60,
+                        child: Stack(
+                          children: [
+                            Positioned(
+                              left: 0,
+                              top: 6,
+                              right: 0,
+                              bottom: 0,
+                              child: Container(
+                                decoration: BoxDecoration(
+                                  color: Color.fromRGBO(251, 230, 202, 1),
+                                  borderRadius: BorderRadius.circular(16),
+                                  border: Border.all(width: 1.5),
+                                ),
+                              ),
+                            ),
+                            Positioned(
+                              left: 0,
+                              top: 0,
+                              right: 6,
+                              bottom: 6,
+                              child: Container(
+                                decoration: BoxDecoration(
+                                    color: Colors.white,
+                                    borderRadius: BorderRadius.circular(9),
+                                    border: Border.all(width: 1.5)),
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
+                    ),
+                    SizedBox(width: 8),
+                    Expanded(
+                      flex: 6,
+                      child: SizedBox(
+                        height: 60,
+                        child: Stack(
+                          children: [
+                            Positioned(
+                              left: 0,
+                              top: 6,
+                              right: 0,
+                              bottom: 0,
+                              child: Container(
+                                decoration: BoxDecoration(
+                                  color: Color.fromRGBO(251, 230, 202, 1),
+                                  borderRadius: BorderRadius.circular(16),
+                                  border: Border.all(width: 1.5),
+                                ),
+                              ),
+                            ),
+                            Positioned(
+                              left: 0,
+                              top: 0,
+                              right: 6,
+                              bottom: 6,
+                              child: Container(
+                                decoration: BoxDecoration(
+                                    color: Colors.white,
+                                    borderRadius: BorderRadius.circular(9),
+                                    border: Border.all(width: 1.5)),
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              Divider(
+                color: Colors.grey,
+              ),
+              Text(
+                "Estimate shipping cost baces on order value or total weight of item",
+                textAlign: TextAlign.center,
+              ),
             ],
           ),
         ),
