@@ -53,7 +53,14 @@ class DeliveryFirstStepPage extends StatelessWidget {
                       right: 8,
                       bottom: 8,
                       child: Container(
-                        color: Colors.pink,
+
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(9),
+                          border: Border.all(
+                            width: 1.5
+                          )
+                        ),
                       ),
                     )
                   ],
