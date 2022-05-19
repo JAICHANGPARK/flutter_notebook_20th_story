@@ -134,7 +134,7 @@ class DeliveryFirstStepPage extends StatelessWidget {
                               child: Container(
                                 decoration: BoxDecoration(
                                   color: Color.fromRGBO(251, 230, 202, 1),
-                                  borderRadius: BorderRadius.circular(16),
+                                  borderRadius: BorderRadius.circular(12),
                                   border: Border.all(width: 1.5),
                                 ),
                               ),
@@ -142,8 +142,8 @@ class DeliveryFirstStepPage extends StatelessWidget {
                             Positioned(
                               left: 0,
                               top: 0,
-                              right: 6,
-                              bottom: 6,
+                              right: 4,
+                              bottom: 4,
                               child: Container(
                                 decoration: BoxDecoration(
                                     color: Colors.white,
@@ -170,7 +170,7 @@ class DeliveryFirstStepPage extends StatelessWidget {
                               child: Container(
                                 decoration: BoxDecoration(
                                   color: Color.fromRGBO(251, 230, 202, 1),
-                                  borderRadius: BorderRadius.circular(16),
+                                  borderRadius: BorderRadius.circular(12),
                                   border: Border.all(width: 1.5),
                                 ),
                               ),
@@ -178,8 +178,8 @@ class DeliveryFirstStepPage extends StatelessWidget {
                             Positioned(
                               left: 0,
                               top: 0,
-                              right: 6,
-                              bottom: 6,
+                              right: 4,
+                              bottom: 4,
                               child: Container(
                                 decoration: BoxDecoration(
                                   color: Colors.white,
