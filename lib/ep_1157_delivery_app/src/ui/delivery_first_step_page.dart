@@ -44,7 +44,7 @@ class DeliveryFirstStepPage extends StatelessWidget {
                       right: 0,
                       bottom: 0,
                       child: Container(
-                        color: Colors.orange,
+                        color: Color.fromRGBO(251, 230, 202, 1),
                       ),
                     ),
                     Positioned(
