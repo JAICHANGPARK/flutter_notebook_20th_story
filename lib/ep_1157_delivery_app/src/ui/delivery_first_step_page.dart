@@ -8,7 +8,7 @@ class DeliveryFirstStepPage extends StatelessWidget {
     return Scaffold(
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.all(16.0),
+          padding: const EdgeInsets.all(24.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -26,7 +26,7 @@ class DeliveryFirstStepPage extends StatelessWidget {
                 ),
               ),
               SizedBox(
-                height: 24,
+                height: 32,
               ),
               Text(
                 "Destinations",
@@ -42,7 +42,7 @@ class DeliveryFirstStepPage extends StatelessWidget {
                     children: [
                       Positioned(
                         left: 0,
-                        top: 8,
+                        top: 6,
                         right: 0,
                         bottom: 0,
                         child: Container(
@@ -56,8 +56,8 @@ class DeliveryFirstStepPage extends StatelessWidget {
                       Positioned(
                         left: 0,
                         top: 0,
-                        right: 8,
-                        bottom: 8,
+                        right: 6,
+                        bottom: 6,
                         child: Container(
                           decoration: BoxDecoration(
                               color: Colors.white,
@@ -68,7 +68,48 @@ class DeliveryFirstStepPage extends StatelessWidget {
                     ],
                   ),
                 ),
-              )
+              ),
+              Text(
+                "Service",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.symmetric(vertical: 16),
+                child: SizedBox(
+                  height: 120,
+                  child: Stack(
+                    children: [
+                      Positioned(
+                        left: 0,
+                        top: 6,
+                        right: 0,
+                        bottom: 0,
+                        child: Container(
+                          decoration: BoxDecoration(
+                            color: Color.fromRGBO(251, 230, 202, 1),
+                            borderRadius: BorderRadius.circular(16),
+                            border: Border.all(width: 1.5),
+                          ),
+                        ),
+                      ),
+                      Positioned(
+                        left: 0,
+                        top: 0,
+                        right: 6,
+                        bottom: 6,
+                        child: Container(
+                          decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(9),
+                              border: Border.all(width: 1.5)),
+                        ),
+                      )
+                    ],
+                  ),
+                ),
+              ),
             ],
           ),
         ),
