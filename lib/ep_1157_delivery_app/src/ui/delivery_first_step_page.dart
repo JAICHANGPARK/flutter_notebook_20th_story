@@ -34,36 +34,39 @@ class DeliveryFirstStepPage extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              SizedBox(
-                height: 160,
-                child: Stack(
-                  children: [
-                    Positioned(
-                      left: 0,
-                      top: 8,
-                      right: 0,
-                      bottom: 0,
-                      child: Container(
-                        color: Color.fromRGBO(251, 230, 202, 1),
-                      ),
-                    ),
-                    Positioned(
-                      left: 0,
-                      top: 0,
-                      right: 8,
-                      bottom: 8,
-                      child: Container(
-
-                        decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.circular(9),
-                          border: Border.all(
-                            width: 1.5
-                          )
+              Padding(
+                padding: const EdgeInsets.symmetric(vertical: 16),
+                child: SizedBox(
+                  height: 180,
+                  child: Stack(
+                    children: [
+                      Positioned(
+                        left: 0,
+                        top: 8,
+                        right: 0,
+                        bottom: 0,
+                        child: Container(
+                          decoration: BoxDecoration(
+                            color: Color.fromRGBO(251, 230, 202, 1),
+                            borderRadius: BorderRadius.circular(16),
+                            border: Border.all(width: 1.5),
+                          ),
                         ),
                       ),
-                    )
-                  ],
+                      Positioned(
+                        left: 0,
+                        top: 0,
+                        right: 8,
+                        bottom: 8,
+                        child: Container(
+                          decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(9),
+                              border: Border.all(width: 1.5)),
+                        ),
+                      )
+                    ],
+                  ),
                 ),
               )
             ],
