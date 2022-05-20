@@ -1,5 +1,6 @@
 # flutter_notebook_20th_story
 
+
 ### EP1157
 
 - Delivery App
@@ -31,6 +32,9 @@ src="https://cdn.dribbble.com/users/4848207/screenshots/18228845/media/aed8f3023
 width="400px"/>
 
 A new Flutter project.
+
+## run
+Flutter run 
 
 ## Getting Started
 
