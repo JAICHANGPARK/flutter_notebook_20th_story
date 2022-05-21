@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'package:dotted_border/dotted_border.dart';
+
 class DeliveryFirstStepPage extends StatelessWidget {
   const DeliveryFirstStepPage({Key? key}) : super(key: key);
 
@@ -101,9 +103,20 @@ class DeliveryFirstStepPage extends StatelessWidget {
                         bottom: 6,
                         child: Container(
                           decoration: BoxDecoration(
-                              color: Colors.white,
-                              borderRadius: BorderRadius.circular(9),
-                              border: Border.all(width: 1.5)),
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(9),
+                            border: Border.all(width: 1.5),
+                          ),
+                          child: Row(
+                            children: [
+                              DottedBorder(
+
+                                child: Center(
+                                  // child: Icon(Icons.de),
+                                ),
+                              )
+                            ],
+                          ),
                         ),
                       )
                     ],
@@ -159,11 +172,12 @@ class DeliveryFirstStepPage extends StatelessWidget {
                                     "4",
                                   ]
                                       .map((e) => DropdownMenuItem<String>(
-                                    child: Text("${e} pieces", style: TextStyle(
-                                      fontSize: 13
-                                    ),),
-                                    value: e,
-                                  ))
+                                            child: Text(
+                                              "${e} pieces",
+                                              style: TextStyle(fontSize: 13),
+                                            ),
+                                            value: e,
+                                          ))
                                       .toList(),
                                   isExpanded: true,
                                   underline: Container(),
