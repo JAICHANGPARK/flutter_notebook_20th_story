@@ -15,6 +15,7 @@ dependencies:
   ionicons: any
   badges: any
   dotted_border: ^2.0.0+2
+  dotted_line: ^3.1.0
 
 dev_dependencies:
   flutter_test:
