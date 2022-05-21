@@ -238,6 +238,11 @@ class DeliveryFirstStepPage extends StatelessWidget {
                               width: 1.5,
                             ),
                           ),
+                          child: Center(
+                            child:Text(
+                              "Next"
+                            ),
+                          ),
                         ),
                       )
                     ],
