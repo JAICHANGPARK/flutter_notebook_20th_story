@@ -79,6 +79,16 @@ class DeliveryFirstStepPage extends StatelessWidget {
                                         Text("Jakarta, Gandaria"),
                                       ],
                                     ),
+                                    DottedLine(),
+                                    Row(
+                                      children: [
+                                        Icon(Icons.send,),
+                                        Text("To", style: TextStyle(
+                                          
+                                        ),),
+                                        Text("Aceh, Parmanina"),
+                                      ],
+                                    ),
 
                                   ],
                                 ),
