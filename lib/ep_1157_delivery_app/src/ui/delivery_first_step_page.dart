@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:dotted_border/dotted_border.dart';
+import 'package:dotted_line/dotted_line.dart';
 
 class DeliveryFirstStepPage extends StatelessWidget {
   const DeliveryFirstStepPage({Key? key}) : super(key: key);
@@ -70,7 +71,16 @@ class DeliveryFirstStepPage extends StatelessWidget {
                             children: [
                               Positioned(
                                 child: Column(
-                                  children: [],
+                                  children: [
+                                    Row(
+                                      children: [
+                                        Icon(Icons.location_on_outlined,),
+                                        Text("From"),
+                                        Text("Jakarta, Gandaria"),
+                                      ],
+                                    ),
+
+                                  ],
                                 ),
                               )
                             ],
