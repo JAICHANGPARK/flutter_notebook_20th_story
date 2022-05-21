@@ -203,6 +203,10 @@ class DeliveryFirstStepPage extends StatelessWidget {
               Text(
                 "Estimate shipping cost baces on order value or total weight of item",
                 textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: 12,
+                  
+                ),
               ),
               Padding(
                 padding: const EdgeInsets.symmetric(vertical: 16),
