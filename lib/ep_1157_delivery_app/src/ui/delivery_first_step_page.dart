@@ -66,6 +66,15 @@ class DeliveryFirstStepPage extends StatelessWidget {
                             borderRadius: BorderRadius.circular(9),
                             border: Border.all(width: 1.5),
                           ),
+                          child: Stack(
+                            children: [
+                              Positioned(
+                                child: Column(
+                                  children: [],
+                                ),
+                              )
+                            ],
+                          ),
                         ),
                       ),
                     ],
