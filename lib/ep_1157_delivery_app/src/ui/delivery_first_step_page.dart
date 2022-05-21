@@ -146,9 +146,26 @@ class DeliveryFirstStepPage extends StatelessWidget {
                               bottom: 4,
                               child: Container(
                                 decoration: BoxDecoration(
-                                    color: Colors.white,
-                                    borderRadius: BorderRadius.circular(9),
-                                    border: Border.all(width: 1.5)),
+                                  color: Colors.white,
+                                  borderRadius: BorderRadius.circular(9),
+                                  border: Border.all(width: 1.5),
+                                ),
+                                padding: EdgeInsets.symmetric(horizontal: 16),
+                                child: DropdownButton<String>(
+                                  onChanged: (d) {},
+                                  value: "16 Kg",
+                                  items: [
+                                    "16 Kg",
+                                    "24 Kg",
+                                  ]
+                                      .map((e) => DropdownMenuItem<String>(
+                                    child: Text(e),
+                                    value: e,
+                                  ))
+                                      .toList(),
+                                  isExpanded: true,
+                                  underline: Container(),
+                                ),
                               ),
                             )
                           ],
