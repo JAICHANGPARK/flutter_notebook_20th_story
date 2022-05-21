@@ -70,11 +70,17 @@ class DeliveryFirstStepPage extends StatelessWidget {
                           child: Stack(
                             children: [
                               Positioned(
+                                top: 16,
+                                right: 24,
+                                bottom: 0,
+                                left: 0,
                                 child: Column(
                                   children: [
                                     Row(
                                       children: [
-                                        Icon(Icons.location_on_outlined,),
+                                        Icon(
+                                          Icons.location_on_outlined,
+                                        ),
                                         Text("From"),
                                         Text("Jakarta, Gandaria"),
                                       ],
@@ -82,14 +88,16 @@ class DeliveryFirstStepPage extends StatelessWidget {
                                     DottedLine(),
                                     Row(
                                       children: [
-                                        Icon(Icons.send,),
-                                        Text("To", style: TextStyle(
-                                          
-                                        ),),
+                                        Icon(
+                                          Icons.send,
+                                        ),
+                                        Text(
+                                          "To",
+                                          style: TextStyle(fontWeight: FontWeight.bold),
+                                        ),
                                         Text("Aceh, Parmanina"),
                                       ],
                                     ),
-
                                   ],
                                 ),
                               )
