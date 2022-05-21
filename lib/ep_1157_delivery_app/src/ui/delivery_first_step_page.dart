@@ -40,7 +40,7 @@ class DeliveryFirstStepPage extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.symmetric(vertical: 16),
                 child: SizedBox(
-                  height: 180,
+                  height: 170,
                   child: Stack(
                     children: [
                       Positioned(
@@ -70,33 +70,50 @@ class DeliveryFirstStepPage extends StatelessWidget {
                           child: Stack(
                             children: [
                               Positioned(
-                                top: 16,
-                                right: 24,
+                                top: 0,
+                                right: 64,
                                 bottom: 0,
                                 left: 0,
                                 child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
-                                    Row(
-                                      children: [
-                                        Icon(
-                                          Icons.location_on_outlined,
-                                        ),
-                                        Text("From"),
-                                        Text("Jakarta, Gandaria"),
-                                      ],
+                                    Padding(
+                                      padding: EdgeInsets.all(16),
+                                      child: Row(
+                                        children: [
+                                          Icon(
+                                            Icons.location_on_outlined,
+                                          ),
+                                          Text(
+                                            "From",
+                                            style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                            ),
+                                          ),
+                                          Text("Jakarta, Gandaria"),
+                                        ],
+                                      ),
                                     ),
                                     DottedLine(),
-                                    Row(
-                                      children: [
-                                        Icon(
-                                          Icons.send,
-                                        ),
-                                        Text(
-                                          "To",
-                                          style: TextStyle(fontWeight: FontWeight.bold),
-                                        ),
-                                        Text("Aceh, Parmanina"),
-                                      ],
+                                    Padding(
+                                      padding: const EdgeInsets.all(16.0),
+                                      child: Row(
+                                        children: [
+                                          Icon(
+                                            Icons.send,
+                                          ),
+                                          Padding(
+                                            padding: const EdgeInsets.symmetric(horizontal: 8),
+                                            child: Text(
+                                              "To",
+                                              style: TextStyle(
+                                                fontWeight: FontWeight.bold,
+                                              ),
+                                            ),
+                                          ),
+                                          Text("Aceh, Parmanina"),
+                                        ],
+                                      ),
                                     ),
                                   ],
                                 ),
