@@ -188,6 +188,22 @@ class DeliveryFirstStepPage extends StatelessWidget {
                                     width: 1.5,
                                   ),
                                 ),
+                                padding: EdgeInsets.symmetric(horizontal: 16),
+                                child: DropdownButton<String>(
+                                  onChanged: (d) {},
+                                  value: "16 Kg",
+                                  items: [
+                                    "16 Kg",
+                                    "24 Kg",
+                                  ]
+                                      .map((e) => DropdownMenuItem<String>(
+                                            child: Text(e),
+                                            value: e,
+                                          ))
+                                      .toList(),
+                                  isExpanded: true,
+                                  underline: Container(),
+                                ),
                               ),
                             )
                           ],
@@ -205,7 +221,6 @@ class DeliveryFirstStepPage extends StatelessWidget {
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 12,
-                  
                 ),
               ),
               Padding(
@@ -243,9 +258,7 @@ class DeliveryFirstStepPage extends StatelessWidget {
                             ),
                           ),
                           child: Center(
-                            child:Text(
-                              "Next"
-                            ),
+                            child: Text("Next"),
                           ),
                         ),
                       )
