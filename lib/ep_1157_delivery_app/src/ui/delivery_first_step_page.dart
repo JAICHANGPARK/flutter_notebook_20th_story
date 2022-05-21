@@ -107,12 +107,18 @@ class DeliveryFirstStepPage extends StatelessWidget {
                             borderRadius: BorderRadius.circular(9),
                             border: Border.all(width: 1.5),
                           ),
+                          padding: EdgeInsets.all(16),
                           child: Row(
                             children: [
-                              DottedBorder(
-
-                                child: Center(
-                                  // child: Icon(Icons.de),
+                              SizedBox(
+                                height: 48,
+                                width: 48,
+                                child: DottedBorder(
+                                  radius: Radius.circular(8),
+                                  borderType: BorderType.RRect,
+                                  child: Center(
+                                    child: Icon(Icons.local_shipping),
+                                  ),
                                 ),
                               )
                             ],
