@@ -80,7 +80,7 @@ class DeliveryFirstStepPage extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.symmetric(vertical: 16),
                 child: SizedBox(
-                  height: 120,
+                  height: 110,
                   child: Stack(
                     children: [
                       Positioned(
@@ -107,7 +107,7 @@ class DeliveryFirstStepPage extends StatelessWidget {
                             borderRadius: BorderRadius.circular(9),
                             border: Border.all(width: 1.5),
                           ),
-                          padding: EdgeInsets.all(16),
+                          padding: EdgeInsets.symmetric(horizontal: 16),
                           child: Row(
                             children: [
                               SizedBox(
@@ -119,6 +119,32 @@ class DeliveryFirstStepPage extends StatelessWidget {
                                   child: Center(
                                     child: Icon(Icons.local_shipping),
                                   ),
+                                ),
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.all(16.0),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    Text(
+                                      "Read Fieight",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      height: 8,
+                                    ),
+                                    Text("Usage for Domestic Cargo"),
+                                  ],
+                                ),
+                              ),
+                              Spacer(),
+                              IconButton(
+                                onPressed: () {},
+                                icon: Icon(
+                                  Icons.keyboard_arrow_right,
                                 ),
                               )
                             ],
