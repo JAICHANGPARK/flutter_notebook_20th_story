@@ -153,13 +153,15 @@ class DeliveryFirstStepPage extends StatelessWidget {
                                 padding: EdgeInsets.symmetric(horizontal: 16),
                                 child: DropdownButton<String>(
                                   onChanged: (d) {},
-                                  value: "16 Kg",
+                                  value: "3",
                                   items: [
-                                    "16 Kg",
-                                    "24 Kg",
+                                    "3",
+                                    "4",
                                   ]
                                       .map((e) => DropdownMenuItem<String>(
-                                    child: Text(e),
+                                    child: Text("${e} pieces", style: TextStyle(
+                                      fontSize: 13
+                                    ),),
                                     value: e,
                                   ))
                                       .toList(),
