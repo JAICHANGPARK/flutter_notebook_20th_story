@@ -65,7 +65,9 @@ class DeliveryFirstStepPage extends StatelessWidget {
                           decoration: BoxDecoration(
                             color: Colors.white,
                             borderRadius: BorderRadius.circular(9),
-                            border: Border.all(width: 1.5),
+                            border: Border.all(
+                              width: 1.5,
+                            ),
                           ),
                           child: Stack(
                             children: [
@@ -84,10 +86,13 @@ class DeliveryFirstStepPage extends StatelessWidget {
                                           Icon(
                                             Icons.location_on_outlined,
                                           ),
-                                          Text(
-                                            "From",
-                                            style: TextStyle(
-                                              fontWeight: FontWeight.bold,
+                                          Padding(
+                                            padding: EdgeInsets.symmetric(horizontal: 8),
+                                            child: Text(
+                                              "From",
+                                              style: TextStyle(
+                                                fontWeight: FontWeight.bold,
+                                              ),
                                             ),
                                           ),
                                           Text("Jakarta, Gandaria"),
@@ -117,7 +122,27 @@ class DeliveryFirstStepPage extends StatelessWidget {
                                     ),
                                   ],
                                 ),
-                              )
+                              ),
+                              Positioned(
+                                right: 24,
+                                top: 0,
+                                bottom: 0,
+                                child: Container(
+                                  height: 42,
+                                  width: 42,
+                                  decoration: BoxDecoration(
+                                    shape: BoxShape.circle,
+                                    border: Border.all(),
+                                    color: Color.fromRGBO(126, 231, 214, 1),
+                                  ),
+                                  child:
+                                  RotatedBox(
+                                    quarterTurns: 3,
+                                    child: Icon(Icons.sync_alt),
+                                  )
+
+                                ),
+                              ),
                             ],
                           ),
                         ),
