@@ -45,7 +45,7 @@ class _DeliveryStatusPageState extends State<DeliveryStatusPage> {
                 ),
               ),
               Container(
-                height: 200,
+                height: 130,
                 decoration: BoxDecoration(
                   color: Colors.blueGrey,
                 ),
@@ -64,7 +64,7 @@ class _DeliveryStatusPageState extends State<DeliveryStatusPage> {
                       ),
                     ),
                     Positioned(
-                      left: 0,
+                      left: 16,
                       top: 0,
                       right: 0,
                       child: Row(
@@ -75,8 +75,22 @@ class _DeliveryStatusPageState extends State<DeliveryStatusPage> {
                                 height: 64,
                                 width: 64,
                                 decoration: BoxDecoration(
-                                  border: Border.all(5),
-                                  borderRadius: BorderRadius.circular(4)
+                                  border: Border.all(),
+                                  borderRadius: BorderRadius.circular(4),
+                                ),
+                              ),
+                              Padding(
+                                padding: EdgeInsets.symmetric(vertical: 16),
+                                child: Text(
+                                  "Packing",
+                                ),
+                              ),
+                              Container(
+                                height: 16,
+                                width: 16,
+                                decoration: BoxDecoration(
+                                  border: Border.all(),
+                                  shape: BoxShape.circle,
                                 ),
                               )
                             ],
