@@ -245,7 +245,7 @@ class _DeliveryStatusPageState extends State<DeliveryStatusPage> {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.symmetric(vertical: 16),
+                padding: const EdgeInsets.only(top: 16),
                 child: SizedBox(
                   height: 100,
                   child: Stack(
@@ -276,6 +276,7 @@ class _DeliveryStatusPageState extends State<DeliveryStatusPage> {
                               width: 1.5,
                             ),
                           ),
+                          padding: EdgeInsets.symmetric(horizontal: 16),
                           child: Row(
                             children: [
                               Container(
@@ -296,23 +297,53 @@ class _DeliveryStatusPageState extends State<DeliveryStatusPage> {
                                   ),
                                 ),
                               ),
-                              Expanded(child: Column(
-                                children: [
-                                  Row(
-                                    children: [
-                                      Text("Arriving Today"),
-                                      Text("Today, 10Am"),
-                                    ],
-                                  ),
-                                  Text("Your Delivery package is arriving"),
-                                ],
-                              ))
+                              SizedBox(
+                                width: 16,
+                              ),
+                              Expanded(
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    Row(
+                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                      children: [
+                                        Text(
+                                          "Arriving Today",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                          ),
+                                        ),
+                                        Text(
+                                          "Today, 10Am",
+                                          style: TextStyle(
+                                            fontSize: 12,
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                    SizedBox(
+                                      height: 8,
+                                    ),
+                                    Text("Your Delivery package is arriving"),
+                                  ],
+                                ),
+                              )
                             ],
                           ),
                         ),
                       ),
                     ],
                   ),
+                ),
+              ),
+              Expanded(
+                child: Stack(
+                  children: [
+                    DottedLine(
+                      direction: Axis.vertical,
+                    )
+                  ],
                 ),
               ),
             ],
