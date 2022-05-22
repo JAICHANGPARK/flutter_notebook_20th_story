@@ -64,7 +64,7 @@ class _DeliveryStatusPageState extends State<DeliveryStatusPage> {
                       ),
                     ),
                     Positioned(
-                      left: 16,
+                      left: 0,
                       top: 0,
                       right: 0,
                       child: Row(
@@ -91,6 +91,10 @@ class _DeliveryStatusPageState extends State<DeliveryStatusPage> {
                                 decoration: BoxDecoration(
                                   border: Border.all(),
                                   shape: BoxShape.circle,
+                                  color: Colors.green,
+                                ),
+                                child: Center(
+                                  child: Icon(Icons.check,size: 12,),
                                 ),
                               )
                             ],
