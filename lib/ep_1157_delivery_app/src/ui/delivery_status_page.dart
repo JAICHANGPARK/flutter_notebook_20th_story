@@ -341,7 +341,7 @@ class _DeliveryStatusPageState extends State<DeliveryStatusPage> {
                 child: Stack(
                   children: [
                     Positioned(
-                      left: 48,
+                      left: 40,
                       top: 0,
                       bottom: 0,
                       child: DottedLine(
@@ -349,66 +349,69 @@ class _DeliveryStatusPageState extends State<DeliveryStatusPage> {
                       ),
                     ),
                     Positioned(
-                      left: 24,
+                      left: 20,
                       right: 24,
                       bottom: 0,
                       top: 0,
                       child: ListView.builder(
                         itemCount: 5,
                         itemBuilder: (context, index) {
-                          return Row(
-                            children: [
-                              Container(
-                                height: 42,
-                                width: 42,
-                                decoration: BoxDecoration(
-                                  border: Border.all(),
-                                  borderRadius: BorderRadius.circular(4),
-                                  color: Colors.green[300],
-                                ),
-                                child: Center(
-                                  child: Text(
-                                    "📦",
-                                    style: TextStyle(
-                                      fontSize: 18,
-                                      color: Colors.white,
+                          return Padding(
+                            padding: const EdgeInsets.symmetric(vertical: 24),
+                            child: Row(
+                              children: [
+                                Container(
+                                  height: 42,
+                                  width: 42,
+                                  decoration: BoxDecoration(
+                                    border: Border.all(),
+                                    borderRadius: BorderRadius.circular(4),
+                                    color: Colors.white,
+                                  ),
+                                  child: Center(
+                                    child: Text(
+                                      "📦",
+                                      style: TextStyle(
+                                        fontSize: 18,
+                                        color: Colors.white,
+                                      ),
                                     ),
                                   ),
                                 ),
-                              ),
-                              SizedBox(
-                                width: 16,
-                              ),
-                              Expanded(
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    Row(
-                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                      children: [
-                                        Text(
-                                          "Has been Shipped",
-                                          style: TextStyle(
-                                            fontWeight: FontWeight.bold,
-                                          ),
-                                        ),
-                                        Text(
-                                          "Mar, 25",
-                                          style: TextStyle(
-                                            fontSize: 12,
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                    SizedBox(
-                                      height: 8,
-                                    ),
-                                    Text("Waiting for collection"),
-                                  ],
+                                SizedBox(
+                                  width: 16,
                                 ),
-                              )
-                            ],
+                                Expanded(
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      Row(
+                                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                        children: [
+                                          Text(
+                                            "Has been Shipped",
+                                            style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                            ),
+                                          ),
+                                          Text(
+                                            "Mar, 25",
+                                            style: TextStyle(
+                                              fontSize: 12,
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                      SizedBox(
+                                        height: 8,
+                                      ),
+                                      Text("Waiting for collection"),
+                                    ],
+                                  ),
+                                )
+                              ],
+                            ),
                           );
                         },
                       ),
