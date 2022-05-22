@@ -17,6 +17,7 @@ class _DeliveryStatusPageState extends State<DeliveryStatusPage> {
         child: Padding(
           padding: const EdgeInsets.all(24.0),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Container(
                 decoration: BoxDecoration(
@@ -34,12 +35,21 @@ class _DeliveryStatusPageState extends State<DeliveryStatusPage> {
               SizedBox(
                 height: 24,
               ),
-              Text(
-                "Status",
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
+              Padding(
+                padding: EdgeInsets.symmetric(vertical: 8),
+                child: Text(
+                  "Status",
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
               ),
+              Container(
+                height: 200,
+                decoration: BoxDecoration(
+                  color: Colors.blueGrey,
+                ),
+              )
             ],
           ),
         ),
