@@ -135,12 +135,10 @@ class DeliveryFirstStepPage extends StatelessWidget {
                                     border: Border.all(),
                                     color: Color.fromRGBO(126, 231, 214, 1),
                                   ),
-                                  child:
-                                  RotatedBox(
+                                  child: RotatedBox(
                                     quarterTurns: 3,
                                     child: Icon(Icons.sync_alt),
-                                  )
-
+                                  ),
                                 ),
                               ),
                             ],
