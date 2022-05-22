@@ -14,25 +14,34 @@ class _DeliveryStatusPageState extends State<DeliveryStatusPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: Column(
-          children: [
-            Container(
-              decoration: BoxDecoration(
-                border: Border.all(
-                  color: Colors.black,
+        child: Padding(
+          padding: const EdgeInsets.all(24.0),
+          child: Column(
+            children: [
+              Container(
+                decoration: BoxDecoration(
+                  border: Border.all(
+                    color: Colors.black,
+                  ),
+                  borderRadius: BorderRadius.circular(4),
+                  color: Color.fromRGBO(192, 191, 248, 1),
                 ),
-                borderRadius: BorderRadius.circular(4),
-                color: Color.fromRGBO(192, 191, 248, 1),
+                padding: EdgeInsets.all(8),
+                child: Icon(
+                  Icons.arrow_back_outlined,
+                ),
               ),
-              padding: EdgeInsets.all(8),
-              child: Icon(
-                Icons.arrow_back_outlined,
+              SizedBox(
+                height: 24,
               ),
-            ),
-            SizedBox(
-              height: 24,
-            ),
-          ],
+              Text(
+                "Status",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );
