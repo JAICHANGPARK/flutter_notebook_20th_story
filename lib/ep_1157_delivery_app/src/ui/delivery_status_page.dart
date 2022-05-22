@@ -340,9 +340,27 @@ class _DeliveryStatusPageState extends State<DeliveryStatusPage> {
               Expanded(
                 child: Stack(
                   children: [
-                    DottedLine(
-                      direction: Axis.vertical,
-                    )
+                    Positioned(
+                      left: 48,
+                      top: 0,
+                      bottom: 0,
+                      child: DottedLine(
+                        direction: Axis.vertical,
+                      ),
+                    ),
+                    Positioned(
+                      left: 24,
+                      right: 24,
+                      bottom: 0,
+                      top: 0,
+                      child: ListView.builder(
+                        itemBuilder: (context, index) {
+                          return Row(
+                            children: [],
+                          );
+                        },
+                      ),
+                    ),
                   ],
                 ),
               ),
