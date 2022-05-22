@@ -247,7 +247,7 @@ class _DeliveryStatusPageState extends State<DeliveryStatusPage> {
               Padding(
                 padding: const EdgeInsets.symmetric(vertical: 16),
                 child: SizedBox(
-                  height: 120,
+                  height: 100,
                   child: Stack(
                     children: [
                       Positioned(
@@ -295,7 +295,18 @@ class _DeliveryStatusPageState extends State<DeliveryStatusPage> {
                                     ),
                                   ),
                                 ),
-                              )
+                              ),
+                              Expanded(child: Column(
+                                children: [
+                                  Row(
+                                    children: [
+                                      Text("Arriving Today"),
+                                      Text("Today, 10Am"),
+                                    ],
+                                  ),
+                                  Text("Your Delivery package is arriving"),
+                                ],
+                              ))
                             ],
                           ),
                         ),
