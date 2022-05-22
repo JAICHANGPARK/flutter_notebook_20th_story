@@ -52,8 +52,8 @@ class _DeliveryStatusPageState extends State<DeliveryStatusPage> {
                 child: Stack(
                   children: [
                     Positioned(
-                      left: 8,
-                      right: 8,
+                      left: 32,
+                      right: 32,
                       bottom: 8,
                       child: Container(
                         height: 4,
