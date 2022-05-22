@@ -118,11 +118,17 @@ class _DeliveryStatusPageState extends State<DeliveryStatusPage> {
                                   border: Border.all(),
                                   borderRadius: BorderRadius.circular(4),
                                 ),
+                                child: Center(
+                                  child: Text(
+                                    "🚚",
+                                    style: TextStyle(fontSize: 24),
+                                  ),
+                                ),
                               ),
                               Padding(
                                 padding: EdgeInsets.symmetric(vertical: 16),
                                 child: Text(
-                                  "Packing",
+                                  "Send",
                                 ),
                               ),
                               Container(
@@ -151,11 +157,17 @@ class _DeliveryStatusPageState extends State<DeliveryStatusPage> {
                                   border: Border.all(),
                                   borderRadius: BorderRadius.circular(4),
                                 ),
+                                child: Center(
+                                  child: Text(
+                                    "👋",
+                                    style: TextStyle(fontSize: 24),
+                                  ),
+                                ),
                               ),
                               Padding(
                                 padding: EdgeInsets.symmetric(vertical: 16),
                                 child: Text(
-                                  "Packing",
+                                  "Arrived",
                                 ),
                               ),
                               Container(
@@ -184,11 +196,17 @@ class _DeliveryStatusPageState extends State<DeliveryStatusPage> {
                                   border: Border.all(),
                                   borderRadius: BorderRadius.circular(4),
                                 ),
+                                child: Center(
+                                  child: Text(
+                                    "📤",
+                                    style: TextStyle(fontSize: 24),
+                                  ),
+                                ),
                               ),
                               Padding(
                                 padding: EdgeInsets.symmetric(vertical: 16),
                                 child: Text(
-                                  "Packing",
+                                  "Succes",
                                 ),
                               ),
                               Container(
