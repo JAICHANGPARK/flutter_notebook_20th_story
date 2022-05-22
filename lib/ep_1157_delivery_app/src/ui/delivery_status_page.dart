@@ -388,13 +388,13 @@ class _DeliveryStatusPageState extends State<DeliveryStatusPage> {
                                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                       children: [
                                         Text(
-                                          "Arriving Today",
+                                          "Has been Shipped",
                                           style: TextStyle(
                                             fontWeight: FontWeight.bold,
                                           ),
                                         ),
                                         Text(
-                                          "Today, 10Am",
+                                          "Mar, 25",
                                           style: TextStyle(
                                             fontSize: 12,
                                           ),
@@ -404,7 +404,7 @@ class _DeliveryStatusPageState extends State<DeliveryStatusPage> {
                                     SizedBox(
                                       height: 8,
                                     ),
-                                    Text("Your Delivery package is arriving"),
+                                    Text("Waiting for collection"),
                                   ],
                                 ),
                               )
