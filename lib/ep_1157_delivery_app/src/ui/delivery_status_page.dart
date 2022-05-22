@@ -49,6 +49,43 @@ class _DeliveryStatusPageState extends State<DeliveryStatusPage> {
                 decoration: BoxDecoration(
                   color: Colors.blueGrey,
                 ),
+                child: Stack(
+                  children: [
+                    Positioned(
+                      left: 8,
+                      right: 8,
+                      bottom: 8,
+                      child: Container(
+                        height: 4,
+                        decoration: BoxDecoration(
+                          color: Colors.green,
+                          border: Border.all(),
+                        ),
+                      ),
+                    ),
+                    Positioned(
+                      left: 0,
+                      top: 0,
+                      right: 0,
+                      child: Row(
+                        children: [
+                          Column(
+                            children: [
+                              Container(
+                                height: 64,
+                                width: 64,
+                                decoration: BoxDecoration(
+                                  border: Border.all(5),
+                                  borderRadius: BorderRadius.circular(4)
+                                ),
+                              )
+                            ],
+                          ),
+                        ],
+                      ),
+                    )
+                  ],
+                ),
               )
             ],
           ),
