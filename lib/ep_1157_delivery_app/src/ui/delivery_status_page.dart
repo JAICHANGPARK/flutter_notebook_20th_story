@@ -354,9 +354,61 @@ class _DeliveryStatusPageState extends State<DeliveryStatusPage> {
                       bottom: 0,
                       top: 0,
                       child: ListView.builder(
+                        itemCount: 5,
                         itemBuilder: (context, index) {
                           return Row(
-                            children: [],
+                            children: [
+                              Container(
+                                height: 42,
+                                width: 42,
+                                decoration: BoxDecoration(
+                                  border: Border.all(),
+                                  borderRadius: BorderRadius.circular(4),
+                                  color: Colors.green[300],
+                                ),
+                                child: Center(
+                                  child: Text(
+                                    "📦",
+                                    style: TextStyle(
+                                      fontSize: 18,
+                                      color: Colors.white,
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              SizedBox(
+                                width: 16,
+                              ),
+                              Expanded(
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    Row(
+                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                      children: [
+                                        Text(
+                                          "Arriving Today",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                          ),
+                                        ),
+                                        Text(
+                                          "Today, 10Am",
+                                          style: TextStyle(
+                                            fontSize: 12,
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                    SizedBox(
+                                      height: 8,
+                                    ),
+                                    Text("Your Delivery package is arriving"),
+                                  ],
+                                ),
+                              )
+                            ],
                           );
                         },
                       ),
