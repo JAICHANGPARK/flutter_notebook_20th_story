@@ -270,7 +270,7 @@ class _DeliveryStatusPageState extends State<DeliveryStatusPage> {
                         bottom: 6,
                         child: Container(
                           decoration: BoxDecoration(
-                            color: Colors.white,
+                            color: Colors.indigo[50],
                             borderRadius: BorderRadius.circular(9),
                             border: Border.all(
                               width: 1.5,
