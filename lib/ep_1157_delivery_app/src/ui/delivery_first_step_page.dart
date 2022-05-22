@@ -392,16 +392,21 @@ class DeliveryFirstStepPage extends StatelessWidget {
                         top: 0,
                         right: 4,
                         bottom: 4,
-                        child: Container(
-                          decoration: BoxDecoration(
-                            color: Color.fromRGBO(214, 242, 255, 1),
-                            borderRadius: BorderRadius.circular(9),
-                            border: Border.all(
-                              width: 1.5,
+                        child: GestureDetector(
+                          onTap: (){
+                            
+                          },
+                          child: Container(
+                            decoration: BoxDecoration(
+                              color: Color.fromRGBO(214, 242, 255, 1),
+                              borderRadius: BorderRadius.circular(9),
+                              border: Border.all(
+                                width: 1.5,
+                              ),
                             ),
-                          ),
-                          child: Center(
-                            child: Text("Next"),
+                            child: Center(
+                              child: Text("Next"),
+                            ),
                           ),
                         ),
                       )
