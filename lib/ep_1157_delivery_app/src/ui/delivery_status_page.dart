@@ -12,6 +12,29 @@ class DeliveryStatusPage extends StatefulWidget {
 class _DeliveryStatusPageState extends State<DeliveryStatusPage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      body: SafeArea(
+        child: Column(
+          children: [
+            Container(
+              decoration: BoxDecoration(
+                border: Border.all(
+                  color: Colors.black,
+                ),
+                borderRadius: BorderRadius.circular(4),
+                color: Color.fromRGBO(192, 191, 248, 1),
+              ),
+              padding: EdgeInsets.all(8),
+              child: Icon(
+                Icons.arrow_back_outlined,
+              ),
+            ),
+            SizedBox(
+              height: 24,
+            ),
+          ],
+        ),
+      ),
+    );
   }
 }
