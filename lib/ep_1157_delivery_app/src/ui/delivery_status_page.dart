@@ -232,13 +232,75 @@ class _DeliveryStatusPageState extends State<DeliveryStatusPage> {
                   ],
                 ),
               ),
-              SizedBox(height: 16,),
+              SizedBox(
+                height: 16,
+              ),
               Padding(
                 padding: EdgeInsets.symmetric(vertical: 16),
                 child: Text(
                   "Tracking Shipping",
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.symmetric(vertical: 16),
+                child: SizedBox(
+                  height: 120,
+                  child: Stack(
+                    children: [
+                      Positioned(
+                        left: 0,
+                        top: 6,
+                        right: 0,
+                        bottom: 0,
+                        child: Container(
+                          decoration: BoxDecoration(
+                            color: Color.fromRGBO(251, 230, 202, 1),
+                            borderRadius: BorderRadius.circular(16),
+                            border: Border.all(width: 1.5),
+                          ),
+                        ),
+                      ),
+                      Positioned(
+                        left: 0,
+                        top: 0,
+                        right: 6,
+                        bottom: 6,
+                        child: Container(
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(9),
+                            border: Border.all(
+                              width: 1.5,
+                            ),
+                          ),
+                          child: Row(
+                            children: [
+                              Container(
+                                height: 42,
+                                width: 42,
+                                decoration: BoxDecoration(
+                                  border: Border.all(),
+                                  borderRadius: BorderRadius.circular(4),
+                                  color: Colors.green[300],
+                                ),
+                                child: Center(
+                                  child: Text(
+                                    "📦",
+                                    style: TextStyle(
+                                      fontSize: 18,
+                                      color: Colors.white,
+                                    ),
+                                  ),
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                      ),
+                    ],
                   ),
                 ),
               ),
