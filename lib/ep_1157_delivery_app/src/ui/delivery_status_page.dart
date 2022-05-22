@@ -232,12 +232,16 @@ class _DeliveryStatusPageState extends State<DeliveryStatusPage> {
                   ],
                 ),
               ),
-              Text(
-                "Tracking Shipping",
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
+              SizedBox(height: 16,),
+              Padding(
+                padding: EdgeInsets.symmetric(vertical: 16),
+                child: Text(
+                  "Tracking Shipping",
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
-              )
+              ),
             ],
           ),
         ),
