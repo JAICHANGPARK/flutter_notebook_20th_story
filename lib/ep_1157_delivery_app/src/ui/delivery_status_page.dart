@@ -47,8 +47,8 @@ class _DeliveryStatusPageState extends State<DeliveryStatusPage> {
               Container(
                 height: 130,
                 decoration: BoxDecoration(
-                  color: Colors.blueGrey,
-                ),
+                    // color: Colors.blueGrey,
+                    ),
                 child: Stack(
                   children: [
                     Positioned(
@@ -68,7 +68,47 @@ class _DeliveryStatusPageState extends State<DeliveryStatusPage> {
                       top: 0,
                       right: 0,
                       child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
+                          Column(
+                            children: [
+                              Container(
+                                height: 64,
+                                width: 64,
+                                decoration: BoxDecoration(
+                                  border: Border.all(),
+                                  borderRadius: BorderRadius.circular(4),
+                                ),
+                                child: Center(
+                                  child: Text(
+                                    "📦",
+                                    style: TextStyle(fontSize: 24),
+                                  ),
+                                ),
+                              ),
+                              Padding(
+                                padding: EdgeInsets.symmetric(vertical: 16),
+                                child: Text(
+                                  "Packing",
+                                ),
+                              ),
+                              Container(
+                                height: 16,
+                                width: 16,
+                                decoration: BoxDecoration(
+                                  border: Border.all(),
+                                  shape: BoxShape.circle,
+                                  color: Colors.green,
+                                ),
+                                child: Center(
+                                  child: Icon(
+                                    Icons.check,
+                                    size: 12,
+                                  ),
+                                ),
+                              )
+                            ],
+                          ),
                           Column(
                             children: [
                               Container(
@@ -94,7 +134,76 @@ class _DeliveryStatusPageState extends State<DeliveryStatusPage> {
                                   color: Colors.green,
                                 ),
                                 child: Center(
-                                  child: Icon(Icons.check,size: 12,),
+                                  child: Icon(
+                                    Icons.check,
+                                    size: 12,
+                                  ),
+                                ),
+                              )
+                            ],
+                          ),
+                          Column(
+                            children: [
+                              Container(
+                                height: 64,
+                                width: 64,
+                                decoration: BoxDecoration(
+                                  border: Border.all(),
+                                  borderRadius: BorderRadius.circular(4),
+                                ),
+                              ),
+                              Padding(
+                                padding: EdgeInsets.symmetric(vertical: 16),
+                                child: Text(
+                                  "Packing",
+                                ),
+                              ),
+                              Container(
+                                height: 16,
+                                width: 16,
+                                decoration: BoxDecoration(
+                                  border: Border.all(),
+                                  shape: BoxShape.circle,
+                                  color: Colors.green,
+                                ),
+                                child: Center(
+                                  child: Icon(
+                                    Icons.check,
+                                    size: 12,
+                                  ),
+                                ),
+                              )
+                            ],
+                          ),
+                          Column(
+                            children: [
+                              Container(
+                                height: 64,
+                                width: 64,
+                                decoration: BoxDecoration(
+                                  border: Border.all(),
+                                  borderRadius: BorderRadius.circular(4),
+                                ),
+                              ),
+                              Padding(
+                                padding: EdgeInsets.symmetric(vertical: 16),
+                                child: Text(
+                                  "Packing",
+                                ),
+                              ),
+                              Container(
+                                height: 16,
+                                width: 16,
+                                decoration: BoxDecoration(
+                                  border: Border.all(),
+                                  shape: BoxShape.circle,
+                                  color: Colors.green,
+                                ),
+                                child: Center(
+                                  child: Icon(
+                                    Icons.check,
+                                    size: 12,
+                                  ),
                                 ),
                               )
                             ],
