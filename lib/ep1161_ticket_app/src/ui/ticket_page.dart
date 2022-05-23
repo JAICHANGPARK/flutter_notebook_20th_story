@@ -86,13 +86,17 @@ class TicketPage extends StatelessWidget {
             left: 0,
             right: 0,
             top: 240,
+            bottom: 0,
             child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 CircleAvatar(
                   radius: 16,
                   backgroundColor: primaryColor,
                 ),
-                DottedLine(),
+                Expanded(
+                  child: DottedLine(),
+                ),
                 CircleAvatar(
                   radius: 16,
                   backgroundColor: primaryColor,
