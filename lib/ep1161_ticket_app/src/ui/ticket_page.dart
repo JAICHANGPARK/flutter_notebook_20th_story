@@ -29,6 +29,9 @@ class TicketPage extends StatelessWidget {
             ),
           ),
           Positioned(
+            left: 16,
+            right: 16,
+            top: 64,
             child: Column(
               children: [
                 Row(
@@ -38,15 +41,28 @@ class TicketPage extends StatelessWidget {
                       color: Colors.white,
                     ),
                     Expanded(
-                      child: Text(
-                        "My Ticket",
-                        style: TextStyle(
-                          color: Colors.white,
+                      child: Center(
+                        child: Text(
+                          "My Ticket",
+                          style: TextStyle(color: Colors.white, fontSize: 18),
                         ),
                       ),
-                    )
+                    ),
+                    Icon(
+                      Icons.more_horiz,
+                      color: Colors.white,
+                    ),
                   ],
-                )
+                ),
+                Expanded(
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                  ),
+                ),
+                
               ],
             ),
           )
