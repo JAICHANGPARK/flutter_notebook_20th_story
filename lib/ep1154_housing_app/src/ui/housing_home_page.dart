@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_notebook_20th_story/ep_1154_housing_app/src/ui/housing_detail_page.dart';
+import 'package:flutter_notebook_20th_story/ep1154_housing_app/src/ui/housing_detail_page.dart';
 
 class HousingHomePage extends StatefulWidget {
   const HousingHomePage({Key? key}) : super(key: key);
