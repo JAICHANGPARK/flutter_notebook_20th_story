@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:dotted_border/dotted_border.dart';
 import 'package:dotted_line/dotted_line.dart';
-import 'package:flutter_notebook_20th_story/ep_1157_delivery_app/src/ui/delivery_status_page.dart';
+import 'package:flutter_notebook_20th_story/ep1157_delivery_app/src/ui/delivery_status_page.dart';
 
 class DeliveryFirstStepPage extends StatelessWidget {
   const DeliveryFirstStepPage({Key? key}) : super(key: key);
