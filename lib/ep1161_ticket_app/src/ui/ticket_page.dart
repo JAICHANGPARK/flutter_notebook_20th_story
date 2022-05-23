@@ -32,6 +32,7 @@ class TicketPage extends StatelessWidget {
             left: 16,
             right: 16,
             top: 64,
+            bottom: 16,
             child: Column(
               children: [
                 Row(
@@ -55,10 +56,13 @@ class TicketPage extends StatelessWidget {
                   ],
                 ),
                 Expanded(
-                  child: Container(
-                    decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.circular(8),
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 16),
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(8),
+                      ),
                     ),
                   ),
                 ),
