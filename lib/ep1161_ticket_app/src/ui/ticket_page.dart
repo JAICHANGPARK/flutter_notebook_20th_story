@@ -1,3 +1,4 @@
+import 'package:dotted_line/dotted_line.dart';
 import 'package:flutter/material.dart';
 
 class TicketPage extends StatelessWidget {
@@ -56,7 +57,7 @@ class TicketPage extends StatelessWidget {
                 ),
                 Expanded(
                   child: Padding(
-                    padding: const EdgeInsets.symmetric(vertical: 16),
+                    padding: const EdgeInsets.symmetric(vertical: 20),
                     child: Container(
                       decoration: BoxDecoration(
                         color: Colors.white,
@@ -66,10 +67,7 @@ class TicketPage extends StatelessWidget {
                   ),
                 ),
                 Container(
-                  decoration: BoxDecoration(
-                    color: primaryColor,
-                    borderRadius: BorderRadius.circular(8)
-                  ),
+                  decoration: BoxDecoration(color: primaryColor, borderRadius: BorderRadius.circular(8)),
                   padding: EdgeInsets.symmetric(vertical: 16),
                   child: Center(
                     child: Text(
@@ -80,6 +78,24 @@ class TicketPage extends StatelessWidget {
                       ),
                     ),
                   ),
+                )
+              ],
+            ),
+          ),
+          Positioned(
+            left: 0,
+            right: 0,
+            top: 240,
+            child: Row(
+              children: [
+                CircleAvatar(
+                  radius: 16,
+                  backgroundColor: primaryColor,
+                ),
+                DottedLine(),
+                CircleAvatar(
+                  radius: 16,
+                  backgroundColor: primaryColor,
                 )
               ],
             ),
