@@ -7,7 +7,7 @@ class TicketPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Color primaryColor =  Color.fromRGBO(42, 106, 238, 1);
+    Color primaryColor = Color.fromRGBO(42, 106, 238, 1);
     return Scaffold(
       body: Stack(
         children: [
@@ -16,14 +16,12 @@ class TicketPage extends StatelessWidget {
               children: [
                 Expanded(
                   flex: 8,
-                  child: Container(
-                    color: primaryColor
-                  ),
+                  child: Container(color: primaryColor),
                 ),
                 Expanded(
                   flex: 4,
                   child: Container(
-                    color: Colors.white,
+                    color: Colors.grey[50],
                   ),
                 )
               ],
@@ -69,13 +67,16 @@ class TicketPage extends StatelessWidget {
                 ),
                 Container(
                   decoration: BoxDecoration(
-                    color:primaryColor
+                    color: primaryColor,
+                    borderRadius: BorderRadius.circular(8)
                   ),
+                  padding: EdgeInsets.symmetric(vertical: 16),
                   child: Center(
                     child: Text(
                       "Find My Seat",
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
+                        color: Colors.white,
                       ),
                     ),
                   ),
