@@ -62,7 +62,16 @@ class TicketPage extends StatelessWidget {
                     ),
                   ),
                 ),
-                
+                Container(
+                  child: Center(
+                    child: Text(
+                      "Find My Seat",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ),
+                )
               ],
             ),
           )
