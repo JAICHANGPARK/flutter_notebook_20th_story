@@ -63,11 +63,26 @@ class TicketPage extends StatelessWidget {
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(8),
                       ),
+                      padding: EdgeInsets.all(16),
+                      child: Column(
+                        children: [
+                          Row(
+                            children: [
+                              Text("JKT"),
+                              Expanded(child: Stack()),
+                              Text("YKT")
+                            ],
+                          )
+                        ],
+                      ),
                     ),
                   ),
                 ),
                 Container(
-                  decoration: BoxDecoration(color: primaryColor, borderRadius: BorderRadius.circular(8)),
+                  decoration: BoxDecoration(
+                    color: primaryColor,
+                    borderRadius: BorderRadius.circular(8),
+                  ),
                   padding: EdgeInsets.symmetric(vertical: 16),
                   child: Center(
                     child: Text(
@@ -85,10 +100,11 @@ class TicketPage extends StatelessWidget {
           Positioned(
             left: 0,
             right: 0,
-            top: 120,
-            bottom: 0,
+            top: 0,
+            bottom: 160,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 CircleAvatar(
                   radius: 16,
