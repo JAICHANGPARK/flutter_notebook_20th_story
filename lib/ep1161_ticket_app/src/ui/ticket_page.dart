@@ -69,21 +69,33 @@ class TicketPage extends StatelessWidget {
                           Row(
                             children: [
                               Text("JKT"),
+                              SizedBox(width: 16,),
                               Expanded(
-                                child: Stack(
-                                  children: [
-                                    Positioned(
-                                      left: 16,
-                                      right: 16,
-                                      top: 0,
-                                      bottom: 0,
-                                      child: Row(
-                                        children: [Expanded(child: DottedLine()), Expanded(child: Divider())],
-                                      ),
-                                    )
-                                  ],
+                                child: Padding(
+                                  padding: EdgeInsets.symmetric(horizontal: 0),
+                                  child: Stack(
+                                    children: [
+                                      Positioned(
+                                        // left: 16,
+                                        // right: 16,
+                                        // top: 0,
+                                        // bottom: 0,
+                                        child: Row(
+                                          children: [
+                                            Expanded(
+                                              child: DottedLine(),
+                                            ),
+                                            Expanded(
+                                              child: Divider(),
+                                            ),
+                                          ],
+                                        ),
+                                      )
+                                    ],
+                                  ),
                                 ),
                               ),
+                              SizedBox(width: 16,),
                               Text("YKT")
                             ],
                           )
