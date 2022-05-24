@@ -203,7 +203,7 @@ class TicketPage extends StatelessWidget {
                                       "Richard Susanto",
                                       style: TextStyle(
                                         fontWeight: FontWeight.bold,
-                                        fontSize: 20,
+                                        fontSize: 18,
                                       ),
                                     ),
                                     SizedBox(
@@ -219,7 +219,7 @@ class TicketPage extends StatelessWidget {
                                       "323253443",
                                       style: TextStyle(
                                         fontWeight: FontWeight.bold,
-                                        fontSize: 20,
+                                        fontSize: 18,
                                       ),
                                     ),
                                     SizedBox(
@@ -243,7 +243,7 @@ class TicketPage extends StatelessWidget {
                                       "Executive",
                                       style: TextStyle(
                                         fontWeight: FontWeight.bold,
-                                        fontSize: 20,
+                                        fontSize: 18,
                                       ),
                                     ),
                                     SizedBox(
@@ -259,7 +259,7 @@ class TicketPage extends StatelessWidget {
                                       "Eks 4 - 22C",
                                       style: TextStyle(
                                         fontWeight: FontWeight.bold,
-                                        fontSize: 20,
+                                        fontSize: 18,
                                       ),
                                     ),
                                     SizedBox(
@@ -280,32 +280,32 @@ class TicketPage extends StatelessWidget {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text(
-                                      "Executive",
+                                      "DWP42SX",
                                       style: TextStyle(
                                         fontWeight: FontWeight.bold,
-                                        fontSize: 20,
+                                        fontSize: 18,
                                       ),
                                     ),
                                     SizedBox(
                                       height: 8,
                                     ),
-                                    Text("Zone")
+                                    Text("Booking Code")
                                   ],
                                 ),
                                 Column(
                                   crossAxisAlignment: CrossAxisAlignment.end,
                                   children: [
                                     Text(
-                                      "Eks 4 - 22C",
+                                      "213534965",
                                       style: TextStyle(
                                         fontWeight: FontWeight.bold,
-                                        fontSize: 20,
+                                        fontSize: 18,
                                       ),
                                     ),
                                     SizedBox(
                                       height: 8,
                                     ),
-                                    Text("Seat Number")
+                                    Text("Order ID")
                                   ],
                                 )
                               ],
@@ -323,7 +323,7 @@ class TicketPage extends StatelessWidget {
                                       "Rice box & Drink",
                                       style: TextStyle(
                                         fontWeight: FontWeight.bold,
-                                        fontSize: 20,
+                                        fontSize: 18,
                                       ),
                                     ),
                                     SizedBox(
@@ -339,7 +339,7 @@ class TicketPage extends StatelessWidget {
                                       "Rp. 340.000",
                                       style: TextStyle(
                                         fontWeight: FontWeight.bold,
-                                        fontSize: 20,
+                                        fontSize: 18,
                                       ),
                                     ),
                                     SizedBox(
@@ -351,7 +351,9 @@ class TicketPage extends StatelessWidget {
                               ],
                             ),
                           ),
-                          Divider(),
+                          Divider(
+                            color: Colors.grey,
+                          ),
                         ],
                       ),
                     ),
