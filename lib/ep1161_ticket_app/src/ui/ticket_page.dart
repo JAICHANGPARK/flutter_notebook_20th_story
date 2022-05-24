@@ -355,7 +355,7 @@ class TicketPage extends StatelessWidget {
                             color: Colors.grey,
                           ),
                           Padding(
-                            padding: const EdgeInsets.symmetric(vertical: 16),
+                            padding: const EdgeInsets.symmetric(vertical: 8),
                             child: Text(
                               "Your E-Ticket",
                               style: TextStyle(
