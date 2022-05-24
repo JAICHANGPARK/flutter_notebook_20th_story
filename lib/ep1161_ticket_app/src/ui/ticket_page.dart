@@ -85,7 +85,7 @@ class TicketPage extends StatelessWidget {
           Positioned(
             left: 0,
             right: 0,
-            top: 240,
+            top: 120,
             bottom: 0,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -103,7 +103,7 @@ class TicketPage extends StatelessWidget {
                 )
               ],
             ),
-          )
+          ),
         ],
       ),
     );
