@@ -354,6 +354,12 @@ class TicketPage extends StatelessWidget {
                           Divider(
                             color: Colors.grey,
                           ),
+                          Text(
+                            "Your E-Ticket",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                            ),
+                          )
                         ],
                       ),
                     ),
