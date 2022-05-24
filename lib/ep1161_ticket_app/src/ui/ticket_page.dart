@@ -140,6 +140,39 @@ class TicketPage extends StatelessWidget {
                                 ),
                               )
                             ],
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.symmetric(vertical: 16),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Text("Passar Senen Station"),
+                                Text("Lempuyangan Station"),
+                              ],
+                            ),
+                          ),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    "08:33",
+                                  ),
+                                  Text("20 May 2022")
+                                ],
+                              ),
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.end,
+                                children: [
+                                  Text(
+                                    "08:33",
+                                  ),
+                                  Text("20 May 2022")
+                                ],
+                              )
+                            ],
                           )
                         ],
                       ),
