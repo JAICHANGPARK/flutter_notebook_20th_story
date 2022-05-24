@@ -354,11 +354,19 @@ class TicketPage extends StatelessWidget {
                           Divider(
                             color: Colors.grey,
                           ),
-                          Text(
-                            "Your E-Ticket",
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
+                          Padding(
+                            padding: const EdgeInsets.symmetric(vertical: 16),
+                            child: Text(
+                              "Your E-Ticket",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                              ),
                             ),
+                          ),
+                          Expanded(child: Placeholder()),
+                          Text(
+                            "Scan the barcode to the ticket printer at the departure station",
+                            textAlign: TextAlign.center,
                           )
                         ],
                       ),
