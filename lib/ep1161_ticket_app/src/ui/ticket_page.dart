@@ -69,7 +69,21 @@ class TicketPage extends StatelessWidget {
                           Row(
                             children: [
                               Text("JKT"),
-                              Expanded(child: Stack()),
+                              Expanded(
+                                child: Stack(
+                                  children: [
+                                    Positioned(
+                                      left: 16,
+                                      right: 16,
+                                      top: 0,
+                                      bottom: 0,
+                                      child: Row(
+                                        children: [Expanded(child: DottedLine()), Expanded(child: Divider())],
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              ),
                               Text("YKT")
                             ],
                           )
