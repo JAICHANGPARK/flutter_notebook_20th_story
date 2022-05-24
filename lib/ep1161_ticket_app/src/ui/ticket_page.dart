@@ -63,7 +63,7 @@ class TicketPage extends StatelessWidget {
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(8),
                       ),
-                      padding: EdgeInsets.all(16),
+                      padding: EdgeInsets.symmetric(horizontal: 24, vertical: 16),
                       child: Column(
                         children: [
                           Row(
