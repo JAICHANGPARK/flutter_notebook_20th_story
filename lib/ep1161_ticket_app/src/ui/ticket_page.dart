@@ -175,6 +175,13 @@ class TicketPage extends StatelessWidget {
                                 children: [
                                   Text(
                                     "08:33",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 20,
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    height: 8,
                                   ),
                                   Text("20 May 2022")
                                 ],
