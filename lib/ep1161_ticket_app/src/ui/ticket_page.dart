@@ -68,7 +68,14 @@ class TicketPage extends StatelessWidget {
                         children: [
                           Row(
                             children: [
-                              Text("JKT"),
+                              Text(
+                                "JKT",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  color: primaryColor,
+                                  fontSize: 16,
+                                ),
+                              ),
                               SizedBox(
                                 width: 16,
                               ),
@@ -124,7 +131,14 @@ class TicketPage extends StatelessWidget {
                               SizedBox(
                                 width: 16,
                               ),
-                              Text("YKT")
+                              Text(
+                                "YKT",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  color: primaryColor,
+                                  fontSize: 16,
+                                ),
+                              )
                             ],
                           )
                         ],
