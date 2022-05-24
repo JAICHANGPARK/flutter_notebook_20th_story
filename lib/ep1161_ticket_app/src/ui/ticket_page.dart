@@ -69,7 +69,9 @@ class TicketPage extends StatelessWidget {
                           Row(
                             children: [
                               Text("JKT"),
-                              SizedBox(width: 16,),
+                              SizedBox(
+                                width: 16,
+                              ),
                               Expanded(
                                 child: Padding(
                                   padding: EdgeInsets.symmetric(horizontal: 0),
@@ -83,19 +85,45 @@ class TicketPage extends StatelessWidget {
                                         child: Row(
                                           children: [
                                             Expanded(
-                                              child: DottedLine(),
+                                              child: DottedLine(
+                                                dashColor: primaryColor,
+                                              ),
                                             ),
                                             Expanded(
-                                              child: Divider(),
+                                              child: Divider(
+                                                color: primaryColor,
+                                              ),
                                             ),
                                           ],
+                                        ),
+                                      ),
+                                      Positioned(
+                                        left: 0,
+                                        right: 0,
+                                        child: Center(
+                                          child: Container(
+                                            padding: EdgeInsets.symmetric(horizontal: 4, vertical: 2),
+                                            decoration: BoxDecoration(
+                                                color: Colors.white,
+                                                borderRadius: BorderRadius.circular(16),
+                                                border: Border.all(color: primaryColor)),
+                                            child: Text(
+                                              "07h 40m",
+                                              style: TextStyle(
+                                                fontSize: 10,
+                                                color: primaryColor,
+                                              ),
+                                            ),
+                                          ),
                                         ),
                                       )
                                     ],
                                   ),
                                 ),
                               ),
-                              SizedBox(width: 16,),
+                              SizedBox(
+                                width: 16,
+                              ),
                               Text("YKT")
                             ],
                           )
