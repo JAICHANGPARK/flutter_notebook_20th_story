@@ -1,4 +1,13 @@
+import 'package:barcode/barcode.dart';
 import 'package:flutter/material.dart';
+import 'package:barcode/barcode.dart';
+Future<File> generateBarcode() async{
+  final dm = Barcode.dataMatrix();
+  var barcodeData = dm.makeBytes("hello", width: 200, height: 84);
+
+
+}
+
 
 class HousingDetailPage extends StatefulWidget {
   String? img;
@@ -10,6 +19,12 @@ class HousingDetailPage extends StatefulWidget {
 }
 
 class _HousingDetailPageState extends State<HousingDetailPage> {
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
