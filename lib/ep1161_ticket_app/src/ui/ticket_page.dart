@@ -1,5 +1,7 @@
 import 'package:dotted_line/dotted_line.dart';
 import 'package:flutter/material.dart';
+import 'package:barcode/barcode.dart';
+import 'dart:io';
 
 class TicketPage extends StatelessWidget {
   const TicketPage({
@@ -363,7 +365,13 @@ class TicketPage extends StatelessWidget {
                               ),
                             ),
                           ),
-                          Expanded(child: Placeholder()),
+                          Expanded(
+                            child: FutureBuilder<String?>(
+                              builder: (context, snapshot) {
+                                return Container();
+                              },
+                            ),
+                          ),
                           Text(
                             "Scan the barcode to the ticket printer at the departure station",
                             textAlign: TextAlign.center,
@@ -406,7 +414,9 @@ class TicketPage extends StatelessWidget {
                   backgroundColor: primaryColor,
                 ),
                 Expanded(
-                  child: DottedLine(),
+                  child: DottedLine(
+                    dashColor: Colors.grey,
+                  ),
                 ),
                 CircleAvatar(
                   radius: 16,
@@ -419,4 +429,9 @@ class TicketPage extends StatelessWidget {
       ),
     );
   }
+}
+
+Future<String?> generateBarcode() async {
+  final dm = Barcode.dataMatrix();
+  return dm.toSvg("hello", width: 200, height: 84);
 }
