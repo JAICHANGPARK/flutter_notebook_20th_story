@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:barcode/barcode.dart';
 import 'dart:io';
 
+import 'package:flutter_svg/flutter_svg.dart';
+
 class TicketPage extends StatelessWidget {
   const TicketPage({
     super.key,
@@ -367,14 +369,27 @@ class TicketPage extends StatelessWidget {
                           ),
                           Expanded(
                             child: FutureBuilder<String?>(
+                              future: generateBarcode(),
                               builder: (context, snapshot) {
-                                return Container();
+                                if (snapshot.hasData) {
+                                  return SvgPicture.string(snapshot.data ?? "");
+                                }
+                                return Center(
+                                  child: CircularProgressIndicator(),
+                                );
                               },
                             ),
+                          ),
+                          SizedBox(
+                            height: 8,
                           ),
                           Text(
                             "Scan the barcode to the ticket printer at the departure station",
                             textAlign: TextAlign.center,
+                            style: TextStyle(
+                              fontSize: 12,
+                              color: Colors.grey,
+                            ),
                           )
                         ],
                       ),
@@ -432,6 +447,6 @@ class TicketPage extends StatelessWidget {
 }
 
 Future<String?> generateBarcode() async {
-  final dm = Barcode.dataMatrix();
-  return dm.toSvg("hello", width: 200, height: 84);
+  final dm = Barcode.code128();
+  return dm.toSvg("123456789", width: 400, height: 100);
 }
