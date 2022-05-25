@@ -1,12 +1,7 @@
 import 'package:barcode/barcode.dart';
 import 'package:flutter/material.dart';
 import 'package:barcode/barcode.dart';
-Future<File> generateBarcode() async{
-  final dm = Barcode.dataMatrix();
-  var barcodeData = dm.makeBytes("hello", width: 200, height: 84);
 
-
-}
 
 
 class HousingDetailPage extends StatefulWidget {
