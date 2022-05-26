@@ -40,30 +40,27 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                 top: 350,
                 child: Container(
                   decoration: BoxDecoration(
-
-                    gradient: LinearGradient(
-                        colors: [
-                          Colors.white,
-                          Colors.white.withOpacity(0.8),
-                          Colors.white.withOpacity(0.7),
-                          Colors.white.withOpacity(0.6),
-                          Colors.white,
-                          Colors.white,
-                          Colors.white.withOpacity(0.6),
-                          Colors.white.withOpacity(0.2),
-                          Colors.white.withOpacity(0.1),
-                        ],
-                        begin: Alignment.bottomCenter,
-                        end: Alignment.topCenter
-                    ),
+                    gradient: LinearGradient(colors: [
+                      Colors.white,
+                      Colors.white.withOpacity(0.8),
+                      Colors.white.withOpacity(0.7),
+                      Colors.white.withOpacity(0.6),
+                      Colors.white,
+                      Colors.white,
+                      Colors.white.withOpacity(0.6),
+                      Colors.white.withOpacity(0.2),
+                      Colors.white.withOpacity(0.1),
+                    ], begin: Alignment.bottomCenter, end: Alignment.topCenter),
                   ),
                   child: Center(),
                 ),
-              )
-
+              ),
+              Positioned(
+                  child: Column(
+                children: [],
+              ))
             ],
           )
-
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
