@@ -49,9 +49,9 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                           Colors.white.withOpacity(0.6),
                           Colors.white,
                           Colors.white,
-                          Colors.white.withOpacity(0.5),
-
-                          Colors.white.withOpacity(0.3),
+                          Colors.white.withOpacity(0.6),
+                          Colors.white.withOpacity(0.2),
+                          Colors.white.withOpacity(0.1),
                         ],
                         begin: Alignment.bottomCenter,
                         end: Alignment.topCenter
