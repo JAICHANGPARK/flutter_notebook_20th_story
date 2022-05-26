@@ -56,8 +56,8 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                 ),
               ),
               Positioned(
-                top: 320,
-                bottom: 0,
+                top: 300,
+                bottom: 16,
                 left: 16,
                 right: 16,
                 child: Column(
