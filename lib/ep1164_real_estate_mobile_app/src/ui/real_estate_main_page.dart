@@ -13,6 +13,8 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
     return Scaffold(
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
+        selectedItemColor: Colors.black,
+        
         items: [
           BottomNavigationBarItem(
             icon: Icon(Icons.home_filled),
