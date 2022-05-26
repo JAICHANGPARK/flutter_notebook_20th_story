@@ -9,6 +9,7 @@ class RealEstateMainPage extends StatefulWidget {
 
 class _RealEstateMainPageState extends State<RealEstateMainPage> {
   int _index = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -16,8 +17,8 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
         type: BottomNavigationBarType.fixed,
         selectedItemColor: Colors.black,
         currentIndex: _index,
-        onTap: (idx){
-          setState(()=> _index = idx);
+        onTap: (idx) {
+          setState(() => _index = idx);
         },
         items: [
           BottomNavigationBarItem(icon: Icon(Icons.home_filled), label: "Home"),
