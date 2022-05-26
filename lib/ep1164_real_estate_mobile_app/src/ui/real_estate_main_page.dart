@@ -56,8 +56,19 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                 ),
               ),
               Positioned(
+                top: 200,
+                  bottom: 0,
+                  left: 16,
+                  right:16,
                   child: Column(
-                children: [],
+                children: [
+                  Container(
+                    height: 42,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                    ),
+                  )
+                ],
               ))
             ],
           )
