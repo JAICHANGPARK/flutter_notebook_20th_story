@@ -16,41 +16,47 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
       body: IndexedStack(
         index: _index,
         children: [
-          Positioned(
-            left: 0,
-            right: 0,
-            bottom: 300,
-            top: 0,
-            child: Container(
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                  image: NetworkImage("https://cdn.pixabay.com/photo/"
-                      "2017/03/30/04/14/house-2187170_960_720.jpg"),
-                  fit: BoxFit.cover,
+          Stack(
+            children: [
+              Positioned(
+                left: 0,
+                right: 0,
+                bottom: 300,
+                top: 0,
+                child: Container(
+                  decoration: BoxDecoration(
+                    image: DecorationImage(
+                      image: NetworkImage("https://cdn.pixabay.com/photo/"
+                          "2017/03/30/04/14/house-2187170_960_720.jpg"),
+                      fit: BoxFit.cover,
+                    ),
+                  ),
                 ),
               ),
-            ),
-          ),
-          Positioned(
-            left: 0,
-            right: 0,
-            bottom: 0,
-            top: 0,
-            child: Container(
-              decoration: BoxDecoration(
-                color: Colors.white,
-                gradient: LinearGradient(
-                  colors: [
-                    Colors.blueGrey,
-                    Colors.blue,
-                  ],
-                  begin: Alignment.bottomCenter,
-                  end: Alignment.topCenter
+              Positioned(
+                left: 0,
+                right: 0,
+                bottom: 0,
+                top: 0,
+                child: Container(
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    gradient: LinearGradient(
+                        colors: [
+                          Colors.blueGrey,
+                          Colors.blue,
+                        ],
+                        begin: Alignment.bottomCenter,
+                        end: Alignment.topCenter
+                    ),
+                  ),
+                  child: Center(),
                 ),
-              ),
-              child: Center(),
-            ),
+              )
+
+            ],
           )
+
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
