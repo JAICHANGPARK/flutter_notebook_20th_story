@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-
-
 class RealEstateMainPage extends StatefulWidget {
   const RealEstateMainPage({Key? key}) : super(key: key);
 
@@ -12,6 +10,31 @@ class RealEstateMainPage extends StatefulWidget {
 class _RealEstateMainPageState extends State<RealEstateMainPage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      bottomNavigationBar: BottomNavigationBar(
+        items: [
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home_filled),
+            label: "Home"
+          ),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.home_filled),
+              label: "Home"
+          ),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.home_filled),
+              label: "Home"
+          ),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.home_filled),
+              label: "Home"
+          ),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.home_filled),
+              label: "Home"
+          ),
+        ],
+      ),
+    );
   }
 }
