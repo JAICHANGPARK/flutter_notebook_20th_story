@@ -16,7 +16,14 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
       body: IndexedStack(
         index: _index,
         children: [
-          
+          Positioned(
+              child: Container(
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                image: NetworkImage(""),
+              ),
+            ),
+          ))
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
