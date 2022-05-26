@@ -37,14 +37,21 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                 left: 0,
                 right: 0,
                 bottom: 0,
-                top: 0,
+                top: 350,
                 child: Container(
                   decoration: BoxDecoration(
-                    color: Colors.white,
+
                     gradient: LinearGradient(
                         colors: [
-                          Colors.blueGrey,
-                          Colors.blue,
+                          Colors.white,
+                          Colors.white.withOpacity(0.8),
+                          Colors.white.withOpacity(0.7),
+                          Colors.white.withOpacity(0.6),
+                          Colors.white,
+                          Colors.white,
+                          Colors.white.withOpacity(0.5),
+
+                          Colors.white.withOpacity(0.3),
                         ],
                         begin: Alignment.bottomCenter,
                         end: Alignment.topCenter
