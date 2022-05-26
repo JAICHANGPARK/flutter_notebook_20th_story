@@ -17,6 +17,10 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
         index: _index,
         children: [
           Positioned(
+            left: 0,
+            right:0,
+            bottom: 300,
+            top: 0,
             child: Container(
               decoration: BoxDecoration(
                 image: DecorationImage(
@@ -25,6 +29,21 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                   fit: BoxFit.cover,
                 ),
               ),
+            ),
+          ),
+          Positioned(
+            left: 0,
+            right:0,
+            bottom: 0,
+            top: 0,
+            child: Container(
+             decoration: BoxDecoration(
+               gradient: LinearGradient(
+                 colors: [
+                   Colors.white,
+                 ]
+               )
+             ),
             ),
           )
         ],
