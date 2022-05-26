@@ -18,7 +18,7 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
         children: [
           Positioned(
             left: 0,
-            right:0,
+            right: 0,
             bottom: 300,
             top: 0,
             child: Container(
@@ -33,17 +33,20 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
           ),
           Positioned(
             left: 0,
-            right:0,
+            right: 0,
             bottom: 0,
             top: 0,
             child: Container(
-             decoration: BoxDecoration(
-               gradient: LinearGradient(
-                 colors: [
-                   Colors.white,
-                 ]
-               )
-             ),
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  colors: [
+                    Colors.blueGrey,
+                    Colors.blue,
+                  ],
+                  begin: Alignment.bottomCenter,
+                ),
+              ),
+              child: Center(),
             ),
           )
         ],
