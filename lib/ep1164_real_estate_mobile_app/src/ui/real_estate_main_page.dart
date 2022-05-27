@@ -112,10 +112,13 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                     ),
                     Expanded(
                       child: Card(
-                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(16),
+                        ),
                         child: DefaultTabController(
                           length: 3,
                           child: Column(
+
                             children: [
                               TabBar(
                                 indicatorColor: Colors.black,
@@ -143,6 +146,7 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                                   Padding(
                                     padding: const EdgeInsets.all(16.0),
                                     child: Column(
+                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                       children: [
                                         TextField(
                                           decoration: InputDecoration(
@@ -194,6 +198,7 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                                             color: Colors.black,
                                             borderRadius: BorderRadius.circular(64),
                                           ),
+                                          padding: EdgeInsets.symmetric(vertical: 18),
                                           child: Center(
                                             child: Text(
                                               "Find housing",
