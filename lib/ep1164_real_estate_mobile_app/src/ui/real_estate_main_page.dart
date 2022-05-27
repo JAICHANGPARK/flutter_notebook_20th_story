@@ -70,6 +70,14 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                       height: 58,
                       decoration: BoxDecoration(
                         color: Colors.white,
+                        borderRadius: BorderRadius.circular(48),
+                      ),
+                      padding: EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+                      child: Row(
+                        children: [
+                          Expanded(child: Placeholder()),
+                          Expanded(child: Placeholder()),
+                        ],
                       ),
                     ),
                     SizedBox(
