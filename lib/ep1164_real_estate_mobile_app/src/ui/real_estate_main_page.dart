@@ -118,7 +118,6 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                         child: DefaultTabController(
                           length: 3,
                           child: Column(
-
                             children: [
                               TabBar(
                                 indicatorColor: Colors.black,
@@ -156,17 +155,25 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                                         Row(
                                           children: [
                                             Icon(Icons.bed),
+                                            SizedBox(
+                                              width: 16,
+                                            ),
                                             Expanded(
                                               child: SizedBox(
                                                 height: 48,
                                                 child: Stack(
                                                   children: [
                                                     Positioned(
-                                                        child: Container(
-                                                      decoration: BoxDecoration(
-                                                        color: Colors.green,
+                                                      top: 8,
+                                                      bottom: 8,
+                                                      left: 0,
+                                                      right: 0,
+                                                      child: Container(
+                                                        decoration: BoxDecoration(
+                                                          color: Colors.grey[100],
+                                                        ),
                                                       ),
-                                                    ))
+                                                    )
                                                   ],
                                                 ),
                                               ),
@@ -175,7 +182,10 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                                         ),
                                         Row(
                                           children: [
-                                            Icon(Icons.bed),
+                                            Icon(Icons.bathtub_outlined),
+                                            SizedBox(
+                                              width: 16,
+                                            ),
                                             Expanded(
                                               child: SizedBox(
                                                 height: 48,
