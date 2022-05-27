@@ -67,7 +67,7 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                 child: Column(
                   children: [
                     Container(
-                      height: 52,
+                      height: 48,
                       decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(48),
@@ -111,7 +111,44 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                     ),
                     Expanded(
                       child: Card(
-                        child: Center(),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(16)
+                        ),
+                        child: DefaultTabController(
+                          length: 3,
+                          child: Column(
+                            children: [
+                              TabBar(
+                                indicatorColor: Colors.black,
+                                labelColor: Colors.black,
+                                unselectedLabelColor: Colors.grey,
+                                tabs: [
+                                  Tab(
+                                    text: "All",
+                                  ),
+                                  Tab(
+                                    text: "House",
+                                  ),
+                                  Tab(
+                                    text: "Apartment",
+                                  )
+                                ],
+                              ),
+                              Divider(
+                                height: 0,
+                                color: Colors.grey,
+                              ),
+                              Expanded(
+                                  child: TabBarView(
+                                children: [
+                                  Container(),
+                                  Container(),
+                                  Container(),
+                                ],
+                              ))
+                            ],
+                          ),
+                        ),
                       ),
                     )
                   ],
