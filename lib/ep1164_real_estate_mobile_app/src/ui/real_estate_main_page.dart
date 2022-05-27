@@ -183,11 +183,33 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                                                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                         crossAxisAlignment: CrossAxisAlignment.center,
                                                         children: [
-                                                          Text("1"),
+                                                          Container(
+                                                            decoration: BoxDecoration(
+                                                              color: Colors.white,
+                                                              border: Border.all(),
+                                                              borderRadius: BorderRadius.circular(20),
+                                                            ),
+                                                            padding: EdgeInsets.symmetric(
+                                                              horizontal: 16,
+                                                              vertical: 12,
+                                                            ),
+                                                            child: Text("1"),
+                                                          ),
                                                           Text("2"),
                                                           Text("3"),
                                                           Text("4"),
-                                                          Text("5+"),
+                                                          Container(
+                                                            decoration: BoxDecoration(
+                                                              color: Colors.white,
+                                                              border: Border.all(),
+                                                              borderRadius: BorderRadius.circular(20),
+                                                            ),
+                                                            padding: EdgeInsets.symmetric(
+                                                              horizontal: 16,
+                                                              vertical: 12,
+                                                            ),
+                                                            child: Text("5+"),
+                                                          ),
                                                         ],
                                                       ),
                                                     )
