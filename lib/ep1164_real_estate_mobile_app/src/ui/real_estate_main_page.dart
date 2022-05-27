@@ -79,7 +79,7 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                             child: Container(
                               decoration: BoxDecoration(
                                 color: Colors.black,
-                                borderRadius: BorderRadius.circular(48)
+                                borderRadius: BorderRadius.circular(48),
                               ),
                               child: Center(
                                 child: Text(
@@ -94,7 +94,15 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                           SizedBox(
                             width: 16,
                           ),
-                          Expanded(child: Placeholder()),
+                          Expanded(
+                              child: Center(
+                            child: Text(
+                              "Rent",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          )),
                         ],
                       ),
                     ),
