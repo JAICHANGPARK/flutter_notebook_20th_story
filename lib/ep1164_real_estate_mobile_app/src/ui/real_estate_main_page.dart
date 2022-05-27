@@ -13,6 +13,7 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       body: IndexedStack(
         index: _index,
         children: [
