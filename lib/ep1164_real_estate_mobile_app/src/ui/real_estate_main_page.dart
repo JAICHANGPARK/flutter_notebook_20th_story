@@ -154,13 +154,54 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                                             Icon(Icons.bed),
                                             Expanded(
                                               child: SizedBox(
-                                                height: 64,
+                                                height: 48,
                                                 child: Stack(
-                                                  children: [],
+                                                  children: [
+                                                    Positioned(
+                                                        child: Container(
+                                                      decoration: BoxDecoration(
+                                                        color: Colors.green,
+                                                      ),
+                                                    ))
+                                                  ],
                                                 ),
                                               ),
                                             )
                                           ],
+                                        ),
+                                        Row(
+                                          children: [
+                                            Icon(Icons.bed),
+                                            Expanded(
+                                              child: SizedBox(
+                                                height: 48,
+                                                child: Stack(
+                                                  children: [
+                                                    Positioned(
+                                                        child: Container(
+                                                      decoration: BoxDecoration(
+                                                        color: Colors.green,
+                                                      ),
+                                                    ))
+                                                  ],
+                                                ),
+                                              ),
+                                            )
+                                          ],
+                                        ),
+                                        Container(
+                                          decoration: BoxDecoration(
+                                            color: Colors.black,
+                                            borderRadius: BorderRadius.circular(64),
+                                          ),
+                                          child: Center(
+                                            child: Text(
+                                              "Find housing",
+                                              style: TextStyle(
+                                                color: Colors.white,
+                                              ),
+                                            ),
+                                          ),
                                         )
                                       ],
                                     ),
