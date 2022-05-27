@@ -171,6 +171,7 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                                                       child: Container(
                                                         decoration: BoxDecoration(
                                                           color: Colors.grey[100],
+                                                          borderRadius: BorderRadius.circular(24)
                                                         ),
                                                       ),
                                                     ),
