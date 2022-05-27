@@ -177,7 +177,8 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                                                     Positioned(
                                                       left: 0,
                                                       right: 0,
-                                                      
+                                                      top: 0,
+                                                      bottom: 0,
                                                       child: Row(
                                                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                         crossAxisAlignment: CrossAxisAlignment.center,
