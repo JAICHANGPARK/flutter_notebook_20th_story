@@ -170,9 +170,8 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                                                       right: 0,
                                                       child: Container(
                                                         decoration: BoxDecoration(
-                                                          color: Colors.grey[100],
-                                                          borderRadius: BorderRadius.circular(24)
-                                                        ),
+                                                            color: Colors.grey[100],
+                                                            borderRadius: BorderRadius.circular(24)),
                                                       ),
                                                     ),
                                                     Positioned(
@@ -210,11 +209,33 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                                                 child: Stack(
                                                   children: [
                                                     Positioned(
-                                                        child: Container(
-                                                      decoration: BoxDecoration(
-                                                        color: Colors.green,
+                                                      top: 8,
+                                                      bottom: 8,
+                                                      left: 0,
+                                                      right: 0,
+                                                      child: Container(
+                                                        decoration: BoxDecoration(
+                                                            color: Colors.grey[100],
+                                                            borderRadius: BorderRadius.circular(24)),
                                                       ),
-                                                    ))
+                                                    ),
+                                                    Positioned(
+                                                      left: 0,
+                                                      right: 0,
+                                                      top: 0,
+                                                      bottom: 0,
+                                                      child: Row(
+                                                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                                        crossAxisAlignment: CrossAxisAlignment.center,
+                                                        children: [
+                                                          Text("1"),
+                                                          Text("2"),
+                                                          Text("3"),
+                                                          Text("4"),
+                                                          Text("5+"),
+                                                        ],
+                                                      ),
+                                                    )
                                                   ],
                                                 ),
                                               ),
