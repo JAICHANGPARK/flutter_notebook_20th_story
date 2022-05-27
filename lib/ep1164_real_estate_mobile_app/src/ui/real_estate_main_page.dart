@@ -173,6 +173,22 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                                                           color: Colors.grey[100],
                                                         ),
                                                       ),
+                                                    ),
+                                                    Positioned(
+                                                      left: 0,
+                                                      right: 0,
+                                                      
+                                                      child: Row(
+                                                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                                        crossAxisAlignment: CrossAxisAlignment.center,
+                                                        children: [
+                                                          Text("1"),
+                                                          Text("2"),
+                                                          Text("3"),
+                                                          Text("4"),
+                                                          Text("5+"),
+                                                        ],
+                                                      ),
                                                     )
                                                   ],
                                                 ),
