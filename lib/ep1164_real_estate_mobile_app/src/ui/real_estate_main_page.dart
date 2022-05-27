@@ -67,15 +67,33 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                 child: Column(
                   children: [
                     Container(
-                      height: 58,
+                      height: 52,
                       decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(48),
                       ),
-                      padding: EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+                      padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                       child: Row(
                         children: [
-                          Expanded(child: Placeholder()),
+                          Expanded(
+                            child: Container(
+                              decoration: BoxDecoration(
+                                color: Colors.black,
+                                borderRadius: BorderRadius.circular(48)
+                              ),
+                              child: Center(
+                                child: Text(
+                                  "Buy",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ),
+                          SizedBox(
+                            width: 16,
+                          ),
                           Expanded(child: Placeholder()),
                         ],
                       ),
