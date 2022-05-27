@@ -111,9 +111,7 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                     ),
                     Expanded(
                       child: Card(
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(16)
-                        ),
+                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
                         child: DefaultTabController(
                           length: 3,
                           child: Column(
@@ -141,7 +139,18 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                               Expanded(
                                   child: TabBarView(
                                 children: [
-                                  Container(),
+                                  Padding(
+                                    padding: const EdgeInsets.all(16.0),
+                                    child: Column(
+                                      children: [
+                                        TextField(
+                                          decoration: InputDecoration(
+                                            icon: Icon(Icons.location_on_outlined),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
                                   Container(),
                                   Container(),
                                 ],
