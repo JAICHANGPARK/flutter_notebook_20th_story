@@ -149,6 +149,19 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                                             icon: Icon(Icons.location_on_outlined),
                                           ),
                                         ),
+                                        Row(
+                                          children: [
+                                            Icon(Icons.bed),
+                                            Expanded(
+                                              child: SizedBox(
+                                                height: 64,
+                                                child: Stack(
+                                                  children: [],
+                                                ),
+                                              ),
+                                            )
+                                          ],
+                                        )
                                       ],
                                     ),
                                   ),
