@@ -27,7 +27,7 @@ class _RealEstateSearchPageState extends State<RealEstateSearchPage> {
                         ),
                         boxShadow: [
                           BoxShadow(
-                            color: Colors.black.withOpacity(0.1),
+                            color: Colors.black.withOpacity(0.15),
                             blurRadius: 2,
                             spreadRadius: 2,
                             offset: Offset(0, 2),
