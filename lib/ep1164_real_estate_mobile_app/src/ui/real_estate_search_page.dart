@@ -40,6 +40,11 @@ class _RealEstateSearchPageState extends State<RealEstateSearchPage> {
                                       color: Colors.grey[100],
                                       borderRadius: BorderRadius.circular(24),
                                     ),
+                                    child: TextField(
+                                      decoration: InputDecoration(
+                                        
+                                      ),
+                                    ),
                                   ),
                                 ),
                               ),
