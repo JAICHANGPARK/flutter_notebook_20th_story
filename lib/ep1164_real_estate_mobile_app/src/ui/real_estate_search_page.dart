@@ -11,9 +11,20 @@ class _RealEstateSearchPageState extends State<RealEstateSearchPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.grey[100],
       body: SafeArea(
         child: Stack(
           children: [
+            Positioned(
+                child: Column(
+              children: [
+                Container(
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                  ),
+                )
+              ],
+            )),
             Positioned(
                 bottom: 24,
                 right: 16,
@@ -21,18 +32,19 @@ class _RealEstateSearchPageState extends State<RealEstateSearchPage> {
                 child: Center(
                   child: Container(
                     decoration: BoxDecoration(
-                        color: Colors.black,
-                        borderRadius: BorderRadius.circular(
-                          24,
-                        ),
-                        boxShadow: [
-                          BoxShadow(
-                            color: Colors.black.withOpacity(0.15),
-                            blurRadius: 2,
-                            spreadRadius: 2,
-                            offset: Offset(1, 2),
-                          )
-                        ]),
+                      color: Colors.black,
+                      borderRadius: BorderRadius.circular(
+                        24,
+                      ),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.black.withOpacity(0.15),
+                          blurRadius: 2,
+                          spreadRadius: 2,
+                          offset: Offset(1, 2),
+                        )
+                      ],
+                    ),
                     padding: EdgeInsets.symmetric(
                       horizontal: 16,
                       vertical: 8,
