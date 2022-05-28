@@ -286,17 +286,26 @@ class _RealEstateMainPageState extends State<RealEstateMainPage> {
                                             )
                                           ],
                                         ),
-                                        Container(
-                                          decoration: BoxDecoration(
-                                            color: Colors.black,
-                                            borderRadius: BorderRadius.circular(64),
-                                          ),
-                                          padding: EdgeInsets.symmetric(vertical: 18),
-                                          child: Center(
-                                            child: Text(
-                                              "Find housing",
-                                              style: TextStyle(
-                                                color: Colors.white,
+                                        GestureDetector(
+                                          onTap: () {
+                                            Navigator.of(context).push(
+                                              MaterialPageRoute(
+                                                builder: (context) => RealEstateSearchPage(),
+                                              ),
+                                            );
+                                          },
+                                          child: Container(
+                                            decoration: BoxDecoration(
+                                              color: Colors.black,
+                                              borderRadius: BorderRadius.circular(64),
+                                            ),
+                                            padding: EdgeInsets.symmetric(vertical: 18),
+                                            child: Center(
+                                              child: Text(
+                                                "Find housing",
+                                                style: TextStyle(
+                                                  color: Colors.white,
+                                                ),
                                               ),
                                             ),
                                           ),
