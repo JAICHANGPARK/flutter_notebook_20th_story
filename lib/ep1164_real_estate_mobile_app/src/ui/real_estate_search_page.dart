@@ -38,6 +38,7 @@ class _RealEstateSearchPageState extends State<RealEstateSearchPage> {
                                     height: 42,
                                     decoration: BoxDecoration(
                                       color: Colors.grey[100],
+                                      borderRadius: BorderRadius.circular(24),
                                     ),
                                   ),
                                 ),
@@ -61,8 +62,9 @@ class _RealEstateSearchPageState extends State<RealEstateSearchPage> {
                       ],
                     ),
                   ),
-                  Expanded(child: Padding(
-                    padding: const EdgeInsets.fromLTRB(16,16,16,0),
+                  Expanded(
+                      child: Padding(
+                    padding: const EdgeInsets.fromLTRB(16, 16, 16, 0),
                     child: Placeholder(),
                   )),
                 ],
