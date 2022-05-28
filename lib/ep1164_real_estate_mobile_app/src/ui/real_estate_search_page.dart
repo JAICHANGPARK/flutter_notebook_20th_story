@@ -15,11 +15,30 @@ class _RealEstateSearchPageState extends State<RealEstateSearchPage> {
         child: Stack(
           children: [
             Positioned(
-              child: Container(
-                decoration: BoxDecoration(
-                  color: Colors.black,
+              bottom: 16,
+              right: 16,
+              left: 16,
+              child:
+              Center(
+                child:
+
+                Container(
+                  decoration: BoxDecoration(
+                    color: Colors.black,
+                  ),
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Text("Map"),
+                      Icon(
+                        Icons.map_outlined,
+                        color: Colors.white,
+                      )
+                    ],
+                  ),
                 ),
-              ),
+              )
+
             )
           ],
         ),
