@@ -15,16 +15,28 @@ class _RealEstateSearchPageState extends State<RealEstateSearchPage> {
         child: Stack(
           children: [
             Positioned(
-                bottom: 16,
+                bottom: 24,
                 right: 16,
                 left: 16,
                 child: Center(
                   child: Container(
                     decoration: BoxDecoration(
-                      color: Colors.black,
-                      borderRadius: BorderRadius.circular(24)
+                        color: Colors.black,
+                        borderRadius: BorderRadius.circular(
+                          24,
+                        ),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.black.withOpacity(0.1),
+                            blurRadius: 2,
+                            spreadRadius: 2,
+                            offset: Offset(0, 2),
+                          )
+                        ]),
+                    padding: EdgeInsets.symmetric(
+                      horizontal: 16,
+                      vertical: 8,
                     ),
-                    padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                     child: Row(
                       mainAxisSize: MainAxisSize.min,
                       children: [
