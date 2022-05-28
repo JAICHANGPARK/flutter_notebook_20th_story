@@ -32,10 +32,13 @@ class _RealEstateSearchPageState extends State<RealEstateSearchPage> {
                               Icons.arrow_back,
                             ),
                             Expanded(
-                              child: Container(
-                                height: 42,
-                                decoration: BoxDecoration(
-                                  color: Colors.grey[100],
+                              child: Padding(
+                                padding: const EdgeInsets.symmetric(horizontal: 16),
+                                child: Container(
+                                  height: 42,
+                                  decoration: BoxDecoration(
+                                    color: Colors.grey[100],
+                                  ),
                                 ),
                               ),
                             ),
