@@ -61,7 +61,10 @@ class _RealEstateSearchPageState extends State<RealEstateSearchPage> {
                       ],
                     ),
                   ),
-                  Expanded(child: Placeholder()),
+                  Expanded(child: Padding(
+                    padding: const EdgeInsets.fromLTRB(16,16,16,0),
+                    child: Placeholder(),
+                  )),
                 ],
               ),
             ),
