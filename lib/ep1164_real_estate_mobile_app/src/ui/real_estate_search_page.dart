@@ -30,7 +30,7 @@ class _RealEstateSearchPageState extends State<RealEstateSearchPage> {
                             color: Colors.black.withOpacity(0.15),
                             blurRadius: 2,
                             spreadRadius: 2,
-                            offset: Offset(0, 2),
+                            offset: Offset(1, 2),
                           )
                         ]),
                     padding: EdgeInsets.symmetric(
