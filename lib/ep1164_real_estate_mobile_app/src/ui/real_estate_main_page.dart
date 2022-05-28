@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'real_estate_search_page.dart';
 
 class RealEstateMainPage extends StatefulWidget {
   const RealEstateMainPage({Key? key}) : super(key: key);
