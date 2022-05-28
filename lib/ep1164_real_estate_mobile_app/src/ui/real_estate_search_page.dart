@@ -47,6 +47,20 @@ class _RealEstateSearchPageState extends State<RealEstateSearchPage> {
                             )
                           ],
                         ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(
+                          left: 16,
+                          top: 0,
+                          bottom: 16
+                        ),
+                        child: SizedBox(
+                          height: 42,
+                          child: Container(
+                            color: Colors.blue,
+                            child: ListView(),
+                          ),
+                        ),
                       )
                     ],
                   ),
