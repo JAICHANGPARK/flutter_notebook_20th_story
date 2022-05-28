@@ -22,6 +22,31 @@ class _RealEstateSearchPageState extends State<RealEstateSearchPage> {
                   decoration: BoxDecoration(
                     color: Colors.white,
                   ),
+                  child: Column(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.all(16.0),
+                        child: Row(
+                          children: [
+                            Icon(
+                              Icons.arrow_back,
+                            ),
+                            Expanded(
+                              child: Container(
+                                height: 42,
+                                decoration: BoxDecoration(
+                                  color: Colors.grey[100],
+                                ),
+                              ),
+                            ),
+                            Icon(
+                              Icons.tune,
+                            )
+                          ],
+                        ),
+                      )
+                    ],
+                  ),
                 )
               ],
             )),
