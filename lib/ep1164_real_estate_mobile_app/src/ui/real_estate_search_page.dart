@@ -16,57 +16,55 @@ class _RealEstateSearchPageState extends State<RealEstateSearchPage> {
         child: Stack(
           children: [
             Positioned(
-                child: Column(
-              children: [
-                Container(
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                  ),
-                  child: Column(
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.all(16.0),
-                        child: Row(
-                          children: [
-                            Icon(
-                              Icons.arrow_back,
-                            ),
-                            Expanded(
-                              child: Padding(
-                                padding: const EdgeInsets.symmetric(horizontal: 16),
-                                child: Container(
-                                  height: 42,
-                                  decoration: BoxDecoration(
-                                    color: Colors.grey[100],
+              child: Column(
+                children: [
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                    ),
+                    child: Column(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.all(16.0),
+                          child: Row(
+                            children: [
+                              Icon(
+                                Icons.arrow_back,
+                              ),
+                              Expanded(
+                                child: Padding(
+                                  padding: const EdgeInsets.symmetric(horizontal: 16),
+                                  child: Container(
+                                    height: 42,
+                                    decoration: BoxDecoration(
+                                      color: Colors.grey[100],
+                                    ),
                                   ),
                                 ),
                               ),
-                            ),
-                            Icon(
-                              Icons.tune,
-                            )
-                          ],
-                        ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.only(
-                          left: 16,
-                          top: 0,
-                          bottom: 16
-                        ),
-                        child: SizedBox(
-                          height: 42,
-                          child: Container(
-                            color: Colors.blue,
-                            child: ListView(),
+                              Icon(
+                                Icons.tune,
+                              )
+                            ],
                           ),
                         ),
-                      )
-                    ],
+                        Padding(
+                          padding: const EdgeInsets.only(left: 16, top: 0, bottom: 16),
+                          child: SizedBox(
+                            height: 42,
+                            child: Container(
+                              color: Colors.blue,
+                              child: ListView(),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
-                )
-              ],
-            )),
+                  Expanded(child: Placeholder()),
+                ],
+              ),
+            ),
             Positioned(
                 bottom: 24,
                 right: 16,
