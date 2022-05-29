@@ -175,12 +175,16 @@ class _RealEstateSearchPageState extends State<RealEstateSearchPage> {
                               Container(
                                 height: 130,
                                 width: 160,
-                                decoration: BoxDecoration(color: Colors.red, borderRadius: BorderRadius.circular(8)),
+                                decoration: BoxDecoration(
+                                  color: Colors.red,
+                                  borderRadius: BorderRadius.circular(8),
+                                ),
                               ),
                               Expanded(
-                                  child: Column(
-                                children: [],
-                              ))
+                                child: Column(
+                                  children: [],
+                                ),
+                              )
                             ],
                           ),
                         );
