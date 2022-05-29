@@ -165,7 +165,25 @@ class _RealEstateSearchPageState extends State<RealEstateSearchPage> {
                   Expanded(
                       child: Padding(
                     padding: const EdgeInsets.fromLTRB(16, 16, 16, 0),
-                    child: Placeholder(),
+                    child: ListView.builder(
+                      itemCount: 10,
+                      itemBuilder: (context, index) {
+                        return Padding(
+                          padding: const EdgeInsets.symmetric(vertical: 16),
+                          child: Row(
+                            children: [
+                              Container(
+                                height: 200,
+                                width: 160,
+                                decoration: BoxDecoration(
+                                  color: Colors.red,
+                                ),
+                              )
+                            ],
+                          ),
+                        );
+                      },
+                    ),
                   )),
                 ],
               ),
