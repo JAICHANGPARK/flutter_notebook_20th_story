@@ -195,9 +195,35 @@ class _RealEstateSearchPageState extends State<RealEstateSearchPage> {
                                       Row(
                                         children: [
                                           Icon(Icons.location_on_outlined),
-                                          Text(
-                                            "Baratajaya, Surabaya City, Jawa Timur",
+                                          Expanded(
+                                            child: Text(
+                                              "Baratajaya, Surabaya City, Jawa Timur",
+                                            ),
                                           ),
+                                        ],
+                                      ),
+                                      Row(
+                                        children: [
+                                          Icon(Icons.room_preferences_sharp),
+                                          Expanded(
+                                            child: Text(
+                                              "345 Sq. M.",
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                      Row(
+                                        children: [
+                                          Icon(Icons.account_circle_outlined),
+                                          Expanded(
+                                            child: Text(
+                                              "Mahmud MD",
+                                            ),
+                                          ),
+                                          CircleAvatar(
+                                            radius: 8,
+                                            backgroundColor: Colors.green,
+                                          )
                                         ],
                                       )
                                     ],
