@@ -224,27 +224,45 @@ class _RealEstateSearchPageState extends State<RealEstateSearchPage> {
                                             ),
                                           ],
                                         ),
-                                        Row(
-                                          crossAxisAlignment: CrossAxisAlignment.start,
-                                          children: [
-                                            Icon(Icons.room_preferences_sharp,    size: 16,),
-                                            Expanded(
-                                              child: Text(
-                                                "345 Sq. M.",
-                                                style: TextStyle(fontSize: 12, color: Colors.grey),
+                                        Padding(
+                                          padding: EdgeInsets.symmetric(vertical: 4),
+                                          child: Row(
+                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            children: [
+                                              Icon(
+                                                Icons.room_preferences_sharp,
+                                                size: 16,
                                               ),
-                                            ),
-                                          ],
+                                              SizedBox(
+                                                width: 4,
+                                              ),
+                                              Expanded(
+                                                child: Text(
+                                                  "345 Sq. M.",
+                                                  style: TextStyle(fontSize: 12, color: Colors.grey),
+                                                ),
+                                              ),
+                                            ],
+                                          ),
                                         ),
                                         Row(
                                           children: [
-                                            Icon(Icons.account_circle_outlined),
+                                            Icon(Icons.account_circle_outlined,
+                                              size: 16,),
+                                            SizedBox(
+                                              width: 4,
+                                            ),
                                             Text(
                                               "Mahmud MD",
+                                              style: TextStyle(fontSize: 12, color: Colors.grey),
+                                            ),
+                                            SizedBox(
+                                              width: 4,
                                             ),
                                             CircleAvatar(
                                               radius: 8,
                                               backgroundColor: Colors.green,
+
                                             )
                                           ],
                                         )
