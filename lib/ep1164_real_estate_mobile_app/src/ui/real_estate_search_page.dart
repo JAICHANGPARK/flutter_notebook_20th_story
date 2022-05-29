@@ -64,10 +64,28 @@ class _RealEstateSearchPageState extends State<RealEstateSearchPage> {
                         Padding(
                           padding: const EdgeInsets.only(left: 16, top: 0, bottom: 16),
                           child: SizedBox(
-                            height: 42,
+                            height: 32,
                             child: Container(
                               color: Colors.blue,
-                              child: ListView(),
+                              child: ListView(
+                                scrollDirection: Axis.horizontal,
+                                children: [
+                                  Container(
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(24),
+                                      border: Border.all(),
+                                    ),
+                                    padding: EdgeInsets.symmetric(horizontal: 8),
+                                    child: Row(
+                                      children: [
+                                        Icon(Icons.filter_list, size: 16,),
+                                        SizedBox(width: 4,),
+                                        Text("Sort")
+                                      ],
+                                    ),
+                                  )
+                                ],
+                              ),
                             ),
                           ),
                         ),
