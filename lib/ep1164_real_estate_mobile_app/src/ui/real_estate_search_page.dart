@@ -8,6 +8,8 @@ class RealEstateSearchPage extends StatefulWidget {
 }
 
 class _RealEstateSearchPageState extends State<RealEstateSearchPage> {
+  TextEditingController _textEditingController = TextEditingController(text: "Surabaya City, Jawa Timur");
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
