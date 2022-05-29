@@ -215,10 +215,8 @@ class _RealEstateSearchPageState extends State<RealEstateSearchPage> {
                                       Row(
                                         children: [
                                           Icon(Icons.account_circle_outlined),
-                                          Expanded(
-                                            child: Text(
-                                              "Mahmud MD",
-                                            ),
+                                          Text(
+                                            "Mahmud MD",
                                           ),
                                           CircleAvatar(
                                             radius: 8,
