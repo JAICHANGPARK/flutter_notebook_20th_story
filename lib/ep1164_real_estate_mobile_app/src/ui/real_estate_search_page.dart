@@ -47,6 +47,7 @@ class _RealEstateSearchPageState extends State<RealEstateSearchPage> {
                                       vertical: 8,
                                     ),
                                     child: TextField(
+                                      controller: _textEditingController,
                                       decoration: InputDecoration(
                                         border: InputBorder.none,
                                       ),
