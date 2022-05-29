@@ -247,8 +247,10 @@ class _RealEstateSearchPageState extends State<RealEstateSearchPage> {
                                         ),
                                         Row(
                                           children: [
-                                            Icon(Icons.account_circle_outlined,
-                                              size: 16,),
+                                            Icon(
+                                              Icons.account_circle_outlined,
+                                              size: 16,
+                                            ),
                                             SizedBox(
                                               width: 4,
                                             ),
@@ -260,9 +262,13 @@ class _RealEstateSearchPageState extends State<RealEstateSearchPage> {
                                               width: 4,
                                             ),
                                             CircleAvatar(
-                                              radius: 8,
+                                              radius: 6,
                                               backgroundColor: Colors.green,
-
+                                              child: Icon(
+                                                Icons.check,
+                                                size: 8,
+                                              ),
+                                              foregroundColor: Colors.white,
                                             )
                                           ],
                                         )
