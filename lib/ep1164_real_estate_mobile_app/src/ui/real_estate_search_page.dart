@@ -169,16 +169,18 @@ class _RealEstateSearchPageState extends State<RealEstateSearchPage> {
                       itemCount: 10,
                       itemBuilder: (context, index) {
                         return Padding(
-                          padding: const EdgeInsets.symmetric(vertical: 16),
+                          padding: const EdgeInsets.symmetric(vertical: 12),
                           child: Row(
                             children: [
                               Container(
-                                height: 200,
+                                height: 130,
                                 width: 160,
-                                decoration: BoxDecoration(
-                                  color: Colors.red,
-                                ),
-                              )
+                                decoration: BoxDecoration(color: Colors.red, borderRadius: BorderRadius.circular(8)),
+                              ),
+                              Expanded(
+                                  child: Column(
+                                children: [],
+                              ))
                             ],
                           ),
                         );
