@@ -209,26 +209,29 @@ class _RealEstateSearchPageState extends State<RealEstateSearchPage> {
                                         Row(
                                           crossAxisAlignment: CrossAxisAlignment.start,
                                           children: [
-                                            Icon(Icons.location_on_outlined,
-                                            size: 16,),
-                                            SizedBox(width: 4,),
+                                            Icon(
+                                              Icons.location_on_outlined,
+                                              size: 16,
+                                            ),
+                                            SizedBox(
+                                              width: 4,
+                                            ),
                                             Expanded(
                                               child: Text(
                                                 "Baratajaya, Surabaya City, Jawa Timur",
-                                                style: TextStyle(
-                                                  fontSize: 12,
-                                                  color: Colors.grey
-                                                ),
+                                                style: TextStyle(fontSize: 12, color: Colors.grey),
                                               ),
                                             ),
                                           ],
                                         ),
                                         Row(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
                                           children: [
-                                            Icon(Icons.room_preferences_sharp),
+                                            Icon(Icons.room_preferences_sharp,    size: 16,),
                                             Expanded(
                                               child: Text(
                                                 "345 Sq. M.",
+                                                style: TextStyle(fontSize: 12, color: Colors.grey),
                                               ),
                                             ),
                                           ],
