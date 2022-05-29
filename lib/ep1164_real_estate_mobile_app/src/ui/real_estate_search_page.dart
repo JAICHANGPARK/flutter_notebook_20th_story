@@ -163,34 +163,53 @@ class _RealEstateSearchPageState extends State<RealEstateSearchPage> {
                     ),
                   ),
                   Expanded(
-                      child: Padding(
-                    padding: const EdgeInsets.fromLTRB(16, 16, 16, 0),
-                    child: ListView.builder(
-                      itemCount: 10,
-                      itemBuilder: (context, index) {
-                        return Padding(
-                          padding: const EdgeInsets.symmetric(vertical: 12),
-                          child: Row(
-                            children: [
-                              Container(
-                                height: 130,
-                                width: 160,
-                                decoration: BoxDecoration(
-                                  color: Colors.red,
-                                  borderRadius: BorderRadius.circular(8),
+                    child: Padding(
+                      padding: const EdgeInsets.fromLTRB(16, 16, 16, 0),
+                      child: ListView.builder(
+                        itemCount: 10,
+                        itemBuilder: (context, index) {
+                          return Padding(
+                            padding: const EdgeInsets.symmetric(vertical: 12),
+                            child: Row(
+                              children: [
+                                Container(
+                                  height: 130,
+                                  width: 160,
+                                  decoration: BoxDecoration(
+                                    color: Colors.red,
+                                    borderRadius: BorderRadius.circular(8),
+                                    image: DecorationImage(
+                                      image: NetworkImage(
+                                        "https://cdn.pixabay.com/photo/2016/12/30/07/59/kitchen-1940174_960_720.jpg",
+                                      ),
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ),
                                 ),
-                              ),
-                              Expanded(
-                                child: Column(
-                                  children: [],
-                                ),
-                              )
-                            ],
-                          ),
-                        );
-                      },
+                                Expanded(
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      Text("Industrial House"),
+                                      Text("\$302.000"),
+                                      Row(
+                                        children: [
+                                          Icon(Icons.location_on_outlined),
+                                          Text(
+                                            "Baratajaya, Surabaya City, Jawa Timur",
+                                          ),
+                                        ],
+                                      )
+                                    ],
+                                  ),
+                                )
+                              ],
+                            ),
+                          );
+                        },
+                      ),
                     ),
-                  )),
+                  ),
                 ],
               ),
             ),
