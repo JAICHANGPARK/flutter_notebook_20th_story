@@ -66,16 +66,17 @@ class _RealEstateSearchPageState extends State<RealEstateSearchPage> {
                           child: SizedBox(
                             height: 32,
                             child: Container(
-                              color: Colors.blue,
                               child: ListView(
                                 scrollDirection: Axis.horizontal,
                                 children: [
                                   Container(
                                     decoration: BoxDecoration(
                                       borderRadius: BorderRadius.circular(24),
-                                      border: Border.all(),
+                                      border: Border.all(
+                                        color: Colors.grey[400]!
+                                      ),
                                     ),
-                                    padding: EdgeInsets.symmetric(horizontal: 8),
+                                    padding: EdgeInsets.symmetric(horizontal: 12),
                                     child: Row(
                                       children: [
                                         Icon(Icons.filter_list, size: 16,),
