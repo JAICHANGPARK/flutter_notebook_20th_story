@@ -72,19 +72,45 @@ class _RealEstateSearchPageState extends State<RealEstateSearchPage> {
                                   Container(
                                     decoration: BoxDecoration(
                                       borderRadius: BorderRadius.circular(24),
-                                      border: Border.all(
-                                        color: Colors.grey[400]!
-                                      ),
+                                      border: Border.all(color: Colors.grey[400]!),
                                     ),
                                     padding: EdgeInsets.symmetric(horizontal: 12),
                                     child: Row(
                                       children: [
-                                        Icon(Icons.filter_list, size: 16,),
-                                        SizedBox(width: 4,),
+                                        Icon(
+                                          Icons.filter_list,
+                                          size: 16,
+                                        ),
+                                        SizedBox(
+                                          width: 4,
+                                        ),
                                         Text("Sort")
                                       ],
                                     ),
-                                  )
+                                  ),
+                                  Padding(
+                                    padding: EdgeInsets.symmetric(horizontal: 8),
+                                    child:   Container(
+                                      decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.circular(24),
+                                        border: Border.all(color: Colors.grey[400]!),
+                                      ),
+                                      padding: EdgeInsets.symmetric(horizontal: 12),
+                                      child: Row(
+                                        children: [
+                                          Text("Price"),
+                                          SizedBox(
+                                            width: 4,
+                                          ),
+                                          Icon(
+                                            Icons.keyboard_arrow_down_sharp,
+                                            size: 16,
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ),
+
                                 ],
                               ),
                             ),
