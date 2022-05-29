@@ -187,44 +187,56 @@ class _RealEstateSearchPageState extends State<RealEstateSearchPage> {
                                   ),
                                 ),
                                 Expanded(
-                                  child: Column(
-                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                    children: [
-                                      Text("Industrial House"),
-                                      Text("\$302.000"),
-                                      Row(
-                                        children: [
-                                          Icon(Icons.location_on_outlined),
-                                          Expanded(
-                                            child: Text(
-                                              "Baratajaya, Surabaya City, Jawa Timur",
+                                  child: Padding(
+                                    padding: const EdgeInsets.only(left: 16),
+                                    child: Column(
+                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      children: [
+                                        Text(
+                                          "Industrial House",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                          ),
+                                        ),
+                                        Text("\$302.000"),
+                                        SizedBox(
+                                          height: 8,
+                                        ),
+                                        Row(
+                                          children: [
+                                            Icon(Icons.location_on_outlined),
+                                            Expanded(
+                                              child: Text(
+                                                "Baratajaya, Surabaya City, Jawa Timur",
+                                              ),
                                             ),
-                                          ),
-                                        ],
-                                      ),
-                                      Row(
-                                        children: [
-                                          Icon(Icons.room_preferences_sharp),
-                                          Expanded(
-                                            child: Text(
-                                              "345 Sq. M.",
+                                          ],
+                                        ),
+                                        Row(
+                                          children: [
+                                            Icon(Icons.room_preferences_sharp),
+                                            Expanded(
+                                              child: Text(
+                                                "345 Sq. M.",
+                                              ),
                                             ),
-                                          ),
-                                        ],
-                                      ),
-                                      Row(
-                                        children: [
-                                          Icon(Icons.account_circle_outlined),
-                                          Text(
-                                            "Mahmud MD",
-                                          ),
-                                          CircleAvatar(
-                                            radius: 8,
-                                            backgroundColor: Colors.green,
-                                          )
-                                        ],
-                                      )
-                                    ],
+                                          ],
+                                        ),
+                                        Row(
+                                          children: [
+                                            Icon(Icons.account_circle_outlined),
+                                            Text(
+                                              "Mahmud MD",
+                                            ),
+                                            CircleAvatar(
+                                              radius: 8,
+                                              backgroundColor: Colors.green,
+                                            )
+                                          ],
+                                        )
+                                      ],
+                                    ),
                                   ),
                                 )
                               ],
