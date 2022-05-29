@@ -199,16 +199,26 @@ class _RealEstateSearchPageState extends State<RealEstateSearchPage> {
                                             fontWeight: FontWeight.bold,
                                           ),
                                         ),
+                                        SizedBox(
+                                          height: 4,
+                                        ),
                                         Text("\$302.000"),
                                         SizedBox(
                                           height: 8,
                                         ),
                                         Row(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
                                           children: [
-                                            Icon(Icons.location_on_outlined),
+                                            Icon(Icons.location_on_outlined,
+                                            size: 16,),
+                                            SizedBox(width: 4,),
                                             Expanded(
                                               child: Text(
                                                 "Baratajaya, Surabaya City, Jawa Timur",
+                                                style: TextStyle(
+                                                  fontSize: 12,
+                                                  color: Colors.grey
+                                                ),
                                               ),
                                             ),
                                           ],
