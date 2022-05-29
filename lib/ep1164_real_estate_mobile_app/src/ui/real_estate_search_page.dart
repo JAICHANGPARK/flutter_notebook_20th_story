@@ -30,8 +30,11 @@ class _RealEstateSearchPageState extends State<RealEstateSearchPage> {
                           padding: const EdgeInsets.all(16.0),
                           child: Row(
                             children: [
-                              Icon(
-                                Icons.arrow_back,
+                              GestureDetector(
+                                onTap: ()=>Navigator.of(context).pop(),
+                                child: Icon(
+                                  Icons.arrow_back,
+                                ),
                               ),
                               Expanded(
                                 child: Padding(
