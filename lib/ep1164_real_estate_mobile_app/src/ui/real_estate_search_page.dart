@@ -31,7 +31,7 @@ class _RealEstateSearchPageState extends State<RealEstateSearchPage> {
                           child: Row(
                             children: [
                               GestureDetector(
-                                onTap: ()=>Navigator.of(context).pop(),
+                                onTap: () => Navigator.of(context).pop(),
                                 child: Icon(
                                   Icons.arrow_back,
                                 ),
