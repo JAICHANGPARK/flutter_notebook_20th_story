@@ -21,13 +21,17 @@ class _FileManagerHomePageState extends State<FileManagerHomePage> {
               child: Column(
                 children: [
                   SizedBox(height: 64,),
-                  Row(
-                    children: [
-                      CircleAvatar(),
-                      Text("Links"),
-                      Spacer(),
-                      CircleAvatar()
-                    ],
+
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+                    child: Row(
+                      children: [
+                        CircleAvatar(),
+                        Text("Links"),
+                        Spacer(),
+                        CircleAvatar()
+                      ],
+                    ),
                   )
                 ],
               ),
