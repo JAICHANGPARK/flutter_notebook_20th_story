@@ -57,6 +57,11 @@ class _FileManagerHomePageState extends State<FileManagerHomePage> {
           )
         ],
       ),
+      floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.add),
+        backgroundColor: Colors.orange,
+        foregroundColor: Colors.white,
+      ),
       bottomNavigationBar: BottomNavigationBar(
         selectedItemColor: Colors.tealAccent,
         onTap: (idx) {},
