@@ -55,8 +55,11 @@ class _FileManagerHomePageState extends State<FileManagerHomePage> {
               ),
             ),
           ),
+          SizedBox(
+            height: 16,
+          ),
           Padding(
-            padding: const EdgeInsets.all(16.0),
+            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
             child: Container(
               height: 42,
               decoration: BoxDecoration(
@@ -67,7 +70,13 @@ class _FileManagerHomePageState extends State<FileManagerHomePage> {
               ),
               child: TextField(),
             ),
-          )
+          ),
+          Expanded(
+            child: Padding(
+              padding: const EdgeInsets.fromLTRB(16, 8, 16, 0),
+              child: Placeholder(),
+            ),
+          ),
         ],
       ),
       floatingActionButton: FloatingActionButton(
