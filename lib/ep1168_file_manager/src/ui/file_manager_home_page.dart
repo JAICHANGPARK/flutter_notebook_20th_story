@@ -12,7 +12,29 @@ class _FileManagerHomePageState extends State<FileManagerHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Color.fromRGBO(23, 24, 34, 1),
-      body: Column(),
+      body: Column(
+        children: [
+          SizedBox(
+            height: 120,
+            child: Container(
+              color: Color.fromRGBO(38, 44, 73, 1),
+              child: Column(
+                children: [
+                  SizedBox(height: 64,),
+                  Row(
+                    children: [
+                      CircleAvatar(),
+                      Text("Links"),
+                      Spacer(),
+                      CircleAvatar()
+                    ],
+                  )
+                ],
+              ),
+            ),
+          )
+        ],
+      ),
       bottomNavigationBar: BottomNavigationBar(
         selectedItemColor: Colors.tealAccent,
         onTap: (idx) {},
