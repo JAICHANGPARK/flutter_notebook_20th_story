@@ -61,6 +61,9 @@ class _FileManagerHomePageState extends State<FileManagerHomePage> {
         child: Icon(Icons.add),
         backgroundColor: Colors.orange,
         foregroundColor: Colors.white,
+        onPressed: () {
+          
+        },
       ),
       bottomNavigationBar: BottomNavigationBar(
         selectedItemColor: Colors.tealAccent,
