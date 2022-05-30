@@ -63,6 +63,7 @@ class _FileManagerHomePageState extends State<FileManagerHomePage> {
                 border: Border.all(
                   color: Colors.white,
                 ),
+                borderRadius: BorderRadius.circular(4),
               ),
               child: TextField(),
             ),
