@@ -20,14 +20,32 @@ class _FileManagerHomePageState extends State<FileManagerHomePage> {
               color: Color.fromRGBO(38, 44, 73, 1),
               child: Column(
                 children: [
-                  SizedBox(height: 64,),
-
+                  SizedBox(
+                    height: 64,
+                  ),
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
                     child: Row(
                       children: [
-                        CircleAvatar(),
-                        Text("Links"),
+                        // CircleAvatar(
+                        //   backgroundColor: Colors.orange,
+                        // ),
+                        Icon(
+                          Icons.pentagon_outlined,
+                          color: Colors.orange,
+                          size: 38,
+                        ),
+                        SizedBox(
+                          width: 16,
+                        ),
+                        Text(
+                          "Links",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white,
+                            fontSize: 20,
+                          ),
+                        ),
                         Spacer(),
                         CircleAvatar()
                       ],
@@ -44,6 +62,7 @@ class _FileManagerHomePageState extends State<FileManagerHomePage> {
         onTap: (idx) {},
         type: BottomNavigationBarType.fixed,
         backgroundColor: Color.fromRGBO(38, 44, 73, 1),
+        unselectedItemColor: Colors.grey,
         items: [
           BottomNavigationBarItem(
             icon: Icon(Icons.link_rounded),
