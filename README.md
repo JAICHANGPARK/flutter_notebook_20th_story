@@ -1,7 +1,16 @@
 # flutter_notebook_20th_story
 
+### EP1168
 
-### EP1164
+- Mobile App - Files Manager
+- by Awesomic
+- https://dribbble.com/shots/18362901-Mobile-App-Files-Manager
+
+<img
+src="https://cdn.dribbble.com/userupload/2795359/file/original-41a68d8633863e6db81e2379a89d728a.mp4"
+width="400px"/>
+
+### EP1164-1167
 
 - Real Estate Mobile App
 - by Irfan Kurniawan
