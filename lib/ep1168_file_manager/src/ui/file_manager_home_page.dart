@@ -54,6 +54,18 @@ class _FileManagerHomePageState extends State<FileManagerHomePage> {
                 ],
               ),
             ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: Container(
+              height: 42,
+              decoration: BoxDecoration(
+                border: Border.all(
+                  color: Colors.white,
+                ),
+              ),
+              child: TextField(),
+            ),
           )
         ],
       ),
@@ -61,9 +73,7 @@ class _FileManagerHomePageState extends State<FileManagerHomePage> {
         child: Icon(Icons.add),
         backgroundColor: Colors.orange,
         foregroundColor: Colors.white,
-        onPressed: () {
-          
-        },
+        onPressed: () {},
       ),
       bottomNavigationBar: BottomNavigationBar(
         selectedItemColor: Colors.tealAccent,
