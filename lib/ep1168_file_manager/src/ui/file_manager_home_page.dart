@@ -102,6 +102,7 @@ class _FileManagerHomePageState extends State<FileManagerHomePage> {
                       color: Color.fromRGBO(38, 44, 73, 1),
                       borderRadius: BorderRadius.circular(8),
                     ),
+                    padding: EdgeInsets.only(bottom: 16),
                     child: Column(
                       children: [
                         Padding(
@@ -258,10 +259,7 @@ class _FileManagerHomePageState extends State<FileManagerHomePage> {
                               child: Center(
                                 child: Text(
                                   "personal",
-                                  style: TextStyle(
-                                    color: Colors.grey,
-                                    fontSize: 12
-                                  ),
+                                  style: TextStyle(color: Colors.grey, fontSize: 12),
                                 ),
                               ),
                             ),
@@ -272,10 +270,10 @@ class _FileManagerHomePageState extends State<FileManagerHomePage> {
                               ),
                               padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                               child: Center(
-                                child: Text("newyear2021", style: TextStyle(
-    color: Colors.grey,
-    fontSize: 12
-    ),),
+                                child: Text(
+                                  "newyear2021",
+                                  style: TextStyle(color: Colors.grey, fontSize: 12),
+                                ),
                               ),
                             ),
                             Container(
@@ -285,10 +283,10 @@ class _FileManagerHomePageState extends State<FileManagerHomePage> {
                               ),
                               padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                               child: Center(
-                                child: Text("photo", style: TextStyle(
-                                    color: Colors.grey,
-                                    fontSize: 12
-                                ),),
+                                child: Text(
+                                  "photo",
+                                  style: TextStyle(color: Colors.grey, fontSize: 12),
+                                ),
                               ),
                             ),
                             Container(
@@ -296,10 +294,14 @@ class _FileManagerHomePageState extends State<FileManagerHomePage> {
                                 color: Colors.tealAccent,
                                 borderRadius: BorderRadius.circular(16),
                               ),
+                              padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                               child: Center(
-                                child: Text("+3"),
+                                child: Text(
+                                  "+3",
+                                  style: TextStyle(color: Colors.white, fontSize: 12),
+                                ),
                               ),
-                            )
+                            ),
                           ],
                         )
                       ],
