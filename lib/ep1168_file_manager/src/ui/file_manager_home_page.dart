@@ -254,23 +254,41 @@ class _FileManagerHomePageState extends State<FileManagerHomePage> {
                                 color: Color.fromRGBO(23, 24, 34, 1),
                                 borderRadius: BorderRadius.circular(16),
                               ),
+                              padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                               child: Center(
                                 child: Text(
                                   "personal",
                                   style: TextStyle(
                                     color: Colors.grey,
+                                    fontSize: 12
                                   ),
                                 ),
                               ),
                             ),
                             Container(
+                              decoration: BoxDecoration(
+                                color: Color.fromRGBO(23, 24, 34, 1),
+                                borderRadius: BorderRadius.circular(16),
+                              ),
+                              padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                               child: Center(
-                                child: Text("newyear2021"),
+                                child: Text("newyear2021", style: TextStyle(
+    color: Colors.grey,
+    fontSize: 12
+    ),),
                               ),
                             ),
                             Container(
+                              decoration: BoxDecoration(
+                                color: Color.fromRGBO(23, 24, 34, 1),
+                                borderRadius: BorderRadius.circular(16),
+                              ),
+                              padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                               child: Center(
-                                child: Text("photo"),
+                                child: Text("photo", style: TextStyle(
+                                    color: Colors.grey,
+                                    fontSize: 12
+                                ),),
                               ),
                             ),
                             Container(
