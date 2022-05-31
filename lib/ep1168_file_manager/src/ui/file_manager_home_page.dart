@@ -74,10 +74,16 @@ class _FileManagerHomePageState extends State<FileManagerHomePage> {
                   helperStyle: TextStyle(
                     color: Colors.grey,
                   ),
-                  icon: Icon(Icons.search),
+                  icon: Icon(
+                    Icons.search,
+                    color: Colors.grey,
+                  ),
                   iconColor: Colors.grey,
-                  prefixIcon: Icon(Icons.sync_alt),
-                  prefixIconColor: Colors.grey
+                  suffixIcon: Icon(
+                    Icons.sync_alt,
+                    color: Colors.grey,
+                  ),
+                  suffixIconColor: Colors.grey,
                 ),
               ),
             ),
