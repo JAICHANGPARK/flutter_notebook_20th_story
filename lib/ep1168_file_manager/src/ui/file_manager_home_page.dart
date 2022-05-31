@@ -97,20 +97,25 @@ class _FileManagerHomePageState extends State<FileManagerHomePage> {
               child: ListView(
                 children: [
                   Container(
-                    decoration: BoxDecoration(
-                      color:  Color.fromRGBO(38, 44, 73, 1),
-                      borderRadius: BorderRadius.circular(8)
-                    ),
+                    decoration:
+                        BoxDecoration(color: Color.fromRGBO(38, 44, 73, 1), borderRadius: BorderRadius.circular(8)),
                     child: Column(
                       children: [
                         Row(
                           children: [
                             Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text("My New Year Photos"),
                                 Text("Jan 3, 2021, 10:53 PM"),
-                                
                               ],
+                            ),
+                            Spacer(),
+                            IconButton(
+                              onPressed: () {},
+                              icon: Icon(
+                                Icons.favorite,
+                              ),
                             )
                           ],
                         )
