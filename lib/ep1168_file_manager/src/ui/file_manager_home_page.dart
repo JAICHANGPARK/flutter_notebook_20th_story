@@ -180,63 +180,72 @@ class _FileManagerHomePageState extends State<FileManagerHomePage> {
                             ),
                           ),
                         ),
-                        Row(
-                          children: [
-                            CircleAvatar(
-                              radius: 12,
-                              backgroundColor: Color.fromRGBO(23, 24, 34, 1),
-                              child: Icon(
-                                Icons.visibility,
-                                size: 16,
-                                color: Colors.tealAccent,
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 16,
+                          vertical: 8),
+                          child: Row(
+                            children: [
+                              CircleAvatar(
+                                radius: 12,
+                                backgroundColor: Color.fromRGBO(23, 24, 34, 1),
+                                child: Icon(
+                                  Icons.visibility,
+                                  size: 16,
+                                  color: Colors.tealAccent,
+                                ),
                               ),
-                            ),
-                            SizedBox(width: 4,),
-                            Text(
-                              "543",
-                              style: TextStyle(
-                                color: Colors.white,
+                              SizedBox(
+                                width: 4,
                               ),
-                            ),
-                            Spacer(),
-                            CircleAvatar(
-                              radius: 12,
-                              backgroundColor: Color.fromRGBO(23, 24, 34, 1),
-                              child: Icon(
-                                Icons.add_to_drive,
-                                size: 16,
-                                color: Colors.tealAccent,
+                              Text(
+                                "543",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                ),
                               ),
-                            ),
-                            SizedBox(width: 4,),
-                            Text(
-                              "7.4MB",
-                              style: TextStyle(
-                                color: Colors.white,
+                              Spacer(),
+                              CircleAvatar(
+                                radius: 12,
+                                backgroundColor: Color.fromRGBO(23, 24, 34, 1),
+                                child: Icon(
+                                  Icons.add_to_drive,
+                                  size: 16,
+                                  color: Colors.tealAccent,
+                                ),
                               ),
-                            ),
-                            Spacer(),
-                            CircleAvatar(
-                              radius: 12,
-                              backgroundColor: Color.fromRGBO(23, 24, 34, 1),
-                              child: Icon(
-                                Icons.file_copy_outlined,
-                                size: 16,
-                                color: Colors.tealAccent,
+                              SizedBox(
+                                width: 4,
                               ),
-                            ),
-                            SizedBox(width: 4,),
-                            Text(
-                              "1000",
-                              style: TextStyle(
-                                color: Colors.white,
+                              Text(
+                                "7.4MB",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                ),
                               ),
-                            )
-                          ],
+                              Spacer(),
+                              CircleAvatar(
+                                radius: 12,
+                                backgroundColor: Color.fromRGBO(23, 24, 34, 1),
+                                child: Icon(
+                                  Icons.file_copy_outlined,
+                                  size: 16,
+                                  color: Colors.tealAccent,
+                                ),
+                              ),
+                              SizedBox(
+                                width: 4,
+                              ),
+                              Text(
+                                "1000",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                ),
+                              )
+                            ],
+                          ),
                         ),
                         Divider(
                           color: Colors.grey,
-
                         )
                       ],
                     ),
