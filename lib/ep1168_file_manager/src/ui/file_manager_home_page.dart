@@ -95,6 +95,7 @@ class _FileManagerHomePageState extends State<FileManagerHomePage> {
             child: Padding(
               padding: const EdgeInsets.fromLTRB(16, 8, 16, 0),
               child: ListView(
+                padding: EdgeInsets.zero,
                 children: [
                   Container(
                     decoration: BoxDecoration(
@@ -106,7 +107,7 @@ class _FileManagerHomePageState extends State<FileManagerHomePage> {
                         Padding(
                           padding: const EdgeInsets.only(left: 16, top: 8),
                           child: Row(
-                            
+
                             children: [
                               Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
