@@ -191,13 +191,18 @@ class _FileManagerHomePageState extends State<FileManagerHomePage> {
                                 color: Colors.tealAccent,
                               ),
                             ),
+                            SizedBox(width: 4,),
                             Text(
                               "543",
                               style: TextStyle(
-                                color: Colors.grey,
+                                color: Colors.white,
                               ),
                             )
                           ],
+                        ),
+                        Divider(
+                          color: Colors.grey,
+
                         )
                       ],
                     ),
