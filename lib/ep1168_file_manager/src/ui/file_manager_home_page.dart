@@ -103,32 +103,46 @@ class _FileManagerHomePageState extends State<FileManagerHomePage> {
                     ),
                     child: Column(
                       children: [
-                        Row(
-                          children: [
-                            Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text("My New Year Photos"),
-                                Text("Jan 3, 2021, 10:53 PM"),
-                              ],
-                            ),
-                            Spacer(),
-                            IconButton(
-                              onPressed: () {},
-                              icon: Icon(
-                                Icons.favorite,
+                        Padding(
+                          padding: const EdgeInsets.only(left: 16, top: 8),
+                          child: Row(
+                            children: [
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    "My New Year Photos",
+                                    style: TextStyle(
+                                      color: Colors.tealAccent,
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    height: 4,
+                                  ),
+                                  Text(
+                                    "Jan 3, 2021, 10:53 PM",
+                                    style: TextStyle(
+                                      color: Colors.grey,
+                                    ),
+                                  ),
+                                ],
                               ),
-                            )
-                          ],
+                              Spacer(),
+                              IconButton(
+                                onPressed: () {},
+                                icon: Icon(
+                                  Icons.favorite,
+                                ),
+                              )
+                            ],
+                          ),
                         ),
                         Padding(
                           padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                           child: Container(
                             padding: EdgeInsets.symmetric(horizontal: 8, vertical: 12),
                             decoration: BoxDecoration(
-                              color: Color.fromRGBO(23, 24, 34, 1),
-                              borderRadius: BorderRadius.circular(4)
-                            ),
+                                color: Color.fromRGBO(23, 24, 34, 1), borderRadius: BorderRadius.circular(4)),
                             child: Row(
                               children: [
                                 Icon(
