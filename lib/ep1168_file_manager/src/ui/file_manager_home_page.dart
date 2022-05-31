@@ -71,8 +71,13 @@ class _FileManagerHomePageState extends State<FileManagerHomePage> {
               child: TextField(
                 decoration: InputDecoration(
                   hintText: "Search",
+                  helperStyle: TextStyle(
+                    color: Colors.grey,
+                  ),
                   icon: Icon(Icons.search),
-                  prefixIcon: Icon(Icons.sync_alt)
+                  iconColor: Colors.grey,
+                  prefixIcon: Icon(Icons.sync_alt),
+                  prefixIconColor: Colors.grey
                 ),
               ),
             ),
