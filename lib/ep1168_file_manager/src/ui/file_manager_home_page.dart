@@ -107,7 +107,6 @@ class _FileManagerHomePageState extends State<FileManagerHomePage> {
                         Padding(
                           padding: const EdgeInsets.only(left: 16, top: 8),
                           child: Row(
-
                             children: [
                               Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -146,7 +145,9 @@ class _FileManagerHomePageState extends State<FileManagerHomePage> {
                           child: Container(
                             padding: EdgeInsets.symmetric(horizontal: 8, vertical: 12),
                             decoration: BoxDecoration(
-                                color: Color.fromRGBO(23, 24, 34, 1), borderRadius: BorderRadius.circular(4)),
+                              color: Color.fromRGBO(23, 24, 34, 1),
+                              borderRadius: BorderRadius.circular(4),
+                            ),
                             child: Row(
                               children: [
                                 Icon(
@@ -178,6 +179,25 @@ class _FileManagerHomePageState extends State<FileManagerHomePage> {
                               ],
                             ),
                           ),
+                        ),
+                        Row(
+                          children: [
+                            CircleAvatar(
+                              radius: 12,
+                              backgroundColor: Color.fromRGBO(23, 24, 34, 1),
+                              child: Icon(
+                                Icons.visibility,
+                                size: 16,
+                                color: Colors.tealAccent,
+                              ),
+                            ),
+                            Text(
+                              "543",
+                              style: TextStyle(
+                                color: Colors.grey,
+                              ),
+                            )
+                          ],
                         )
                       ],
                     ),
