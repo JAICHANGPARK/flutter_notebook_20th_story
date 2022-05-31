@@ -94,7 +94,31 @@ class _FileManagerHomePageState extends State<FileManagerHomePage> {
           Expanded(
             child: Padding(
               padding: const EdgeInsets.fromLTRB(16, 8, 16, 0),
-              child: Placeholder(),
+              child: ListView(
+                children: [
+                  Container(
+                    decoration: BoxDecoration(
+                      color:  Color.fromRGBO(38, 44, 73, 1),
+                      borderRadius: BorderRadius.circular(8)
+                    ),
+                    child: Column(
+                      children: [
+                        Row(
+                          children: [
+                            Column(
+                              children: [
+                                Text("My New Year Photos"),
+                                Text("Jan 3, 2021, 10:53 PM"),
+                                
+                              ],
+                            )
+                          ],
+                        )
+                      ],
+                    ),
+                  )
+                ],
+              ),
             ),
           ),
         ],
