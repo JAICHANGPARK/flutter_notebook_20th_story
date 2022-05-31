@@ -68,7 +68,13 @@ class _FileManagerHomePageState extends State<FileManagerHomePage> {
                 ),
                 borderRadius: BorderRadius.circular(4),
               ),
-              child: TextField(),
+              child: TextField(
+                decoration: InputDecoration(
+                  hintText: "Search",
+                  icon: Icon(Icons.search),
+                  prefixIcon: Icon(Icons.sync_alt)
+                ),
+              ),
             ),
           ),
           Expanded(
