@@ -292,6 +292,10 @@ class _FileManagerHomePageState extends State<FileManagerHomePage> {
                               ),
                             ),
                             Container(
+                              decoration: BoxDecoration(
+                                color: Colors.tealAccent,
+                                borderRadius: BorderRadius.circular(16),
+                              ),
                               child: Center(
                                 child: Text("+3"),
                               ),
