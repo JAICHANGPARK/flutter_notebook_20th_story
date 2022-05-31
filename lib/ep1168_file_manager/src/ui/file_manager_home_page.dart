@@ -122,11 +122,12 @@ class _FileManagerHomePageState extends State<FileManagerHomePage> {
                           ],
                         ),
                         Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                           child: Container(
-                            padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                            padding: EdgeInsets.symmetric(horizontal: 8, vertical: 12),
                             decoration: BoxDecoration(
                               color: Color.fromRGBO(23, 24, 34, 1),
+                              borderRadius: BorderRadius.circular(4)
                             ),
                             child: Row(
                               children: [
