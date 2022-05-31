@@ -8,6 +8,8 @@ class FileManagerHomePage extends StatefulWidget {
 }
 
 class _FileManagerHomePageState extends State<FileManagerHomePage> {
+  int _btmIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -321,7 +323,9 @@ class _FileManagerHomePageState extends State<FileManagerHomePage> {
       ),
       bottomNavigationBar: BottomNavigationBar(
         selectedItemColor: Colors.tealAccent,
-        onTap: (idx) {},
+        onTap: (idx) {
+          setState(() => _btmIndex = idx);
+        },
         type: BottomNavigationBarType.fixed,
         backgroundColor: Color.fromRGBO(38, 44, 73, 1),
         unselectedItemColor: Colors.grey,
