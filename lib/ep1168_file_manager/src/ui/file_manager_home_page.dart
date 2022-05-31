@@ -68,10 +68,12 @@ class _FileManagerHomePageState extends State<FileManagerHomePage> {
                 ),
                 borderRadius: BorderRadius.circular(4),
               ),
+              padding: EdgeInsets.symmetric(horizontal: 16),
               child: TextField(
                 decoration: InputDecoration(
+                  border: InputBorder.none,
                   hintText: "Search",
-                  helperStyle: TextStyle(
+                  hintStyle: TextStyle(
                     color: Colors.grey,
                   ),
                   icon: Icon(
