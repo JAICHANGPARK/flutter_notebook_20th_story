@@ -181,8 +181,7 @@ class _FileManagerHomePageState extends State<FileManagerHomePage> {
                           ),
                         ),
                         Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 16,
-                          vertical: 8),
+                          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                           child: Row(
                             children: [
                               CircleAvatar(
@@ -248,28 +247,34 @@ class _FileManagerHomePageState extends State<FileManagerHomePage> {
                           color: Colors.grey,
                         ),
                         Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [
                             Container(
-                              child:
-                              Center(
-                                child: Text("personal"),
+                              decoration: BoxDecoration(
+                                color: Color.fromRGBO(23, 24, 34, 1),
+                                borderRadius: BorderRadius.circular(16),
+                              ),
+                              child: Center(
+                                child: Text(
+                                  "personal",
+                                  style: TextStyle(
+                                    color: Colors.grey,
+                                  ),
+                                ),
                               ),
                             ),
                             Container(
-                              child:
-                              Center(
+                              child: Center(
                                 child: Text("newyear2021"),
                               ),
                             ),
                             Container(
-                              child:
-                              Center(
+                              child: Center(
                                 child: Text("photo"),
                               ),
                             ),
                             Container(
-                              child:
-                              Center(
+                              child: Center(
                                 child: Text("+3"),
                               ),
                             )
