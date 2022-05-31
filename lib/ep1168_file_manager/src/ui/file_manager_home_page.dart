@@ -246,6 +246,34 @@ class _FileManagerHomePageState extends State<FileManagerHomePage> {
                         ),
                         Divider(
                           color: Colors.grey,
+                        ),
+                        Row(
+                          children: [
+                            Container(
+                              child:
+                              Center(
+                                child: Text("personal"),
+                              ),
+                            ),
+                            Container(
+                              child:
+                              Center(
+                                child: Text("newyear2021"),
+                              ),
+                            ),
+                            Container(
+                              child:
+                              Center(
+                                child: Text("photo"),
+                              ),
+                            ),
+                            Container(
+                              child:
+                              Center(
+                                child: Text("+3"),
+                              ),
+                            )
+                          ],
                         )
                       ],
                     ),
