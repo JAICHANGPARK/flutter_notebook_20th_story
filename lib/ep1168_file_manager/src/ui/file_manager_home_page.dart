@@ -133,6 +133,7 @@ class _FileManagerHomePageState extends State<FileManagerHomePage> {
                                 icon: Icon(
                                   Icons.favorite,
                                 ),
+                                color: Colors.orange,
                               )
                             ],
                           ),
