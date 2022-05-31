@@ -121,17 +121,43 @@ class _FileManagerHomePageState extends State<FileManagerHomePage> {
                             )
                           ],
                         ),
-                        Container(
-                          decoration: BoxDecoration(
-                            color: Color.fromRGBO(23, 24, 34, 1),
-                          ),
-                          child: Row(
-                            children: [
-                              Icon(Icons.link, color: Colors.grey,),
-                              Text("https://google.com"),
-                              Icon(Icons.copy),
-                              Icon(Icons.share)
-                            ],
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                          child: Container(
+                            padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                            decoration: BoxDecoration(
+                              color: Color.fromRGBO(23, 24, 34, 1),
+                            ),
+                            child: Row(
+                              children: [
+                                Icon(
+                                  Icons.link,
+                                  color: Colors.grey,
+                                ),
+                                SizedBox(
+                                  width: 8,
+                                ),
+                                Text(
+                                  "https://google.com",
+                                  style: TextStyle(
+                                    color: Colors.grey,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                                Spacer(),
+                                Icon(
+                                  Icons.copy,
+                                  color: Colors.tealAccent,
+                                ),
+                                SizedBox(
+                                  width: 16,
+                                ),
+                                Icon(
+                                  Icons.share,
+                                  color: Colors.tealAccent,
+                                ),
+                              ],
+                            ),
                           ),
                         )
                       ],
