@@ -97,8 +97,10 @@ class _FileManagerHomePageState extends State<FileManagerHomePage> {
               child: ListView(
                 children: [
                   Container(
-                    decoration:
-                        BoxDecoration(color: Color.fromRGBO(38, 44, 73, 1), borderRadius: BorderRadius.circular(8)),
+                    decoration: BoxDecoration(
+                      color: Color.fromRGBO(38, 44, 73, 1),
+                      borderRadius: BorderRadius.circular(8),
+                    ),
                     child: Column(
                       children: [
                         Row(
@@ -118,6 +120,19 @@ class _FileManagerHomePageState extends State<FileManagerHomePage> {
                               ),
                             )
                           ],
+                        ),
+                        Container(
+                          decoration: BoxDecoration(
+                            color: Color.fromRGBO(23, 24, 34, 1),
+                          ),
+                          child: Row(
+                            children: [
+                              Icon(Icons.link, color: Colors.grey,),
+                              Text("https://google.com"),
+                              Icon(Icons.copy),
+                              Icon(Icons.share)
+                            ],
+                          ),
                         )
                       ],
                     ),
