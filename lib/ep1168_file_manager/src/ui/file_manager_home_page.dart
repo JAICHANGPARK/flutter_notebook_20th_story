@@ -117,9 +117,10 @@ class _FileManagerHomePageState extends State<FileManagerHomePage> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text(
-                                  "My New Year Photos",
+                                  "Birthday",
                                   style: TextStyle(
-                                    color: Colors.tealAccent,
+                                    color: Colors.white,
+                                    fontSize: 16
                                   ),
                                 ),
                                 SizedBox(
@@ -137,12 +138,51 @@ class _FileManagerHomePageState extends State<FileManagerHomePage> {
                             IconButton(
                               onPressed: () {},
                               icon: Icon(
-                                Icons.favorite,
+                                Icons.favorite_outline,
                               ),
                               color: Colors.orange,
                               iconSize: 18,
                             )
                           ],
+                        ),
+
+                        Container(
+                          margin: EdgeInsets.symmetric(vertical: 8),
+                          padding: EdgeInsets.symmetric(horizontal: 8, vertical: 12),
+                          decoration: BoxDecoration(
+                            color: Color.fromRGBO(23, 24, 34, 1),
+                            borderRadius: BorderRadius.circular(4),
+                          ),
+                          child: Row(
+                            children: [
+                              Icon(
+                                Icons.link,
+                                color: Colors.grey,
+                              ),
+                              SizedBox(
+                                width: 8,
+                              ),
+                              Text(
+                                "https://google.com",
+                                style: TextStyle(
+                                  color: Colors.grey,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              Spacer(),
+                              Icon(
+                                Icons.copy,
+                                color: Colors.tealAccent,
+                              ),
+                              SizedBox(
+                                width: 16,
+                              ),
+                              Icon(
+                                Icons.share,
+                                color: Colors.tealAccent,
+                              ),
+                            ],
+                          ),
                         ),
 
                       ],
