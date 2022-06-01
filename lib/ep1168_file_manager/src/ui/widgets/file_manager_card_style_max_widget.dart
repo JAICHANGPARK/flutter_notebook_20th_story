@@ -1,13 +1,11 @@
-
 import 'package:flutter/material.dart';
-
 
 class FMCardMaxWidget extends StatelessWidget {
   const FMCardMaxWidget({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return   Container(
+    return Container(
       decoration: BoxDecoration(
         color: Color.fromRGBO(38, 44, 73, 1),
         borderRadius: BorderRadius.circular(8),
