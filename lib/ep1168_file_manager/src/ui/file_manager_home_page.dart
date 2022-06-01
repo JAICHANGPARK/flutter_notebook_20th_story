@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'fm_link_page.dart';
-
+import 'widgets/fm_top_bar_widget.dart';
 class FileManagerHomePage extends StatefulWidget {
   const FileManagerHomePage({Key? key}) : super(key: key);
 
@@ -18,47 +18,7 @@ class _FileManagerHomePageState extends State<FileManagerHomePage> {
       backgroundColor: Color.fromRGBO(23, 24, 34, 1),
       body: Column(
         children: [
-          SizedBox(
-            height: 120,
-            child: Container(
-              color: Color.fromRGBO(38, 44, 73, 1),
-              child: Column(
-                children: [
-                  SizedBox(
-                    height: 64,
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
-                    child: Row(
-                      children: [
-                        // CircleAvatar(
-                        //   backgroundColor: Colors.orange,
-                        // ),
-                        Icon(
-                          Icons.pentagon_outlined,
-                          color: Colors.orange,
-                          size: 38,
-                        ),
-                        SizedBox(
-                          width: 16,
-                        ),
-                        Text(
-                          "Links",
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            color: Colors.white,
-                            fontSize: 20,
-                          ),
-                        ),
-                        Spacer(),
-                        CircleAvatar()
-                      ],
-                    ),
-                  )
-                ],
-              ),
-            ),
-          ),
+          FMTopBarWidget(),
           SizedBox(
             height: 16,
           ),
@@ -66,12 +26,27 @@ class _FileManagerHomePageState extends State<FileManagerHomePage> {
             child: IndexedStack(
               index: _btmIndex,
               children: [
-                Expanded(
-                  child: FMLinkPage(),
-                ),
+                
+                FMLinkPage(),
                 Center(
                   child: Text(
                     "Private",
+                    style: TextStyle(
+                      color: Colors.tealAccent,
+                    ),
+                  ),
+                ),
+                Center(
+                  child: Text(
+                    "Public",
+                    style: TextStyle(
+                      color: Colors.tealAccent,
+                    ),
+                  ),
+                ),
+                Center(
+                  child: Text(
+                    "Sites",
                     style: TextStyle(
                       color: Colors.tealAccent,
                     ),
