@@ -116,8 +116,11 @@ class _FileManagerHomePageState extends State<FileManagerHomePage> {
       ),
       bottomNavigationBar: BottomNavigationBar(
         selectedItemColor: Colors.tealAccent,
+        currentIndex: _btmIndex,
         onTap: (idx) {
-          setState(() => _btmIndex = idx);
+          setState(() {
+            _btmIndex = idx;
+          });
         },
         type: BottomNavigationBarType.fixed,
         backgroundColor: Color.fromRGBO(38, 44, 73, 1),
