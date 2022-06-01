@@ -102,6 +102,7 @@ class _FileManagerHomePageState extends State<FileManagerHomePage> {
                 children: [
                   FMCardMaxWidget(),
                   Container(
+                    margin: EdgeInsets.symmetric(vertical: 12),
                     decoration: BoxDecoration(
                       color: Color.fromRGBO(38, 44, 73, 1),
                       borderRadius: BorderRadius.circular(8),
@@ -112,10 +113,37 @@ class _FileManagerHomePageState extends State<FileManagerHomePage> {
                       children: [
                         Row(
                           children: [
-                            Text("Birthdat"),
-                            Text("")
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  "My New Year Photos",
+                                  style: TextStyle(
+                                    color: Colors.tealAccent,
+                                  ),
+                                ),
+                                SizedBox(
+                                  height: 4,
+                                ),
+                                Text(
+                                  "Jan 3, 2021, 10:53 PM",
+                                  style: TextStyle(
+                                    color: Colors.grey,
+                                  ),
+                                ),
+                              ],
+                            ),
+                            Spacer(),
+                            IconButton(
+                              onPressed: () {},
+                              icon: Icon(
+                                Icons.favorite,
+                              ),
+                              color: Colors.orange,
+                              iconSize: 18,
+                            )
                           ],
-                        )
+                        ),
 
                       ],
                     ),
