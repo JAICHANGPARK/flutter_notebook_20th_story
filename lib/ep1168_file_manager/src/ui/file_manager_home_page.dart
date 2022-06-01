@@ -101,6 +101,25 @@ class _FileManagerHomePageState extends State<FileManagerHomePage> {
                 padding: EdgeInsets.zero,
                 children: [
                   FMCardMaxWidget(),
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Color.fromRGBO(38, 44, 73, 1),
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                    padding: EdgeInsets.all(16),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Row(
+                          children: [
+                            Text("Birthdat"),
+                            Text("")
+                          ],
+                        )
+
+                      ],
+                    ),
+                  )
                 ],
               ),
             ),
