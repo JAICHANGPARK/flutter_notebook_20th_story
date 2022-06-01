@@ -118,10 +118,7 @@ class _FileManagerHomePageState extends State<FileManagerHomePage> {
                               children: [
                                 Text(
                                   "Birthday",
-                                  style: TextStyle(
-                                    color: Colors.white,
-                                    fontSize: 16
-                                  ),
+                                  style: TextStyle(color: Colors.white, fontSize: 16),
                                 ),
                                 SizedBox(
                                   height: 4,
@@ -145,7 +142,6 @@ class _FileManagerHomePageState extends State<FileManagerHomePage> {
                             )
                           ],
                         ),
-
                         Container(
                           margin: EdgeInsets.symmetric(vertical: 8),
                           padding: EdgeInsets.symmetric(horizontal: 8, vertical: 12),
@@ -184,7 +180,69 @@ class _FileManagerHomePageState extends State<FileManagerHomePage> {
                             ],
                           ),
                         ),
-
+                        SizedBox(
+                          height:12,
+                        ),
+                        Row(
+                          children: [
+                            CircleAvatar(
+                              radius: 12,
+                              backgroundColor: Color.fromRGBO(23, 24, 34, 1),
+                              child: Icon(
+                                Icons.visibility,
+                                size: 16,
+                                color: Colors.tealAccent,
+                              ),
+                            ),
+                            SizedBox(
+                              width: 4,
+                            ),
+                            Text(
+                              "543",
+                              style: TextStyle(
+                                color: Colors.white,
+                              ),
+                            ),
+                            Spacer(),
+                            CircleAvatar(
+                              radius: 12,
+                              backgroundColor: Color.fromRGBO(23, 24, 34, 1),
+                              child: Icon(
+                                Icons.add_to_drive,
+                                size: 16,
+                                color: Colors.tealAccent,
+                              ),
+                            ),
+                            SizedBox(
+                              width: 4,
+                            ),
+                            Text(
+                              "7.4MB",
+                              style: TextStyle(
+                                color: Colors.white,
+                              ),
+                            ),
+                            Spacer(),
+                            CircleAvatar(
+                              radius: 12,
+                              backgroundColor: Color.fromRGBO(23, 24, 34, 1),
+                              child: Icon(
+                                Icons.file_copy_outlined,
+                                size: 16,
+                                color: Colors.tealAccent,
+                              ),
+                            ),
+                            SizedBox(
+                              width: 4,
+                            ),
+                            Text(
+                              "1000",
+                              style: TextStyle(
+                                color: Colors.white,
+                              ),
+                            )
+                          ],
+                        ),
                       ],
                     ),
                   )
