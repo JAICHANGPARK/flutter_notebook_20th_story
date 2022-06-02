@@ -22,11 +22,11 @@ class _LayrHomePageState extends State<LayrHomePage> {
             label: "Home",
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.home_filled),
+            icon: Icon(Icons.search),
             label: "Home",
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.home_filled),
+            icon: Icon(Icons.person),
             label: "Home",
           ),
 
