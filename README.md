@@ -7,7 +7,7 @@
 - https://dribbble.com/shots/18386932-Layr-App-Concept
 
 <img
-src="https://cdn.dribbble.com/userupload/2795359/file/original-41a68d8633863e6db81e2379a89d728a.mp4"
+src="https://cdn.dribbble.com/userupload/2800684/file/original-fa290e209858c7decfb1705c7f021c91.png?compress=1&resize=1200x902"
 width="400px"/>
 
 ### EP1168-1170
