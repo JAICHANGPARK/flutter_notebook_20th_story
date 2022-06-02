@@ -3,17 +3,11 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 final layrAppBottomIndex = StateProvider((ref) => 0);
 
-class LayrHomePage extends StatefulWidget {
+class LayrHomePage extends ConsumerWidget {
   const LayrHomePage({Key? key}) : super(key: key);
 
   @override
-  State<LayrHomePage> createState() => _LayrHomePageState();
-}
-
-class _LayrHomePageState extends State<LayrHomePage> {
-  
-  @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, ref) {
     return Scaffold(
       bottomNavigationBar: BottomNavigationBar(
         selectedItemColor: Colors.pink,
@@ -35,7 +29,6 @@ class _LayrHomePageState extends State<LayrHomePage> {
             icon: Icon(Icons.person),
             label: "Home",
           ),
-
         ],
       ),
     );
