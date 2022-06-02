@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class LayrHomePage extends StatefulWidget {
   const LayrHomePage({Key? key}) : super(key: key);
 
@@ -11,6 +10,28 @@ class LayrHomePage extends StatefulWidget {
 class _LayrHomePageState extends State<LayrHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      bottomNavigationBar: BottomNavigationBar(
+        items: [
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home_filled),
+            label: "Home",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.album),
+            label: "Home",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home_filled),
+            label: "Home",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home_filled),
+            label: "Home",
+          ),
+
+        ],
+      ),
+    );
   }
 }
