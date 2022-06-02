@@ -8,10 +8,13 @@ class LayrHomePage extends StatefulWidget {
 }
 
 class _LayrHomePageState extends State<LayrHomePage> {
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       bottomNavigationBar: BottomNavigationBar(
+        selectedItemColor: Colors.pink,
+        unselectedItemColor: Colors.grey,
         items: [
           BottomNavigationBarItem(
             icon: Icon(Icons.home_filled),
