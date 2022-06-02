@@ -8,8 +8,11 @@ class LayrHomePage extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, ref) {
+    final index = ref.watch(layrAppBottomIndex);
     return Scaffold(
       bottomNavigationBar: BottomNavigationBar(
+        currentIndex: index,
+        onTap: (idx) => ref.read(layrAppBottomIndex.notifier).state = idx,
         selectedItemColor: Colors.pink,
         unselectedItemColor: Colors.grey,
         items: [
