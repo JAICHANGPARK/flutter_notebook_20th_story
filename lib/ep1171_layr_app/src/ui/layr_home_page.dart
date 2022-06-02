@@ -15,6 +15,7 @@ class LayrHomePage extends ConsumerWidget {
         onTap: (idx) => ref.read(layrAppBottomIndex.notifier).state = idx,
         selectedItemColor: Colors.pink,
         unselectedItemColor: Colors.grey,
+        type: BottomNavigationBarType.fixed,
         items: [
           BottomNavigationBarItem(
             icon: Icon(Icons.home_filled),
