@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+
+final layrAppBottomIndex = StateProvider((ref) => 0);
 
 class LayrHomePage extends StatefulWidget {
   const LayrHomePage({Key? key}) : super(key: key);
