@@ -46,7 +46,7 @@ class _LayrProfilePageState extends State<LayrProfilePage> {
             color: Colors.grey,
           ),
           SizedBox(
-            height: MediaQuery.of(context).size.height / 3,
+            height: MediaQuery.of(context).size.height / 3.8,
             child: Stack(
               children: [
                 Positioned(
@@ -59,7 +59,12 @@ class _LayrProfilePageState extends State<LayrProfilePage> {
                   ),
                 ),
                 Positioned(
+                  left: 16,
+                  top: 16,
+                  bottom: 16,
+                  right: 16,
                   child: Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
                       CircleAvatar(
                         radius: 48,
