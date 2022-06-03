@@ -9,20 +9,22 @@ class LayrAppHomeStack extends ConsumerWidget {
   @override
   Widget build(BuildContext context, ref) {
     final idx = ref.watch(layrAppBottomIndex);
-    return IndexedStack(
-      index: idx,
-      children: [
-        Center(
-          child: Text("Page1"),
-        ),
-        Center(
-          child: Text("Page2"),
-        ),
-        Center(
-          child: Text("Page3"),
-        ),
-        LayrProfilePage(),
-      ],
+    return SafeArea(
+      child: IndexedStack(
+        index: idx,
+        children: [
+          Center(
+            child: Text("Page1"),
+          ),
+          Center(
+            child: Text("Page2"),
+          ),
+          Center(
+            child: Text("Page3"),
+          ),
+          LayrProfilePage(),
+        ],
+      ),
     );
   }
 }
