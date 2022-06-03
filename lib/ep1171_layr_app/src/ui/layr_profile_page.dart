@@ -15,7 +15,7 @@ class _LayrProfilePageState extends State<LayrProfilePage> {
       child: Column(
         children: [
           SizedBox(
-            height: 48,
+            height: 52,
             child: Padding(
               padding: const EdgeInsets.all(8.0),
               child: Row(
@@ -24,8 +24,9 @@ class _LayrProfilePageState extends State<LayrProfilePage> {
                   Expanded(
                       child: Center(
                     child: Icon(
-                      Icons.library_music,
+                      Icons.library_music_outlined,
                       color: Colors.pink,
+                      size: 32,
                     ),
                   )),
                   Expanded(
@@ -80,31 +81,29 @@ class _LayrProfilePageState extends State<LayrProfilePage> {
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Text("Listens", style: TextStyle(
-                                fontSize: 14,
-                                fontWeight: FontWeight.bold,
-                                color: Colors.grey
-                            ),),
-                            SizedBox(width: 8,),
-                            Text("4,321", style: TextStyle(
-                              fontSize: 16,
-                              fontWeight: FontWeight.bold,
-                              color: Colors.pink
-                            ),),
+                            Text(
+                              "Listens",
+                              style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold, color: Colors.grey),
+                            ),
+                            SizedBox(
+                              width: 8,
+                            ),
+                            Text(
+                              "4,321",
+                              style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold, color: Colors.pink),
+                            ),
                             VerticalDivider(
                               color: Colors.grey,
                             ),
-                            Text("Followers", style: TextStyle(
-                                fontSize: 14,
-                                fontWeight: FontWeight.bold,
-                                color: Colors.grey
-                            )),
-                            SizedBox(width: 8,),
-                            Text("346", style: TextStyle(
-                                fontSize: 16,
-                                fontWeight: FontWeight.bold,
-                                color: Colors.pink
-                            ),),
+                            Text("Followers",
+                                style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold, color: Colors.grey)),
+                            SizedBox(
+                              width: 8,
+                            ),
+                            Text(
+                              "346",
+                              style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold, color: Colors.pink),
+                            ),
                           ],
                         ),
                       )
@@ -136,7 +135,21 @@ class _LayrProfilePageState extends State<LayrProfilePage> {
               child: TabBarView(
             children: [
               Container(),
-              Container(),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: ListView.builder(
+                    itemCount: 10,
+                    itemBuilder: (context, index) {
+                      return SizedBox(
+                        height: 120,
+                        child: Card(
+                          child: Column(
+                            children: [],
+                          ),
+                        ),
+                      );
+                    }),
+              ),
             ],
           ))
         ],
