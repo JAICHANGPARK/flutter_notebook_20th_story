@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_20th_story/ep1171_layr_app/src/ui/layr_profile_page.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../layr_home_page.dart';
 
@@ -20,9 +21,7 @@ class LayrAppHomeStack extends ConsumerWidget {
         Center(
           child: Text("Page3"),
         ),
-        Center(
-          child: Text("Page4"),
-        )
+        LayrProfilePage(),
       ],
     );
   }
