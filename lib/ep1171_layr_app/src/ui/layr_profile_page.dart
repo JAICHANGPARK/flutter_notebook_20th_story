@@ -16,6 +16,15 @@ class _LayrProfilePageState extends State<LayrProfilePage> {
         children: [
           SizedBox(
             height: MediaQuery.of(context).size.height / 2.2,
+            child: Stack(
+              children: [
+                Positioned(child: IconButton(
+                  onPressed: (){},
+                  icon: Icon(Icons.more_horiz),
+                  color: Colors.pink,
+                ))
+              ],
+            ),
           ),
           TabBar(
             tabs: [
