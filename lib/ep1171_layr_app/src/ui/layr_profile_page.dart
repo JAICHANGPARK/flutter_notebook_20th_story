@@ -17,12 +17,24 @@ class _LayrProfilePageState extends State<LayrProfilePage> {
           SizedBox(
             height: MediaQuery.of(context).size.height / 2.2,
           ),
-          TabBar(tabs: []),
+          TabBar(
+            tabs: [
+              Tab(
+                text: "Layrs",
+              ),
+              Tab(
+                text: "Collaborations",
+              ),
+            ],
+            indicatorColor: Colors.pink,
+            indicatorWeight: 4,
+          ),
           Divider(
             height: 0,
             color: Colors.grey,
           ),
-          Expanded(child: TabBarView(
+          Expanded(
+              child: TabBarView(
             children: [
               Container(),
               Container(),
