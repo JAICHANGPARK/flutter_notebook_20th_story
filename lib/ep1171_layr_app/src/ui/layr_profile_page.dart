@@ -31,8 +31,10 @@ class _LayrProfilePageState extends State<LayrProfilePage> {
                   Expanded(
                     child: Align(
                       alignment: Alignment.centerRight,
-                      child: Icon(Icons.notifications_active_outlined,
-                        color: Colors.pink,),
+                      child: Icon(
+                        Icons.notifications_active_outlined,
+                        color: Colors.pink,
+                      ),
                     ),
                   ),
                 ],
@@ -49,17 +51,41 @@ class _LayrProfilePageState extends State<LayrProfilePage> {
               children: [
                 Positioned(
                   right: 8,
-                    top: 8,
-                    child: IconButton(
-                  onPressed: () {},
-                  icon: Icon(Icons.more_horiz),
-                  color: Colors.pink,
-                ))
+                  top: 8,
+                  child: IconButton(
+                    onPressed: () {},
+                    icon: Icon(Icons.more_horiz),
+                    color: Colors.pink,
+                  ),
+                ),
+                Positioned(
+                  child: Column(
+                    children: [
+                      CircleAvatar(
+                        radius: 48,
+                      ),
+                      Text("Dreamwalker"),
+                      IntrinsicHeight(
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Text("Listens"),
+                            Text("4,321"),
+                            VerticalDivider(
+                              color: Colors.grey,
+                            ),
+                            Text("Followers"),
+                            Text("346"),
+                          ],
+                        ),
+                      )
+                    ],
+                  ),
+                )
               ],
             ),
           ),
           TabBar(
-
             tabs: [
               Tab(
                 text: "Layrs",
