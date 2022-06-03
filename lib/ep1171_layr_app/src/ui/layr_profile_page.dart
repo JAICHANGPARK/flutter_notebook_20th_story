@@ -69,13 +69,24 @@ class _LayrProfilePageState extends State<LayrProfilePage> {
                       CircleAvatar(
                         radius: 48,
                       ),
-                      Text("Dreamwalker"),
+                      Text(
+                        "Dreamwalker",
+                        style: TextStyle(
+                          fontSize: 24,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
                       IntrinsicHeight(
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Text("Listens"),
-                            Text("4,321"),
+                            SizedBox(width: 8,),
+                            Text("4,321", style: TextStyle(
+                              fontSize: 16,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.pink
+                            ),),
                             VerticalDivider(
                               color: Colors.grey,
                             ),
