@@ -11,8 +11,18 @@ class LayrAppHomeStack extends ConsumerWidget {
     return IndexedStack(
       index: idx,
       children: [
-
-
+        Center(
+          child: Text("Page1"),
+        ),
+        Center(
+          child: Text("Page2"),
+        ),
+        Center(
+          child: Text("Page3"),
+        ),
+        Center(
+          child: Text("Page4"),
+        )
       ],
     );
   }
