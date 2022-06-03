@@ -24,7 +24,7 @@ class _LayrProfilePageState extends State<LayrProfilePage> {
                   Expanded(
                       child: Center(
                     child: Icon(
-                      Icons.playlist_add,
+                      Icons.library_music,
                       color: Colors.pink,
                     ),
                   )),
@@ -80,7 +80,11 @@ class _LayrProfilePageState extends State<LayrProfilePage> {
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Text("Listens"),
+                            Text("Listens", style: TextStyle(
+                                fontSize: 14,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.grey
+                            ),),
                             SizedBox(width: 8,),
                             Text("4,321", style: TextStyle(
                               fontSize: 16,
@@ -90,8 +94,17 @@ class _LayrProfilePageState extends State<LayrProfilePage> {
                             VerticalDivider(
                               color: Colors.grey,
                             ),
-                            Text("Followers"),
-                            Text("346"),
+                            Text("Followers", style: TextStyle(
+                                fontSize: 14,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.grey
+                            )),
+                            SizedBox(width: 8,),
+                            Text("346", style: TextStyle(
+                                fontSize: 16,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.pink
+                            ),),
                           ],
                         ),
                       )
