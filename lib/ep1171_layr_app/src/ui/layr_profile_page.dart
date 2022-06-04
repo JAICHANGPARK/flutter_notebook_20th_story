@@ -106,6 +106,9 @@ class _LayrProfilePageState extends State<LayrProfilePage> {
                     children: [
                       CircleAvatar(
                         radius: 48,
+                        backgroundImage: NetworkImage(
+                          "https://cdn.pixabay.com/photo/2015/09/18/00/24/robin-944887__340.jpg",
+                        ),
                       ),
                       Text(
                         "Dreamwalker",
