@@ -173,7 +173,7 @@ class _LayrProfilePageState extends State<LayrProfilePage> {
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: ListView.builder(
-                    itemCount: 10,
+                    itemCount: collabItems.length ,
                     itemBuilder: (context, index) {
                       return SizedBox(
                         height: 120,
@@ -187,10 +187,19 @@ class _LayrProfilePageState extends State<LayrProfilePage> {
                                     Column(
                                       crossAxisAlignment: CrossAxisAlignment.start,
                                       children: [
-                                        Text("${collabItems[index].title}", style: TextStyle(
-                                          
-                                        ),),
-                                        Text("${collabItems[index].duration} | ${collabItems[index].datatime}"),
+                                        Text(
+                                          "${collabItems[index].title}",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                          ),
+                                        ),
+                                        SizedBox(
+                                          height: 4,
+                                        ),
+                                        Text(
+                                          "${collabItems[index].duration} | ${collabItems[index].datatime}",
+                                          style: TextStyle(color: Colors.grey, fontSize: 12),
+                                        ),
                                       ],
                                     ),
                                     Spacer(),
@@ -199,12 +208,29 @@ class _LayrProfilePageState extends State<LayrProfilePage> {
                                             children: [
                                               CircleAvatar(
                                                 radius: 18,
+                                                backgroundImage: NetworkImage(
+                                                  collabItems?[index]?.profileImages?[0] ?? "",
+                                                ),
+                                              ),
+                                              SizedBox(
+                                                width: 4,
                                               ),
                                               CircleAvatar(
                                                 radius: 18,
+                                                backgroundImage: NetworkImage(
+                                                  collabItems?[index]?.profileImages?[1] ?? "",
+                                                ),
+                                              ),
+                                              SizedBox(
+                                                width: 4,
                                               ),
                                               CircleAvatar(
                                                 radius: 18,
+                                                backgroundColor: Colors.pink,
+                                                foregroundColor: Colors.white,
+                                                child: Text(
+                                                  "+${(collabItems[index].profileImages?.length ?? 2) - 2}",
+                                                ),
                                               ),
                                             ],
                                           )
