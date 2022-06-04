@@ -178,42 +178,48 @@ class _LayrProfilePageState extends State<LayrProfilePage> {
                       return SizedBox(
                         height: 120,
                         child: Card(
-                          child: Column(
-                            children: [
-                              Row(
-                                children: [
-                                  Column(
-                                    children: [
-                                      Text("${collabItems[index].title}"),
-                                      Text("${collabItems[index].duration} | ${collabItems[index].datatime}"),
-                                    ],
-                                  ),
-                                  Spacer(),
-                                  (collabItems[index].profileImages?.length ?? 0) > 1
-                                      ? Row(
-                                          children: [
-                                            CircleAvatar(
-                                              radius: 18,
-                                            ),
-                                            CircleAvatar(
-                                              radius: 18,
-                                            ),
-                                            CircleAvatar(
-                                              radius: 18,
-                                            ),
-                                          ],
-                                        )
-                                      : CircleAvatar(
-                                          radius: 18,
-                                        ),
-                                  IconButton(
-                                    onPressed: () {},
-                                    icon: Icon(Icons.more_horiz),
-                                    color: Colors.pink,
-                                  )
-                                ],
-                              ),
-                            ],
+                          child: Padding(
+                            padding: EdgeInsets.all(8),
+                            child: Column(
+                              children: [
+                                Row(
+                                  children: [
+                                    Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      children: [
+                                        Text("${collabItems[index].title}", style: TextStyle(
+                                          
+                                        ),),
+                                        Text("${collabItems[index].duration} | ${collabItems[index].datatime}"),
+                                      ],
+                                    ),
+                                    Spacer(),
+                                    (collabItems[index].profileImages?.length ?? 0) > 1
+                                        ? Row(
+                                            children: [
+                                              CircleAvatar(
+                                                radius: 18,
+                                              ),
+                                              CircleAvatar(
+                                                radius: 18,
+                                              ),
+                                              CircleAvatar(
+                                                radius: 18,
+                                              ),
+                                            ],
+                                          )
+                                        : CircleAvatar(
+                                            radius: 18,
+                                          ),
+                                    IconButton(
+                                      onPressed: () {},
+                                      icon: Icon(Icons.more_horiz),
+                                      color: Colors.pink,
+                                    )
+                                  ],
+                                ),
+                              ],
+                            ),
                           ),
                         ),
                       );
