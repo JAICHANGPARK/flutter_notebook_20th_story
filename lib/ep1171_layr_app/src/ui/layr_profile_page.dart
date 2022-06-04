@@ -260,6 +260,7 @@ class _LayrProfilePageState extends State<LayrProfilePage> {
                                       child: SizedBox(
                                         height: 32,
                                         child: Row(
+                                          crossAxisAlignment: CrossAxisAlignment.end,
                                           children: List.generate(100, (index) => Container(
                                             height: Random().nextInt(16) + 4,
                                             width: 2,
