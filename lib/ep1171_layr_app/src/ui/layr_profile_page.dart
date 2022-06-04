@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_notebook_20th_story/ep1171_layr_app/src/model/collaboration.dart';
 
@@ -249,8 +251,25 @@ class _LayrProfilePageState extends State<LayrProfilePage> {
                                 ),
                                 Row(
                                   children: [
-                                    IconButton(onPressed: (){}, icon: Icon(Icons.play_arrow),color: Colors.pink,),
-                                    Expanded(child: Placeholder()),
+                                    IconButton(
+                                      onPressed: () {},
+                                      icon: Icon(Icons.play_arrow),
+                                      color: Colors.pink,
+                                    ),
+                                    Expanded(
+                                      child: SizedBox(
+                                        height: 32,
+                                        child: Row(
+                                          children: List.generate(100, (index) => Container(
+                                            height: Random().nextInt(16) + 4,
+                                            width: 2,
+                                            decoration: BoxDecoration(
+                                              color: Colors.grey
+                                            ),
+                                          )),
+                                        ),
+                                      ),
+                                    ),
                                   ],
                                 )
                               ],
