@@ -173,7 +173,7 @@ class _LayrProfilePageState extends State<LayrProfilePage> {
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: ListView.builder(
-                    itemCount: collabItems.length ,
+                    itemCount: collabItems.length,
                     itemBuilder: (context, index) {
                       return SizedBox(
                         height: 120,
@@ -236,6 +236,9 @@ class _LayrProfilePageState extends State<LayrProfilePage> {
                                           )
                                         : CircleAvatar(
                                             radius: 18,
+                                            backgroundImage: NetworkImage(
+                                              collabItems?[index]?.profileImages?[0] ?? "",
+                                            ),
                                           ),
                                     IconButton(
                                       onPressed: () {},
@@ -244,6 +247,12 @@ class _LayrProfilePageState extends State<LayrProfilePage> {
                                     )
                                   ],
                                 ),
+                                Row(
+                                  children: [
+                                    IconButton(onPressed: (){}, icon: Icon(Icons.play_arrow),color: Colors.pink,),
+                                    Expanded(child: Placeholder()),
+                                  ],
+                                )
                               ],
                             ),
                           ),
