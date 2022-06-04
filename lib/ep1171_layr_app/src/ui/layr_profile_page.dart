@@ -250,6 +250,7 @@ class _LayrProfilePageState extends State<LayrProfilePage> {
                                   ],
                                 ),
                                 Row(
+                                  crossAxisAlignment: CrossAxisAlignment.center,
                                   children: [
                                     IconButton(
                                       onPressed: () {},
