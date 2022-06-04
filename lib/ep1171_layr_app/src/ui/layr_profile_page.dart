@@ -20,10 +20,6 @@ List<Collaboration> collabItems = [
     duration: "12 sec",
     profileImages: [
       "https://cdn.pixabay.com/photo/2015/09/18/00/24/robin-944887__340.jpg",
-      // "https://cdn.pixabay.com/photo/2016/11/22/21/42/woman-1850703__340.jpg",
-      // "https://cdn.pixabay.com/photo/2019/11/03/20/11/portrait-4599553__340.jpg",
-      // "https://cdn.pixabay.com/photo/2016/11/29/06/08/woman-1867715__340.jpg",
-      // "https://cdn.pixabay.com/photo/2017/07/10/11/28/bulldog-2489829__340.jpg",
     ],
   ),
   Collaboration(
@@ -35,7 +31,6 @@ List<Collaboration> collabItems = [
       "https://cdn.pixabay.com/photo/2016/11/22/21/42/woman-1850703__340.jpg",
       "https://cdn.pixabay.com/photo/2019/11/03/20/11/portrait-4599553__340.jpg",
       "https://cdn.pixabay.com/photo/2016/11/29/06/08/woman-1867715__340.jpg",
-      // "https://cdn.pixabay.com/photo/2017/07/10/11/28/bulldog-2489829__340.jpg",
     ],
   )
 ];
@@ -184,7 +179,41 @@ class _LayrProfilePageState extends State<LayrProfilePage> {
                         height: 120,
                         child: Card(
                           child: Column(
-                            children: [],
+                            children: [
+                              Row(
+                                children: [
+                                  Column(
+                                    children: [
+                                      Text("${collabItems[index].title}"),
+                                      Text("${collabItems[index].duration} | ${collabItems[index].datatime}"),
+                                    ],
+                                  ),
+                                  Spacer(),
+                                  (collabItems[index].profileImages?.length ?? 0) > 1
+                                      ? Row(
+                                          children: [
+                                            CircleAvatar(
+                                              radius: 18,
+                                            ),
+                                            CircleAvatar(
+                                              radius: 18,
+                                            ),
+                                            CircleAvatar(
+                                              radius: 18,
+                                            ),
+                                          ],
+                                        )
+                                      : CircleAvatar(
+                                          radius: 18,
+                                        ),
+                                  IconButton(
+                                    onPressed: () {},
+                                    icon: Icon(Icons.more_horiz),
+                                    color: Colors.pink,
+                                  )
+                                ],
+                              ),
+                            ],
                           ),
                         ),
                       );
