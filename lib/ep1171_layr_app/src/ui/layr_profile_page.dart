@@ -1,4 +1,44 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_20th_story/ep1171_layr_app/src/model/collaboration.dart';
+
+List<Collaboration> collabItems = [
+  Collaboration(
+    title: "Purposely Untitled",
+    datatime: "4/17/2022",
+    duration: "30 sec",
+    profileImages: [
+      "https://cdn.pixabay.com/photo/2015/09/18/00/24/robin-944887__340.jpg",
+      "https://cdn.pixabay.com/photo/2016/11/22/21/42/woman-1850703__340.jpg",
+      "https://cdn.pixabay.com/photo/2019/11/03/20/11/portrait-4599553__340.jpg",
+      "https://cdn.pixabay.com/photo/2016/11/29/06/08/woman-1867715__340.jpg",
+      "https://cdn.pixabay.com/photo/2017/07/10/11/28/bulldog-2489829__340.jpg",
+    ],
+  ),
+  Collaboration(
+    title: "Early Morning Echo",
+    datatime: "4/17/2022",
+    duration: "12 sec",
+    profileImages: [
+      "https://cdn.pixabay.com/photo/2015/09/18/00/24/robin-944887__340.jpg",
+      // "https://cdn.pixabay.com/photo/2016/11/22/21/42/woman-1850703__340.jpg",
+      // "https://cdn.pixabay.com/photo/2019/11/03/20/11/portrait-4599553__340.jpg",
+      // "https://cdn.pixabay.com/photo/2016/11/29/06/08/woman-1867715__340.jpg",
+      // "https://cdn.pixabay.com/photo/2017/07/10/11/28/bulldog-2489829__340.jpg",
+    ],
+  ),
+  Collaboration(
+    title: "Tuesday Jam Sesh",
+    datatime: "4/17/2022",
+    duration: "27 sec",
+    profileImages: [
+      "https://cdn.pixabay.com/photo/2015/09/18/00/24/robin-944887__340.jpg",
+      "https://cdn.pixabay.com/photo/2016/11/22/21/42/woman-1850703__340.jpg",
+      "https://cdn.pixabay.com/photo/2019/11/03/20/11/portrait-4599553__340.jpg",
+      "https://cdn.pixabay.com/photo/2016/11/29/06/08/woman-1867715__340.jpg",
+      // "https://cdn.pixabay.com/photo/2017/07/10/11/28/bulldog-2489829__340.jpg",
+    ],
+  )
+];
 
 class LayrProfilePage extends StatefulWidget {
   const LayrProfilePage({Key? key}) : super(key: key);
