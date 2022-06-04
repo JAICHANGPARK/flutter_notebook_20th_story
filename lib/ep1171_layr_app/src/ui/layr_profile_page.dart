@@ -261,11 +261,14 @@ class _LayrProfilePageState extends State<LayrProfilePage> {
                                         height: 32,
                                         child: Row(
                                           crossAxisAlignment: CrossAxisAlignment.end,
-                                          children: List.generate(100, (index) => Container(
-                                            height: Random().nextInt(16) + 4,
-                                            width: 2,
-                                            decoration: BoxDecoration(
-                                              color: Colors.grey
+                                          children: List.generate(100, (index) => Padding(
+                                            padding: const EdgeInsets.only(right: 1),
+                                            child: Container(
+                                              height: Random().nextInt(16) + 4,
+                                              width: 2,
+                                              decoration: BoxDecoration(
+                                                color: Colors.grey
+                                              ),
                                             ),
                                           )),
                                         ),
