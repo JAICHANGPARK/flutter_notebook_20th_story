@@ -12,6 +12,9 @@ class _CosmeticsHomePageState extends State<CosmeticsHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        foregroundColor: Colors.black,
+        backgroundColor: Colors.white,
+        elevation: 1,
         title: Icon(Icons.search),
         centerTitle: true,
         leading: Icon(
