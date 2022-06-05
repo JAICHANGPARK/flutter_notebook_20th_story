@@ -21,7 +21,23 @@ class _CosmeticsHomePageState extends State<CosmeticsHomePage> {
           Icons.menu,
         ),
         actions: [
-          IconButton(onPressed: () {}, icon: Icon(Icons.shopping_basket_outlined)),
+          IconButton(
+            onPressed: () {},
+            icon: Icon(
+              Icons.shopping_basket_outlined,
+            ),
+          ),
+        ],
+      ),
+      body: Column(
+        children: [
+          SizedBox(
+            height: 64,
+            child: ListView.builder(
+              itemBuilder: (context, index) {},
+            ),
+          ),
+          Expanded(child: Placeholder()),
         ],
       ),
     );
