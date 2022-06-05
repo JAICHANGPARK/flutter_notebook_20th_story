@@ -45,9 +45,20 @@ class _CosmeticsHomePageState extends State<CosmeticsHomePage> {
           SizedBox(
             height: 64,
             child: ListView.builder(
+              itemCount: cosmeticsMenuItems.length,
               scrollDirection: Axis.horizontal,
               itemBuilder: (context, index) {
-                return Container();
+                return Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(4),
+                    border: Border.all(
+                      color: Colors.grey,
+                    ),
+                  ),
+                  child: Center(
+                    child: Text(cosmeticsMenuItems[index].title ?? ""),
+                  ),
+                );
               },
             ),
           ),
