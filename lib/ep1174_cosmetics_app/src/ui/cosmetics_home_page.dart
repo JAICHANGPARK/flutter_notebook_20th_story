@@ -39,7 +39,7 @@ class _CosmeticsHomePageState extends ConsumerState<CosmeticsHomePage> {
         // ),
         actions: [
           IconButton(
-            onPressed: () {},
+            onPressed: ripi() {},
             icon: Icon(
               Icons.shopping_basket_outlined,
             ),
@@ -49,7 +49,7 @@ class _CosmeticsHomePageState extends ConsumerState<CosmeticsHomePage> {
       body: Column(
         children: [
           Padding(
-            padding: const EdgeInsets.symmetric(vertical: 16),
+            padding: const EdgeInsets.fromLTRB(12, 12, 0, 12),
             child: SizedBox(
               height: 42,
               child: ListView.builder(
@@ -57,7 +57,6 @@ class _CosmeticsHomePageState extends ConsumerState<CosmeticsHomePage> {
                 itemCount: cosmeticsMenuItems.length,
                 scrollDirection: Axis.horizontal,
                 itemBuilder: (context, index) {
-
                   return Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 8),
                     child: GestureDetector(
@@ -88,7 +87,8 @@ class _CosmeticsHomePageState extends ConsumerState<CosmeticsHomePage> {
               ),
             ),
           ),
-          Expanded(child: IndexedStack(
+          Expanded(
+              child: IndexedStack(
             index: sIndex,
             children: [
               Container(
