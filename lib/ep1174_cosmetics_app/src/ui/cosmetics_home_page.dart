@@ -34,7 +34,10 @@ class _CosmeticsHomePageState extends State<CosmeticsHomePage> {
           SizedBox(
             height: 64,
             child: ListView.builder(
-              itemBuilder: (context, index) {},
+              scrollDirection: Axis.horizontal,
+              itemBuilder: (context, index) {
+                return  Container();
+              },
             ),
           ),
           Expanded(child: Placeholder()),
