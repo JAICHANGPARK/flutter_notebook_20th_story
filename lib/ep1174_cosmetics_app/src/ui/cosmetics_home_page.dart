@@ -1,5 +1,16 @@
 import 'package:flutter/material.dart';
 
+class CosmeticMenu {
+  int? index;
+  String? title;
+
+  CosmeticMenu({this.index, this.title});
+}
+
+List<String> titles = ["Kids", "Woman", "Cream", "Face Wash"];
+List<CosmeticMenu> cosmeticsMenuItems =
+    List.generate(titles.length, (idx) => CosmeticMenu(index: idx, title: titles[idx]));
+
 class CosmeticsHomePage extends StatefulWidget {
   const CosmeticsHomePage({Key? key}) : super(key: key);
 
@@ -36,7 +47,7 @@ class _CosmeticsHomePageState extends State<CosmeticsHomePage> {
             child: ListView.builder(
               scrollDirection: Axis.horizontal,
               itemBuilder: (context, index) {
-                return  Container();
+                return Container();
               },
             ),
           ),
