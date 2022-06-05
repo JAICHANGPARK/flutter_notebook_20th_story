@@ -3,7 +3,9 @@ import 'package:flutter_notebook_20th_story/ep1174_cosmetics_app/cosmetics_app.d
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 main() {
-  runApp(ProviderScope(
-    child: CosmeticsApp(),
-  ));
+  runApp(
+    ProviderScope(
+      child: CosmeticsApp(),
+    ),
+  );
 }
