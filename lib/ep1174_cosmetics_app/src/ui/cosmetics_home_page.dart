@@ -10,6 +10,17 @@ class CosmeticsHomePage extends StatefulWidget {
 class _CosmeticsHomePageState extends State<CosmeticsHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(
+        title: Icon(Icons.search),
+        centerTitle: true,
+        leading: Icon(
+          Icons.menu,
+        ),
+        actions: [
+          IconButton(onPressed: () {}, icon: Icon(Icons.shopping_basket_outlined)),
+        ],
+      ),
+    );
   }
 }
