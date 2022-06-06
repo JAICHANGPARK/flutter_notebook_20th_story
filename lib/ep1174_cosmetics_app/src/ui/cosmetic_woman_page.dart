@@ -14,17 +14,21 @@ class _CosmeticWomanPageState extends State<CosmeticWomanPage> {
       child: Column(
         children: [
           Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
                 "Popular",
                 style: TextStyle(
-                  fontSize: 20,
+                  fontSize: 24,
                   fontWeight: FontWeight.bold,
                 ),
               ),
               TextButton(
                 onPressed: () {},
                 child: Text("See all"),
+                style: TextButton.styleFrom(
+                  primary:  Color.fromRGBO(45, 58, 33, 1)
+                ),
               )
             ],
           )
