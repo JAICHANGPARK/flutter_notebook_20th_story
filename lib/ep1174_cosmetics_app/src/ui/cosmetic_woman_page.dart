@@ -51,9 +51,17 @@ class _CosmeticWomanPageState extends State<CosmeticWomanPage> {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Expanded(child: Container(
+                            Expanded(
+                                child: Container(
                               decoration: BoxDecoration(
                                 color: Colors.blue,
+                                borderRadius: BorderRadius.circular(8),
+                                image: DecorationImage(
+                                  image: NetworkImage(
+                                    'https://cdn.pixabay.com/photo/2020/04/20/10/57/dispenser-5067855__340.jpg',
+                                  ),
+                                  fit: BoxFit.cover
+                                ),
                               ),
                             )),
                             SizedBox(
@@ -70,19 +78,16 @@ class _CosmeticWomanPageState extends State<CosmeticWomanPage> {
                             ),
                             Row(
                               children: [
-                                Text("\$29.99",
-                                style: TextStyle(
-                                  color: Colors.yellow
-                                ),),
+                                Text(
+                                  "\$29.99",
+                                  style: TextStyle(color: Colors.yellow),
+                                ),
                                 SizedBox(
                                   width: 8,
                                 ),
                                 Text(
                                   "\$44.99",
-                                  style: TextStyle(
-                                    decoration: TextDecoration.lineThrough,
-                                    color: Colors.grey
-                                  ),
+                                  style: TextStyle(decoration: TextDecoration.lineThrough, color: Colors.grey),
                                 )
                               ],
                             )
