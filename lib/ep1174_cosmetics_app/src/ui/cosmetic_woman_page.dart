@@ -222,6 +222,114 @@ class _CosmeticWomanPageState extends State<CosmeticWomanPage> {
                 )
               ],
             ),
+          ),
+          Container(
+            height: 140,
+            margin: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+            decoration: BoxDecoration(),
+            child: Stack(
+              children: [
+                Positioned(
+                  top: 8,
+                  left: 0,
+                  right: 0,
+                  bottom: 0,
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: Colors.teal[50],
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                    padding: EdgeInsets.all(8),
+                    child: Row(
+                      children: [
+                        Container(
+                          height: 100,
+                          width: 110,
+                          decoration: BoxDecoration(
+                            color: Colors.orange,
+                            borderRadius: BorderRadius.circular(8),
+                          ),
+                        ),
+                        Expanded(
+                          child: Padding(
+                            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  "Skin oil Serum",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                                SizedBox(
+                                  height: 8,
+                                ),
+                                Row(
+                                  children: [
+                                    Icon(
+                                      Icons.star,
+                                      color: Colors.orange,
+                                      size: 18,
+                                    ),
+                                    Text("4.9"),
+                                    Text(
+                                      "(286 reviews)",
+                                      style: TextStyle(
+                                        color: Colors.grey,
+                                      ),
+                                    )
+                                  ],
+                                ),
+                                Spacer(),
+                                Row(
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Text(
+                                      "\$39.99",
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                          color: Colors.orange,
+                                          fontSize: 16
+                                      ),
+                                    ),
+                                    Spacer(),
+                                    IconButton(
+                                      onPressed: () {},
+                                      icon: Icon(Icons.favorite_outline),
+                                    )
+                                  ],
+                                )
+                              ],
+                            ),
+                          ),
+                        )
+                      ],
+                    ),
+                  ),
+                ),
+                // Positioned(
+                //   right: 16,
+                //   top: 0,
+                //   child: Container(
+                //     decoration: BoxDecoration(
+                //       color: Color.fromRGBO(45, 58, 33, 1),
+                //       borderRadius: BorderRadius.circular(16),
+                //     ),
+                //     padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                //     child: Center(
+                //       child: Text(
+                //         "25% off",
+                //         style: TextStyle(
+                //           color: Colors.white,
+                //           fontSize: 12,
+                //         ),
+                //       ),
+                //     ),
+                //   ),
+                // )
+              ],
+            ),
           )
         ],
       ),
