@@ -13,24 +13,25 @@ class _CosmeticWomanPageState extends State<CosmeticWomanPage> {
     return SingleChildScrollView(
       child: Column(
         children: [
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Text(
-                "Popular",
-                style: TextStyle(
-                  fontSize: 24,
-                  fontWeight: FontWeight.bold,
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text(
+                  "Popular",
+                  style: TextStyle(
+                    fontSize: 24,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
-              ),
-              TextButton(
-                onPressed: () {},
-                child: Text("See all"),
-                style: TextButton.styleFrom(
-                  primary:  Color.fromRGBO(45, 58, 33, 1)
-                ),
-              )
-            ],
+                TextButton(
+                  onPressed: () {},
+                  child: Text("See all"),
+                  style: TextButton.styleFrom(primary: Color.fromRGBO(45, 58, 33, 1)),
+                )
+              ],
+            ),
           )
         ],
       ),
