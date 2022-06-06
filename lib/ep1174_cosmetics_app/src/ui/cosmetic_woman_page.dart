@@ -39,6 +39,21 @@ class _CosmeticWomanPageState extends State<CosmeticWomanPage> {
             height: MediaQuery.of(context).size.height / 2.5,
             child: Container(
               color: Colors.red,
+              child: ListView.builder(
+                itemCount: 4,
+                scrollDirection: Axis.horizontal,
+                itemBuilder: (context, index) {
+                  return SizedBox(
+                    width: 160,
+                    child: Column(
+                      children: [
+                        Expanded(child: Placeholder()),
+                        Text("Promio body lotion")
+                      ],
+                    ),
+                  );
+                },
+              ),
             ),
           )
         ],
