@@ -40,7 +40,6 @@ class _CosmeticWomanPageState extends State<CosmeticWomanPage> {
             child: SizedBox(
               height: MediaQuery.of(context).size.height / 2.5,
               child: Container(
-                color: Colors.red,
                 child: ListView.builder(
                   itemCount: 4,
                   scrollDirection: Axis.horizontal,
@@ -52,17 +51,37 @@ class _CosmeticWomanPageState extends State<CosmeticWomanPage> {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Expanded(child: Placeholder()),
-                            SizedBox(height: 8,),
-                            Text("Promio body lotion"),
-                            SizedBox(height: 8,),
+                            Expanded(child: Container(
+                              decoration: BoxDecoration(
+                                color: Colors.blue,
+                              ),
+                            )),
+                            SizedBox(
+                              height: 8,
+                            ),
+                            Text(
+                              "Promio body lotion",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            SizedBox(
+                              height: 8,
+                            ),
                             Row(
                               children: [
-                                Text("\$29.99"),
+                                Text("\$29.99",
+                                style: TextStyle(
+                                  color: Colors.yellow
+                                ),),
+                                SizedBox(
+                                  width: 8,
+                                ),
                                 Text(
                                   "\$44.99",
                                   style: TextStyle(
                                     decoration: TextDecoration.lineThrough,
+                                    color: Colors.grey
                                   ),
                                 )
                               ],
