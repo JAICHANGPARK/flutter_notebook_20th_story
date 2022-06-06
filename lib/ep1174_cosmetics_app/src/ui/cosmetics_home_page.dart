@@ -39,7 +39,7 @@ class _CosmeticsHomePageState extends ConsumerState<CosmeticsHomePage> {
         // ),
         actions: [
           IconButton(
-            onPressed: ripi() {},
+            onPressed: () {},
             icon: Icon(
               Icons.shopping_basket_outlined,
             ),
