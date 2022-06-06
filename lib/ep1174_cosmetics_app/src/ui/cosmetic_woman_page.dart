@@ -45,25 +45,30 @@ class _CosmeticWomanPageState extends State<CosmeticWomanPage> {
                   itemCount: 4,
                   scrollDirection: Axis.horizontal,
                   itemBuilder: (context, index) {
-                    return SizedBox(
-                      width: 160,
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Expanded(child: Placeholder()),
-                          Text("Promio body lotion"),
-                          Row(
-                            children: [
-                              Text("\$29.99"),
-                              Text(
-                                "\$44.99",
-                                style: TextStyle(
-                                  decoration: TextDecoration.lineThrough,
-                                ),
-                              )
-                            ],
-                          )
-                        ],
+                    return Padding(
+                      padding: const EdgeInsets.only(right: 8),
+                      child: SizedBox(
+                        width: 160,
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Expanded(child: Placeholder()),
+                            SizedBox(height: 8,),
+                            Text("Promio body lotion"),
+                            SizedBox(height: 8,),
+                            Row(
+                              children: [
+                                Text("\$29.99"),
+                                Text(
+                                  "\$44.99",
+                                  style: TextStyle(
+                                    decoration: TextDecoration.lineThrough,
+                                  ),
+                                )
+                              ],
+                            )
+                          ],
+                        ),
                       ),
                     );
                   },
