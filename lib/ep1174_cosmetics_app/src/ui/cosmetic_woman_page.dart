@@ -11,6 +11,12 @@ class CosmeticWomanPage extends StatefulWidget {
 class _CosmeticWomanPageState extends State<CosmeticWomanPage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return    SingleChildScrollView(
+      child: Column(
+        children: [
+
+        ],
+      ),
+    );
   }
 }
