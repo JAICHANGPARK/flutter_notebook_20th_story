@@ -28,9 +28,17 @@ class _CosmeticWomanPageState extends State<CosmeticWomanPage> {
                 TextButton(
                   onPressed: () {},
                   child: Text("See all"),
-                  style: TextButton.styleFrom(primary: Color.fromRGBO(45, 58, 33, 1)),
-                )
+                  style: TextButton.styleFrom(
+                    primary: Color.fromRGBO(45, 58, 33, 1),
+                  ),
+                ),
               ],
+            ),
+          ),
+          SizedBox(
+            height: MediaQuery.of(context).size.height / 2.5,
+            child: Container(
+              color: Colors.red,
             ),
           )
         ],
