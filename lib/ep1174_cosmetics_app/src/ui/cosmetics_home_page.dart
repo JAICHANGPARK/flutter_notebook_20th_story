@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_20th_story/ep1174_cosmetics_app/src/ui/cosmetic_woman_page.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class CosmeticMenu {
@@ -96,13 +97,7 @@ class _CosmeticsHomePageState extends ConsumerState<CosmeticsHomePage> {
                   child: Text("Page $sIndex"),
                 ),
               ),
-              SingleChildScrollView(
-                child: Column(
-                  children: [
-
-                  ],
-                ),
-              ),
+              CosmeticWomanPage(),
               Container(
                 child: Center(
                   child: Text("Page $sIndex"),
