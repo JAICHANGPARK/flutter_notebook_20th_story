@@ -46,9 +46,21 @@ class _CosmeticWomanPageState extends State<CosmeticWomanPage> {
                   return SizedBox(
                     width: 160,
                     child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Expanded(child: Placeholder()),
-                        Text("Promio body lotion")
+                        Text("Promio body lotion"),
+                        Row(
+                          children: [
+                            Text("\$29.99"),
+                            Text(
+                              "\$44.99",
+                              style: TextStyle(
+                                decoration: TextDecoration.lineThrough,
+                              ),
+                            )
+                          ],
+                        )
                       ],
                     ),
                   );
