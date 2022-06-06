@@ -144,7 +144,7 @@ class _CosmeticWomanPageState extends State<CosmeticWomanPage> {
                         ),
                         Expanded(
                           child: Padding(
-                            padding: const EdgeInsets.all(8.0),
+                            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
@@ -154,7 +154,9 @@ class _CosmeticWomanPageState extends State<CosmeticWomanPage> {
                                     fontWeight: FontWeight.bold,
                                   ),
                                 ),
-                                SizedBox(height: 8,),
+                                SizedBox(
+                                  height: 8,
+                                ),
                                 Row(
                                   children: [
                                     Icon(
@@ -175,7 +177,14 @@ class _CosmeticWomanPageState extends State<CosmeticWomanPage> {
                                 Row(
                                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                   children: [
-                                    Text("\$39.99"),
+                                    Text(
+                                      "\$39.99",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.orange,
+                                        fontSize: 16
+                                      ),
+                                    ),
                                     Spacer(),
                                     IconButton(
                                       onPressed: () {},
