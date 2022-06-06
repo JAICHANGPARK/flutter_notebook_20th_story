@@ -99,7 +99,7 @@ class _CosmeticsHomePageState extends ConsumerState<CosmeticsHomePage> {
               SingleChildScrollView(
                 child: Column(
                   children: [
-                    
+
                   ],
                 ),
               ),
