@@ -118,9 +118,7 @@ class _CosmeticWomanPageState extends State<CosmeticWomanPage> {
           Container(
             height: 140,
             margin: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-            decoration: BoxDecoration(
-              
-            ),
+            decoration: BoxDecoration(),
             child: Stack(
               children: [
                 Positioned(
@@ -139,13 +137,43 @@ class _CosmeticWomanPageState extends State<CosmeticWomanPage> {
                         Container(
                           height: 100,
                           width: 100,
-                          
                           decoration: BoxDecoration(
                             color: Colors.orange,
-                            borderRadius: BorderRadius.circular(8)
+                            borderRadius: BorderRadius.circular(8),
                           ),
                         ),
-
+                        Expanded(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                "Skin oil Serum",
+                              ),
+                              Row(
+                                children: [
+                                  Icon(
+                                    Icons.star,
+                                    color: Colors.orange,
+                                  ),
+                                  Text("4.9"),
+                                  Text("(286 reviews)")
+                                ],
+                              ),
+                              Spacer(),
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Text("\$39.99"),
+                                  Spacer(),
+                                  IconButton(
+                                    onPressed: () {},
+                                    icon: Icon(Icons.favorite_outline),
+                                  )
+                                ],
+                              )
+                            ],
+                          ),
+                        )
                       ],
                     ),
                   ),
@@ -158,7 +186,7 @@ class _CosmeticWomanPageState extends State<CosmeticWomanPage> {
                       color: Color.fromRGBO(45, 58, 33, 1),
                       borderRadius: BorderRadius.circular(16),
                     ),
-                    padding: EdgeInsets.symmetric(horizontal: 4, vertical: 4),
+                    padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                     child: Center(
                       child: Text(
                         "25% off",
