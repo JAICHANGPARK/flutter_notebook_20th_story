@@ -96,9 +96,11 @@ class _CosmeticsHomePageState extends ConsumerState<CosmeticsHomePage> {
                   child: Text("Page $sIndex"),
                 ),
               ),
-              Container(
-                child: Center(
-                  child: Text("Page $sIndex"),
+              SingleChildScrollView(
+                child: Column(
+                  children: [
+                    
+                  ],
                 ),
               ),
               Container(
