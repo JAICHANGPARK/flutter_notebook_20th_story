@@ -143,35 +143,48 @@ class _CosmeticWomanPageState extends State<CosmeticWomanPage> {
                           ),
                         ),
                         Expanded(
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text(
-                                "Skin oil Serum",
-                              ),
-                              Row(
-                                children: [
-                                  Icon(
-                                    Icons.star,
-                                    color: Colors.orange,
+                          child: Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  "Skin oil Serum",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
                                   ),
-                                  Text("4.9"),
-                                  Text("(286 reviews)")
-                                ],
-                              ),
-                              Spacer(),
-                              Row(
-                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                children: [
-                                  Text("\$39.99"),
-                                  Spacer(),
-                                  IconButton(
-                                    onPressed: () {},
-                                    icon: Icon(Icons.favorite_outline),
-                                  )
-                                ],
-                              )
-                            ],
+                                ),
+                                SizedBox(height: 8,),
+                                Row(
+                                  children: [
+                                    Icon(
+                                      Icons.star,
+                                      color: Colors.orange,
+                                      size: 18,
+                                    ),
+                                    Text("4.9"),
+                                    Text(
+                                      "(286 reviews)",
+                                      style: TextStyle(
+                                        color: Colors.grey,
+                                      ),
+                                    )
+                                  ],
+                                ),
+                                Spacer(),
+                                Row(
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Text("\$39.99"),
+                                    Spacer(),
+                                    IconButton(
+                                      onPressed: () {},
+                                      icon: Icon(Icons.favorite_outline),
+                                    )
+                                  ],
+                                )
+                              ],
+                            ),
                           ),
                         )
                       ],
