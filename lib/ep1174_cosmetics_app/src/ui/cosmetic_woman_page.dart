@@ -136,7 +136,7 @@ class _CosmeticWomanPageState extends State<CosmeticWomanPage> {
                       children: [
                         Container(
                           height: 100,
-                          width: 100,
+                          width: 110,
                           decoration: BoxDecoration(
                             color: Colors.orange,
                             borderRadius: BorderRadius.circular(8),
