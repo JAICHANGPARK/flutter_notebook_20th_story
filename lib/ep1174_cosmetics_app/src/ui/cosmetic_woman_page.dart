@@ -115,6 +115,44 @@ class _CosmeticWomanPageState extends State<CosmeticWomanPage> {
               ),
             ),
           ),
+          Container(
+            height: 140,
+            margin: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+            decoration: BoxDecoration(
+              color: Colors.orange,
+            ),
+            child: Stack(
+              children: [
+                Positioned(
+                  top: 8,
+                  left: 0,
+                  right: 0,
+                  bottom: 0,
+                  child: Container(
+                    decoration: BoxDecoration(color: Colors.teal[50], borderRadius: BorderRadius.circular(8)),
+                  ),
+                ),
+                Positioned(
+                    right: 16,
+                    top: 0,
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Color.fromRGBO(45, 58, 33, 1),
+                      ),
+                      padding: EdgeInsets.symmetric(horizontal: 4, vertical: 4),
+                      child: Center(
+                        child: Text(
+                          "25% off",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 12,
+                          ),
+                        ),
+                      ),
+                    ))
+              ],
+            ),
+          )
         ],
       ),
     );
