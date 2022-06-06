@@ -12,6 +12,7 @@ class _CosmeticWomanPageState extends State<CosmeticWomanPage> {
   Widget build(BuildContext context) {
     return SingleChildScrollView(
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 16),
@@ -23,6 +24,7 @@ class _CosmeticWomanPageState extends State<CosmeticWomanPage> {
                   style: TextStyle(
                     fontSize: 24,
                     fontWeight: FontWeight.bold,
+                    color: Color.fromRGBO(45, 58, 33, 1),
                   ),
                 ),
                 TextButton(
@@ -57,11 +59,10 @@ class _CosmeticWomanPageState extends State<CosmeticWomanPage> {
                                 color: Colors.blue,
                                 borderRadius: BorderRadius.circular(8),
                                 image: DecorationImage(
-                                  image: NetworkImage(
-                                    'https://cdn.pixabay.com/photo/2020/04/20/10/57/dispenser-5067855__340.jpg',
-                                  ),
-                                  fit: BoxFit.cover
-                                ),
+                                    image: NetworkImage(
+                                      'https://cdn.pixabay.com/photo/2020/04/20/10/57/dispenser-5067855__340.jpg',
+                                    ),
+                                    fit: BoxFit.cover),
                               ),
                             )),
                             SizedBox(
@@ -87,7 +88,10 @@ class _CosmeticWomanPageState extends State<CosmeticWomanPage> {
                                 ),
                                 Text(
                                   "\$44.99",
-                                  style: TextStyle(decoration: TextDecoration.lineThrough, color: Colors.grey),
+                                  style: TextStyle(
+                                    decoration: TextDecoration.lineThrough,
+                                    color: Colors.grey,
+                                  ),
                                 )
                               ],
                             )
@@ -99,7 +103,18 @@ class _CosmeticWomanPageState extends State<CosmeticWomanPage> {
                 ),
               ),
             ),
-          )
+          ),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16),
+            child: Text(
+              "Recent Products",
+              style: TextStyle(
+                fontSize: 24,
+                fontWeight: FontWeight.bold,
+                color: Color.fromRGBO(45, 58, 33, 1),
+              ),
+            ),
+          ),
         ],
       ),
     );
