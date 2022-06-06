@@ -119,7 +119,7 @@ class _CosmeticWomanPageState extends State<CosmeticWomanPage> {
             height: 140,
             margin: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
             decoration: BoxDecoration(
-              color: Colors.orange,
+              
             ),
             child: Stack(
               children: [
@@ -129,27 +129,47 @@ class _CosmeticWomanPageState extends State<CosmeticWomanPage> {
                   right: 0,
                   bottom: 0,
                   child: Container(
-                    decoration: BoxDecoration(color: Colors.teal[50], borderRadius: BorderRadius.circular(8)),
+                    decoration: BoxDecoration(
+                      color: Colors.teal[50],
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                    padding: EdgeInsets.all(8),
+                    child: Row(
+                      children: [
+                        Container(
+                          height: 100,
+                          width: 100,
+                          
+                          decoration: BoxDecoration(
+                            color: Colors.orange,
+                            borderRadius: BorderRadius.circular(8)
+                          ),
+                        ),
+
+                      ],
+                    ),
                   ),
                 ),
                 Positioned(
-                    right: 16,
-                    top: 0,
-                    child: Container(
-                      decoration: BoxDecoration(
-                        color: Color.fromRGBO(45, 58, 33, 1),
-                      ),
-                      padding: EdgeInsets.symmetric(horizontal: 4, vertical: 4),
-                      child: Center(
-                        child: Text(
-                          "25% off",
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 12,
-                          ),
+                  right: 16,
+                  top: 0,
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: Color.fromRGBO(45, 58, 33, 1),
+                      borderRadius: BorderRadius.circular(16),
+                    ),
+                    padding: EdgeInsets.symmetric(horizontal: 4, vertical: 4),
+                    child: Center(
+                      child: Text(
+                        "25% off",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 12,
                         ),
                       ),
-                    ))
+                    ),
+                  ),
+                )
               ],
             ),
           )
