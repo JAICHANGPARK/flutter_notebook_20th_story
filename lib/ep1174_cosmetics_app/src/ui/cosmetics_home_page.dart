@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_notebook_20th_story/ep1174_cosmetics_app/src/ui/cosmetic_woman_page.dart';
+import 'package:flutter_notebook_20th_story/ep1174_cosmetics_app/src/ui/cosmetics_cart_page.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class CosmeticMenu {
@@ -40,7 +41,13 @@ class _CosmeticsHomePageState extends ConsumerState<CosmeticsHomePage> {
         // ),
         actions: [
           IconButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => CosmeticsCartPage(),
+                ),
+              );
+            },
             icon: Icon(
               Icons.shopping_basket_outlined,
             ),
