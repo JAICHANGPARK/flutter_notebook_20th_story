@@ -14,6 +14,15 @@ class CosmeticsDetailPage extends StatefulWidget {
 }
 
 class _CosmeticsDetailPageState extends State<CosmeticsDetailPage> {
+  PageController _pageController = PageController();
+  int _currentPageIndex = 0;
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -42,7 +51,37 @@ class _CosmeticsDetailPageState extends State<CosmeticsDetailPage> {
             ),
             child: Stack(
               children: [
-
+                Container(
+                  decoration: BoxDecoration(
+                      // image: DecorationImage(
+                      //   image: NetworkImage(
+                      //     widget.cosmeticItem?.images?[_currentPageIndex] ?? "",
+                      //   ),
+                      //   fit: BoxFit.cover,
+                      // ),
+                      ),
+                  child: PageView(
+                    controller: _pageController,
+                    onPageChanged: (idx) {
+                      setState(() {
+                        _currentPageIndex = idx;
+                      });
+                    },
+                    children: widget?.cosmeticItem?.images
+                            ?.map(
+                              (e) => Container(
+                                decoration: BoxDecoration(
+                                  image: DecorationImage(
+                                    image: NetworkImage(e ?? ""),
+                                    fit: BoxFit.cover,
+                                  ),
+                                ),
+                              ),
+                            )
+                            .toList() ??
+                        [],
+                  ),
+                )
               ],
             ),
           ),
