@@ -23,6 +23,7 @@ class _CosmeticsDetailPageState extends State<CosmeticsDetailPage> {
         foregroundColor: Colors.black,
         elevation: 0,
         title: Text("Details"),
+        centerTitle: true,
         actions: [
           IconButton(
             onPressed: () {},
