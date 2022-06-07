@@ -51,35 +51,60 @@ class _CosmeticsDetailPageState extends State<CosmeticsDetailPage> {
             ),
             child: Stack(
               children: [
-                Container(
-                  decoration: BoxDecoration(
-                      // image: DecorationImage(
-                      //   image: NetworkImage(
-                      //     widget.cosmeticItem?.images?[_currentPageIndex] ?? "",
-                      //   ),
-                      //   fit: BoxFit.cover,
-                      // ),
-                      ),
-                  child: PageView(
-                    controller: _pageController,
-                    onPageChanged: (idx) {
-                      setState(() {
-                        _currentPageIndex = idx;
-                      });
-                    },
-                    children: widget?.cosmeticItem?.images
-                            ?.map(
-                              (e) => Container(
-                                decoration: BoxDecoration(
-                                  image: DecorationImage(
-                                    image: NetworkImage(e ?? ""),
-                                    fit: BoxFit.cover,
+                Positioned(
+                  left: 0,
+                  right: 0,
+                  bottom: 0,
+                  top: 0,
+                  child: Container(
+                    decoration: BoxDecoration(
+                        // image: DecorationImage(
+                        //   image: NetworkImage(
+                        //     widget.cosmeticItem?.images?[_currentPageIndex] ?? "",
+                        //   ),
+                        //   fit: BoxFit.cover,
+                        // ),
+                        ),
+                    child: PageView(
+                      controller: _pageController,
+                      onPageChanged: (idx) {
+                        setState(() {
+                          _currentPageIndex = idx;
+                        });
+                      },
+                      children: widget?.cosmeticItem?.images
+                              ?.map(
+                                (e) => Container(
+                                  decoration: BoxDecoration(
+                                    image: DecorationImage(
+                                      image: NetworkImage(e ?? ""),
+                                      fit: BoxFit.cover,
+                                    ),
                                   ),
                                 ),
-                              ),
-                            )
-                            .toList() ??
-                        [],
+                              )
+                              .toList() ??
+                          [],
+                    ),
+                  ),
+                ),
+                Positioned(
+                  left: 16,
+                  top: 16,
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: Colors.black.withOpacity(0.4),
+                      borderRadius: BorderRadius.circular(16),
+                    ),
+                    padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                    child: Center(
+                      child: Text(
+                        "${_currentPageIndex + 1}/${widget?.cosmeticItem?.images?.length ?? "?"}",
+                        style: TextStyle(
+                          color: Colors.white,
+                        ),
+                      ),
+                    ),
                   ),
                 )
               ],
