@@ -84,18 +84,19 @@ class _CosmeticWomanPageState extends State<CosmeticWomanPage> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Expanded(
-                                  child: Container(
-                                decoration: BoxDecoration(
-                                  color: Colors.blue,
-                                  borderRadius: BorderRadius.circular(8),
-                                  image: DecorationImage(
-                                    image: NetworkImage(
-                                      'https://cdn.pixabay.com/photo/2020/04/20/10/57/dispenser-5067855__340.jpg',
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                    color: Colors.blue,
+                                    borderRadius: BorderRadius.circular(8),
+                                    image: DecorationImage(
+                                      image: NetworkImage(
+                                        'https://cdn.pixabay.com/photo/2020/04/20/10/57/dispenser-5067855__340.jpg',
+                                      ),
+                                      fit: BoxFit.cover,
                                     ),
-                                    fit: BoxFit.cover,
                                   ),
                                 ),
-                              )),
+                              ),
                               SizedBox(
                                 height: 8,
                               ),
