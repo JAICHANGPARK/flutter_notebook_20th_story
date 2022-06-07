@@ -1,8 +1,13 @@
 import 'package:flutter/material.dart';
-
+import 'package:flutter_notebook_20th_story/ep1174_cosmetics_app/src/model/cosmetic_item.dart';
 
 class CosmeticsDetailPage extends StatefulWidget {
-  const CosmeticsDetailPage({Key? key}) : super(key: key);
+  CosmeticItem? cosmeticItem;
+
+  CosmeticsDetailPage({
+    Key? key,
+    this.cosmeticItem,
+  }) : super(key: key);
 
   @override
   State<CosmeticsDetailPage> createState() => _CosmeticsDetailPageState();
