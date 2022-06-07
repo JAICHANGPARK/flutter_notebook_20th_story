@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_20th_story/ep1174_cosmetics_app/src/ui/cosmetics_detail_page.dart';
 
 class CosmeticWomanPage extends StatefulWidget {
   const CosmeticWomanPage({Key? key}) : super(key: key);
@@ -46,56 +47,66 @@ class _CosmeticWomanPageState extends State<CosmeticWomanPage> {
                   itemCount: 4,
                   scrollDirection: Axis.horizontal,
                   itemBuilder: (context, index) {
-                    return Padding(
-                      padding: const EdgeInsets.only(right: 8),
-                      child: SizedBox(
-                        width: 160,
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Expanded(
-                                child: Container(
-                              decoration: BoxDecoration(
-                                color: Colors.blue,
-                                borderRadius: BorderRadius.circular(8),
-                                image: DecorationImage(
+                    return GestureDetector(
+                      onTap: () {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) => CosmeticsDetailPage(),
+                          ),
+                        );
+                      },
+                      child: Padding(
+                        padding: const EdgeInsets.only(right: 8),
+                        child: SizedBox(
+                          width: 160,
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Expanded(
+                                  child: Container(
+                                decoration: BoxDecoration(
+                                  color: Colors.blue,
+                                  borderRadius: BorderRadius.circular(8),
+                                  image: DecorationImage(
                                     image: NetworkImage(
                                       'https://cdn.pixabay.com/photo/2020/04/20/10/57/dispenser-5067855__340.jpg',
                                     ),
-                                    fit: BoxFit.cover),
-                              ),
-                            )),
-                            SizedBox(
-                              height: 8,
-                            ),
-                            Text(
-                              "Promio body lotion",
-                              style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                            SizedBox(
-                              height: 8,
-                            ),
-                            Row(
-                              children: [
-                                Text(
-                                  "\$29.99",
-                                  style: TextStyle(color: Colors.yellow),
-                                ),
-                                SizedBox(
-                                  width: 8,
-                                ),
-                                Text(
-                                  "\$44.99",
-                                  style: TextStyle(
-                                    decoration: TextDecoration.lineThrough,
-                                    color: Colors.grey,
+                                    fit: BoxFit.cover,
                                   ),
-                                )
-                              ],
-                            )
-                          ],
+                                ),
+                              )),
+                              SizedBox(
+                                height: 8,
+                              ),
+                              Text(
+                                "Promio body lotion",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              SizedBox(
+                                height: 8,
+                              ),
+                              Row(
+                                children: [
+                                  Text(
+                                    "\$29.99",
+                                    style: TextStyle(color: Colors.yellow),
+                                  ),
+                                  SizedBox(
+                                    width: 8,
+                                  ),
+                                  Text(
+                                    "\$44.99",
+                                    style: TextStyle(
+                                      decoration: TextDecoration.lineThrough,
+                                      color: Colors.grey,
+                                    ),
+                                  )
+                                ],
+                              )
+                            ],
+                          ),
                         ),
                       ),
                     );
@@ -138,13 +149,14 @@ class _CosmeticWomanPageState extends State<CosmeticWomanPage> {
                           height: 100,
                           width: 110,
                           decoration: BoxDecoration(
-                              color: Colors.orange,
-                              borderRadius: BorderRadius.circular(8),
-                              image: DecorationImage(
-                                  image: NetworkImage(
-                                    "https://cdn.pixabay.com/photo/2019/04/06/19/22/glass-4108085_960_720.jpg",
-                                  ),
-                                  fit: BoxFit.cover)),
+                            color: Colors.orange,
+                            borderRadius: BorderRadius.circular(8),
+                            image: DecorationImage(
+                                image: NetworkImage(
+                                  "https://cdn.pixabay.com/photo/2019/04/06/19/22/glass-4108085_960_720.jpg",
+                                ),
+                                fit: BoxFit.cover),
+                          ),
                         ),
                         Expanded(
                           child: Padding(
