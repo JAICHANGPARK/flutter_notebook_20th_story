@@ -1,5 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_notebook_20th_story/ep1174_cosmetics_app/src/ui/cosmetics_detail_page.dart';
+import 'package:flutter_notebook_20th_story/ep1174_cosmetics_app/src/model/cosmetic_item.dart';
+
+List<CosmeticItem> cosItems = [
+  CosmeticItem(
+      title: "Skin all Serum",
+      detail:
+          "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+      images: [
+        "https://cdn.pixabay.com/photo/2020/04/20/10/57/dispenser-5067855__340.jpg",
+      ],
+      liquidVolume: "100",
+      ml: "150",
+      price: "39.99",
+      review: "286",
+      scent: "Coconut",
+      useType: "Full Body")
+];
 
 class CosmeticWomanPage extends StatefulWidget {
   const CosmeticWomanPage({Key? key}) : super(key: key);
@@ -51,7 +68,9 @@ class _CosmeticWomanPageState extends State<CosmeticWomanPage> {
                       onTap: () {
                         Navigator.of(context).push(
                           MaterialPageRoute(
-                            builder: (context) => CosmeticsDetailPage(),
+                            builder: (context) => CosmeticsDetailPage(
+                              cosmeticItem: cosItems[index],
+                            ),
                           ),
                         );
                       },
