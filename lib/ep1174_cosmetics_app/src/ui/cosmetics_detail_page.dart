@@ -113,7 +113,20 @@ class _CosmeticsDetailPageState extends State<CosmeticsDetailPage> {
           Expanded(child: Placeholder()),
           Expanded(child: Placeholder()),
           Expanded(child: Placeholder()),
-          Expanded(child: Placeholder()),
+          Expanded(
+              child: Container(
+                margin: EdgeInsets.all(12),
+            decoration: BoxDecoration(
+              color: Color.fromRGBO(45, 58, 33, 1),
+              borderRadius: BorderRadius.circular(8)
+            ),
+            child: Center(
+              child: Text("Shop Now", style: TextStyle(
+                color: Colors.orange,
+                fontSize: 16
+              ),),
+            ),
+          )),
         ],
       ),
     );
