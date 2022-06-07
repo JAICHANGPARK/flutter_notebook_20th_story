@@ -330,12 +330,18 @@ class _CosmeticWomanPageState extends State<CosmeticWomanPage> {
                                   children: [
                                     Text(
                                       "\$39.99",
-                                      style: TextStyle(fontWeight: FontWeight.bold, color: Colors.orange, fontSize: 16),
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.orange,
+                                        fontSize: 16,
+                                      ),
                                     ),
                                     Spacer(),
                                     IconButton(
                                       onPressed: () {},
-                                      icon: Icon(Icons.favorite_outline),
+                                      icon: Icon(
+                                        Icons.favorite_outline,
+                                      ),
                                     )
                                   ],
                                 )
