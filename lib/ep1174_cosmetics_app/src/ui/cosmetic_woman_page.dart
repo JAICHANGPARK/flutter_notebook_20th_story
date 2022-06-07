@@ -9,6 +9,8 @@ List<CosmeticItem> cosItems = [
           "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
       images: [
         "https://cdn.pixabay.com/photo/2020/04/20/10/57/dispenser-5067855__340.jpg",
+        "https://cdn.pixabay.com/photo/2021/01/06/07/52/lipsticks-5893480_960_720.jpg",
+        "https://cdn.pixabay.com/photo/2018/01/10/13/47/essential-oil-3073901__340.jpg",
       ],
       liquidVolume: "100",
       ml: "150",
