@@ -6,5 +6,13 @@ part 'cosmetic_item.freezed.dart';
 class CosmeticItem with _$CosmeticItem {
   factory CosmeticItem({
     String? title,
+    String? review,
+    List<String>? images,
+    String? price,
+    String? detail,
+    String? useType,
+    String? scent,
+    String? liquidVolume,
+    String? ml,
   }) = _CosmeticItem;
 }
