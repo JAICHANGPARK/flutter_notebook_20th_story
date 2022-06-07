@@ -32,9 +32,26 @@ class _CosmeticsDetailPageState extends State<CosmeticsDetailPage> {
             ),
           ),
         ],
-
       ),
-      body: Column(),
+      body: Column(
+        children: [
+          Container(
+            height: 380,
+            decoration: BoxDecoration(
+              color: Colors.orange,
+            ),
+            child: Stack(
+              children: [
+
+              ],
+            ),
+          ),
+          Expanded(child: Placeholder()),
+          Expanded(child: Placeholder()),
+          Expanded(child: Placeholder()),
+          Expanded(child: Placeholder()),
+        ],
+      ),
     );
   }
 }
