@@ -138,9 +138,13 @@ class _CosmeticWomanPageState extends State<CosmeticWomanPage> {
                           height: 100,
                           width: 110,
                           decoration: BoxDecoration(
-                            color: Colors.orange,
-                            borderRadius: BorderRadius.circular(8),
-                          ),
+                              color: Colors.orange,
+                              borderRadius: BorderRadius.circular(8),
+                              image: DecorationImage(
+                                  image: NetworkImage(
+                                    "https://cdn.pixabay.com/photo/2019/04/06/19/22/glass-4108085_960_720.jpg",
+                                  ),
+                                  fit: BoxFit.cover)),
                         ),
                         Expanded(
                           child: Padding(
@@ -182,7 +186,7 @@ class _CosmeticWomanPageState extends State<CosmeticWomanPage> {
                                       style: TextStyle(
                                         fontWeight: FontWeight.bold,
                                         color: Colors.orange,
-                                        fontSize: 16
+                                        fontSize: 16,
                                       ),
                                     ),
                                     Spacer(),
@@ -248,6 +252,11 @@ class _CosmeticWomanPageState extends State<CosmeticWomanPage> {
                           decoration: BoxDecoration(
                             color: Colors.orange,
                             borderRadius: BorderRadius.circular(8),
+                            image: DecorationImage(
+                              image: NetworkImage(
+                                  "https://cdn.pixabay.com/photo/2021/01/06/07/52/lipsticks-5893480_960_720.jpg"),
+                              fit: BoxFit.cover,
+                            ),
                           ),
                         ),
                         Expanded(
@@ -287,11 +296,7 @@ class _CosmeticWomanPageState extends State<CosmeticWomanPage> {
                                   children: [
                                     Text(
                                       "\$39.99",
-                                      style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          color: Colors.orange,
-                                          fontSize: 16
-                                      ),
+                                      style: TextStyle(fontWeight: FontWeight.bold, color: Colors.orange, fontSize: 16),
                                     ),
                                     Spacer(),
                                     IconButton(
