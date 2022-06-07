@@ -16,6 +16,24 @@ class CosmeticsDetailPage extends StatefulWidget {
 class _CosmeticsDetailPageState extends State<CosmeticsDetailPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      backgroundColor: Colors.white,
+      appBar: AppBar(
+        backgroundColor: Colors.white,
+        foregroundColor: Colors.black,
+        elevation: 0,
+        title: Text("Details"),
+        actions: [
+          IconButton(
+            onPressed: () {},
+            icon: Icon(
+              Icons.favorite_outline,
+            ),
+          ),
+        ],
+
+      ),
+      body: Column(),
+    );
   }
 }
