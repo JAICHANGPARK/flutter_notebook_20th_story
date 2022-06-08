@@ -112,7 +112,7 @@ class _CosmeticsDetailPageState extends State<CosmeticsDetailPage> {
           ),
           Expanded(
               child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Row(
                 children: [
@@ -131,7 +131,10 @@ class _CosmeticsDetailPageState extends State<CosmeticsDetailPage> {
           Expanded(
               child: Container(
             margin: EdgeInsets.all(12),
-            decoration: BoxDecoration(color: Color.fromRGBO(45, 58, 33, 1), borderRadius: BorderRadius.circular(8)),
+            decoration: BoxDecoration(
+              color: Color.fromRGBO(45, 58, 33, 1),
+              borderRadius: BorderRadius.circular(8),
+            ),
             child: Center(
               child: Text(
                 "Shop Now",
