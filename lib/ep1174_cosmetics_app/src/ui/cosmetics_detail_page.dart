@@ -207,6 +207,53 @@ class _CosmeticsDetailPageState extends State<CosmeticsDetailPage> {
                   ),
                   VerticalDivider(
                     color: Colors.grey,
+                    width: 64,
+                  ),
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        "Scent",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      SizedBox(
+                        height: 8,
+                      ),
+                      Text(
+                        "${widget.cosmeticItem?.scent ?? "??"}",
+                        style: TextStyle(
+                            fontSize: 12
+                        ),
+                      ),
+                    ],
+                  ),
+                  VerticalDivider(
+                    color: Colors.grey,
+                    width: 64,
+                  ),
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        "Liquid volume",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      SizedBox(
+                        height: 8,
+                      ),
+                      Text(
+                        "${widget.cosmeticItem?.liquidVolume ?? "??"}",
+                        style: TextStyle(
+                            fontSize: 12
+                        ),
+                      ),
+                    ],
                   ),
                 ],
               ),
