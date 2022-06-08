@@ -27,6 +27,24 @@ class _CosmeticsCartPageState extends State<CosmeticsCartPage> {
           ),
         ],
       ),
+      body: Column(
+        children: [
+          Expanded(flex: 16, child: Placeholder()),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Text("Promo/Student Code or Vouchers"),
+              IconButton(
+                onPressed: () {},
+                icon: Icon(
+                  Icons.arrow_forward_ios_rounded,
+                ),
+              )
+            ],
+          ),
+          Expanded(flex: 10, child: Placeholder())
+        ],
+      ),
     );
   }
 }
