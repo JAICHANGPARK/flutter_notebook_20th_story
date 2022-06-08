@@ -68,12 +68,28 @@ class _CosmeticsCartPageState extends State<CosmeticsCartPage> {
                         ),
                         ListTile(
                           title: Text("Shipping"),
+                          trailing: Text.rich(
+                            TextSpan(
+                              children: [
+                                TextSpan(text: "\$"),
+                                TextSpan(text: "10.0"),
+                              ],
+                            ),
+                          ),
                         ),
                         Divider(
                           color: Colors.grey,
                         ),
                         ListTile(
                           title: Text("Total"),
+                          trailing: Text.rich(
+                            TextSpan(
+                              children: [
+                                TextSpan(text: "\$"),
+                                TextSpan(text: "196.97"),
+                              ],
+                            ),
+                          ),
                         ),
                       ],
                     ),
