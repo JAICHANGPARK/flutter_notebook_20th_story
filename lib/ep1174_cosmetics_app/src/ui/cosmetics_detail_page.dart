@@ -111,22 +111,31 @@ class _CosmeticsDetailPageState extends State<CosmeticsDetailPage> {
             ),
           ),
           Expanded(
-              child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Text(
-                    widget.cosmeticItem?.title ?? "",
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
+              child: Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      widget.cosmeticItem?.title ?? "",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
-                  ),
-                  Text("\$${widget.cosmeticItem?.price ?? "??"}")
-                ],
-              )
-            ],
+                    Text(
+                      "\$${widget.cosmeticItem?.price ?? "??"}",
+                      style: TextStyle(
+                        color: Colors.orange,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ],
+                )
+              ],
+            ),
           )),
           Expanded(child: Placeholder()),
           Expanded(child: Placeholder()),
