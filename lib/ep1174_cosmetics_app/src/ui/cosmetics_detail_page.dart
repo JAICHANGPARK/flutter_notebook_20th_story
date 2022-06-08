@@ -115,13 +115,15 @@ class _CosmeticsDetailPageState extends State<CosmeticsDetailPage> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
-                    widget.cosmeticItem.title ?? "",
+                    widget.cosmeticItem?.title ?? "",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                     ),
-                  )
+                  ),
+                  Text("\$${widget.cosmeticItem?.price ?? "??"}")
                 ],
               )
             ],
