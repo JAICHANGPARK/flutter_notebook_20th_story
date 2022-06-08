@@ -180,12 +180,13 @@ class _CosmeticsDetailPageState extends State<CosmeticsDetailPage> {
           Expanded(
             flex: 5,
             child: Padding(
-              padding: const EdgeInsets.only(left: 16),
+              padding: const EdgeInsets.only(left: 16, top: 8, bottom: 8),
               child: ListView(
                 scrollDirection: Axis.horizontal,
                 children: [
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
                         "Use Type",
@@ -204,7 +205,7 @@ class _CosmeticsDetailPageState extends State<CosmeticsDetailPage> {
                       ),
                     ],
                   ),
-                  Divider(
+                  VerticalDivider(
                     color: Colors.grey,
                   ),
                 ],
