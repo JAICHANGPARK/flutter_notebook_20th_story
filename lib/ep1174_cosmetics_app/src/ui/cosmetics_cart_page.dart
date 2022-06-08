@@ -33,7 +33,7 @@ class _CosmeticsCartPageState extends State<CosmeticsCartPage> {
         ),
         child: Column(
           children: [
-            Expanded(flex: 16, child: Placeholder()),
+            Expanded(flex: 18, child: Placeholder()),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -47,16 +47,34 @@ class _CosmeticsCartPageState extends State<CosmeticsCartPage> {
               ],
             ),
             Expanded(
-              flex: 10,
+              flex: 13,
               child: Column(
                 children: [
                   Expanded(
                     child: Column(
                       children: [
-                        ListTile(),
-                        ListTile(),
-                        Divider(color: Colors.grey,),
-                        ListTile(),
+                        ListTile(
+                          title: Text(
+                            "Sub Total",
+                          ),
+                          trailing: Text.rich(
+                            TextSpan(
+                              children: [
+                                TextSpan(text: "\$"),
+                                TextSpan(text: "286.97"),
+                              ],
+                            ),
+                          ),
+                        ),
+                        ListTile(
+                          title: Text("Shipping"),
+                        ),
+                        Divider(
+                          color: Colors.grey,
+                        ),
+                        ListTile(
+                          title: Text("Total"),
+                        ),
                       ],
                     ),
                   ),
@@ -77,7 +95,6 @@ class _CosmeticsCartPageState extends State<CosmeticsCartPage> {
                       ),
                     ),
                   ),
-
                 ],
               ),
             )
