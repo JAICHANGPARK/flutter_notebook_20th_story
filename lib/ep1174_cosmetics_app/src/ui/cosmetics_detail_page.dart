@@ -111,11 +111,12 @@ class _CosmeticsDetailPageState extends State<CosmeticsDetailPage> {
             ),
           ),
           Expanded(
-              flex: 5,
+              flex: 6,
               child: Padding(
                 padding: const EdgeInsets.all(16.0),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -166,21 +167,52 @@ class _CosmeticsDetailPageState extends State<CosmeticsDetailPage> {
                 ),
               )),
           Expanded(
-            flex: 4,
+            flex: 5,
             child: Padding(
               padding: const EdgeInsets.all(16.0),
               child: Text(
                 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor "
-                    "incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                "incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                style: TextStyle(fontSize: 13),
               ),
             ),
           ),
           Expanded(
-            flex: 4,
-            child: Placeholder(),
+            flex: 5,
+            child: Padding(
+              padding: const EdgeInsets.only(left: 16),
+              child: ListView(
+                scrollDirection: Axis.horizontal,
+                children: [
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        "Use Type",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      SizedBox(
+                        height: 8,
+                      ),
+                      Text(
+                        "${widget.cosmeticItem?.useType ?? "??"}",
+                        style: TextStyle(
+                          fontSize: 12
+                        ),
+                      ),
+                    ],
+                  ),
+                  Divider(
+                    color: Colors.grey,
+                  ),
+                ],
+              ),
+            ),
           ),
           Expanded(
-              flex: 4,
+              flex: 5,
               child: Container(
                 margin: EdgeInsets.all(12),
                 decoration: BoxDecoration(
