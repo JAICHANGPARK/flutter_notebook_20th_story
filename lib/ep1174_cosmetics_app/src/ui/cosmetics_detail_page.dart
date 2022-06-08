@@ -111,48 +111,89 @@ class _CosmeticsDetailPageState extends State<CosmeticsDetailPage> {
             ),
           ),
           Expanded(
+              flex: 5,
               child: Padding(
-            padding: const EdgeInsets.all(16.0),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                padding: const EdgeInsets.all(16.0),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
-                      widget.cosmeticItem?.title ?? "",
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                      ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          widget.cosmeticItem?.title ?? "",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 18,
+                          ),
+                        ),
+                        Text(
+                          "\$${widget.cosmeticItem?.price ?? "??"}",
+                          style: TextStyle(
+                            color: Colors.orange,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 18,
+                          ),
+                        ),
+                      ],
                     ),
-                    Text(
-                      "\$${widget.cosmeticItem?.price ?? "??"}",
-                      style: TextStyle(
-                        color: Colors.orange,
-                        fontWeight: FontWeight.bold,
-                      ),
+                    SizedBox(
+                      height: 12,
                     ),
+                    Row(
+                      children: [
+                        Icon(
+                          Icons.star,
+                          color: Colors.orange,
+                          size: 12,
+                        ),
+                        Text(
+                          "4.9 (${widget.cosmeticItem?.review ?? ""} review)",
+                          style: TextStyle(
+                            color: Colors.grey,
+                          ),
+                        ),
+                        Spacer(),
+                        Text(
+                          "${widget.cosmeticItem?.ml ?? "??"} ml",
+                          style: TextStyle(
+                            color: Colors.grey,
+                          ),
+                        )
+                      ],
+                    )
                   ],
-                )
-              ],
-            ),
-          )),
-          Expanded(child: Placeholder()),
-          Expanded(child: Placeholder()),
+                ),
+              )),
           Expanded(
-              child: Container(
-            margin: EdgeInsets.all(12),
-            decoration: BoxDecoration(
-              color: Color.fromRGBO(45, 58, 33, 1),
-              borderRadius: BorderRadius.circular(8),
-            ),
-            child: Center(
+            flex: 4,
+            child: Padding(
+              padding: const EdgeInsets.all(16.0),
               child: Text(
-                "Shop Now",
-                style: TextStyle(color: Colors.orange, fontSize: 16),
+                "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor "
+                    "incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
               ),
             ),
-          )),
+          ),
+          Expanded(
+            flex: 4,
+            child: Placeholder(),
+          ),
+          Expanded(
+              flex: 4,
+              child: Container(
+                margin: EdgeInsets.all(12),
+                decoration: BoxDecoration(
+                  color: Color.fromRGBO(45, 58, 33, 1),
+                  borderRadius: BorderRadius.circular(8),
+                ),
+                child: Center(
+                  child: Text(
+                    "Shop Now",
+                    style: TextStyle(color: Colors.orange, fontSize: 16),
+                  ),
+                ),
+              )),
         ],
       ),
     );
