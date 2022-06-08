@@ -27,23 +27,62 @@ class _CosmeticsCartPageState extends State<CosmeticsCartPage> {
           ),
         ],
       ),
-      body: Column(
-        children: [
-          Expanded(flex: 16, child: Placeholder()),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Text("Promo/Student Code or Vouchers"),
-              IconButton(
-                onPressed: () {},
-                icon: Icon(
-                  Icons.arrow_forward_ios_rounded,
-                ),
-              )
-            ],
-          ),
-          Expanded(flex: 10, child: Placeholder())
-        ],
+      body: Padding(
+        padding: const EdgeInsets.symmetric(
+          horizontal: 16,
+        ),
+        child: Column(
+          children: [
+            Expanded(flex: 16, child: Placeholder()),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text("Promo/Student Code or Vouchers"),
+                IconButton(
+                  onPressed: () {},
+                  icon: Icon(
+                    Icons.arrow_forward_ios_rounded,
+                  ),
+                )
+              ],
+            ),
+            Expanded(
+              flex: 10,
+              child: Column(
+                children: [
+                  Expanded(
+                    child: Column(
+                      children: [
+                        ListTile(),
+                        ListTile(),
+                        Divider(color: Colors.grey,),
+                        ListTile(),
+                      ],
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 16),
+                    child: Container(
+                      height: 52,
+                      // margin: EdgeInsets.all(12),
+                      decoration: BoxDecoration(
+                        color: Color.fromRGBO(45, 58, 33, 1),
+                        borderRadius: BorderRadius.circular(8),
+                      ),
+                      child: Center(
+                        child: Text(
+                          "Checkout",
+                          style: TextStyle(color: Colors.orange, fontSize: 16),
+                        ),
+                      ),
+                    ),
+                  ),
+
+                ],
+              ),
+            )
+          ],
+        ),
       ),
     );
   }
