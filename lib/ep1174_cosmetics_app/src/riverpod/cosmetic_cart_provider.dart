@@ -13,9 +13,27 @@ final cosmeticCartProvider = StateNotifierProvider<CosmeticCartController, List<
 class CosmeticCartController extends StateNotifier<List<CosmeticItem>> {
   CosmeticCartController(super.state);
 
-  updateItemCount(int index) {
-    CosmeticItem item = state[index];
+  updateItemCount(int index, bool control) {
+    List<CosmeticItem> items = state;
+    CosmeticItem item = items[index];
     int _oldCount = item?.count ?? 1;
-    state[index] = item.copyWith(count: _oldCount++);
+    if(control){
+      _oldCount += 1;
+    }else{
+      _oldCount -= 1;
+    }
+
+    items[index] = item.copyWith(count: _oldCount);
+    state = [...items];
   }
+
+
+  remove(int index){
+    List<CosmeticItem> items = state;
+    items.removeAt(index);
+    state = [...items];
+
+  }
+
+
 }
