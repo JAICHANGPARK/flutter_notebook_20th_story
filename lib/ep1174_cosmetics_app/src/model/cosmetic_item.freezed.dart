@@ -25,6 +25,7 @@ mixin _$CosmeticItem {
   String? get scent => throw _privateConstructorUsedError;
   String? get liquidVolume => throw _privateConstructorUsedError;
   String? get ml => throw _privateConstructorUsedError;
+  int? get count => throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
   $CosmeticItemCopyWith<CosmeticItem> get copyWith =>
@@ -45,7 +46,8 @@ abstract class $CosmeticItemCopyWith<$Res> {
       String? useType,
       String? scent,
       String? liquidVolume,
-      String? ml});
+      String? ml,
+      int? count});
 }
 
 /// @nodoc
@@ -67,6 +69,7 @@ class _$CosmeticItemCopyWithImpl<$Res> implements $CosmeticItemCopyWith<$Res> {
     Object? scent = freezed,
     Object? liquidVolume = freezed,
     Object? ml = freezed,
+    Object? count = freezed,
   }) {
     return _then(_value.copyWith(
       title: title == freezed
@@ -105,6 +108,10 @@ class _$CosmeticItemCopyWithImpl<$Res> implements $CosmeticItemCopyWith<$Res> {
           ? _value.ml
           : ml // ignore: cast_nullable_to_non_nullable
               as String?,
+      count: count == freezed
+          ? _value.count
+          : count // ignore: cast_nullable_to_non_nullable
+              as int?,
     ));
   }
 }
@@ -125,7 +132,8 @@ abstract class _$$_CosmeticItemCopyWith<$Res>
       String? useType,
       String? scent,
       String? liquidVolume,
-      String? ml});
+      String? ml,
+      int? count});
 }
 
 /// @nodoc
@@ -150,6 +158,7 @@ class __$$_CosmeticItemCopyWithImpl<$Res>
     Object? scent = freezed,
     Object? liquidVolume = freezed,
     Object? ml = freezed,
+    Object? count = freezed,
   }) {
     return _then(_$_CosmeticItem(
       title: title == freezed
@@ -188,6 +197,10 @@ class __$$_CosmeticItemCopyWithImpl<$Res>
           ? _value.ml
           : ml // ignore: cast_nullable_to_non_nullable
               as String?,
+      count: count == freezed
+          ? _value.count
+          : count // ignore: cast_nullable_to_non_nullable
+              as int?,
     ));
   }
 }
@@ -204,7 +217,8 @@ class _$_CosmeticItem implements _CosmeticItem {
       this.useType,
       this.scent,
       this.liquidVolume,
-      this.ml})
+      this.ml,
+      this.count})
       : _images = images;
 
   @override
@@ -232,10 +246,12 @@ class _$_CosmeticItem implements _CosmeticItem {
   final String? liquidVolume;
   @override
   final String? ml;
+  @override
+  final int? count;
 
   @override
   String toString() {
-    return 'CosmeticItem(title: $title, review: $review, images: $images, price: $price, detail: $detail, useType: $useType, scent: $scent, liquidVolume: $liquidVolume, ml: $ml)';
+    return 'CosmeticItem(title: $title, review: $review, images: $images, price: $price, detail: $detail, useType: $useType, scent: $scent, liquidVolume: $liquidVolume, ml: $ml, count: $count)';
   }
 
   @override
@@ -252,7 +268,8 @@ class _$_CosmeticItem implements _CosmeticItem {
             const DeepCollectionEquality().equals(other.scent, scent) &&
             const DeepCollectionEquality()
                 .equals(other.liquidVolume, liquidVolume) &&
-            const DeepCollectionEquality().equals(other.ml, ml));
+            const DeepCollectionEquality().equals(other.ml, ml) &&
+            const DeepCollectionEquality().equals(other.count, count));
   }
 
   @override
@@ -266,7 +283,8 @@ class _$_CosmeticItem implements _CosmeticItem {
       const DeepCollectionEquality().hash(useType),
       const DeepCollectionEquality().hash(scent),
       const DeepCollectionEquality().hash(liquidVolume),
-      const DeepCollectionEquality().hash(ml));
+      const DeepCollectionEquality().hash(ml),
+      const DeepCollectionEquality().hash(count));
 
   @JsonKey(ignore: true)
   @override
@@ -284,7 +302,8 @@ abstract class _CosmeticItem implements CosmeticItem {
       final String? useType,
       final String? scent,
       final String? liquidVolume,
-      final String? ml}) = _$_CosmeticItem;
+      final String? ml,
+      final int? count}) = _$_CosmeticItem;
 
   @override
   String? get title => throw _privateConstructorUsedError;
@@ -304,6 +323,8 @@ abstract class _CosmeticItem implements CosmeticItem {
   String? get liquidVolume => throw _privateConstructorUsedError;
   @override
   String? get ml => throw _privateConstructorUsedError;
+  @override
+  int? get count => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$$_CosmeticItemCopyWith<_$_CosmeticItem> get copyWith =>
