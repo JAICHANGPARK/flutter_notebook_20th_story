@@ -5,6 +5,7 @@ import 'package:flutter_notebook_20th_story/ep1174_cosmetics_app/src/model/cosme
 List<CosmeticItem> cosItems = [
   CosmeticItem(
       title: "Skin all Serum",
+      
       detail:
           "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
       images: [
@@ -17,7 +18,24 @@ List<CosmeticItem> cosItems = [
       price: "39.99",
       review: "286",
       scent: "Coconut",
-      useType: "Full Body")
+      useType: "Full Body",
+      count: 1),
+  CosmeticItem(
+      title: "Skin all Serum",
+      detail:
+          "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+      images: [
+        "https://cdn.pixabay.com/photo/2020/04/20/10/57/dispenser-5067855__340.jpg",
+        "https://cdn.pixabay.com/photo/2021/01/06/07/52/lipsticks-5893480_960_720.jpg",
+        "https://cdn.pixabay.com/photo/2018/01/10/13/47/essential-oil-3073901__340.jpg",
+      ],
+      liquidVolume: "100",
+      ml: "150",
+      price: "39.99",
+      review: "286",
+      scent: "Coconut",
+      useType: "Full Body",
+      count: 1),
 ];
 
 class CosmeticWomanPage extends StatefulWidget {
