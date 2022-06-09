@@ -36,15 +36,27 @@ class _CosmeticsCartPageState extends State<CosmeticsCartPage> {
         child: Column(
           children: [
             Expanded(
-              flex: 18,
+              flex: 20,
               child: Consumer(builder: (context, ref, child) {
                 final items = ref.watch(cosmeticCartProvider);
                 return ListView.builder(
+                  itemCount: items.length,
                   itemBuilder: (context, index) {
-                    return Container(
-                      height: 160,
-                      decoration: BoxDecoration(
-                        color: Colors.blue,
+                    return Padding(
+                      padding: const EdgeInsets.only(
+                        bottom: 16,
+                      ),
+                      child: Container(
+                        height: 200,
+                        decoration: BoxDecoration(
+                          color: Colors.blue,
+                        ),
+                        child: Row(
+                          children: [
+                            Expanded(flex: 5, child: Placeholder()),
+                            Expanded(flex: 6, child: Column()),
+                          ],
+                        ),
                       ),
                     );
                   },
@@ -64,7 +76,7 @@ class _CosmeticsCartPageState extends State<CosmeticsCartPage> {
               ],
             ),
             Expanded(
-              flex: 13,
+              flex: 14,
               child: Column(
                 children: [
                   Expanded(
@@ -96,6 +108,7 @@ class _CosmeticsCartPageState extends State<CosmeticsCartPage> {
                         ),
                         Divider(
                           color: Colors.grey,
+                          height: 8,
                         ),
                         ListTile(
                           title: Text("Total"),
