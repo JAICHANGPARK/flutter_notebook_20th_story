@@ -14,5 +14,6 @@ class CosmeticItem with _$CosmeticItem {
     String? scent,
     String? liquidVolume,
     String? ml,
+    int? count,
   }) = _CosmeticItem;
 }
