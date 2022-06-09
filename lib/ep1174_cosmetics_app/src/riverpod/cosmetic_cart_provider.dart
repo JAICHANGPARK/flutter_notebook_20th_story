@@ -12,4 +12,10 @@ final cosmeticCartProvider = StateNotifierProvider<CosmeticCartController, List<
 
 class CosmeticCartController extends StateNotifier<List<CosmeticItem>> {
   CosmeticCartController(super.state);
+
+  updateItemCount(int index) {
+    CosmeticItem item = state[index];
+    int _oldCount = item?.count ?? 1;
+    state[index] = item.copyWith(count: _oldCount++);
+  }
 }
