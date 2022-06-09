@@ -60,13 +60,47 @@ class _CosmeticsCartPageState extends State<CosmeticsCartPage> {
                                 padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
+                                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                   children: [
                                     Text("${items[index].category ?? ""}"),
                                     Text("${items[index]?.title ?? ""}"),
                                     Text("${items[index]?.ml ?? ""}ml"),
                                     Text("\$${items[index]?.price ?? ""}"),
                                     Row(
-                                      children: [],
+                                      children: [
+                                        Container(
+                                          decoration: BoxDecoration(
+                                            borderRadius: BorderRadius.circular(2),
+                                            border: Border.all(),
+                                          ),
+                                          padding: EdgeInsets.all(4),
+                                          child: Center(
+                                            child: Icon(
+                                              Icons.remove,
+                                              size: 14,
+                                            ),
+                                          ),
+                                        ),
+                                        Padding(
+                                          padding: const EdgeInsets.all(8.0),
+                                          child: Text(
+                                            "${items[index]?.count ?? ""}",
+                                          ),
+                                        ),
+                                        Container(
+                                          decoration: BoxDecoration(
+                                            borderRadius: BorderRadius.circular(2),
+                                            border: Border.all(),
+                                          ),
+                                          padding: EdgeInsets.all(4),
+                                          child: Center(
+                                            child: Icon(
+                                              Icons.remove,
+                                              size: 14,
+                                            ),
+                                          ),
+                                        )
+                                      ],
                                     )
                                   ],
                                 ),
