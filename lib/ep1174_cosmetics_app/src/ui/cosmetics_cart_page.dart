@@ -48,12 +48,23 @@ class _CosmeticsCartPageState extends State<CosmeticsCartPage> {
                       ),
                       child: Container(
                         height: 200,
-                        decoration: BoxDecoration(
-                          color: Colors.blue,
-                        ),
+                        decoration: BoxDecoration(),
                         child: Row(
                           children: [
-                            Expanded(flex: 5, child: Placeholder()),
+                            Expanded(
+                              flex: 5,
+                              child: Container(
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(8),
+                                  image: DecorationImage(
+                                    image: NetworkImage(
+                                      "${items?[index]?.images?[0] ?? ""}",
+                                    ),
+                                    fit: BoxFit.cover,
+                                  ),
+                                ),
+                              ),
+                            ),
                             Expanded(
                               flex: 6,
                               child: Padding(
@@ -68,16 +79,21 @@ class _CosmeticsCartPageState extends State<CosmeticsCartPage> {
                                     Text("\$${items[index]?.price ?? ""}"),
                                     Row(
                                       children: [
-                                        Container(
-                                          decoration: BoxDecoration(
-                                            borderRadius: BorderRadius.circular(2),
-                                            border: Border.all(),
-                                          ),
-                                          padding: EdgeInsets.all(4),
-                                          child: Center(
-                                            child: Icon(
-                                              Icons.remove,
-                                              size: 14,
+                                        GestureDetector(
+                                          onTap: () {
+                                            ref.read(cosmeticCartProvider.notifier).updateItemCount(index, false);
+                                          },
+                                          child: Container(
+                                            decoration: BoxDecoration(
+                                              borderRadius: BorderRadius.circular(2),
+                                              border: Border.all(),
+                                            ),
+                                            padding: EdgeInsets.all(4),
+                                            child: Center(
+                                              child: Icon(
+                                                Icons.remove,
+                                                size: 14,
+                                              ),
                                             ),
                                           ),
                                         ),
@@ -87,19 +103,29 @@ class _CosmeticsCartPageState extends State<CosmeticsCartPage> {
                                             "${items[index]?.count ?? ""}",
                                           ),
                                         ),
-                                        Container(
-                                          decoration: BoxDecoration(
-                                            borderRadius: BorderRadius.circular(2),
-                                            border: Border.all(),
-                                          ),
-                                          padding: EdgeInsets.all(4),
-                                          child: Center(
-                                            child: Icon(
-                                              Icons.remove,
-                                              size: 14,
+                                        GestureDetector(
+                                          onTap: () {
+                                            ref.read(cosmeticCartProvider.notifier).updateItemCount(index, true);
+                                          },
+                                          child: Container(
+                                            decoration: BoxDecoration(
+                                              borderRadius: BorderRadius.circular(2),
+                                              border: Border.all(),
+                                            ),
+                                            padding: EdgeInsets.all(4),
+                                            child: Center(
+                                              child: Icon(
+                                                Icons.add,
+                                                size: 14,
+                                              ),
                                             ),
                                           ),
-                                        )
+                                        ),
+                                        IconButton(
+                                            onPressed: () {
+                                              ref.read(cosmeticCartProvider.notifier).remove(index);
+                                            },
+                                            icon: Icon(Icons.clear)),
                                       ],
                                     )
                                   ],
