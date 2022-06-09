@@ -55,21 +55,23 @@ class _CosmeticsCartPageState extends State<CosmeticsCartPage> {
                           children: [
                             Expanded(flex: 5, child: Placeholder()),
                             Expanded(
-                                flex: 6,
-                                child: Padding(
-                                    padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                                    child: Column(
-                                      crossAxisAlignment: CrossAxisAlignment.start,
-                                      children: [
-                                        Text("${items[index].category ?? ""}"),
-                                        Text("${items[index]?.title ?? ""}"),
-                                        Text("${items[index]?.ml ?? ""}ml"),
-                                        Text("\$${items[index]?.price ?? ""}"),
-                                        Row(
-                                          children: [],
-                                        )
-                                      ],
-                                    ))),
+                              flex: 6,
+                              child: Padding(
+                                padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text("${items[index].category ?? ""}"),
+                                    Text("${items[index]?.title ?? ""}"),
+                                    Text("${items[index]?.ml ?? ""}ml"),
+                                    Text("\$${items[index]?.price ?? ""}"),
+                                    Row(
+                                      children: [],
+                                    )
+                                  ],
+                                ),
+                              ),
+                            ),
                           ],
                         ),
                       ),
