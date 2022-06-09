@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_20th_story/ep1174_cosmetics_app/src/riverpod/cosmetic_cart_provider.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class CosmeticsCartPage extends StatefulWidget {
   const CosmeticsCartPage({Key? key}) : super(key: key);
@@ -33,7 +35,19 @@ class _CosmeticsCartPageState extends State<CosmeticsCartPage> {
         ),
         child: Column(
           children: [
-            Expanded(flex: 18, child: Placeholder()),
+            Expanded(
+              flex: 18,
+              child: Consumer(builder: (context, ref, child) {
+                final items = ref.watch(cosmeticCartProvider);
+                return ListView.builder(
+                  itemBuilder: (context, index) {
+                    return Container(
+                      
+                    );
+                  },
+                );
+              }),
+            ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
