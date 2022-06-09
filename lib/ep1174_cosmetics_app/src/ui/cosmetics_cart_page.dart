@@ -42,7 +42,10 @@ class _CosmeticsCartPageState extends State<CosmeticsCartPage> {
                 return ListView.builder(
                   itemBuilder: (context, index) {
                     return Container(
-                      
+                      height: 160,
+                      decoration: BoxDecoration(
+                        color: Colors.blue,
+                      ),
                     );
                   },
                 );
