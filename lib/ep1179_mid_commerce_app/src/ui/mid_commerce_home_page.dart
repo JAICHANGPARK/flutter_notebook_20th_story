@@ -57,7 +57,7 @@ class _MidCommerceHomePageState extends State<MidCommerceHomePage> {
                       child: Column(
                         children: [
                           Padding(
-                            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                            padding: const EdgeInsets.only(left: 16, top: 8),
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
@@ -78,7 +78,9 @@ class _MidCommerceHomePageState extends State<MidCommerceHomePage> {
                             children: [
                               Expanded(
                                 child: TabBar(
+                                  labelPadding: EdgeInsets.symmetric(horizontal: 0),
                                   indicatorColor: Colors.grey[100],
+                                  padding: EdgeInsets.zero,
                                   labelColor: Colors.black,
                                   tabs: [
                                     Tab(
@@ -92,7 +94,7 @@ class _MidCommerceHomePageState extends State<MidCommerceHomePage> {
                                 ),
                               ),
                               SizedBox(
-                                width: 24,
+                                width: 64,
                               ),
                               IconButton(
                                 onPressed: () {},
@@ -109,16 +111,19 @@ class _MidCommerceHomePageState extends State<MidCommerceHomePage> {
                                 Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    Text("Available Margin", style: TextStyle(
-                                      fontSize: 10
-                                    ),),
-                                    SizedBox(height: 4,),
+                                    Text(
+                                      "Available Margin",
+                                      style: TextStyle(fontSize: 10),
+                                    ),
+                                    SizedBox(
+                                      height: 4,
+                                    ),
                                     Text(
                                       '\$589000',
                                       style: TextStyle(
                                         color: Colors.black,
                                         fontWeight: FontWeight.bold,
-                                        fontSize: 18
+                                        fontSize: 20,
                                       ),
                                     )
                                   ],
