@@ -100,6 +100,31 @@ class _MidCommerceHomePageState extends State<MidCommerceHomePage> {
                                 color: Colors.black,
                               ),
                             ],
+                          ),
+                          Expanded(child: Placeholder()),
+                          Padding(
+                            padding: const EdgeInsets.all(16.0),
+                            child: Row(
+                              children: [
+                                Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text("Available Margin", style: TextStyle(
+                                      fontSize: 10
+                                    ),),
+                                    SizedBox(height: 4,),
+                                    Text(
+                                      '\$589000',
+                                      style: TextStyle(
+                                        color: Colors.black,
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 18
+                                      ),
+                                    )
+                                  ],
+                                )
+                              ],
+                            ),
                           )
                         ],
                       ),
