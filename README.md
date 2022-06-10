@@ -1,6 +1,16 @@
 # flutter_notebook_20th_story
 
-### EP1174
+### EP1179
+
+- Mid-commerce Mobile App Concept
+- Hasnur Alam Ujjol
+- https://dribbble.com/shots/18454973-Mid-commerce-Mobile-App-Concept
+
+<img
+src="https://cdn.dribbble.com/userupload/2849219/file/original-b5b030bf6fb498ce5adcf9cf5636f5f0.jpg?compress=1&resize=1200x900"
+width="400px"/>
+
+### EP1174-1178
 
 - Cosmetics Product eCommerce App
 - Rakib Kowshar for Orizon: UI/UX Design Agency
