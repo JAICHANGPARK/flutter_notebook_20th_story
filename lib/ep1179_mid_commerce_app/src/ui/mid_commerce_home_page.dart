@@ -22,19 +22,31 @@ class _MidCommerceHomePageState extends State<MidCommerceHomePage> {
         children: [
           Container(
             decoration: BoxDecoration(
-              color: Colors.grey,
+              color: Color.fromRGBO(111, 111, 111, 1),
             ),
-            padding: EdgeInsets.only(
-              left: 16
-            ),
+            padding: EdgeInsets.only(left: 16),
             child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text("Complete your E-Kye & Start Trading"),
+                Text(
+                  "Complete your E-Kye & Start Trading",
+                  style: TextStyle(
+                    color: Colors.white,
+                  ),
+                ),
                 IconButton(
                   onPressed: () {},
                   icon: Icon(Icons.arrow_forward),
+                  color: Colors.white,
                 ),
               ],
+            ),
+          ),
+          Expanded(
+            child: SingleChildScrollView(
+              child: Column(
+                children: [],
+              ),
             ),
           )
         ],
