@@ -46,16 +46,20 @@ class _MidCommerceHomePageState extends State<MidCommerceHomePage> {
             child: SingleChildScrollView(
               child: Column(
                 children: [
-                  Row(
-                    children: [
-                      Text("Welcome, Dream"),
-                      IconButton(
-                        onPressed: () {},
-                        icon: Icon(
-                          Icons.notifications_none,
-                        ),
-                      )
-                    ],
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text("Welcome, Dream"),
+                        IconButton(
+                          onPressed: () {},
+                          icon: Icon(
+                            Icons.notifications_none,
+                          ),
+                        )
+                      ],
+                    ),
                   )
                 ],
               ),
