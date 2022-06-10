@@ -46,32 +46,65 @@ class _MidCommerceHomePageState extends State<MidCommerceHomePage> {
             child: SingleChildScrollView(
               child: Column(
                 children: [
-                  Container(
-                    height: MediaQuery.of(context).size.height / 2,
-                    child: Column(
-                      children: [
-                        Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  DefaultTabController(
+                    length: 2,
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.grey[100],
+                        // borderRadius: BorderRadius.only()
+                      ),
+                      height: MediaQuery.of(context).size.height / 2,
+                      child: Column(
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Text(
+                                  "Welcome, Dream",
+                                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                                ),
+                                IconButton(
+                                  onPressed: () {},
+                                  icon: Icon(
+                                    Icons.notifications_none,
+                                  ),
+                                )
+                              ],
+                            ),
+                          ),
+                          Row(
                             children: [
-                              Text(
-                                "Welcome, Dream",
-                                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                              Expanded(
+                                child: TabBar(
+                                  indicatorColor: Colors.grey[100],
+                                  labelColor: Colors.black,
+                                  tabs: [
+                                    Tab(
+                                      text: "POSITIONS",
+                                    ),
+                                    Tab(
+                                      text: "HOLDINGS",
+                                    ),
+                                  ],
+                                  unselectedLabelColor: Colors.grey,
+                                ),
+                              ),
+                              SizedBox(
+                                width: 24,
                               ),
                               IconButton(
                                 onPressed: () {},
-                                icon: Icon(
-                                  Icons.notifications_none,
-                                ),
-                              )
+                                icon: Icon(Icons.arrow_forward),
+                                color: Colors.black,
+                              ),
                             ],
-                          ),
-                        )
-                      ],
+                          )
+                        ],
+                      ),
                     ),
                   ),
-
                 ],
               ),
             ),
