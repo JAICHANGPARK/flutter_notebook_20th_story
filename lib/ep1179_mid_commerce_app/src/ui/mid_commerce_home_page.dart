@@ -63,7 +63,10 @@ class _MidCommerceHomePageState extends State<MidCommerceHomePage> {
                               children: [
                                 Text(
                                   "Welcome, Dream",
-                                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 16,
+                                  ),
                                 ),
                                 IconButton(
                                   onPressed: () {},
@@ -116,15 +119,22 @@ class _MidCommerceHomePageState extends State<MidCommerceHomePage> {
                                       margin: EdgeInsets.only(right: 8),
                                       width: 240,
                                       decoration: BoxDecoration(
-                                        color: Colors.grey[400],
+                                        color: Colors.grey[300],
                                         borderRadius: BorderRadius.circular(8),
                                       ),
+                                      padding: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
                                       child: Column(
                                         crossAxisAlignment: CrossAxisAlignment.start,
                                         children: [
                                           Text("IRCTC"),
+                                          SizedBox(
+                                            height: 8,
+                                          ),
                                           Text("2655.23"),
                                           Text("48.25 (2.16%)"),
+                                          SizedBox(
+                                            height: 8,
+                                          ),
                                           Row(
                                             children: [
                                               Expanded(
@@ -137,13 +147,29 @@ class _MidCommerceHomePageState extends State<MidCommerceHomePage> {
                                               )),
                                               Expanded(
                                                   child: Column(
-                                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                                    children: [
-                                                      Text("Overall G/L"),
-                                                      Text("2,800"),
-                                                    ],
-                                                  )),
+                                                crossAxisAlignment: CrossAxisAlignment.start,
+                                                children: [
+                                                  Text("Overall G/L"),
+                                                  Text("2,800"),
+                                                ],
+                                              )),
                                             ],
+                                          ),
+                                          SizedBox(
+                                            height: 8,
+                                          ),
+                                          Container(
+                                            decoration: BoxDecoration(
+                                              borderRadius: BorderRadius.circular(4),
+                                            ),
+                                            child: Center(
+                                              child: Text(
+                                                "intraday - Buy",
+                                                style: TextStyle(
+                                                  color: Colors.white,
+                                                ),
+                                              ),
+                                            ),
                                           )
                                         ],
                                       ),
