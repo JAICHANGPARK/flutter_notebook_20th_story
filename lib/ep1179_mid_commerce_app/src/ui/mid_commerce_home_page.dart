@@ -125,8 +125,30 @@ class _MidCommerceHomePageState extends State<MidCommerceHomePage> {
                                         fontWeight: FontWeight.bold,
                                         fontSize: 20,
                                       ),
-                                    )
+                                    ),
                                   ],
+                                ),
+                                Spacer(),
+                                Container(
+                                  decoration: BoxDecoration(
+                                    color: Colors.grey,
+                                    borderRadius: BorderRadius.circular(4),
+                                  ),
+                                  padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
+                                  child: Row(
+                                    children: [
+                                      Icon(
+                                        Icons.wallet,
+                                        color: Colors.white,
+                                      ),
+                                      Text(
+                                        "Add Fund",
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                        ),
+                                      )
+                                    ],
+                                  ),
                                 )
                               ],
                             ),
