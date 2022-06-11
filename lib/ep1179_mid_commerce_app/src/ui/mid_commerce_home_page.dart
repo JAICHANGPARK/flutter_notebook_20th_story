@@ -345,12 +345,40 @@ class _MidCommerceHomePageState extends State<MidCommerceHomePage> {
                               ),
                               Row(
                                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                children: [Text("ADAMENT"), Text("\$ 5.920.00")],
+                                children: [
+                                  Text(
+                                    "ADAMENT",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                  Text(
+                                    "\$ 5.920.00",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  )
+                                ],
                               ),
                               Row(
                                 children: [
-                                  Text("NSE"),
-                                  Text("No of Shares 4"),
+                                  Text(
+                                    "NSE",
+                                    style: TextStyle(
+                                      color: Colors.grey,
+                                      fontSize: 12,
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    width: 16,
+                                  ),
+                                  Text(
+                                    "No of Shares 4",
+                                    style: TextStyle(
+                                      color: Colors.grey,
+                                      fontSize: 12,
+                                    ),
+                                  ),
                                   Spacer(),
                                   Text("Ordered at 1480.00"),
                                 ],
@@ -360,11 +388,34 @@ class _MidCommerceHomePageState extends State<MidCommerceHomePage> {
                               ),
                               Row(
                                 children: [
-                                  Text("MARKET"),
-                                  Text("LTP"),
-                                  Text("1850.00"),
+                                  Text(
+                                    "MARKET",
+                                    style: TextStyle(
+                                      color: Colors.grey,
+                                      fontSize: 12,
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    width: 16,
+                                  ),
+                                  Text(
+                                    "LTP",
+                                    style: TextStyle(
+                                      color: Colors.grey,
+                                      fontSize: 12,
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    width: 8,
+                                  ),
+                                  Text(
+                                    "1850.00",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
                                   Spacer(),
-                                  Text("12:00 AM")
+                                  Text("12:00 AM"),
                                 ],
                               )
                             ],
