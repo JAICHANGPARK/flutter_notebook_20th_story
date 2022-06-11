@@ -106,18 +106,23 @@ class _MidCommerceHomePageState extends State<MidCommerceHomePage> {
                           Expanded(
                               child: TabBarView(
                             children: [
-                              ListView.builder(
-                                itemCount: 3,
-                                scrollDirection: Axis.horizontal,
-                                itemBuilder: (context, index) {
-                                  return Container(
-                                    width: 200,
-                                    decoration: BoxDecoration(
-                                      color: Colors.grey,
-                                      borderRadius: BorderRadius.circular(8)
-                                    ),
-                                  );
-                                },
+                              Padding(
+                                padding: EdgeInsets.only(
+                                    left: 16),
+                                child: ListView.builder(
+                                  itemCount: 3,
+                                  scrollDirection: Axis.horizontal,
+                                  itemBuilder: (context, index) {
+                                    return Container(
+                                      margin: EdgeInsets.only(right: 8),
+                                      width: 240,
+                                      decoration: BoxDecoration(
+                                        color: Colors.grey,
+                                        borderRadius: BorderRadius.circular(8),
+                                      ),
+                                    );
+                                  },
+                                ),
                               ),
                               Container(
                                 color: Colors.blueGrey,
