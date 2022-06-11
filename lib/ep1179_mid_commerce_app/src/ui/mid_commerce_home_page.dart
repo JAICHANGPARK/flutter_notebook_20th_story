@@ -286,7 +286,15 @@ class _MidCommerceHomePageState extends State<MidCommerceHomePage> {
                       children: [
                         Row(
                           children: [
-
+                                Container(
+                                  decoration: BoxDecoration(
+                                    color: Colors.grey[100],
+                                      borderRadius: BorderRadius.circular(4)
+                                  ),
+                                  child: Center(
+                                    child: Text("Buy"),
+                                  ),
+                                )
                           ],
                         ),
                         Row(
