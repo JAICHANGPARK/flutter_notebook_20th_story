@@ -283,68 +283,73 @@ class _MidCommerceHomePageState extends State<MidCommerceHomePage> {
                   ...List.generate(
                     10,
                     (index) => Column(
-                      crossAxisAlignment:CrossAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Column(
-                          crossAxisAlignment:CrossAxisAlignment.start,
-                          children: [
-                            Row(
-                              children: [
-                                Container(
-                                  decoration: BoxDecoration(
-                                    color: Colors.grey[100],
-                                    borderRadius: BorderRadius.circular(4),
-                                  ),
-                                  child: Center(
-                                    child: Text(
-                                      "Buy",
-                                      style: TextStyle(
-                                        color: Colors.grey,
+                        Padding(
+                          padding: const EdgeInsets.all(16.0),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Row(
+                                children: [
+                                  Container(
+                                    decoration: BoxDecoration(
+                                      color: Colors.grey[100],
+                                      borderRadius: BorderRadius.circular(4),
+                                    ),
+                                    child: Center(
+                                      child: Text(
+                                        "Buy",
+                                        style: TextStyle(
+                                          color: Colors.grey,
+                                        ),
                                       ),
                                     ),
+                                    padding: EdgeInsets.all(4),
                                   ),
-                                  padding: EdgeInsets.all(4),
-                                ),
-                                Container(
-                                  decoration: BoxDecoration(
-                                    color: Colors.grey[100],
-                                    borderRadius: BorderRadius.circular(4),
-                                  ),
-                                  child: Center(
-                                    child: Text(
-                                      "Intraday",
-                                      style: TextStyle(
-                                        color: Colors.grey,
+                                  Container(
+                                    decoration: BoxDecoration(
+                                      color: Colors.grey[100],
+                                      borderRadius: BorderRadius.circular(4),
+                                    ),
+                                    child: Center(
+                                      child: Text(
+                                        "Intraday",
+                                        style: TextStyle(
+                                          color: Colors.grey,
+                                        ),
                                       ),
                                     ),
+                                    padding: EdgeInsets.all(4),
                                   ),
-                                  padding: EdgeInsets.all(4),
-                                ),
-                                Spacer(),
-                                Container(
-                                  decoration: BoxDecoration(
-                                    color: Colors.grey[100],
-                                    borderRadius: BorderRadius.circular(4),
-                                  ),
-                                  child: Center(
-                                    child: Text(
-                                      "Completed",
-                                      style: TextStyle(
-                                        color: Colors.grey,
+                                  Spacer(),
+                                  Container(
+                                    decoration: BoxDecoration(
+                                      color: Colors.grey[100],
+                                      borderRadius: BorderRadius.circular(4),
+                                    ),
+                                    child: Center(
+                                      child: Text(
+                                        "Completed",
+                                        style: TextStyle(
+                                          color: Colors.grey,
+                                        ),
                                       ),
                                     ),
-                                  ),
-                                  padding: EdgeInsets.all(4),
-                                )
-                              ],
-                            ),
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [Text("ADAMENT"), Text("\$ 5.920.00")],
-                            ),
-                          ],
+                                    padding: EdgeInsets.all(4),
+                                  )
+                                ],
+                              ),
+                              SizedBox(
+                                height: 8,
+                              ),
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                children: [Text("ADAMENT"), Text("\$ 5.920.00")],
+                              ),
+                            ],
+                          ),
                         ),
-
                         Divider(
                           color: Colors.grey,
                         ),
