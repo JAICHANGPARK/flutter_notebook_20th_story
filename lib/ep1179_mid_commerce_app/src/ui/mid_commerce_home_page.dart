@@ -107,10 +107,7 @@ class _MidCommerceHomePageState extends State<MidCommerceHomePage> {
                               child: TabBarView(
                             children: [
                               Padding(
-                                padding: EdgeInsets.only(
-                                  left: 16,
-                                  bottom: 8
-                                ),
+                                padding: EdgeInsets.only(left: 16, bottom: 8),
                                 child: ListView.builder(
                                   itemCount: 3,
                                   scrollDirection: Axis.horizontal,
@@ -123,15 +120,29 @@ class _MidCommerceHomePageState extends State<MidCommerceHomePage> {
                                         borderRadius: BorderRadius.circular(8),
                                       ),
                                       child: Column(
+                                        crossAxisAlignment: CrossAxisAlignment.start,
                                         children: [
                                           Text("IRCTC"),
                                           Text("2655.23"),
                                           Text("48.25 (2.16%)"),
-
                                           Row(
                                             children: [
-                                              Expanded(child: Column()),
-                                              Expanded(child: Column()),
+                                              Expanded(
+                                                  child: Column(
+                                                crossAxisAlignment: CrossAxisAlignment.start,
+                                                children: [
+                                                  Text("Quantity"),
+                                                  Text("100"),
+                                                ],
+                                              )),
+                                              Expanded(
+                                                  child: Column(
+                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                    children: [
+                                                      Text("Overall G/L"),
+                                                      Text("2,800"),
+                                                    ],
+                                                  )),
                                             ],
                                           )
                                         ],
