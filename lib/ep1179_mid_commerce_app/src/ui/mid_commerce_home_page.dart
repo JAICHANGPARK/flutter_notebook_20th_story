@@ -110,9 +110,18 @@ class _MidCommerceHomePageState extends State<MidCommerceHomePage> {
                                 itemCount: 3,
                                 scrollDirection: Axis.horizontal,
                                 itemBuilder: (context, index) {
-                                  return Container();
+                                  return Container(
+                                    width: 200,
+                                    decoration: BoxDecoration(
+                                      color: Colors.grey,
+                                      borderRadius: BorderRadius.circular(8)
+                                    ),
+                                  );
                                 },
                               ),
+                              Container(
+                                color: Colors.blueGrey,
+                              )
                             ],
                           )),
                           Padding(
