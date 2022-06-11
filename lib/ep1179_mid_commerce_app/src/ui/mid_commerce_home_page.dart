@@ -103,7 +103,16 @@ class _MidCommerceHomePageState extends State<MidCommerceHomePage> {
                               ),
                             ],
                           ),
-                          Expanded(child: Placeholder()),
+                          Expanded(
+                              child: TabBarView(
+                            children: [
+                              ListView.builder(
+                                itemBuilder: (context, index) {
+                                  return Container();
+                                },
+                              ),
+                            ],
+                          )),
                           Padding(
                             padding: const EdgeInsets.all(16.0),
                             child: Row(
