@@ -122,6 +122,20 @@ class _MidCommerceHomePageState extends State<MidCommerceHomePage> {
                                         color: Colors.grey[400],
                                         borderRadius: BorderRadius.circular(8),
                                       ),
+                                      child: Column(
+                                        children: [
+                                          Text("IRCTC"),
+                                          Text("2655.23"),
+                                          Text("48.25 (2.16%)"),
+
+                                          Row(
+                                            children: [
+                                              Expanded(child: Column()),
+                                              Expanded(child: Column()),
+                                            ],
+                                          )
+                                        ],
+                                      ),
                                     );
                                   },
                                 ),
