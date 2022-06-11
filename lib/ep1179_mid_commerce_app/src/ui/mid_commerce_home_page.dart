@@ -19,6 +19,7 @@ class _MidCommerceHomePageState extends State<MidCommerceHomePage> {
         elevation: 0,
       ),
       body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Container(
             decoration: BoxDecoration(
@@ -45,6 +46,7 @@ class _MidCommerceHomePageState extends State<MidCommerceHomePage> {
           Expanded(
             child: SingleChildScrollView(
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   DefaultTabController(
                     length: 2,
@@ -268,11 +270,14 @@ class _MidCommerceHomePageState extends State<MidCommerceHomePage> {
                       ),
                     ),
                   ),
-                  Text(
-                    "1 Open Order",
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 20
+                  Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: Text(
+                      "1 Open Order",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 20,
+                      ),
                     ),
                   ),
                 ],
