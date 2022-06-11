@@ -283,28 +283,68 @@ class _MidCommerceHomePageState extends State<MidCommerceHomePage> {
                   ...List.generate(
                     10,
                     (index) => Column(
+                      crossAxisAlignment:CrossAxisAlignment.start,
                       children: [
-                        Row(
+                        Column(
+                          crossAxisAlignment:CrossAxisAlignment.start,
                           children: [
+                            Row(
+                              children: [
                                 Container(
                                   decoration: BoxDecoration(
                                     color: Colors.grey[100],
-                                      borderRadius: BorderRadius.circular(4)
+                                    borderRadius: BorderRadius.circular(4),
                                   ),
                                   child: Center(
-                                    child: Text("Buy"),
+                                    child: Text(
+                                      "Buy",
+                                      style: TextStyle(
+                                        color: Colors.grey,
+                                      ),
+                                    ),
                                   ),
+                                  padding: EdgeInsets.all(4),
+                                ),
+                                Container(
+                                  decoration: BoxDecoration(
+                                    color: Colors.grey[100],
+                                    borderRadius: BorderRadius.circular(4),
+                                  ),
+                                  child: Center(
+                                    child: Text(
+                                      "Intraday",
+                                      style: TextStyle(
+                                        color: Colors.grey,
+                                      ),
+                                    ),
+                                  ),
+                                  padding: EdgeInsets.all(4),
+                                ),
+                                Spacer(),
+                                Container(
+                                  decoration: BoxDecoration(
+                                    color: Colors.grey[100],
+                                    borderRadius: BorderRadius.circular(4),
+                                  ),
+                                  child: Center(
+                                    child: Text(
+                                      "Completed",
+                                      style: TextStyle(
+                                        color: Colors.grey,
+                                      ),
+                                    ),
+                                  ),
+                                  padding: EdgeInsets.all(4),
                                 )
+                              ],
+                            ),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [Text("ADAMENT"), Text("\$ 5.920.00")],
+                            ),
                           ],
                         ),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
 
-                            Text("ADAMENT"),
-                            Text("\$ 5.920.00")
-                          ],
-                        ),
                         Divider(
                           color: Colors.grey,
                         ),
