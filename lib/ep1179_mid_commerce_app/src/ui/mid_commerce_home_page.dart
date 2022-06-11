@@ -347,6 +347,26 @@ class _MidCommerceHomePageState extends State<MidCommerceHomePage> {
                                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                 children: [Text("ADAMENT"), Text("\$ 5.920.00")],
                               ),
+                              Row(
+                                children: [
+                                  Text("NSE"),
+                                  Text("No of Shares 4"),
+                                  Spacer(),
+                                  Text("Ordered at 1480.00"),
+                                ],
+                              ),
+                              SizedBox(
+                                height: 8,
+                              ),
+                              Row(
+                                children: [
+                                  Text("MARKET"),
+                                  Text("LTP"),
+                                  Text("1850.00"),
+                                  Spacer(),
+                                  Text("12:00 AM")
+                                ],
+                              )
                             ],
                           ),
                         ),
