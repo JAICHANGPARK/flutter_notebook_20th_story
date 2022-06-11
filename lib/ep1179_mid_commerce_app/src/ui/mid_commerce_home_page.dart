@@ -280,6 +280,29 @@ class _MidCommerceHomePageState extends State<MidCommerceHomePage> {
                       ),
                     ),
                   ),
+                  ...List.generate(
+                    10,
+                    (index) => Column(
+                      children: [
+                        Row(
+                          children: [
+
+                          ],
+                        ),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+
+                            Text("ADAMENT"),
+                            Text("\$ 5.920.00")
+                          ],
+                        ),
+                        Divider(
+                          color: Colors.grey,
+                        ),
+                      ],
+                    ),
+                  ),
                 ],
               ),
             ),
