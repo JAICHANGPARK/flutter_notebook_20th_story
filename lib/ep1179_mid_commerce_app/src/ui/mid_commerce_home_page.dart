@@ -153,7 +153,12 @@ class _MidCommerceHomePageState extends State<MidCommerceHomePage> {
                                                 child: Column(
                                                   crossAxisAlignment: CrossAxisAlignment.start,
                                                   children: [
-                                                    Text("Quantity"),
+                                                    Text(
+                                                      "Quantity",
+                                                      style: TextStyle(
+                                                        fontWeight: FontWeight.bold,
+                                                      ),
+                                                    ),
                                                     SizedBox(
                                                       height: 8,
                                                     ),
@@ -165,7 +170,12 @@ class _MidCommerceHomePageState extends State<MidCommerceHomePage> {
                                                 child: Column(
                                                   crossAxisAlignment: CrossAxisAlignment.start,
                                                   children: [
-                                                    Text("Overall G/L"),
+                                                    Text(
+                                                      "Overall G/L",
+                                                      style: TextStyle(
+                                                        fontWeight: FontWeight.bold,
+                                                      ),
+                                                    ),
                                                     SizedBox(
                                                       height: 8,
                                                     ),
@@ -183,7 +193,7 @@ class _MidCommerceHomePageState extends State<MidCommerceHomePage> {
                                             padding: EdgeInsets.symmetric(vertical: 8),
                                             decoration: BoxDecoration(
                                               borderRadius: BorderRadius.circular(4),
-                                              color: Color.fromRGBO(111, 111, 111, 1),
+                                              color: Color.fromRGBO(80, 80, 80, 1),
                                             ),
                                             child: Center(
                                               child: Text(
@@ -256,6 +266,13 @@ class _MidCommerceHomePageState extends State<MidCommerceHomePage> {
                           )
                         ],
                       ),
+                    ),
+                  ),
+                  Text(
+                    "1 Open Order",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 20
                     ),
                   ),
                 ],
