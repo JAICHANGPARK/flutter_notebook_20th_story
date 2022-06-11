@@ -107,6 +107,8 @@ class _MidCommerceHomePageState extends State<MidCommerceHomePage> {
                               child: TabBarView(
                             children: [
                               ListView.builder(
+                                itemCount: 3,
+                                scrollDirection: Axis.horizontal,
                                 itemBuilder: (context, index) {
                                   return Container();
                                 },
