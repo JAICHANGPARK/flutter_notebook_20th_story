@@ -125,6 +125,7 @@ class _MidCommerceHomePageState extends State<MidCommerceHomePage> {
                                       padding: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
                                       child: Column(
                                         crossAxisAlignment: CrossAxisAlignment.start,
+                                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                         children: [
                                           Text("IRCTC"),
                                           SizedBox(
@@ -142,6 +143,9 @@ class _MidCommerceHomePageState extends State<MidCommerceHomePage> {
                                                 crossAxisAlignment: CrossAxisAlignment.start,
                                                 children: [
                                                   Text("Quantity"),
+                                                  SizedBox(
+                                                    height: 8,
+                                                  ),
                                                   Text("100"),
                                                 ],
                                               )),
@@ -150,6 +154,9 @@ class _MidCommerceHomePageState extends State<MidCommerceHomePage> {
                                                 crossAxisAlignment: CrossAxisAlignment.start,
                                                 children: [
                                                   Text("Overall G/L"),
+                                                  SizedBox(
+                                                    height: 8,
+                                                  ),
                                                   Text("2,800"),
                                                 ],
                                               )),
@@ -159,8 +166,11 @@ class _MidCommerceHomePageState extends State<MidCommerceHomePage> {
                                             height: 8,
                                           ),
                                           Container(
+                                            width: 120,
+                                            padding: EdgeInsets.symmetric(vertical: 8),
                                             decoration: BoxDecoration(
                                               borderRadius: BorderRadius.circular(4),
+                                              color: Color.fromRGBO(111, 111, 111, 1),
                                             ),
                                             child: Center(
                                               child: Text(
