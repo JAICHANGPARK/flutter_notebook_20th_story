@@ -131,35 +131,48 @@ class _MidCommerceHomePageState extends State<MidCommerceHomePage> {
                                           SizedBox(
                                             height: 8,
                                           ),
-                                          Text("2655.23"),
-                                          Text("48.25 (2.16%)"),
+                                          Text(
+                                            "2655.23",
+                                            style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                              fontSize: 20,
+                                            ),
+                                          ),
+                                          Text(
+                                            "48.25 (2.16%)",
+                                            style: TextStyle(
+                                              color: Colors.grey,
+                                            ),
+                                          ),
                                           SizedBox(
                                             height: 8,
                                           ),
                                           Row(
                                             children: [
                                               Expanded(
-                                                  child: Column(
-                                                crossAxisAlignment: CrossAxisAlignment.start,
-                                                children: [
-                                                  Text("Quantity"),
-                                                  SizedBox(
-                                                    height: 8,
-                                                  ),
-                                                  Text("100"),
-                                                ],
-                                              )),
+                                                child: Column(
+                                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                                  children: [
+                                                    Text("Quantity"),
+                                                    SizedBox(
+                                                      height: 8,
+                                                    ),
+                                                    Text("100"),
+                                                  ],
+                                                ),
+                                              ),
                                               Expanded(
-                                                  child: Column(
-                                                crossAxisAlignment: CrossAxisAlignment.start,
-                                                children: [
-                                                  Text("Overall G/L"),
-                                                  SizedBox(
-                                                    height: 8,
-                                                  ),
-                                                  Text("2,800"),
-                                                ],
-                                              )),
+                                                child: Column(
+                                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                                  children: [
+                                                    Text("Overall G/L"),
+                                                    SizedBox(
+                                                      height: 8,
+                                                    ),
+                                                    Text("2,800"),
+                                                  ],
+                                                ),
+                                              ),
                                             ],
                                           ),
                                           SizedBox(
