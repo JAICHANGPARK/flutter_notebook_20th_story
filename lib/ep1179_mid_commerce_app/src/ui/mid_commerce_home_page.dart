@@ -108,7 +108,9 @@ class _MidCommerceHomePageState extends State<MidCommerceHomePage> {
                             children: [
                               Padding(
                                 padding: EdgeInsets.only(
-                                    left: 16),
+                                  left: 16,
+                                  bottom: 8
+                                ),
                                 child: ListView.builder(
                                   itemCount: 3,
                                   scrollDirection: Axis.horizontal,
@@ -117,7 +119,7 @@ class _MidCommerceHomePageState extends State<MidCommerceHomePage> {
                                       margin: EdgeInsets.only(right: 8),
                                       width: 240,
                                       decoration: BoxDecoration(
-                                        color: Colors.grey,
+                                        color: Colors.grey[400],
                                         borderRadius: BorderRadius.circular(8),
                                       ),
                                     );
