@@ -247,7 +247,16 @@ class _MidCommerceInfoPageState extends State<MidCommerceInfoPage> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text("But don't warry couse we are all learning here"),
-                        Text("14:44"),
+                        SizedBox(
+                          height: 8,
+                        ),
+                        Text(
+                          "14:44",
+                          style: TextStyle(
+                            fontSize: 12,
+                            color: Colors.grey,
+                          ),
+                        ),
                       ],
                     ),
                   )
