@@ -94,7 +94,7 @@ class _MidCommerceInfoPageState extends State<MidCommerceInfoPage> {
                           Text(
                             "Pocketful Rating",
                             style: TextStyle(
-                              fontWeight: FontWeight.bold,
+                              fontWeight: FontWeight.w500,
                               color: Colors.grey,
                             ),
                           ),
@@ -108,7 +108,7 @@ class _MidCommerceInfoPageState extends State<MidCommerceInfoPage> {
                                   text: "4.5",
                                   style: TextStyle(
                                     fontSize: 16,
-                                    fontWeight: FontWeight.bold,
+                                    fontWeight: FontWeight.w500,
                                   ),
                                 ),
                                 TextSpan(text: "/5",
@@ -130,7 +130,7 @@ class _MidCommerceInfoPageState extends State<MidCommerceInfoPage> {
                           Text(
                             "Followers",
                             style: TextStyle(
-                              fontWeight: FontWeight.bold,
+                              fontWeight: FontWeight.w500,
                               color: Colors.grey,
                             ),
                           ),
@@ -144,9 +144,40 @@ class _MidCommerceInfoPageState extends State<MidCommerceInfoPage> {
                                   text: "Over 90%",
                                   style: TextStyle(
                                     fontSize: 16,
-                                    fontWeight: FontWeight.bold,
+                                    fontWeight: FontWeight.w500,
                                   ),
                                 ),
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            "Subscription",
+                            style: TextStyle(
+                              fontWeight: FontWeight.w500,
+                              color: Colors.grey,
+                            ),
+                          ),
+                          SizedBox(
+                            height: 4,
+                          ),
+                          Text.rich(
+                            TextSpan(
+                              children: [
+                                TextSpan(
+                                  text: "Rs. 500/month",
+                                  style: TextStyle(
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.w500,
+                                  ),
+                                ),
+
                               ],
                             ),
                           ),
