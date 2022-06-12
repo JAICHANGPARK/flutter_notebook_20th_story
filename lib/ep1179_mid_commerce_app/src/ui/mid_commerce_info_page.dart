@@ -26,11 +26,15 @@ class _MidCommerceInfoPageState extends State<MidCommerceInfoPage> {
                   onPressed: () {
                     context.pop();
                   },
-                  icon: Icon(Icons.arrow_back),
+                  icon: Icon(
+                    Icons.arrow_back,
+                  ),
                 ),
                 Row(
                   children: [
-                    CircleAvatar(),
+                    CircleAvatar(
+                      backgroundColor: Colors.grey[500],
+                    ),
                     Padding(
                       padding: const EdgeInsets.symmetric(
                         horizontal: 8,
@@ -76,6 +80,33 @@ class _MidCommerceInfoPageState extends State<MidCommerceInfoPage> {
                         ),
                       ),
                     )
+                  ],
+                ),
+                Row(
+                  children: [
+                    Expanded(
+                        child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          "Pocketful Rating",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            color: Colors.grey,
+                          ),
+                        ),
+                        Text.rich(
+                          TextSpan(
+                            children: [
+                              TextSpan(
+                                text: "4.5",
+                              ),
+                              TextSpan(text: "/5"),
+                            ],
+                          ),
+                        ),
+                      ],
+                    )),
                   ],
                 )
               ],
