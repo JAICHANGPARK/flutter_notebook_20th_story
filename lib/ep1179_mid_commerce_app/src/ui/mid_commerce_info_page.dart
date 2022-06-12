@@ -13,13 +13,16 @@ class _MidCommerceInfoPageState extends State<MidCommerceInfoPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Container(
             decoration: BoxDecoration(color: Colors.grey[100]),
             padding: EdgeInsets.fromLTRB(16, 48, 16, 16),
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 IconButton(
+                  padding: EdgeInsets.zero,
                   onPressed: () {
                     context.pop();
                   },
@@ -28,21 +31,47 @@ class _MidCommerceInfoPageState extends State<MidCommerceInfoPage> {
                 Row(
                   children: [
                     CircleAvatar(),
-                    Column(
-                      children: [
-                        Text("Mid-Commerce"),
-                        Text("John"),
-                      ],
-                    ),
-                    Container(
-                      decoration: BoxDecoration(
-                        color: Colors.black,
+                    Padding(
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 8,
+                        vertical: 8,
                       ),
-                      child: Center(
-                        child: Text(
-                          "Join",
-                          style: TextStyle(
-                            color: Colors.white,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            "Mid-Commerce",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          SizedBox(
+                            height: 8,
+                          ),
+                          Text(
+                            "John",
+                            style: TextStyle(),
+                          ),
+                        ],
+                      ),
+                    ),
+                    SizedBox(
+                      width: 16,
+                    ),
+                    Expanded(
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: Colors.black,
+                          borderRadius: BorderRadius.circular(4),
+                        ),
+                        margin: EdgeInsets.symmetric(horizontal: 16),
+                        padding: EdgeInsets.symmetric(vertical: 8),
+                        child: Center(
+                          child: Text(
+                            "Join",
+                            style: TextStyle(
+                              color: Colors.white,
+                            ),
                           ),
                         ),
                       ),
