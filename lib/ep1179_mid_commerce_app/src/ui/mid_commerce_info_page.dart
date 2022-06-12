@@ -246,7 +246,9 @@ class _MidCommerceInfoPageState extends State<MidCommerceInfoPage> {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text("But don't warry couse we are all learning here"),
+                        Text(
+                          "But don't warry couse we are all learning here",
+                        ),
                         SizedBox(
                           height: 8,
                         ),
