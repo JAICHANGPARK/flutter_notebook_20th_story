@@ -236,20 +236,22 @@ class _MidCommerceInfoPageState extends State<MidCommerceInfoPage> {
               ),
               child: ListView(
                 padding: EdgeInsets.zero,
-                children: [Container(
-                  decoration: BoxDecoration(
-                    color: Colors.grey[300],
-                    borderRadius: BorderRadius.circular(8),
-                  ),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text("But don't warry couse we are all learning here"),
-                      Text("14:44")
-
-                    ],
-                  ),
-                )],
+                children: [
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.grey[100],
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                    padding: EdgeInsets.symmetric(vertical: 8, horizontal: 4),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text("But don't warry couse we are all learning here"),
+                        Text("14:44"),
+                      ],
+                    ),
+                  )
+                ],
               ),
             ),
           ),
