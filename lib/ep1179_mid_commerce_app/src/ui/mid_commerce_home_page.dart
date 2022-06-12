@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class MidCommerceHomePage extends StatefulWidget {
   const MidCommerceHomePage({Key? key}) : super(key: key);
@@ -36,7 +37,9 @@ class _MidCommerceHomePageState extends State<MidCommerceHomePage> {
                   ),
                 ),
                 IconButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    context.push("/info");
+                  },
                   icon: Icon(Icons.arrow_forward),
                   color: Colors.white,
                 ),
