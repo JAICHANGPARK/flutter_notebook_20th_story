@@ -82,6 +82,9 @@ class _MidCommerceInfoPageState extends State<MidCommerceInfoPage> {
                     )
                   ],
                 ),
+                SizedBox(
+                  height: 8,
+                ),
                 Row(
                   children: [
                     Expanded(
@@ -95,11 +98,18 @@ class _MidCommerceInfoPageState extends State<MidCommerceInfoPage> {
                             color: Colors.grey,
                           ),
                         ),
+                        SizedBox(
+                          height: 4,
+                        ),
                         Text.rich(
                           TextSpan(
                             children: [
                               TextSpan(
                                 text: "4.5",
+                                style: TextStyle(
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.bold,
+                                ),
                               ),
                               TextSpan(text: "/5"),
                             ],
