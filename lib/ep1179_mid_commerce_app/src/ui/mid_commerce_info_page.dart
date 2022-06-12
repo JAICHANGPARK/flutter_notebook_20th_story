@@ -271,6 +271,24 @@ class _MidCommerceInfoPageState extends State<MidCommerceInfoPage> {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
+                        Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Container(
+                            decoration: BoxDecoration(color: Colors.grey[300], borderRadius: BorderRadius.circular(4)),
+                            child: Row(
+                              children: [
+                                Container(
+                                  height: 64,
+                                  width: 4,
+                                  decoration: BoxDecoration(
+                                    color: Colors.grey,
+                                    borderRadius: BorderRadius.circular(8),
+                                  ),
+                                )
+                              ],
+                            ),
+                          ),
+                        ),
                         Text(
                           "Opportunities comes daily. be ready for tommorow market",
                         ),
@@ -284,7 +302,6 @@ class _MidCommerceInfoPageState extends State<MidCommerceInfoPage> {
                             color: Colors.grey,
                           ),
                         ),
-
                       ],
                     ),
                   )
