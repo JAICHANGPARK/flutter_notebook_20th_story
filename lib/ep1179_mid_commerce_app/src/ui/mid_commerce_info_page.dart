@@ -192,32 +192,45 @@ class _MidCommerceInfoPageState extends State<MidCommerceInfoPage> {
               ],
             ),
           ),
-          SizedBox(
-            height: 24,
-            child: Stack(
-              children: [
-                Positioned(
-                  left: 0,
-                  right: 0,
-                  top: 0,
-                  bottom: 0,
-                  child: Divider(
-                    color: Colors.grey,
-                  ),
-                ),
-                Positioned(
-                  child: Container(
-                    decoration: BoxDecoration(
-                      color: Colors.white,
-                    ),
-                    child: Center(
-                      child: Text("Sat. 17/10"),
+          Padding(
+            padding: const EdgeInsets.symmetric(vertical: 16),
+            child: SizedBox(
+              height: 24,
+              child: Stack(
+                alignment: Alignment.center,
+                children: [
+                  Positioned(
+                    left: 0,
+                    right: 0,
+                    top: 0,
+                    bottom: 0,
+                    child: Divider(
+                      color: Colors.grey,
                     ),
                   ),
-                )
-              ],
+                  Positioned(
+                    width: 84,
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                      ),
+                      child: Center(
+                        child: Text(
+                          "Sat. 17/10",
+                          style: TextStyle(
+                            color: Colors.grey,
+                          ),
+                        ),
+                      ),
+                    ),
+                  )
+                ],
+              ),
             ),
-          )
+          ),
+          Expanded(
+            child: Placeholder(),
+          ),
         ],
       ),
     );
