@@ -276,8 +276,10 @@ class _MidCommerceInfoPageState extends State<MidCommerceInfoPage> {
                           Padding(
                             padding: const EdgeInsets.all(8.0),
                             child: Container(
-                              decoration:
-                                  BoxDecoration(color: Colors.grey[300], borderRadius: BorderRadius.circular(4)),
+                              decoration: BoxDecoration(
+                                color: Colors.grey[300],
+                                borderRadius: BorderRadius.circular(4),
+                              ),
                               child: Row(
                                 children: [
                                   Container(
@@ -288,7 +290,201 @@ class _MidCommerceInfoPageState extends State<MidCommerceInfoPage> {
                                       borderRadius: BorderRadius.circular(8),
                                     ),
                                   ),
+                                  SizedBox(
+                                    width: 8,
+                                  ),
                                   Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      Text(
+                                        "skytree",
+                                        style: TextStyle(
+                                          fontSize: 12,
+                                          color: Colors.grey,
+                                        ),
+                                      ),
+                                      SizedBox(
+                                        height: 8,
+                                      ),
+                                      Text(
+                                        "But don't warry couse we are all learning here",
+                                      ),
+                                    ],
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                          Text(
+                            "Opportunities comes daily. be ready for tommorow market",
+                          ),
+                          SizedBox(
+                            height: 8,
+                          ),
+                          Text(
+                            "16:48",
+                            style: TextStyle(
+                              fontSize: 12,
+                              color: Colors.grey,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.grey[100],
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                    padding: EdgeInsets.symmetric(vertical: 8, horizontal: 4),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          "But don't warry couse we are all learning here",
+                        ),
+                        SizedBox(
+                          height: 8,
+                        ),
+                        Text(
+                          "14:44",
+                          style: TextStyle(
+                            fontSize: 12,
+                            color: Colors.grey,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 16),
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.grey[100],
+                        borderRadius: BorderRadius.circular(8),
+                      ),
+                      padding: EdgeInsets.symmetric(vertical: 8, horizontal: 4),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Container(
+                              decoration: BoxDecoration(
+                                color: Colors.grey[300],
+                                borderRadius: BorderRadius.circular(4),
+                              ),
+                              child: Row(
+                                children: [
+                                  Container(
+                                    height: 64,
+                                    width: 4,
+                                    decoration: BoxDecoration(
+                                      color: Colors.grey,
+                                      borderRadius: BorderRadius.circular(8),
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    width: 8,
+                                  ),
+                                  Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      Text(
+                                        "skytree",
+                                        style: TextStyle(
+                                          fontSize: 12,
+                                          color: Colors.grey,
+                                        ),
+                                      ),
+                                      SizedBox(
+                                        height: 8,
+                                      ),
+                                      Text(
+                                        "But don't warry couse we are all learning here",
+                                      ),
+                                    ],
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                          Text(
+                            "Opportunities comes daily. be ready for tommorow market",
+                          ),
+                          SizedBox(
+                            height: 8,
+                          ),
+                          Text(
+                            "16:48",
+                            style: TextStyle(
+                              fontSize: 12,
+                              color: Colors.grey,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.grey[100],
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                    padding: EdgeInsets.symmetric(vertical: 8, horizontal: 4),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          "But don't warry couse we are all learning here",
+                        ),
+                        SizedBox(
+                          height: 8,
+                        ),
+                        Text(
+                          "14:44",
+                          style: TextStyle(
+                            fontSize: 12,
+                            color: Colors.grey,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 16),
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.grey[100],
+                        borderRadius: BorderRadius.circular(8),
+                      ),
+                      padding: EdgeInsets.symmetric(vertical: 8, horizontal: 4),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Container(
+                              decoration: BoxDecoration(
+                                color: Colors.grey[300],
+                                borderRadius: BorderRadius.circular(4),
+                              ),
+                              child: Row(
+                                children: [
+                                  Container(
+                                    height: 64,
+                                    width: 4,
+                                    decoration: BoxDecoration(
+                                      color: Colors.grey,
+                                      borderRadius: BorderRadius.circular(8),
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    width: 8,
+                                  ),
+                                  Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
                                       Text(
                                         "skytree",
