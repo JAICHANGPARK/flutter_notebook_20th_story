@@ -276,7 +276,8 @@ class _MidCommerceInfoPageState extends State<MidCommerceInfoPage> {
                           Padding(
                             padding: const EdgeInsets.all(8.0),
                             child: Container(
-                              decoration: BoxDecoration(color: Colors.grey[300], borderRadius: BorderRadius.circular(4)),
+                              decoration:
+                                  BoxDecoration(color: Colors.grey[300], borderRadius: BorderRadius.circular(4)),
                               child: Row(
                                 children: [
                                   Container(
@@ -286,7 +287,24 @@ class _MidCommerceInfoPageState extends State<MidCommerceInfoPage> {
                                       color: Colors.grey,
                                       borderRadius: BorderRadius.circular(8),
                                     ),
-                                  )
+                                  ),
+                                  Column(
+                                    children: [
+                                      Text(
+                                        "skytree",
+                                        style: TextStyle(
+                                          fontSize: 12,
+                                          color: Colors.grey,
+                                        ),
+                                      ),
+                                      SizedBox(
+                                        height: 8,
+                                      ),
+                                      Text(
+                                        "But don't warry couse we are all learning here",
+                                      ),
+                                    ],
+                                  ),
                                 ],
                               ),
                             ),
