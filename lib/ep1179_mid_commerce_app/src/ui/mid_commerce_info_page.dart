@@ -17,18 +17,20 @@ class _MidCommerceInfoPageState extends State<MidCommerceInfoPage> {
         children: [
           Container(
             decoration: BoxDecoration(color: Colors.grey[100]),
-            padding: EdgeInsets.fromLTRB(16, 48, 16, 16),
+            padding: EdgeInsets.fromLTRB(16, 64, 16, 16),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                IconButton(
-                  padding: EdgeInsets.zero,
-                  onPressed: () {
+                InkWell(
+                  onTap: () {
                     context.pop();
                   },
-                  icon: Icon(
+                  child: Icon(
                     Icons.arrow_back,
                   ),
+                ),
+                SizedBox(
+                  height: 12,
                 ),
                 Row(
                   children: [
@@ -111,7 +113,8 @@ class _MidCommerceInfoPageState extends State<MidCommerceInfoPage> {
                                     fontWeight: FontWeight.w500,
                                   ),
                                 ),
-                                TextSpan(text: "/5",
+                                TextSpan(
+                                  text: "/5",
                                   style: TextStyle(
                                     fontSize: 12,
                                     // fontWeight: FontWeight.bold,
@@ -177,7 +180,6 @@ class _MidCommerceInfoPageState extends State<MidCommerceInfoPage> {
                                     fontWeight: FontWeight.w500,
                                   ),
                                 ),
-
                               ],
                             ),
                           ),
