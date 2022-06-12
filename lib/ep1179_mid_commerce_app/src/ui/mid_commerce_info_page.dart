@@ -11,12 +11,19 @@ class _MidCommerceInfoPageState extends State<MidCommerceInfoPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.white,
-        foregroundColor: Colors.black,
-      ),
       body: Column(
-        children: [],
+        children: [
+          Container(
+            decoration: BoxDecoration(
+              color: Colors.grey[100]
+            ),
+            child: Column(
+              children: [
+
+              ],
+            ),
+          )
+        ],
       ),
     );
   }
