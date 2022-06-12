@@ -229,7 +229,29 @@ class _MidCommerceInfoPageState extends State<MidCommerceInfoPage> {
             ),
           ),
           Expanded(
-            child: Placeholder(),
+            child: Padding(
+              padding: const EdgeInsets.only(
+                left: 16,
+                right: 16,
+              ),
+              child: ListView(
+                padding: EdgeInsets.zero,
+                children: [Container(
+                  decoration: BoxDecoration(
+                    color: Colors.grey[300],
+                    borderRadius: BorderRadius.circular(8),
+                  ),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text("But don't warry couse we are all learning here"),
+                      Text("14:44")
+
+                    ],
+                  ),
+                )],
+              ),
+            ),
           ),
         ],
       ),
