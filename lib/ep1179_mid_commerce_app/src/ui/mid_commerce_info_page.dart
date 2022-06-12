@@ -12,6 +12,7 @@ class _MidCommerceInfoPageState extends State<MidCommerceInfoPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -187,6 +188,32 @@ class _MidCommerceInfoPageState extends State<MidCommerceInfoPage> {
                       ),
                     ),
                   ],
+                )
+              ],
+            ),
+          ),
+          SizedBox(
+            height: 24,
+            child: Stack(
+              children: [
+                Positioned(
+                  left: 0,
+                  right: 0,
+                  top: 0,
+                  bottom: 0,
+                  child: Divider(
+                    color: Colors.grey,
+                  ),
+                ),
+                Positioned(
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                    ),
+                    child: Center(
+                      child: Text("Sat. 17/10"),
+                    ),
+                  ),
                 )
               ],
             ),
