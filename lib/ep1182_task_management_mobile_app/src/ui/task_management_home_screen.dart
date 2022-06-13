@@ -11,7 +11,7 @@ class TaskManagementHomeScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Padding(
-              padding: const EdgeInsets.fromLTRB(16, 4, 16, 32),
+              padding: const EdgeInsets.fromLTRB(12, 8, 12, 32),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -48,11 +48,28 @@ class TaskManagementHomeScreen extends StatelessWidget {
                       )
                     ],
                   ),
-                  SizedBox(height: 24,),
-                  Text("Hey, Dream Walker"),
-                  Text("Are you ready to get back to your workplace?"),
+                  SizedBox(
+                    height: 24,
+                  ),
+                  Text(
+                    "Hey, Dream Walker",
+                    style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  SizedBox(
+                    height: 8,
+                  ),
+                  Text(
+                    "Are you ready to get back to your workplace?",
+                    style: TextStyle(
+                      color: Colors.grey,
+                    ),
+                  ),
                   Divider(
                     color: Colors.grey,
+                    height: 42,
                   ),
                 ],
               ),
