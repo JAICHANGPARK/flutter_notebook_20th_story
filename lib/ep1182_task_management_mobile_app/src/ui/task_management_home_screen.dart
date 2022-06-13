@@ -135,10 +135,25 @@ class TaskManagementHomeScreen extends StatelessWidget {
           height: 72,
           child: Row(
             children: [
-
+              IconButton(
+                onPressed: () {},
+                icon: Icon(Icons.home_filled),
+              ),
+              IconButton(
+                onPressed: () {},
+                icon: Icon(Icons.folder_copy_outlined),
+              ),
+              CircleAvatar(),
+              IconButton(
+                onPressed: () {},
+                icon: Icon(Icons.chat_outlined),
+              ),
+              IconButton(
+                onPressed: () {},
+                icon: Icon(Icons.person),
+              ),
             ],
           ),
-
         ),
       ),
     );
