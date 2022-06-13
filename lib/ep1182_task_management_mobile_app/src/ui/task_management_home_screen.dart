@@ -12,6 +12,7 @@ class TaskManagementHomeScreen extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.fromLTRB(16, 4, 16, 16),
               child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Container(
                     height: 42,
@@ -25,6 +26,20 @@ class TaskManagementHomeScreen extends StatelessWidget {
                     child: Icon(
                       Icons.apps,
                       color: Colors.blue,
+                    ),
+                  ),
+                  Container(
+                    height: 42,
+                    width: 42,
+                    decoration: BoxDecoration(
+                      border: Border.all(
+                        color: Colors.grey,
+                      ),
+                      shape: BoxShape.circle,
+                    ),
+                    child: Icon(
+                      Icons.notifications_none,
+                      color: Colors.grey,
                     ),
                   )
                 ],
