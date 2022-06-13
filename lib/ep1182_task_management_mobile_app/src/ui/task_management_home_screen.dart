@@ -71,6 +71,33 @@ class TaskManagementHomeScreen extends StatelessWidget {
                     color: Colors.grey,
                     height: 42,
                   ),
+                  Text(
+                    "Workspace",
+                    style: TextStyle(
+                      fontSize: 18,
+                    ),
+                  ),
+                  SizedBox(
+                    height: 8,
+                  ),
+                  Row(
+                    children: [
+                      Text(
+                        "Techcare Design",
+                        style: TextStyle(
+                          fontSize: 24,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ],
+                  ),
+
+                  Text(
+                    "Are you ready to get back to your workplace?",
+                    style: TextStyle(
+                      color: Colors.grey,
+                    ),
+                  ),
                 ],
               ),
             ),
