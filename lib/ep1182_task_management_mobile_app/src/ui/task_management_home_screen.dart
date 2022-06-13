@@ -134,6 +134,7 @@ class TaskManagementHomeScreen extends StatelessWidget {
         child: Container(
           height: 72,
           child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               IconButton(
                 onPressed: () {},
