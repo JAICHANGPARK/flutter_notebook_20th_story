@@ -1,6 +1,16 @@
 # flutter_notebook_20th_story
 
-### EP1179
+### EP1182
+
+- Task Management Mobile App
+- by TechCare™ Inc ✪
+- https://dribbble.com/shots/18454973-Mid-commerce-Mobile-App-Concept
+
+<img
+src="https://cdn.dribbble.com/userupload/2849219/file/original-b5b030bf6fb498ce5adcf9cf5636f5f0.jpg?compress=1&resize=1200x900"
+width="400px"/>
+
+### EP1179-1181
 
 - Mid-commerce Mobile App Concept
 - Hasnur Alam Ujjol
