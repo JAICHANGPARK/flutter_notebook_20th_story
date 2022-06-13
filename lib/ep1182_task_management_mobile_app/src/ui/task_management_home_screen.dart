@@ -124,9 +124,11 @@ class TaskManagementHomeScreen extends StatelessWidget {
                     color: Colors.grey[300],
                     height: 42,
                   ),
+                  Text("Running Task")
                 ],
               ),
             ),
+            Expanded(child: Placeholder()),
           ],
         ),
       ),
@@ -144,7 +146,12 @@ class TaskManagementHomeScreen extends StatelessWidget {
                 onPressed: () {},
                 icon: Icon(Icons.folder_copy_outlined),
               ),
-              CircleAvatar(),
+              CircleAvatar(
+                child: Icon(
+                  Icons.add,
+                ),
+                foregroundColor: Colors.white,
+              ),
               IconButton(
                 onPressed: () {},
                 icon: Icon(Icons.chat_outlined),
