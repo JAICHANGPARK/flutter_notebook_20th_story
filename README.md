@@ -4,10 +4,10 @@
 
 - Task Management Mobile App
 - by TechCare™ Inc ✪
-- https://dribbble.com/shots/18454973-Mid-commerce-Mobile-App-Concept
+- https://dribbble.com/shots/18468670-Task-Management-Mobile-App
 
 <img
-src="https://cdn.dribbble.com/userupload/2849219/file/original-b5b030bf6fb498ce5adcf9cf5636f5f0.jpg?compress=1&resize=1200x900"
+src="https://cdn.dribbble.com/userupload/2865609/file/original-cd503942ad4e2ac4720eded92e153d0f.png?compress=1&resize=1200x900"
 width="400px"/>
 
 ### EP1179-1181
