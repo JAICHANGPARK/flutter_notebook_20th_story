@@ -130,6 +130,17 @@ class TaskManagementHomeScreen extends StatelessWidget {
           ],
         ),
       ),
+      bottomNavigationBar: BottomAppBar(
+        child: Container(
+          height: 72,
+          child: Row(
+            children: [
+
+            ],
+          ),
+
+        ),
+      ),
     );
   }
 }
