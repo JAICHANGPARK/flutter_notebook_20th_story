@@ -81,6 +81,7 @@ class TaskManagementHomeScreen extends StatelessWidget {
                     height: 8,
                   ),
                   Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
                         "Techcare Design",
@@ -89,9 +90,22 @@ class TaskManagementHomeScreen extends StatelessWidget {
                           fontWeight: FontWeight.bold,
                         ),
                       ),
+                      Container(
+                        height: 42,
+                        width: 42,
+                        decoration: BoxDecoration(
+                          border: Border.all(
+                            color: Colors.grey[500]!,
+                          ),
+                          shape: BoxShape.circle,
+                        ),
+                        child: Icon(
+                          Icons.arrow_forward,
+                          color: Colors.blue,
+                        ),
+                      ),
                     ],
                   ),
-
                   Text(
                     "Are you ready to get back to your workplace?",
                     style: TextStyle(
