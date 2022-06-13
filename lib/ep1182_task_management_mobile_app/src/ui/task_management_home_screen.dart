@@ -10,17 +10,12 @@ class TaskManagementHomeScreen extends StatelessWidget {
         child: Column(
           children: [
             Padding(
-              padding: const EdgeInsets.fromLTRB(
-                16,
-                32,
-                16,
-                16,
-              ),
+              padding: const EdgeInsets.fromLTRB(16, 4, 16, 16),
               child: Row(
                 children: [
                   Container(
-                    height: 48,
-                    width: 48,
+                    height: 42,
+                    width: 42,
                     decoration: BoxDecoration(
                       border: Border.all(
                         color: Colors.grey,
