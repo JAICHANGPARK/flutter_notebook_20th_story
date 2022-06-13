@@ -23,7 +23,7 @@ class TaskManagementHomeScreen extends StatelessWidget {
                         width: 42,
                         decoration: BoxDecoration(
                           border: Border.all(
-                            color: Colors.grey,
+                            color: Colors.grey[400]!,
                           ),
                           shape: BoxShape.circle,
                         ),
@@ -37,7 +37,7 @@ class TaskManagementHomeScreen extends StatelessWidget {
                         width: 42,
                         decoration: BoxDecoration(
                           border: Border.all(
-                            color: Colors.grey,
+                            color: Colors.grey[400]!,
                           ),
                           shape: BoxShape.circle,
                         ),
@@ -95,7 +95,7 @@ class TaskManagementHomeScreen extends StatelessWidget {
                         width: 42,
                         decoration: BoxDecoration(
                           border: Border.all(
-                            color: Colors.grey[500]!,
+                            color: Colors.grey[400]!,
                           ),
                           shape: BoxShape.circle,
                         ),
