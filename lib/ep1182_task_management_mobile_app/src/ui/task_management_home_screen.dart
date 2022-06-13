@@ -45,6 +45,8 @@ class TaskManagementHomeScreen extends StatelessWidget {
                 ],
               ),
             ),
+            Text("Hey, Dream Walker"),
+            Text("Are you ready to get back to your workplace?")
           ],
         ),
       ),
