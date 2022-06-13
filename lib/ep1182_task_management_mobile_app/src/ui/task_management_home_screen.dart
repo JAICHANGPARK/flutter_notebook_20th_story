@@ -68,7 +68,7 @@ class TaskManagementHomeScreen extends StatelessWidget {
                     ),
                   ),
                   Divider(
-                    color: Colors.grey,
+                    color: Colors.grey[300],
                     height: 42,
                   ),
                   Text(
@@ -106,11 +106,23 @@ class TaskManagementHomeScreen extends StatelessWidget {
                       ),
                     ],
                   ),
-                  Text(
-                    "Are you ready to get back to your workplace?",
-                    style: TextStyle(
-                      color: Colors.grey,
-                    ),
+                  Row(
+                    children: [
+                      Text(
+                        "Created Date: ",
+                        style: TextStyle(
+                          color: Colors.grey,
+                        ),
+                      ),
+                      Text(
+                        " 20 may 2020",
+                        style: TextStyle(),
+                      ),
+                    ],
+                  ),
+                  Divider(
+                    color: Colors.grey[300],
+                    height: 42,
                   ),
                 ],
               ),
