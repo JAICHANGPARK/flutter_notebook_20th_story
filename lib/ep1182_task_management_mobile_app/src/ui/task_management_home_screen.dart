@@ -191,14 +191,14 @@ class TaskManagementHomeScreen extends StatelessWidget {
                                     radius: 12,
                                     backgroundColor: Colors.red,
                                   ),
-                                  left: 12,
+                                  left: 14,
                                 ),
                                 Positioned(
                                   child: CircleAvatar(
                                     radius: 12,
                                     backgroundColor: Colors.green,
                                   ),
-                                  left: 24,
+                                  left: 28,
                                 )
                               ],
                             ),
