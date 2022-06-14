@@ -234,11 +234,15 @@ class TaskManagementHomeScreen extends StatelessWidget {
                             value: 0.5,
                             backgroundColor: Colors.white,
                           ),
+                          SizedBox(
+                            height: 16,
+                          ),
                           Container(
                             decoration: BoxDecoration(
                               color: Colors.white,
                               borderRadius: BorderRadius.circular(4),
                             ),
+                            padding: EdgeInsets.all(8),
                             child: Column(
                               children: [
                                 Row(
