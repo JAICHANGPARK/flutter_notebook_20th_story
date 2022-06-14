@@ -146,7 +146,10 @@ class TaskManagementHomeScreen extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Container(
-                            decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(16)),
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(16),
+                            ),
                             padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                             child: Text(
                               "UI Design Kit",
@@ -170,38 +173,66 @@ class TaskManagementHomeScreen extends StatelessWidget {
                           Padding(
                             padding: const EdgeInsets.symmetric(vertical: 8),
                             child: Text(
-                              "Make a page display about service for website company with blue and red colors",
+                              "Make a page display about service for website "
+                              "company with blue and red colors",
                               style: TextStyle(
                                 color: Colors.grey,
                               ),
                             ),
                           ),
-                          SizedBox(
-                            height: 24,
-                            child: Stack(
-                              children: [
-                                Positioned(
-                                  child: CircleAvatar(
-                                    radius: 12,
+                          Padding(
+                            padding: const EdgeInsets.symmetric(vertical: 8),
+                            child: SizedBox(
+                              height: 24,
+                              child: Stack(
+                                children: [
+                                  Positioned(
+                                    child: CircleAvatar(
+                                      radius: 12,
+                                    ),
+                                    left: 0,
                                   ),
-                                  left: 0,
-                                ),
-                                Positioned(
-                                  child: CircleAvatar(
-                                    radius: 12,
-                                    backgroundColor: Colors.red,
+                                  Positioned(
+                                    child: CircleAvatar(
+                                      radius: 12,
+                                      backgroundColor: Colors.red,
+                                    ),
+                                    left: 14,
                                   ),
-                                  left: 14,
-                                ),
-                                Positioned(
-                                  child: CircleAvatar(
-                                    radius: 12,
-                                    backgroundColor: Colors.green,
-                                  ),
-                                  left: 28,
-                                )
-                              ],
+                                  Positioned(
+                                    child: CircleAvatar(
+                                      radius: 12,
+                                      backgroundColor: Colors.green,
+                                    ),
+                                    left: 28,
+                                  )
+                                ],
+                              ),
                             ),
+                          ),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text(
+                                "Progress",
+                                style: TextStyle(
+                                    // fontWeight: FontWeight.bold,
+                                    color: Colors.grey),
+                              ),
+                              Text(
+                                "50%",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              )
+                            ],
+                          ),
+                          SizedBox(
+                            height: 4,
+                          ),
+                          LinearProgressIndicator(
+                            value: 0.5,
+                            backgroundColor: Colors.white,
                           )
                         ],
                       ),
