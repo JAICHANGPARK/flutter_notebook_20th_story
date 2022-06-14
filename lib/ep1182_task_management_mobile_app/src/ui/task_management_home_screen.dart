@@ -11,7 +11,7 @@ class TaskManagementHomeScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Padding(
-              padding: const EdgeInsets.fromLTRB(12, 8, 12, 32),
+              padding: const EdgeInsets.fromLTRB(12, 8, 12, 16),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -128,7 +128,20 @@ class TaskManagementHomeScreen extends StatelessWidget {
                 ],
               ),
             ),
-            Expanded(child: Placeholder()),
+            Expanded(
+              child: ListView.builder(
+                itemCount: 3,
+                scrollDirection: Axis.horizontal,
+                itemBuilder: (context, index) {
+                  return Container(
+                    width: 240,
+                    decoration: BoxDecoration(
+                      color: Colors.blue[100],
+                    ),
+                  );
+                },
+              ),
+            ),
           ],
         ),
       ),
