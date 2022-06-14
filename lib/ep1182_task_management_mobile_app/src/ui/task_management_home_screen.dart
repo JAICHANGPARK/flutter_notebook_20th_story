@@ -261,7 +261,9 @@ class TaskManagementHomeScreen extends StatelessWidget {
                                         ),
                                       ),
                                     ),
-                                    SizedBox(width: 4,),
+                                    SizedBox(
+                                      width: 4,
+                                    ),
                                     Text(
                                       "Deadline 20 Act. 16 days left",
                                       style: TextStyle(
@@ -270,13 +272,26 @@ class TaskManagementHomeScreen extends StatelessWidget {
                                     )
                                   ],
                                 ),
+                                SizedBox(height: 12,),
                                 Row(
                                   children: [
-                                    Icon(Icons.attach_file,
-                                    size: 14,),
-                                    Text("4 Attachment"),
-                                    Icon(Icons.chat_outlined,),
-                                    Text("10 Comments"),
+                                    Icon(
+                                      Icons.attach_file,
+                                      size: 14,
+                                    ),
+                                    Text(
+                                      "4 Attachment",
+                                      style: TextStyle(fontSize: 12),
+                                    ),
+                                    Spacer(),
+                                    Icon(
+                                      Icons.chat_outlined,
+                                      size: 14,
+                                    ),
+                                    Text(
+                                      "10 Comments",
+                                      style: TextStyle(fontSize: 12),
+                                    ),
                                   ],
                                 )
                               ],
