@@ -133,10 +133,14 @@ class TaskManagementHomeScreen extends StatelessWidget {
                 itemCount: 3,
                 scrollDirection: Axis.horizontal,
                 itemBuilder: (context, index) {
-                  return Container(
-                    width: 240,
-                    decoration: BoxDecoration(
-                      color: Colors.blue[100],
+                  return Padding(
+                    padding: const EdgeInsets.only(top: 8, left: 8, right: 8, bottom: 8),
+                    child: Container(
+                      width: 240,
+                      decoration: BoxDecoration(
+                        color: Colors.blue[100],
+                        borderRadius: BorderRadius.circular(8),
+                      ),
                     ),
                   );
                 },
