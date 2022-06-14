@@ -142,14 +142,17 @@ class TaskManagementHomeScreen extends StatelessWidget {
                         borderRadius: BorderRadius.circular(8),
                       ),
                       child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Container(
-                            child: Center(
-                              child: Text(
-                                "UI Design Kit",
-                                style: TextStyle(
-                                  color: Colors.blue,
-                                ),
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                            ),
+                            padding: EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+                            child: Text(
+                              "UI Design Kit",
+                              style: TextStyle(
+                                color: Colors.blue,
                               ),
                             ),
                           )
