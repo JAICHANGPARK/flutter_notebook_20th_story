@@ -169,7 +169,7 @@ class TaskManagementHomeScreen extends StatelessWidget {
                           ),
 
                           Padding(
-                            padding: const EdgeInsets.all(8.0),
+                            padding: const EdgeInsets.symmetric(vertical: 8),
                             child: Text(
                               "Make a page display about service for website company with blue and red colors",
                               style: TextStyle(
