@@ -155,13 +155,25 @@ class TaskManagementHomeScreen extends StatelessWidget {
                               ),
                             ),
                           ),
-                          SizedBox(height: 16,),
+                          SizedBox(
+                            height: 16,
+                          ),
                           Padding(
                             padding: const EdgeInsets.only(right: 64),
                             child: Text(
                               "Website home page design",
                               style: TextStyle(
                                 fontSize: 20,
+                              ),
+                            ),
+                          ),
+
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Text(
+                              "Make a page display about service for website company with blue and red colors",
+                              style: TextStyle(
+                                color: Colors.grey,
                               ),
                             ),
                           )
