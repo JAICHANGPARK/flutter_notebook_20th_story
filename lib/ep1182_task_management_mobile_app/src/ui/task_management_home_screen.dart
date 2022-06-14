@@ -260,7 +260,23 @@ class TaskManagementHomeScreen extends StatelessWidget {
                                           color: Colors.blue,
                                         ),
                                       ),
+                                    ),
+                                    SizedBox(width: 4,),
+                                    Text(
+                                      "Deadline 20 Act. 16 days left",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                      ),
                                     )
+                                  ],
+                                ),
+                                Row(
+                                  children: [
+                                    Icon(Icons.attach_file,
+                                    size: 14,),
+                                    Text("4 Attachment"),
+                                    Icon(Icons.chat_outlined,),
+                                    Text("10 Comments"),
                                   ],
                                 )
                               ],
