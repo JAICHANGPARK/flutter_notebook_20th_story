@@ -167,7 +167,6 @@ class TaskManagementHomeScreen extends StatelessWidget {
                               ),
                             ),
                           ),
-
                           Padding(
                             padding: const EdgeInsets.symmetric(vertical: 8),
                             child: Text(
@@ -178,10 +177,29 @@ class TaskManagementHomeScreen extends StatelessWidget {
                             ),
                           ),
                           SizedBox(
-                            height: 42,
+                            height: 24,
                             child: Stack(
                               children: [
-
+                                Positioned(
+                                  child: CircleAvatar(
+                                    radius: 12,
+                                  ),
+                                  left: 0,
+                                ),
+                                Positioned(
+                                  child: CircleAvatar(
+                                    radius: 12,
+                                    backgroundColor: Colors.red,
+                                  ),
+                                  left: 12,
+                                ),
+                                Positioned(
+                                  child: CircleAvatar(
+                                    radius: 12,
+                                    backgroundColor: Colors.green,
+                                  ),
+                                  left: 24,
+                                )
                               ],
                             ),
                           )
