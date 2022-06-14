@@ -176,6 +176,14 @@ class TaskManagementHomeScreen extends StatelessWidget {
                                 color: Colors.grey,
                               ),
                             ),
+                          ),
+                          SizedBox(
+                            height: 42,
+                            child: Stack(
+                              children: [
+
+                              ],
+                            ),
                           )
                         ],
                       ),
