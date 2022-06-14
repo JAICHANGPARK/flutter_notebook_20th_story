@@ -134,12 +134,26 @@ class TaskManagementHomeScreen extends StatelessWidget {
                 scrollDirection: Axis.horizontal,
                 itemBuilder: (context, index) {
                   return Padding(
-                    padding: const EdgeInsets.only(top: 8, left: 8, right: 8, bottom: 8),
+                    padding: const EdgeInsets.only(top: 8, left: 16, right: 4, bottom: 16),
                     child: Container(
-                      width: 240,
+                      width: 300,
                       decoration: BoxDecoration(
                         color: Colors.blue[100],
                         borderRadius: BorderRadius.circular(8),
+                      ),
+                      child: Column(
+                        children: [
+                          Container(
+                            child: Center(
+                              child: Text(
+                                "UI Design Kit",
+                                style: TextStyle(
+                                  color: Colors.blue,
+                                ),
+                              ),
+                            ),
+                          )
+                        ],
                       ),
                     ),
                   );
