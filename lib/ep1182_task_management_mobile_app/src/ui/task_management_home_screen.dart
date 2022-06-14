@@ -233,6 +233,34 @@ class TaskManagementHomeScreen extends StatelessWidget {
                           LinearProgressIndicator(
                             value: 0.5,
                             backgroundColor: Colors.white,
+                          ),
+                          Container(
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(4),
+                            ),
+                            child: Column(
+                              children: [
+                                Row(
+                                  children: [
+                                    Container(
+                                      padding: EdgeInsets.all(2),
+                                      decoration: BoxDecoration(
+                                        border: Border.all(),
+                                        borderRadius: BorderRadius.circular(2),
+                                      ),
+                                      child: Center(
+                                        child: Icon(
+                                          Icons.check,
+                                          size: 12,
+                                          color: Colors.blue,
+                                        ),
+                                      ),
+                                    )
+                                  ],
+                                )
+                              ],
+                            ),
                           )
                         ],
                       ),
