@@ -1,6 +1,17 @@
 # flutter_notebook_20th_story
 
-### EP1182
+### EP1184-
+
+- Mobile App - Task Management
+- Raffialdo Bayu for Enver Studio
+- https://dribbble.com/shots/18492103-Mobile-App-Task-Management#
+
+
+<img
+src="https://cdn.dribbble.com/userupload/2903372/file/original-577dfad2cd9f215dea0692584ad28ff0.png?compress=1&resize=1200x900"
+width="400px"/>
+
+### EP1182-1183
 
 - Task Management Mobile App
 - by TechCare™ Inc ✪
