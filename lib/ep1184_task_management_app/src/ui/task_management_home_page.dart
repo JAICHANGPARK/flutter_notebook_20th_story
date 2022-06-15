@@ -19,9 +19,13 @@ class _TaskManagementHomePageState extends State<TaskManagementHomePage> {
             right: 0,
             bottom: 0,
             top: 0,
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [],
+            child: SingleChildScrollView(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  
+                ],
+              ),
             ),
           ),
           Positioned(
@@ -29,10 +33,11 @@ class _TaskManagementHomePageState extends State<TaskManagementHomePage> {
             right: 0,
             bottom: 0,
             child: Container(
-              height: 52,
+              height: 58,
               decoration: BoxDecoration(color: Color.fromRGBO(44, 46, 47, 1)),
-              padding: EdgeInsets.only(top: 16, right: 24, left: 24),
+              padding: EdgeInsets.only(top: 12, right: 24, left: 24),
               child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Column(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -47,10 +52,66 @@ class _TaskManagementHomePageState extends State<TaskManagementHomePage> {
                         width: 16,
                       )
                     ],
-                  )
+                  ),
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Icon(
+                        Icons.calendar_month_outlined,
+                        color: Colors.grey,
+                      ),
+                      Container(
+                        color: Colors.transparent,
+                        height: 4,
+                        width: 16,
+                      ),
+                    ],
+                  ),
+                  SizedBox(
+                    width: 64,
+                  ),
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Icon(
+                        Icons.chat_outlined,
+                        color: Colors.grey,
+                      ),
+                      Container(
+                        color: Colors.transparent,
+                        height: 4,
+                        width: 16,
+                      ),
+                    ],
+                  ),
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Icon(
+                        Icons.settings_outlined,
+                        color: Colors.grey,
+                      ),
+                      Container(
+                        color: Colors.transparent,
+                        height: 4,
+                        width: 16,
+                      ),
+                    ],
+                  ),
                 ],
               ),
             ),
+          ),
+          Positioned(
+            child: FloatingActionButton(
+              onPressed: () {},
+              backgroundColor: Color.fromRGBO(61, 63, 65, 1),
+              child: Icon(Icons.add),
+
+            ),
+            left: 0,
+            right: 0,
+            bottom: 24,
           )
         ],
       ),
