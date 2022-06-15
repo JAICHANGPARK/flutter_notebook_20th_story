@@ -24,41 +24,44 @@ class _TaskManagementHomePageState extends State<TaskManagementHomePage> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Row(
-                      children: [
-                        CircleAvatar(),
-                        SizedBox(
-                          width: 4,
-                        ),
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              "Dreamwalker",
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontWeight: FontWeight.bold,
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Row(
+                        children: [
+                          CircleAvatar(),
+                          SizedBox(
+                            width: 4,
+                          ),
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                "Dreamwalker",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold,
+                                ),
                               ),
-                            ),
-                            SizedBox(
-                              height: 4,
-                            ),
-                            Text(
-                              "@jaichangpark",
-                              style: TextStyle(
-                                color: Colors.grey,
-                                fontWeight: FontWeight.bold,
+                              SizedBox(
+                                height: 4,
                               ),
-                            )
-                          ],
-                        ),
-                        Spacer(),
-                        CircleAvatar(
-                          backgroundColor: Colors.white.withOpacity(.1),
-                          child: Icon(Icons.notifications_none),
-                          foregroundColor: Colors.white,
-                        )
-                      ],
+                              Text(
+                                "@jaichangpark",
+                                style: TextStyle(
+                                  color: Colors.grey,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              )
+                            ],
+                          ),
+                          Spacer(),
+                          CircleAvatar(
+                            backgroundColor: Colors.white.withOpacity(.1),
+                            child: Icon(Icons.notifications_none),
+                            foregroundColor: Colors.white,
+                          )
+                        ],
+                      ),
                     )
                   ],
                 ),
