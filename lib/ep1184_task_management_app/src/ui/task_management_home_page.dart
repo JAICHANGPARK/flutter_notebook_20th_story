@@ -23,7 +23,22 @@ class _TaskManagementHomePageState extends State<TaskManagementHomePage> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  
+                  Row(
+                    children: [
+                      CircleAvatar(),
+                      Column(
+                        children: [
+                          Text(
+                            "Dreamwalker",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          )
+                        ],
+                      )
+                    ],
+                  )
                 ],
               ),
             ),
@@ -107,7 +122,6 @@ class _TaskManagementHomePageState extends State<TaskManagementHomePage> {
               onPressed: () {},
               backgroundColor: Color.fromRGBO(61, 63, 65, 1),
               child: Icon(Icons.add),
-
             ),
             left: 0,
             right: 0,
