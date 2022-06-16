@@ -131,8 +131,9 @@ class _TaskManagementHomePageState extends State<TaskManagementHomePage> {
                         ),
                       ),
                     ),
+                    SizedBox(height: 16,),
                     Padding(
-                      padding: const EdgeInsets.all(16.0),
+                      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                       child: Row(
                         children: [
                           Text(
@@ -159,6 +160,21 @@ class _TaskManagementHomePageState extends State<TaskManagementHomePage> {
                         ],
                       ),
                     ),
+
+                    Column(
+                      children: List.generate(
+                        10,
+                        (index) => Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Container(
+                            height: 64,
+                            decoration: BoxDecoration(
+                              color: Colors.white.withOpacity(0.2),
+                            ),
+                          ),
+                        ),
+                      ),
+                    )
                   ],
                 ),
               ),
