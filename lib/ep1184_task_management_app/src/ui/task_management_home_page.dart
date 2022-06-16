@@ -62,6 +62,24 @@ class _TaskManagementHomePageState extends State<TaskManagementHomePage> {
                           )
                         ],
                       ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Container(
+                        height: 48,
+                        decoration: BoxDecoration(
+                          color: Colors.white.withOpacity(0.2),
+                          borderRadius: BorderRadius.circular(4),
+                        ),
+                        child: TextField(
+                          decoration: InputDecoration(
+                            hintText: "Search tasks...",
+                            hintStyle: TextStyle(
+                              color: Colors.white,
+                            ),
+                          ),
+                        ),
+                      ),
                     )
                   ],
                 ),
