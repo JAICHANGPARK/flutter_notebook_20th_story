@@ -95,6 +95,19 @@ class _TaskManagementHomePageState extends State<TaskManagementHomePage> {
                             color: Colors.white,
                             fontWeight: FontWeight.bold,
                           ),
+                        ),
+                        Spacer(),
+                        Text(
+                          "See all",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 12,
+                          ),
+                        ),
+                        Icon(
+                          Icons.arrow_forward,
+                          size: 12,
+                          color: Colors.white,
                         )
                       ],
                     )
