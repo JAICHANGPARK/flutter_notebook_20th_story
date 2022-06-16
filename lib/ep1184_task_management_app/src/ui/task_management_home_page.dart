@@ -114,16 +114,21 @@ class _TaskManagementHomePageState extends State<TaskManagementHomePage> {
                     SizedBox(
                       height: 200,
                       child: Container(
-                        color: Colors.blue,
+                        padding: EdgeInsets.only(left: 16),
                         child: ListView.builder(
                           itemCount: 4,
                           scrollDirection: Axis.horizontal,
                           itemBuilder: (context, index) {
-                            return Container(
-                              decoration: BoxDecoration(
-                                color: Colors.white.withOpacity(0.2)
+                            return Padding(
+                              padding: EdgeInsets.only(right: 16),
+                              child: Container(
+                                width: 280,
+                                decoration: BoxDecoration(
+                                  color: Colors.white.withOpacity(0.2),
+                                  borderRadius: BorderRadius.circular(4)
+                                ),
                               ),
-                            )
+                            );
                           },
                         ),
                       ),
