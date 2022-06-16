@@ -73,6 +73,9 @@ class _TaskManagementHomePageState extends State<TaskManagementHomePage> {
                         ),
                         child: TextField(
                           decoration: InputDecoration(
+                            icon: Icon(
+                              Icons.search,
+                            ),
                             hintText: "Search tasks...",
                             hintStyle: TextStyle(
                               color: Colors.white,
