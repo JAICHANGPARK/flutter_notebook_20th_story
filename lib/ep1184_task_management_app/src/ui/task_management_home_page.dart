@@ -131,7 +131,9 @@ class _TaskManagementHomePageState extends State<TaskManagementHomePage> {
                         ),
                       ),
                     ),
-                    SizedBox(height: 16,),
+                    SizedBox(
+                      height: 16,
+                    ),
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                       child: Row(
@@ -160,7 +162,6 @@ class _TaskManagementHomePageState extends State<TaskManagementHomePage> {
                         ],
                       ),
                     ),
-
                     Column(
                       children: List.generate(
                         10,
@@ -170,6 +171,56 @@ class _TaskManagementHomePageState extends State<TaskManagementHomePage> {
                             height: 84,
                             decoration: BoxDecoration(
                               color: Colors.white.withOpacity(0.2),
+                            ),
+                            padding: EdgeInsets.all(8),
+                            child: Row(
+                              children: [
+                                Container(
+                                  height: 78,
+                                  width: 78,
+                                  decoration: BoxDecoration(
+                                    color: Colors.blue,
+                                    borderRadius: BorderRadius.circular(4),
+                                  ),
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      Text(
+                                        "Mobile App - Finance",
+                                        style: TextStyle(color: Colors.white, fontSize: 18),
+                                      ),
+                                      SizedBox(
+                                        height: 4,
+                                      ),
+                                      Row(
+                                        children: [
+                                          CircleAvatar(
+                                            radius: 8,
+                                          ),
+                                          SizedBox(
+                                            width: 8,
+                                          ),
+                                          Text(
+                                            "Completed (4)",
+                                            style: TextStyle(
+                                              color: Colors.white,
+                                            ),
+                                          )
+                                        ],
+                                      )
+                                    ],
+                                  ),
+                                ),
+                                Spacer(),
+                                IconButton(
+                                  onPressed: () {},
+                                  icon: Icon(Icons.more_vert),
+                                  color: Colors.white,
+                                )
+                              ],
                             ),
                           ),
                         ),
