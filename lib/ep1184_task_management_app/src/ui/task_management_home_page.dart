@@ -87,29 +87,33 @@ class _TaskManagementHomePageState extends State<TaskManagementHomePage> {
                         ),
                       ),
                     ),
-                    Row(
-                      children: [
-                        Text(
-                          "Latest project",
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontWeight: FontWeight.bold,
+                    Padding(
+                      padding: const EdgeInsets.all(16.0),
+                      child: Row(
+                        children: [
+                          Text(
+                            "Latest project",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 24
+                            ),
                           ),
-                        ),
-                        Spacer(),
-                        Text(
-                          "See all",
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 12,
+                          Spacer(),
+                          Text(
+                            "See all",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 12,
+                            ),
                           ),
-                        ),
-                        Icon(
-                          Icons.arrow_forward,
-                          size: 12,
-                          color: Colors.white,
-                        )
-                      ],
+                          Icon(
+                            Icons.arrow_forward,
+                            size: 12,
+                            color: Colors.white,
+                          )
+                        ],
+                      ),
                     )
                   ],
                 ),
