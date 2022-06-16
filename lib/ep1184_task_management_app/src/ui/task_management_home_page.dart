@@ -71,21 +71,32 @@ class _TaskManagementHomePageState extends State<TaskManagementHomePage> {
                           color: Colors.white.withOpacity(0.2),
                           borderRadius: BorderRadius.circular(4),
                         ),
-                        padding:EdgeInsets.symmetric(horizontal: 16),
+                        padding: EdgeInsets.symmetric(horizontal: 16),
                         child: TextField(
                           decoration: InputDecoration(
                             icon: Icon(
                               Icons.search,
-                              color: Colors.white,
+                              color: Colors.grey,
                             ),
                             iconColor: Colors.white,
                             hintText: "Search tasks...",
                             hintStyle: TextStyle(
-                              color: Colors.white,
+                              color: Colors.grey,
                             ),
                           ),
                         ),
                       ),
+                    ),
+                    Row(
+                      children: [
+                        Text(
+                          "Latest project",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        )
+                      ],
                     )
                   ],
                 ),
