@@ -93,11 +93,7 @@ class _TaskManagementHomePageState extends State<TaskManagementHomePage> {
                         children: [
                           Text(
                             "Latest project",
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontWeight: FontWeight.bold,
-                              fontSize: 24
-                            ),
+                            style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 24),
                           ),
                           Spacer(),
                           Text(
@@ -114,7 +110,24 @@ class _TaskManagementHomePageState extends State<TaskManagementHomePage> {
                           )
                         ],
                       ),
-                    )
+                    ),
+                    SizedBox(
+                      height: 200,
+                      child: Container(
+                        color: Colors.blue,
+                        child: ListView.builder(
+                          itemCount: 4,
+                          scrollDirection: Axis.horizontal,
+                          itemBuilder: (context, index) {
+                            return Container(
+                              decoration: BoxDecoration(
+                                color: Colors.white.withOpacity(0.2)
+                              ),
+                            )
+                          },
+                        ),
+                      ),
+                    ),
                   ],
                 ),
               ),
