@@ -165,9 +165,9 @@ class _TaskManagementHomePageState extends State<TaskManagementHomePage> {
                       children: List.generate(
                         10,
                         (index) => Padding(
-                          padding: const EdgeInsets.all(8.0),
+                          padding: const EdgeInsets.only(left: 16, right: 16, bottom: 12),
                           child: Container(
-                            height: 64,
+                            height: 84,
                             decoration: BoxDecoration(
                               color: Colors.white.withOpacity(0.2),
                             ),
