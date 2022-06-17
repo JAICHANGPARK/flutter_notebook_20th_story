@@ -120,6 +120,10 @@ A new Flutter project.
 
 Flutter run
 
+## channel
+
+Flutter master
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
