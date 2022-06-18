@@ -211,6 +211,15 @@ class _TaskManagementHomePageState extends State<TaskManagementHomePage> {
                                                     radius: 14,
                                                     backgroundColor: Colors.red,
                                                   ),
+                                                ),
+                                                Positioned(
+                                                  left: 32,
+                                                  bottom: 0,
+                                                  top: 0,
+                                                  child: CircleAvatar(
+                                                    radius: 14,
+                                                    backgroundColor: Colors.green,
+                                                  ),
                                                 )
                                               ],
                                             ),
