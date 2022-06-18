@@ -205,7 +205,7 @@ class _TaskManagementHomePageState extends State<TaskManagementHomePage> {
                                                   ),
                                                 ),
                                                 Positioned(
-                                                  left: 16,
+                                                  left: 20,
                                                   bottom: 0,
                                                   top: 0,
                                                   child: CircleAvatar(
@@ -214,7 +214,7 @@ class _TaskManagementHomePageState extends State<TaskManagementHomePage> {
                                                   ),
                                                 ),
                                                 Positioned(
-                                                  left: 32,
+                                                  left: 40,
                                                   bottom: 0,
                                                   top: 0,
                                                   child: CircleAvatar(
@@ -223,7 +223,7 @@ class _TaskManagementHomePageState extends State<TaskManagementHomePage> {
                                                   ),
                                                 ),
                                                 Positioned(
-                                                  left: 48,
+                                                  left: 60,
                                                   bottom: 0,
                                                   top: 0,
                                                   child: CircleAvatar(
