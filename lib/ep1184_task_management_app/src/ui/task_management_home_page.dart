@@ -163,6 +163,18 @@ class _TaskManagementHomePageState extends State<TaskManagementHomePage> {
                                           fontSize: 20,
                                         ),
                                       ),
+                                    ),
+                                    Text(
+                                      "Design real estate system company responsive design website today.",
+                                    ),
+                                    Container(
+                                      decoration: BoxDecoration(
+                                        border: Border.all(
+                                          color: Colors.yellow,
+                                          width: 0.5,
+                                        ),
+                                      ),
+                                      child: Text(),
                                     )
                                   ],
                                 ),
