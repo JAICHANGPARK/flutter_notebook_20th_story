@@ -128,7 +128,21 @@ class _TaskManagementHomePageState extends State<TaskManagementHomePage> {
                               child: Container(
                                 width: 280,
                                 decoration: BoxDecoration(
-                                    color: Colors.white.withOpacity(0.2), borderRadius: BorderRadius.circular(4)),
+                                  color: Colors.white.withOpacity(0.2),
+                                  borderRadius: BorderRadius.circular(4),
+                                ),
+                                child: Column(
+                                  children: [
+                                    Row(
+                                      children: [
+                                        CircleAvatar(
+                                          radius: 12,
+                                          backgroundColor: Colors.blue[200],
+                                        )
+                                      ],
+                                    )
+                                  ],
+                                ),
                               ),
                             );
                           },
