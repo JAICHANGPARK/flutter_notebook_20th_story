@@ -166,20 +166,26 @@ class _TaskManagementHomePageState extends State<TaskManagementHomePage> {
                                     ),
                                     Text(
                                       "Design real estate system company responsive design website today.",
-                                    ),
-                                    Container(
-                                      decoration: BoxDecoration(
-                                        border: Border.all(
-                                          color: Colors.yellow,
-                                          width: 0.5,
-                                        ),
-                                        borderRadius: BorderRadius.circular(4)
+                                      style: TextStyle(
+                                        color: Colors.grey,
+
                                       ),
-                                      padding: EdgeInsets.symmetric(vertical: 4, horizontal: 4),
-                                      child: Text(
-                                        "14-06-2022, 23:59",
-                                        style: TextStyle(
-                                          color: Colors.white,
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.symmetric(vertical: 8),
+                                      child: Container(
+                                        decoration: BoxDecoration(
+                                            border: Border.all(
+                                              color: Colors.yellow,
+                                              width: 0.5,
+                                            ),
+                                            borderRadius: BorderRadius.circular(4)),
+                                        padding: EdgeInsets.symmetric(vertical: 4, horizontal: 4),
+                                        child: Text(
+                                          "14-06-2022, 23:59",
+                                          style: TextStyle(
+                                            color: Colors.white,
+                                          ),
                                         ),
                                       ),
                                     )
