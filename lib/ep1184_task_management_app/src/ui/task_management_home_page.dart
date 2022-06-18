@@ -131,8 +131,9 @@ class _TaskManagementHomePageState extends State<TaskManagementHomePage> {
                                   color: Colors.white.withOpacity(0.2),
                                   borderRadius: BorderRadius.circular(4),
                                 ),
-                                padding: EdgeInsets.all(8),
+                                padding: EdgeInsets.all(16),
                                 child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Row(
                                       children: [
@@ -141,16 +142,27 @@ class _TaskManagementHomePageState extends State<TaskManagementHomePage> {
                                           backgroundColor: Colors.blue[200],
                                         ),
                                         SizedBox(
-                                          width: 4,
+                                          width: 8,
                                         ),
                                         Text(
                                           "Next up (2)",
                                           style: TextStyle(
                                             color: Colors.white,
-                                            fontSize: 12
+                                            fontSize: 12,
                                           ),
                                         ),
                                       ],
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.symmetric(vertical: 8),
+                                      child: Text(
+                                        "Design System",
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 20,
+                                        ),
+                                      ),
                                     )
                                   ],
                                 ),
