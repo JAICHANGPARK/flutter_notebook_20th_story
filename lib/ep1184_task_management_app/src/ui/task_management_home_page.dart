@@ -236,7 +236,18 @@ class _TaskManagementHomePageState extends State<TaskManagementHomePage> {
                                           ),
                                           Expanded(
                                             child: Row(
-                                              children: [],
+                                              children: [
+                                                Icon(
+                                                  Icons.check_circle_outline,
+                                                  color: Colors.grey,
+                                                ),
+                                                Text(
+                                                  "0/8",
+                                                  style: TextStyle(
+                                                    color: Colors.grey,
+                                                  ),
+                                                )
+                                              ],
                                             ),
                                           )
                                         ],
