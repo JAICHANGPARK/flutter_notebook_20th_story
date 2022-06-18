@@ -450,10 +450,12 @@ class _TaskManagementHomePageState extends State<TaskManagementHomePage> {
               ),
             ),
             Positioned(
-              child: FloatingActionButton(
-                onPressed: () {},
-                backgroundColor: Color.fromRGBO(61, 63, 65, 1),
-                child: Icon(Icons.add),
+              child: Center(
+                child: FloatingActionButton(
+                  onPressed: () {},
+                  backgroundColor: Color.fromRGBO(61, 63, 65, 1),
+                  child: Icon(Icons.add),
+                ),
               ),
               left: 0,
               right: 0,
