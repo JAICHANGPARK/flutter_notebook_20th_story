@@ -191,6 +191,7 @@ class _TaskManagementHomePageState extends State<TaskManagementHomePage> {
                                     SizedBox(
                                       height: 40,
                                       child: Row(
+                                        crossAxisAlignment: CrossAxisAlignment.center,
                                         children: [
                                           Expanded(
                                             child: Stack(
