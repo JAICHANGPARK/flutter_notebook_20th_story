@@ -93,7 +93,11 @@ class _TaskManagementHomePageState extends State<TaskManagementHomePage> {
                         children: [
                           Text(
                             "Latest project",
-                            style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 24),
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 24,
+                            ),
                           ),
                           Spacer(),
                           Text(
