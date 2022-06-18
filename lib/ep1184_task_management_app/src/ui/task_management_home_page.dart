@@ -194,6 +194,7 @@ class _TaskManagementHomePageState extends State<TaskManagementHomePage> {
                                         crossAxisAlignment: CrossAxisAlignment.center,
                                         children: [
                                           Expanded(
+                                            flex: 4,
                                             child: Stack(
                                               children: [
                                                 Positioned(
@@ -235,7 +236,9 @@ class _TaskManagementHomePageState extends State<TaskManagementHomePage> {
                                             ),
                                           ),
                                           Expanded(
+                                            flex: 3,
                                             child: Row(
+                                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                               children: [
                                                 Icon(
                                                   Icons.check_circle_outline,
