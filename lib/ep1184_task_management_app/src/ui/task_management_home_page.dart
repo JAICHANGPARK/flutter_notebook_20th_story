@@ -247,10 +247,16 @@ class _TaskManagementHomePageState extends State<TaskManagementHomePage> {
                                                     color: Colors.grey,
                                                   ),
                                                 ),
-                                                Icon(Icons.more_horiz),
-                                                Text("12", style: TextStyle(
+                                                Icon(
+                                                  Icons.more_horiz,
                                                   color: Colors.grey,
-                                                ),),
+                                                ),
+                                                Text(
+                                                  "12",
+                                                  style: TextStyle(
+                                                    color: Colors.grey,
+                                                  ),
+                                                ),
                                               ],
                                             ),
                                           )
