@@ -168,7 +168,6 @@ class _TaskManagementHomePageState extends State<TaskManagementHomePage> {
                                       "Design real estate system company responsive design website today.",
                                       style: TextStyle(
                                         color: Colors.grey,
-
                                       ),
                                     ),
                                     Padding(
@@ -187,6 +186,21 @@ class _TaskManagementHomePageState extends State<TaskManagementHomePage> {
                                             color: Colors.white,
                                           ),
                                         ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      height: 42,
+                                      child: Row(
+                                        children: [
+                                          Expanded(child: Stack()),
+                                          Expanded(
+                                            child: Row(
+                                              children: [
+
+                                              ],
+                                            ),
+                                          )
+                                        ],
                                       ),
                                     )
                                   ],
