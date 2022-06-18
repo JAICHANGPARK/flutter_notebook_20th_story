@@ -189,15 +189,17 @@ class _TaskManagementHomePageState extends State<TaskManagementHomePage> {
                                       ),
                                     ),
                                     SizedBox(
-                                      height: 42,
+                                      height: 40,
                                       child: Row(
                                         children: [
-                                          Expanded(child: Stack()),
+                                          Expanded(
+                                            child: Stack(
+                                              children: [],
+                                            ),
+                                          ),
                                           Expanded(
                                             child: Row(
-                                              children: [
-
-                                              ],
+                                              children: [],
                                             ),
                                           )
                                         ],
