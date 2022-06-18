@@ -147,6 +147,7 @@ class _TaskManagementHomePageState extends State<TaskManagementHomePage> {
                                           "Next up (2)",
                                           style: TextStyle(
                                             color: Colors.white,
+                                            fontSize: 12
                                           ),
                                         ),
                                       ],
