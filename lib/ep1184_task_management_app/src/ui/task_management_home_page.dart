@@ -74,6 +74,7 @@ class _TaskManagementHomePageState extends State<TaskManagementHomePage> {
                         padding: EdgeInsets.symmetric(horizontal: 16),
                         child: TextField(
                           decoration: InputDecoration(
+                            border: InputBorder.none,
                             icon: Icon(
                               Icons.search,
                               color: Colors.grey,
