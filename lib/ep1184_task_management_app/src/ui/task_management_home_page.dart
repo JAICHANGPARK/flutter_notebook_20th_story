@@ -131,14 +131,24 @@ class _TaskManagementHomePageState extends State<TaskManagementHomePage> {
                                   color: Colors.white.withOpacity(0.2),
                                   borderRadius: BorderRadius.circular(4),
                                 ),
+                                padding: EdgeInsets.all(8),
                                 child: Column(
                                   children: [
                                     Row(
                                       children: [
                                         CircleAvatar(
-                                          radius: 12,
+                                          radius: 8,
                                           backgroundColor: Colors.blue[200],
-                                        )
+                                        ),
+                                        SizedBox(
+                                          width: 4,
+                                        ),
+                                        Text(
+                                          "Next up (2)",
+                                          style: TextStyle(
+                                            color: Colors.white,
+                                          ),
+                                        ),
                                       ],
                                     )
                                   ],
