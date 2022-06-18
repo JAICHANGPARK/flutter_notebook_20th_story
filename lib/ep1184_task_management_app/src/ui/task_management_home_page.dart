@@ -196,19 +196,22 @@ class _TaskManagementHomePageState extends State<TaskManagementHomePage> {
                                             child: Stack(
                                               children: [
                                                 Positioned(
-                                                    left: 0,
-                                                    bottom: 0,
-                                                    top: 0,
-                                                    child: CircleAvatar(
-                                                  radius: 14,
-                                                )),
+                                                  left: 0,
+                                                  bottom: 0,
+                                                  top: 0,
+                                                  child: CircleAvatar(
+                                                    radius: 14,
+                                                  ),
+                                                ),
                                                 Positioned(
-                                                    left: 16,
-                                                    bottom: 0,
-                                                    top: 0,
-                                                    child: CircleAvatar(
-                                                      radius: 14,
-                                                    ))
+                                                  left: 16,
+                                                  bottom: 0,
+                                                  top: 0,
+                                                  child: CircleAvatar(
+                                                    radius: 14,
+                                                    backgroundColor: Colors.red,
+                                                  ),
+                                                )
                                               ],
                                             ),
                                           ),
