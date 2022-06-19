@@ -90,11 +90,52 @@ class _TaskSchedulePageState extends State<TaskSchedulePage> {
           ),
         ),
         Expanded(
-          child: ListView.builder(
-            itemBuilder: (context, _) {
-              return Container();
-            },
-            itemCount: 10,
+          child: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: ListView.builder(
+              itemBuilder: (context, _) {
+                return Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      "08.30",
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
+                    ),
+                    Expanded(
+                      child: Container(
+                        margin: EdgeInsets.fromLTRB(8, 0, 8, 8),
+                        padding: EdgeInsets.symmetric(vertical: 8, horizontal: 8),
+                        decoration: BoxDecoration(
+                          color: Colors.white.withOpacity(0.2),
+                        ),
+                        child: Column(
+                          children: [
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Text(
+                                  "Visualize user flow into\nattractive product designs",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                                Icon(
+                                  Icons.edit,
+                                )
+                              ],
+                            )
+                          ],
+                        ),
+                      ),
+                    )
+                  ],
+                );
+              },
+              itemCount: 10,
+            ),
           ),
         )
       ],
