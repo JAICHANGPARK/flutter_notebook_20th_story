@@ -35,6 +35,23 @@ class _TaskSchedulePageState extends State<TaskSchedulePage> {
           decoration: BoxDecoration(
             color: Colors.blue,
           ),
+          child: Column(
+            children: [
+              Row(
+                children: [
+                  Column(
+                    children: [
+                      Text("24 Sept 2022", style: TextStyle(
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold
+                          , fontSize: 20
+                      ),)
+                    ],
+                  )
+                ],
+              )
+            ],
+          ),
         ),
         Expanded(
           child: SingleChildScrollView(
