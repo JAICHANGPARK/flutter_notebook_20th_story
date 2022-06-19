@@ -36,26 +36,39 @@ class _TaskSchedulePageState extends State<TaskSchedulePage> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Row(
-                children: [
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        "24 Sept 2022",
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 20,
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Row(
+                  children: [
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          "24 Sept 2022",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 20,
+                          ),
                         ),
-                      ),
-                      Text(
-                        "15 Active task",
-                        style: TextStyle(color: Colors.grey),
-                      ),
-                    ],
-                  ),
-                ],
+                        SizedBox(
+                          height: 8,
+                        ),
+                        Text(
+                          "15 Active task",
+                          style: TextStyle(color: Colors.grey),
+                        ),
+                      ],
+                    ),
+                    Spacer(),
+                    CircleAvatar(
+
+                      child: Icon(Icons.calendar_month_outlined),
+                      foregroundColor: Colors.white,
+                      backgroundColor: Colors.deepOrange[300],
+                    )
+                  ],
+                ),
               ),
               DatePicker(
                 DateTime.now(),
@@ -64,7 +77,9 @@ class _TaskSchedulePageState extends State<TaskSchedulePage> {
                 selectedTextColor: Colors.orangeAccent,
                 deactivatedColor: Colors.white,
                 selectionColor: Colors.white.withOpacity(0.2),
-                dateTextStyle: defaultDateTextStyle.copyWith(color: Colors.white,),
+                dateTextStyle: defaultDateTextStyle.copyWith(
+                  color: Colors.white,
+                ),
                 dayTextStyle: defaultDayTextStyle.copyWith(color: Colors.white),
                 monthTextStyle: defaultMonthTextStyle.copyWith(color: Colors.white),
               )
