@@ -32,7 +32,6 @@ class _TaskSchedulePageState extends State<TaskSchedulePage> {
           ),
         ),
         Container(
-         
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -59,20 +58,24 @@ class _TaskSchedulePageState extends State<TaskSchedulePage> {
               ),
               DatePicker(
                 DateTime.now(),
-                height: 64,
+                initialSelectedDate: DateTime.now(),
+                // height: 84,
                 selectedTextColor: Colors.orangeAccent,
+                deactivatedColor: Colors.white,
+                selectionColor: Colors.white.withOpacity(0.2),
+                dateTextStyle: TextStyle(
+                  color: Colors.white
+                ),
               )
             ],
           ),
         ),
         Expanded(
-          child: SingleChildScrollView(
-            child: ListView.builder(
-              itemBuilder: (context, _) {
-                return Container();
-              },
-              itemCount: 10,
-            ),
+          child: ListView.builder(
+            itemBuilder: (context, _) {
+              return Container();
+            },
+            itemCount: 10,
           ),
         )
       ],
