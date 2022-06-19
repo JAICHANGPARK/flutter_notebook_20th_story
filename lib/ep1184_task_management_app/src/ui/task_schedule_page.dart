@@ -105,7 +105,7 @@ class _TaskSchedulePageState extends State<TaskSchedulePage> {
                     ),
                     Expanded(
                       child: Container(
-                        margin: EdgeInsets.fromLTRB(8, 0, 8, 8),
+                        margin: EdgeInsets.fromLTRB(8, 0, 8, 12),
                         padding: EdgeInsets.symmetric(vertical: 8, horizontal: 8),
                         decoration: BoxDecoration(
                           color: Colors.white.withOpacity(0.2),
@@ -124,6 +124,7 @@ class _TaskSchedulePageState extends State<TaskSchedulePage> {
                                 ),
                                 Icon(
                                   Icons.edit,
+                                  color: Colors.white,
                                 )
                               ],
                             ),
@@ -150,56 +151,52 @@ class _TaskSchedulePageState extends State<TaskSchedulePage> {
                                 Expanded(
                                   child: SizedBox(
                                     height: 40,
-                                    child: Align(
-                                      alignment: Alignment.centerRight,
-                                      child: Row(
-                                        crossAxisAlignment: CrossAxisAlignment.center,
-                                        children: [
-                                          Expanded(
-                                            flex: 4,
-                                            child: Stack(
-                                              children: [
-                                                Positioned(
-                                                  left: 0,
-                                                  bottom: 0,
-                                                  top: 0,
-                                                  child: CircleAvatar(
-                                                    radius: 14,
-                                                  ),
+                                    child: Row(
+                                      crossAxisAlignment: CrossAxisAlignment.center,
+                                      children: [
+                                        Expanded(
+                                          flex: 4,
+                                          child: Stack(
+                                            children: [
+                                              Positioned(
+                                                right: 0,
+                                                bottom: 0,
+                                                top: 0,
+                                                child: CircleAvatar(
+                                                  radius: 14,
                                                 ),
-                                                Positioned(
-                                                  left: 20,
-                                                  bottom: 0,
-                                                  top: 0,
-                                                  child: CircleAvatar(
-                                                    radius: 14,
-                                                    backgroundColor: Colors.red,
-                                                  ),
+                                              ),
+                                              Positioned(
+                                                right: 20,
+                                                bottom: 0,
+                                                top: 0,
+                                                child: CircleAvatar(
+                                                  radius: 14,
+                                                  backgroundColor: Colors.red,
                                                 ),
-                                                Positioned(
-                                                  left: 40,
-                                                  bottom: 0,
-                                                  top: 0,
-                                                  child: CircleAvatar(
-                                                    radius: 14,
-                                                    backgroundColor: Colors.green,
-                                                  ),
+                                              ),
+                                              Positioned(
+                                                right: 40,
+                                                bottom: 0,
+                                                top: 0,
+                                                child: CircleAvatar(
+                                                  radius: 14,
+                                                  backgroundColor: Colors.green,
                                                 ),
-                                                Positioned(
-                                                  left: 60,
-                                                  bottom: 0,
-                                                  top: 0,
-                                                  child: CircleAvatar(
-                                                    radius: 14,
-                                                    backgroundColor: Colors.orange,
-                                                  ),
-                                                )
-                                              ],
-                                            ),
+                                              ),
+                                              Positioned(
+                                                right: 60,
+                                                bottom: 0,
+                                                top: 0,
+                                                child: CircleAvatar(
+                                                  radius: 14,
+                                                  backgroundColor: Colors.orange,
+                                                ),
+                                              )
+                                            ],
                                           ),
-
-                                        ],
-                                      ),
+                                        ),
+                                      ],
                                     ),
                                   ),
                                 )
