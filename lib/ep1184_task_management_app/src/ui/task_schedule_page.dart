@@ -89,6 +89,7 @@ class _TaskSchedulePageState extends State<TaskSchedulePage> {
             ],
           ),
         ),
+        SizedBox(height: 16,),
         Expanded(
           child: Padding(
             padding: const EdgeInsets.all(8.0),
