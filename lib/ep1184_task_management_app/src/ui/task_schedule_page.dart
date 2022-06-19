@@ -1,4 +1,5 @@
 import 'package:date_picker_timeline/date_picker_timeline.dart';
+import 'package:date_picker_timeline/extra/style.dart';
 import 'package:flutter/material.dart';
 
 class TaskSchedulePage extends StatefulWidget {
@@ -63,9 +64,8 @@ class _TaskSchedulePageState extends State<TaskSchedulePage> {
                 selectedTextColor: Colors.orangeAccent,
                 deactivatedColor: Colors.white,
                 selectionColor: Colors.white.withOpacity(0.2),
-                dateTextStyle: TextStyle(
-                  color: Colors.white
-                ),
+                dateTextStyle: defaultDateTextStyle.copyWith(color: Colors.white,),
+                dayTextStyle: defaultDayTextStyle.copyWith(color: Colors.white)
               )
             ],
           ),
