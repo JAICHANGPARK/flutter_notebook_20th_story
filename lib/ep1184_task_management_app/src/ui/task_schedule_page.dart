@@ -126,6 +126,84 @@ class _TaskSchedulePageState extends State<TaskSchedulePage> {
                                   Icons.edit,
                                 )
                               ],
+                            ),
+                            Row(
+                              children: [
+                                Padding(
+                                  padding: const EdgeInsets.symmetric(vertical: 8),
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                        border: Border.all(
+                                          color: Colors.yellow,
+                                          width: 0.5,
+                                        ),
+                                        borderRadius: BorderRadius.circular(4)),
+                                    padding: EdgeInsets.symmetric(vertical: 4, horizontal: 4),
+                                    child: Text(
+                                      "14-06-2022, 23:59",
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                                Expanded(
+                                  child: SizedBox(
+                                    height: 40,
+                                    child: Align(
+                                      alignment: Alignment.centerRight,
+                                      child: Row(
+                                        crossAxisAlignment: CrossAxisAlignment.center,
+                                        children: [
+                                          Expanded(
+                                            flex: 4,
+                                            child: Stack(
+                                              children: [
+                                                Positioned(
+                                                  left: 0,
+                                                  bottom: 0,
+                                                  top: 0,
+                                                  child: CircleAvatar(
+                                                    radius: 14,
+                                                  ),
+                                                ),
+                                                Positioned(
+                                                  left: 20,
+                                                  bottom: 0,
+                                                  top: 0,
+                                                  child: CircleAvatar(
+                                                    radius: 14,
+                                                    backgroundColor: Colors.red,
+                                                  ),
+                                                ),
+                                                Positioned(
+                                                  left: 40,
+                                                  bottom: 0,
+                                                  top: 0,
+                                                  child: CircleAvatar(
+                                                    radius: 14,
+                                                    backgroundColor: Colors.green,
+                                                  ),
+                                                ),
+                                                Positioned(
+                                                  left: 60,
+                                                  bottom: 0,
+                                                  top: 0,
+                                                  child: CircleAvatar(
+                                                    radius: 14,
+                                                    backgroundColor: Colors.orange,
+                                                  ),
+                                                )
+                                              ],
+                                            ),
+                                          ),
+
+                                        ],
+                                      ),
+                                    ),
+                                  ),
+                                )
+                              ],
                             )
                           ],
                         ),
