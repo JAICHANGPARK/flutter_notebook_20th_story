@@ -65,7 +65,8 @@ class _TaskSchedulePageState extends State<TaskSchedulePage> {
                 deactivatedColor: Colors.white,
                 selectionColor: Colors.white.withOpacity(0.2),
                 dateTextStyle: defaultDateTextStyle.copyWith(color: Colors.white,),
-                dayTextStyle: defaultDayTextStyle.copyWith(color: Colors.white)
+                dayTextStyle: defaultDayTextStyle.copyWith(color: Colors.white),
+                monthTextStyle: defaultMonthTextStyle.copyWith(color: Colors.white),
               )
             ],
           ),
