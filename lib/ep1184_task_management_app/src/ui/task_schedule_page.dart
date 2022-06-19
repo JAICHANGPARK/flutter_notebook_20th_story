@@ -1,3 +1,4 @@
+import 'package:date_picker_timeline/date_picker_timeline.dart';
 import 'package:flutter/material.dart';
 
 class TaskSchedulePage extends StatefulWidget {
@@ -31,24 +32,35 @@ class _TaskSchedulePageState extends State<TaskSchedulePage> {
           ),
         ),
         Container(
-          height: 120,
-          decoration: BoxDecoration(
-            color: Colors.blue,
-          ),
+         
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Row(
                 children: [
                   Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text("24 Sept 2022", style: TextStyle(
-                        color: Colors.white,
-                        fontWeight: FontWeight.bold
-                          , fontSize: 20
-                      ),)
+                      Text(
+                        "24 Sept 2022",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 20,
+                        ),
+                      ),
+                      Text(
+                        "15 Active task",
+                        style: TextStyle(color: Colors.grey),
+                      ),
                     ],
-                  )
+                  ),
                 ],
+              ),
+              DatePicker(
+                DateTime.now(),
+                height: 64,
+                selectedTextColor: Colors.orangeAccent,
               )
             ],
           ),
