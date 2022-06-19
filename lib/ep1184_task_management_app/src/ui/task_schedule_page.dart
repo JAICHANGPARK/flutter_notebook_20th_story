@@ -23,10 +23,14 @@ class _TaskSchedulePageState extends State<TaskSchedulePage> {
                 child: Icon(Icons.arrow_back_ios_new),
                 foregroundColor: Colors.white,
               ),
-              Text(
-                "All task schedule",
-                style: TextStyle(
-                  color: Colors.white,
+              Expanded(
+                child: Center(
+                  child: Text(
+                    "All task schedule",
+                    style: TextStyle(
+                      color: Colors.white,
+                    ),
+                  ),
                 ),
               )
             ],
@@ -62,7 +66,6 @@ class _TaskSchedulePageState extends State<TaskSchedulePage> {
                     ),
                     Spacer(),
                     CircleAvatar(
-
                       child: Icon(Icons.calendar_month_outlined),
                       foregroundColor: Colors.white,
                       backgroundColor: Colors.deepOrange[300],
