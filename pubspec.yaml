@@ -13,16 +13,18 @@ dependencies:
 
   cupertino_icons: ^1.0.4
   ionicons: any
-  badges: any
-  dotted_border: ^2.0.0+2
-  dotted_line: ^3.1.0
-  barcode: ^2.2.1
-  flutter_svg: ^1.1.0
+#  badges: any
+#  dotted_border: ^2.0.0+2
+#  dotted_line: ^3.1.0
+#  barcode: ^2.2.1
+#  flutter_svg: ^1.1.0
 
   flutter_riverpod: any
   freezed_annotation: ^2.0.3
 
   go_router: any
+
+  date_picker_timeline: ^1.2.3
 
 dev_dependencies:
   flutter_test:
