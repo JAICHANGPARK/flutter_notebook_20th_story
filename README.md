@@ -6,8 +6,6 @@
 - Michal Skvarenina for Sable Card
 - https://dribbble.com/shots/18531777-Sable-App-Referrals-Money-Movement-Shortcuts-and-more
 
-
-
 ### EP1184-1187
 
 - Mobile App - Task Management
