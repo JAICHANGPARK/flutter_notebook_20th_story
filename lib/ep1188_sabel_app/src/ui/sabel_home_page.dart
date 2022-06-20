@@ -16,6 +16,10 @@ class _SabelHomePageState extends State<SabelHomePage> {
         child: Stack(
           children: [
             Positioned(
+              left: 0,
+              top: 0,
+              right: 0,
+              bottom: 0,
               child: SingleChildScrollView(
                 child: Column(
                   children: [],
@@ -30,11 +34,11 @@ class _SabelHomePageState extends State<SabelHomePage> {
                 height: 64,
                 decoration: BoxDecoration(
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(24),
+                  borderRadius: BorderRadius.circular(32),
                 ),
                 child: Row(
                   children: [
-                    
+
                   ],
                 ),
               ),
