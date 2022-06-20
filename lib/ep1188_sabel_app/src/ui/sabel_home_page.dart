@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_20th_story/ep1188_sabel_app/src/provider/sabel_menu_index_provider.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class SabelHomePage extends StatefulWidget {
   const SabelHomePage({Key? key}) : super(key: key);
@@ -30,42 +32,45 @@ class _SabelHomePageState extends State<SabelHomePage> {
               left: 64,
               right: 64,
               bottom: 24,
-              child: Container(
-                height: 64,
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(32),
-                ),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    IconButton(
-                      onPressed: () {},
-                      icon: Icon(
-                        Icons.home,
+              child: Consumer(builder: (context, ref, _) {
+                final index = ref.watch(sabelMenuIndex);
+                return Container(
+                  height: 64,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(32),
+                  ),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      IconButton(
+                        onPressed: () {},
+                        icon: Icon(
+                          Icons.home,
+                        ),
                       ),
-                    ),
-                    IconButton(
-                      onPressed: () {},
-                      icon: Icon(
-                        Icons.sync_alt,
+                      IconButton(
+                        onPressed: () {},
+                        icon: Icon(
+                          Icons.sync_alt,
+                        ),
                       ),
-                    ),
-                    IconButton(
-                      onPressed: () {},
-                      icon: Icon(
-                        Icons.credit_card,
+                      IconButton(
+                        onPressed: () {},
+                        icon: Icon(
+                          Icons.credit_card,
+                        ),
                       ),
-                    ),
-                    IconButton(
-                      onPressed: () {},
-                      icon: Icon(
-                        Icons.military_tech,
-                      ),
-                    )
-                  ],
-                ),
-              ),
+                      IconButton(
+                        onPressed: () {},
+                        icon: Icon(
+                          Icons.military_tech,
+                        ),
+                      )
+                    ],
+                  ),
+                );
+              }),
             )
           ],
         ),
