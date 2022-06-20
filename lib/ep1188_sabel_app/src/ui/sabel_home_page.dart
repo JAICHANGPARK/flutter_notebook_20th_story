@@ -44,28 +44,40 @@ class _SabelHomePageState extends State<SabelHomePage> {
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
                       IconButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          ref.read(sabelMenuIndex.notifier).state = 0;
+                        },
                         icon: Icon(
                           Icons.home,
                         ),
+                        color: index == 0 ? Colors.black : Colors.grey,
                       ),
                       IconButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          ref.read(sabelMenuIndex.notifier).state = 1;
+                        },
                         icon: Icon(
                           Icons.sync_alt,
                         ),
+                        color: index == 1 ? Colors.black : Colors.grey,
                       ),
                       IconButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          ref.read(sabelMenuIndex.notifier).state = 2;
+                        },
                         icon: Icon(
                           Icons.credit_card,
                         ),
+                        color: index == 2 ? Colors.black : Colors.grey,
                       ),
                       IconButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          ref.read(sabelMenuIndex.notifier).state = 3;
+                        },
                         icon: Icon(
                           Icons.military_tech,
                         ),
+                        color: index == 3 ? Colors.black : Colors.grey,
                       )
                     ],
                   ),
