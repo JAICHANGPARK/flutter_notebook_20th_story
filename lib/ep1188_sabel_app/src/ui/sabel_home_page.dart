@@ -48,19 +48,19 @@ class _SabelHomePageState extends State<SabelHomePage> {
                     IconButton(
                       onPressed: () {},
                       icon: Icon(
-                        Icons.home,
+                        Icons.sync_alt,
                       ),
                     ),
                     IconButton(
                       onPressed: () {},
                       icon: Icon(
-                        Icons.home,
+                        Icons.credit_card,
                       ),
                     ),
                     IconButton(
                       onPressed: () {},
                       icon: Icon(
-                        Icons.home,
+                        Icons.military_tech,
                       ),
                     )
                   ],
