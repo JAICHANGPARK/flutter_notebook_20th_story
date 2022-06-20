@@ -22,11 +22,19 @@ class _SabelHomePageState extends State<SabelHomePage> {
               top: 0,
               right: 0,
               bottom: 0,
-              child: SingleChildScrollView(
-                child: Column(
-                  children: [],
-                ),
-              ),
+              child: Consumer(builder: (context, ref, _) {
+                final index = ref.watch(sabelMenuIndex);
+                return IndexedStack(
+                  index: index,
+                  children: [
+                    SingleChildScrollView(
+                      child: Column(
+                        children: [],
+                      ),
+                    ),
+                  ],
+                );
+              }),
             ),
             Positioned(
               left: 64,
