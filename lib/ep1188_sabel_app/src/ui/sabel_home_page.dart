@@ -32,6 +32,29 @@ class _SabelHomePageState extends State<SabelHomePage> {
                         children: [],
                       ),
                     ),
+                    Center(
+                      child: Text(
+                        "1",
+                        style: TextStyle(
+                          color: Colors.white,
+                        ),
+                      ),
+                    ),
+                    Center(
+                      child: Text(
+                        "2",
+                        style: TextStyle(
+                          color: Colors.white,
+                        ),
+                      ),
+                    ),  Center(
+                      child: Text(
+                        "3",
+                        style: TextStyle(
+                          color: Colors.white,
+                        ),
+                      ),
+                    )
                   ],
                 );
               }),
