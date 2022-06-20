@@ -1,6 +1,16 @@
 # flutter_notebook_20th_story
 
-### EP1184-
+### EP1188
+
+- Sable App – Referrals, Money Movement Shortcuts, and more
+- Michal Skvarenina for Sable Card
+- https://dribbble.com/shots/18531777-Sable-App-Referrals-Money-Movement-Shortcuts-and-more
+
+<img
+src="https://cdn.dribbble.com/userupload/2903372/file/original-577dfad2cd9f215dea0692584ad28ff0.png?compress=1&resize=1200x900"
+width="400px"/>
+
+### EP1184-1187
 
 - Mobile App - Task Management
 - Raffialdo Bayu for Enver Studio
