@@ -37,8 +37,32 @@ class _SabelHomePageState extends State<SabelHomePage> {
                   borderRadius: BorderRadius.circular(32),
                 ),
                 child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-
+                    IconButton(
+                      onPressed: () {},
+                      icon: Icon(
+                        Icons.home,
+                      ),
+                    ),
+                    IconButton(
+                      onPressed: () {},
+                      icon: Icon(
+                        Icons.home,
+                      ),
+                    ),
+                    IconButton(
+                      onPressed: () {},
+                      icon: Icon(
+                        Icons.home,
+                      ),
+                    ),
+                    IconButton(
+                      onPressed: () {},
+                      icon: Icon(
+                        Icons.home,
+                      ),
+                    )
                   ],
                 ),
               ),
