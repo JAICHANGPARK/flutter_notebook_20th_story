@@ -1,3 +1,4 @@
+import 'package:badges/badges.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_notebook_20th_story/ep1188_sabel_app/src/provider/sabel_menu_index_provider.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -29,7 +30,38 @@ class _SabelHomePageState extends State<SabelHomePage> {
                   children: [
                     SingleChildScrollView(
                       child: Column(
-                        children: [],
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.all(16.0),
+                            child: Row(
+                              children: [
+                                Icon(
+                                  Icons.person,
+                                  color: Colors.white,
+                                ),
+                                Expanded(
+                                  child: Center(
+                                    child: Text(
+                                      "Sable.",
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 32,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                                Badge(
+                                  child: Icon(
+                                    Icons.notifications,
+                                    color: Colors.white,
+                                  ),
+                                )
+                              ],
+                            ),
+                          )
+                        ],
                       ),
                     ),
                     Center(
@@ -47,7 +79,8 @@ class _SabelHomePageState extends State<SabelHomePage> {
                           color: Colors.white,
                         ),
                       ),
-                    ),  Center(
+                    ),
+                    Center(
                       child: Text(
                         "3",
                         style: TextStyle(
