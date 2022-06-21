@@ -151,32 +151,36 @@ class _SabelHomePageState extends State<SabelHomePage> {
                           SizedBox(
                             height: 120,
                             child: Container(
+                                margin: EdgeInsets.only(left: 16),
                                 color: Colors.blue,
                                 child: ListView(
                                   scrollDirection: Axis.horizontal,
                                   children: [
-                                    Column(
-                                      mainAxisAlignment: MainAxisAlignment.center,
-                                      children: [
-                                        CircleAvatar(
-                                          radius: 32,
-                                          backgroundColor: Colors.white,
-                                          foregroundColor: Colors.black,
-                                          child: Icon(
-                                            Icons.add,
+                                    Padding(
+                                      padding: const EdgeInsets.all(8.0),
+                                      child: Column(
+                                        mainAxisAlignment: MainAxisAlignment.center,
+                                        children: [
+                                          CircleAvatar(
+                                            radius: 32,
+                                            backgroundColor: Colors.white,
+                                            foregroundColor: Colors.black,
+                                            child: Icon(
+                                              Icons.add,
+                                            ),
                                           ),
-                                        ),
-                                        SizedBox(
-                                          height: 8,
-                                        ),
-                                        Text(
-                                          "Add money",
-                                          style: TextStyle(
-                                            color: Colors.white,
-                                            fontWeight: FontWeight.bold,
+                                          SizedBox(
+                                            height: 8,
                                           ),
-                                        )
-                                      ],
+                                          Text(
+                                            "Add money",
+                                            style: TextStyle(
+                                              color: Colors.white,
+                                              fontWeight: FontWeight.bold,
+                                            ),
+                                          )
+                                        ],
+                                      ),
                                     )
                                   ],
                                 )),
