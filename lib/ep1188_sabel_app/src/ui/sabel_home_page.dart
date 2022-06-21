@@ -93,6 +93,7 @@ class _SabelHomePageState extends State<SabelHomePage> {
                                           padding: EdgeInsets.all(16),
                                           child: Column(
                                             crossAxisAlignment: CrossAxisAlignment.start,
+                                            mainAxisAlignment: MainAxisAlignment.spaceAround,
                                             children: [
                                               Text(
                                                 "CREDIT CARD",
@@ -125,9 +126,20 @@ class _SabelHomePageState extends State<SabelHomePage> {
                                                   linearStrokeCap: LinearStrokeCap.roundAll,
                                                   progressColor: Colors.cyanAccent,
                                                   barRadius: Radius.circular(16),
-
                                                 ),
                                               ),
+                                              Container(
+                                                decoration: BoxDecoration(
+                                                    color: Colors.white.withOpacity(0.3),
+                                                    borderRadius: BorderRadius.circular(8)),
+                                                padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
+                                                child: Text(
+                                                  "Payment due in 7 days",
+                                                  style: TextStyle(
+                                                    color: Colors.white,
+                                                  ),
+                                                ),
+                                              )
                                             ],
                                           ),
                                         ),
