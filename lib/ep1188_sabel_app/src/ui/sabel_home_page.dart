@@ -151,13 +151,13 @@ class _SabelHomePageState extends State<SabelHomePage> {
                           SizedBox(
                             height: 120,
                             child: Container(
-                                margin: EdgeInsets.only(left: 16),
+                                margin: EdgeInsets.only(left: 0),
                                 color: Colors.blue,
-                                child: ListView(
-                                  scrollDirection: Axis.horizontal,
+                                child: Row(
+                                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                                   children: [
                                     Padding(
-                                      padding: const EdgeInsets.only(right: 32),
+                                      padding: const EdgeInsets.only(right: 0),
                                       child: Column(
                                         mainAxisAlignment: MainAxisAlignment.center,
                                         children: [
@@ -183,7 +183,7 @@ class _SabelHomePageState extends State<SabelHomePage> {
                                       ),
                                     ),
                                     Padding(
-                                      padding: const EdgeInsets.only(right: 32),
+                                      padding: const EdgeInsets.only(right: 0),
                                       child: Column(
                                         mainAxisAlignment: MainAxisAlignment.center,
                                         children: [
