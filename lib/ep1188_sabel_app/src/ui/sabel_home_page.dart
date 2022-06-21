@@ -60,6 +60,40 @@ class _SabelHomePageState extends State<SabelHomePage> {
                                 )
                               ],
                             ),
+                          ),
+                          Container(
+                            height: 260,
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Padding(
+                                  padding: const EdgeInsets.only(left: 8),
+                                  child: Text(
+                                    "ACCOUNTS",
+                                    style: TextStyle(
+                                      color: Colors.grey,
+                                      fontSize: 12,
+                                    ),
+                                  ),
+                                ),
+                                Expanded(
+                                    child: ListView.builder(
+                                  itemCount: 8,
+                                  scrollDirection: Axis.horizontal,
+                                  itemBuilder: (context, index) {
+                                    return Padding(
+                                      padding: const EdgeInsets.all(8.0),
+                                      child: Container(
+                                        width: 240,
+                                        decoration: BoxDecoration(
+                                          color: Colors.white.withOpacity(0.1),
+                                        ),
+                                      ),
+                                    );
+                                  },
+                                )),
+                              ],
+                            ),
                           )
                         ],
                       ),
