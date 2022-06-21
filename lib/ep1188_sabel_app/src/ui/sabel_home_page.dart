@@ -160,6 +160,7 @@ class _SabelHomePageState extends State<SabelHomePage> {
                                         CircleAvatar(
                                           radius: 32,
                                           backgroundColor: Colors.white,
+                                          foregroundColor: Colors.black,
                                           child: Icon(
                                             Icons.add,
                                           ),
