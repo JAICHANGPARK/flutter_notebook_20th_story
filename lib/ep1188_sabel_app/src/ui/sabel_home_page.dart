@@ -209,6 +209,34 @@ class _SabelHomePageState extends State<SabelHomePage> {
                                           )
                                         ],
                                       ),
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.only(right: 0),
+                                      child: Column(
+                                        mainAxisAlignment: MainAxisAlignment.center,
+                                        children: [
+                                          Container(
+                                            height: 64,
+                                            width: 64,
+                                            decoration: BoxDecoration(
+                                              border: Border.all(
+                                                color: Colors.white,
+                                              ),
+                                              shape: BoxShape.circle,
+                                            ),
+                                          ),
+                                          SizedBox(
+                                            height: 8,
+                                          ),
+                                          Text(
+                                            "Pay bills",
+                                            style: TextStyle(
+                                              color: Colors.white,
+                                              fontWeight: FontWeight.bold,
+                                            ),
+                                          )
+                                        ],
+                                      ),
                                     )
                                   ],
                                 )),
