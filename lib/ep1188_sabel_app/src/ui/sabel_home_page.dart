@@ -2,6 +2,7 @@ import 'package:badges/badges.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_notebook_20th_story/ep1188_sabel_app/src/provider/sabel_menu_index_provider.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:percent_indicator/linear_percent_indicator.dart';
 
 class SabelHomePage extends StatefulWidget {
   const SabelHomePage({Key? key}) : super(key: key);
@@ -77,21 +78,63 @@ class _SabelHomePageState extends State<SabelHomePage> {
                                   ),
                                 ),
                                 Expanded(
-                                    child: ListView.builder(
-                                  itemCount: 8,
-                                  scrollDirection: Axis.horizontal,
-                                  itemBuilder: (context, index) {
-                                    return Padding(
-                                      padding: const EdgeInsets.all(8.0),
-                                      child: Container(
-                                        width: 240,
-                                        decoration: BoxDecoration(
-                                          color: Colors.white.withOpacity(0.1),
+                                  child: ListView.builder(
+                                    itemCount: 8,
+                                    scrollDirection: Axis.horizontal,
+                                    itemBuilder: (context, index) {
+                                      return Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: Container(
+                                          width: 240,
+                                          decoration: BoxDecoration(
+                                            color: Colors.white.withOpacity(0.1),
+                                            borderRadius: BorderRadius.circular(8),
+                                          ),
+                                          padding: EdgeInsets.all(16),
+                                          child: Column(
+                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            children: [
+                                              Text(
+                                                "CREDIT CARD",
+                                                style: TextStyle(
+                                                  color: Colors.white,
+                                                ),
+                                              ),
+                                              Text(
+                                                "\$860.00",
+                                                style: TextStyle(
+                                                  color: Colors.white,
+                                                  fontSize: 24,
+                                                  fontWeight: FontWeight.bold,
+                                                ),
+                                              ),
+                                              Text(
+                                                "Balance",
+                                                style: TextStyle(
+                                                  color: Colors.white,
+                                                ),
+                                              ),
+                                              SizedBox(
+                                                height: 12,
+                                                child: LinearPercentIndicator(
+                                                  backgroundColor: Colors.white.withOpacity(0.2),
+                                                  // fillColor: Colors.cyanAccent,
+                                                  percent: 0.45,
+                                                  lineHeight: 10,
+
+                                                  linearStrokeCap: LinearStrokeCap.roundAll,
+                                                  progressColor: Colors.cyanAccent,
+                                                  barRadius: Radius.circular(16),
+
+                                                ),
+                                              ),
+                                            ],
+                                          ),
                                         ),
-                                      ),
-                                    );
-                                  },
-                                )),
+                                      );
+                                    },
+                                  ),
+                                ),
                               ],
                             ),
                           )
