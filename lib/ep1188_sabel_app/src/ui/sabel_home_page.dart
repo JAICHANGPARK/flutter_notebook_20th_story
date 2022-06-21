@@ -151,8 +151,6 @@ class _SabelHomePageState extends State<SabelHomePage> {
                           SizedBox(
                             height: 120,
                             child: Container(
-                                margin: EdgeInsets.only(left: 0),
-                                color: Colors.blue,
                                 child: Row(
                                  mainAxisAlignment: MainAxisAlignment.spaceAround,
                                   children: [
