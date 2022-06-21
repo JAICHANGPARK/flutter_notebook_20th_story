@@ -132,11 +132,12 @@ class _SabelHomePageState extends State<SabelHomePage> {
                                                 decoration: BoxDecoration(
                                                     color: Colors.white.withOpacity(0.3),
                                                     borderRadius: BorderRadius.circular(8)),
-                                                padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
+                                                padding: EdgeInsets.symmetric(horizontal: 8, vertical: 12),
                                                 child: Text(
                                                   "Payment due in 7 days",
                                                   style: TextStyle(
                                                     color: Colors.white,
+                                                    fontSize: 12
                                                   ),
                                                 ),
                                               )
