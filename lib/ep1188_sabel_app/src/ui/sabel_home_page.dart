@@ -156,6 +156,7 @@ class _SabelHomePageState extends State<SabelHomePage> {
                                   scrollDirection: Axis.horizontal,
                                   children: [
                                     Column(
+                                      mainAxisAlignment: MainAxisAlignment.center,
                                       children: [
                                         CircleAvatar(
                                           radius: 32,
@@ -164,6 +165,9 @@ class _SabelHomePageState extends State<SabelHomePage> {
                                           child: Icon(
                                             Icons.add,
                                           ),
+                                        ),
+                                        SizedBox(
+                                          height: 8,
                                         ),
                                         Text(
                                           "Add money",
