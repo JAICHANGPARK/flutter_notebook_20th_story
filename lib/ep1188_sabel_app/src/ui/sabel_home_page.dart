@@ -135,10 +135,7 @@ class _SabelHomePageState extends State<SabelHomePage> {
                                                 padding: EdgeInsets.symmetric(horizontal: 8, vertical: 12),
                                                 child: Text(
                                                   "Payment due in 7 days",
-                                                  style: TextStyle(
-                                                    color: Colors.white,
-                                                    fontSize: 12
-                                                  ),
+                                                  style: TextStyle(color: Colors.white, fontSize: 12),
                                                 ),
                                               )
                                             ],
@@ -150,7 +147,32 @@ class _SabelHomePageState extends State<SabelHomePage> {
                                 ),
                               ],
                             ),
-                          )
+                          ),
+                          SizedBox(
+                            height: 120,
+                            child: Container(
+                                color: Colors.blue,
+                                child: ListView(
+                                  scrollDirection: Axis.horizontal,
+                                  children: [
+                                    Column(
+                                      children: [
+                                        CircleAvatar(
+                                          radius: 32,
+                                          backgroundColor: Colors.white,
+                                        ),
+                                        Text(
+                                          "Add money",
+                                          style: TextStyle(
+                                            color: Colors.white,
+                                            fontWeight: FontWeight.bold,
+                                          ),
+                                        )
+                                      ],
+                                    )
+                                  ],
+                                )),
+                          ),
                         ],
                       ),
                     ),
