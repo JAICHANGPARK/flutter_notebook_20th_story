@@ -152,92 +152,96 @@ class _SabelHomePageState extends State<SabelHomePage> {
                             height: 120,
                             child: Container(
                                 child: Row(
-                                 mainAxisAlignment: MainAxisAlignment.spaceAround,
-                                  children: [
-                                    Padding(
-                                      padding: const EdgeInsets.only(right: 0),
-                                      child: Column(
-                                        mainAxisAlignment: MainAxisAlignment.center,
-                                        children: [
-                                          CircleAvatar(
-                                            radius: 32,
-                                            backgroundColor: Colors.white,
-                                            foregroundColor: Colors.black,
-                                            child: Icon(
-                                              Icons.add,
-                                            ),
-                                          ),
-                                          SizedBox(
-                                            height: 8,
-                                          ),
-                                          Text(
-                                            "Add money",
-                                            style: TextStyle(
-                                              color: Colors.white,
-                                              fontWeight: FontWeight.bold,
-                                            ),
-                                          )
-                                        ],
+                              mainAxisAlignment: MainAxisAlignment.spaceAround,
+                              children: [
+                                Padding(
+                                  padding: const EdgeInsets.only(right: 0),
+                                  child: Column(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      CircleAvatar(
+                                        radius: 32,
+                                        backgroundColor: Colors.white,
+                                        foregroundColor: Colors.black,
+                                        child: Icon(
+                                          Icons.add,
+                                        ),
                                       ),
-                                    ),
-                                    Padding(
-                                      padding: const EdgeInsets.only(right: 0),
-                                      child: Column(
-                                        mainAxisAlignment: MainAxisAlignment.center,
-                                        children: [
-                                          Container(
-                                            height: 64,
-                                            width: 64,
-                                            decoration: BoxDecoration(
-                                              border: Border.all(
-                                                color: Colors.white,
-                                              ),
-                                              shape: BoxShape.circle,
-                                            ),
-                                          ),
-                                          SizedBox(
-                                            height: 8,
-                                          ),
-                                          Text(
-                                            "Send money",
-                                            style: TextStyle(
-                                              color: Colors.white,
-                                              fontWeight: FontWeight.bold,
-                                            ),
-                                          )
-                                        ],
+                                      SizedBox(
+                                        height: 8,
                                       ),
-                                    ),
-                                    Padding(
-                                      padding: const EdgeInsets.only(right: 0),
-                                      child: Column(
-                                        mainAxisAlignment: MainAxisAlignment.center,
-                                        children: [
-                                          Container(
-                                            height: 64,
-                                            width: 64,
-                                            decoration: BoxDecoration(
-                                              border: Border.all(
-                                                color: Colors.white,
-                                              ),
-                                              shape: BoxShape.circle,
-                                            ),
+                                      Text(
+                                        "Add money",
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      )
+                                    ],
+                                  ),
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.only(right: 0),
+                                  child: Column(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      Container(
+                                        height: 64,
+                                        width: 64,
+                                        decoration: BoxDecoration(
+                                          border: Border.all(
+                                            color: Colors.white,
                                           ),
-                                          SizedBox(
-                                            height: 8,
-                                          ),
-                                          Text(
-                                            "Pay bills",
-                                            style: TextStyle(
-                                              color: Colors.white,
-                                              fontWeight: FontWeight.bold,
-                                            ),
-                                          )
-                                        ],
+                                          shape: BoxShape.circle,
+                                        ),
+                                        child: Icon(
+                                          Icons.arrow_forward,
+                                          color: Colors.white,
+                                        ),
                                       ),
-                                    )
-                                  ],
-                                )),
+                                      SizedBox(
+                                        height: 8,
+                                      ),
+                                      Text(
+                                        "Send money",
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      )
+                                    ],
+                                  ),
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.only(right: 0),
+                                  child: Column(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      Container(
+                                        height: 64,
+                                        width: 64,
+                                        decoration: BoxDecoration(
+                                          border: Border.all(
+                                            color: Colors.white,
+                                          ),
+                                          shape: BoxShape.circle,
+                                        ),
+                                      ),
+                                      SizedBox(
+                                        height: 8,
+                                      ),
+                                      Text(
+                                        "Pay bills",
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      )
+                                    ],
+                                  ),
+                                )
+                              ],
+                            )),
                           ),
                         ],
                       ),
