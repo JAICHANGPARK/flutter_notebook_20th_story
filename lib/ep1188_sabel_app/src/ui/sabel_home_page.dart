@@ -192,6 +192,22 @@ class _SabelHomePageState extends State<SabelHomePage> {
                                                     ),
                                                   )
                                                 ],
+                                              ),
+                                              Row(
+                                                children: [
+                                                  CircleAvatar(
+                                                    backgroundColor: Colors.green,
+                                                  ),
+                                                  SizedBox(
+                                                    width: 8,
+                                                  ),
+                                                  Text(
+                                                    "Spotify",
+                                                    style: TextStyle(
+                                                      color: Colors.white,
+                                                    ),
+                                                  )
+                                                ],
                                               )
                                             ],
                                           ),
@@ -301,6 +317,22 @@ class _SabelHomePageState extends State<SabelHomePage> {
                                 )
                               ],
                             )),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.symmetric(horizontal: 8),
+                            child: Text(
+                              "FOR YOU",
+                              style: TextStyle(
+                                color: Colors.white,
+                              ),
+                            ),
+                          ),
+                          SizedBox(
+                            height: 240,
+                            child: ListView(
+                              scrollDirection: Axis.horizontal,
+                              children: [],
+                            ),
                           ),
                         ],
                       ),
