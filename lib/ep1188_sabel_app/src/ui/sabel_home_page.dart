@@ -263,7 +263,7 @@ class _SabelHomePageState extends State<SabelHomePage> {
                                             context: context,
                                             isDismissible: false,
                                             builder: (context) => SizedBox(
-                                              height: 380,
+                                              height: 360,
                                               child: Container(
                                                 decoration: BoxDecoration(
                                                   color: Colors.black,
