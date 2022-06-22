@@ -263,7 +263,7 @@ class _SabelHomePageState extends State<SabelHomePage> {
                                             context: context,
                                             isDismissible: false,
                                             builder: (context) => SizedBox(
-                                              height: 320,
+                                              height: 380,
                                               child: Container(
                                                 decoration: BoxDecoration(
                                                   color: Colors.black,
@@ -294,14 +294,61 @@ class _SabelHomePageState extends State<SabelHomePage> {
                                                     ),
                                                     Divider(
                                                       color: Colors.grey,
+                                                      height: 32,
                                                     ),
                                                     ListTile(
-                                                      title: Text("Send funds to U.S. banks"),
+                                                      title: Text(
+                                                        "Send funds to U.S. banks",
+                                                        style: TextStyle(
+                                                          color: Colors.white,
+                                                        ),
+                                                      ),
                                                       leading: Icon(
                                                         Icons.account_balance,
                                                         color: Colors.tealAccent,
                                                       ),
-                                                    )
+                                                      trailing: Icon(
+                                                        Icons.keyboard_arrow_right_outlined,
+                                                      ),
+                                                    ),
+                                                    ListTile(
+                                                      title: Text(
+                                                        "Send funds aboard",
+                                                        style: TextStyle(
+                                                          color: Colors.white,
+                                                        ),
+                                                      ),
+                                                      leading: Icon(
+                                                        Icons.public,
+                                                        color: Colors.tealAccent,
+                                                      ),
+                                                      trailing: Icon(
+                                                        Icons.keyboard_arrow_right_outlined,
+                                                      ),
+                                                    ),
+                                                    Divider(
+                                                      color: Colors.grey,
+                                                      height: 32,
+                                                    ),
+                                                    ListTile(
+                                                      title: Text(
+                                                        "Mail a check",
+                                                        style: TextStyle(
+                                                          color: Colors.white,
+                                                        ),
+                                                      ),
+                                                      leading: Icon(
+                                                        Icons.mail,
+                                                        color: Colors.tealAccent,
+                                                      ),
+                                                      trailing: Icon(
+                                                        Icons.keyboard_arrow_right_outlined,
+                                                      ),
+                                                    ),
+                                                    Divider(
+                                                      color: Colors.grey,
+                                                      height: 32,
+                                                    ),
                                                   ],
                                                 ),
                                               ),
