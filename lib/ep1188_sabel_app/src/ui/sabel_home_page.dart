@@ -82,7 +82,69 @@ class _SabelHomePageState extends State<SabelHomePage> {
                                     itemCount: 8,
                                     scrollDirection: Axis.horizontal,
                                     itemBuilder: (context, index) {
-                                      return Padding(
+                                      if(index ==0 ){
+                                        return Padding(
+                                          padding: const EdgeInsets.all(8.0),
+                                          child: Container(
+                                            width: 240,
+                                            decoration: BoxDecoration(
+                                              color: Colors.white.withOpacity(0.1),
+                                              borderRadius: BorderRadius.circular(8),
+                                            ),
+                                            padding: EdgeInsets.all(16),
+                                            child: Column(
+                                              crossAxisAlignment: CrossAxisAlignment.start,
+                                              mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                              children: [
+                                                Text(
+                                                  "CREDIT CARD",
+                                                  style: TextStyle(
+                                                    color: Colors.white,
+                                                  ),
+                                                ),
+                                                Text(
+                                                  "\$860.00",
+                                                  style: TextStyle(
+                                                    color: Colors.white,
+                                                    fontSize: 24,
+                                                    fontWeight: FontWeight.bold,
+                                                  ),
+                                                ),
+                                                Text(
+                                                  "Balance",
+                                                  style: TextStyle(
+                                                    color: Colors.white,
+                                                  ),
+                                                ),
+                                                SizedBox(
+                                                  height: 12,
+                                                  child: LinearPercentIndicator(
+                                                    backgroundColor: Colors.white.withOpacity(0.2),
+                                                    // fillColor: Colors.cyanAccent,
+                                                    percent: 0.45,
+                                                    lineHeight: 10,
+
+                                                    linearStrokeCap: LinearStrokeCap.roundAll,
+                                                    progressColor: Colors.cyanAccent,
+                                                    barRadius: Radius.circular(16),
+                                                  ),
+                                                ),
+                                                Container(
+                                                  decoration: BoxDecoration(
+                                                      color: Colors.white.withOpacity(0.3),
+                                                      borderRadius: BorderRadius.circular(8)),
+                                                  padding: EdgeInsets.symmetric(horizontal: 8, vertical: 12),
+                                                  child: Text(
+                                                    "Payment due in 7 days",
+                                                    style: TextStyle(color: Colors.white, fontSize: 12),
+                                                  ),
+                                                )
+                                              ],
+                                            ),
+                                          ),
+                                        );
+                                      }
+                                      return  Padding(
                                         padding: const EdgeInsets.all(8.0),
                                         child: Container(
                                           width: 240,
@@ -142,6 +204,7 @@ class _SabelHomePageState extends State<SabelHomePage> {
                                           ),
                                         ),
                                       );
+
                                     },
                                   ),
                                 ),
