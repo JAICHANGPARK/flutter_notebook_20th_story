@@ -268,6 +268,7 @@ class _SabelHomePageState extends State<SabelHomePage> {
                                                 decoration: BoxDecoration(
                                                   color: Colors.black,
                                                 ),
+                                                padding: EdgeInsets.all(16),
                                                 child: Column(
                                                   children: [
                                                     Row(
@@ -275,11 +276,31 @@ class _SabelHomePageState extends State<SabelHomePage> {
                                                         Text(
                                                           "Send money",
                                                           style: TextStyle(
-                                                            color: Colors.white,
-                                                            fontWeight: FontWeight.bold,
+                                                              color: Colors.white,
+                                                              fontWeight: FontWeight.bold,
+                                                              fontSize: 24),
+                                                        ),
+                                                        Spacer(),
+                                                        CircleAvatar(
+                                                          radius: 16,
+                                                          backgroundColor: Colors.white.withOpacity(0.2),
+                                                          foregroundColor: Colors.white,
+                                                          child: Icon(
+                                                            Icons.clear,
+                                                            size: 16,
                                                           ),
-                                                        )
+                                                        ),
                                                       ],
+                                                    ),
+                                                    Divider(
+                                                      color: Colors.grey,
+                                                    ),
+                                                    ListTile(
+                                                      title: Text("Send funds to U.S. banks"),
+                                                      leading: Icon(
+                                                        Icons.account_balance,
+                                                        color: Colors.tealAccent,
+                                                      ),
                                                     )
                                                   ],
                                                 ),
