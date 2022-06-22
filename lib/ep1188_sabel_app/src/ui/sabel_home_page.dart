@@ -226,6 +226,7 @@ class _SabelHomePageState extends State<SabelHomePage> {
                                           ),
                                           shape: BoxShape.circle,
                                         ),
+                                        child: Icon(Icons.receipt),
                                       ),
                                       SizedBox(
                                         height: 8,
