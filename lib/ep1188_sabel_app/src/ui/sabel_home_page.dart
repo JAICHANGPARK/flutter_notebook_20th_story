@@ -318,6 +318,9 @@ class _SabelHomePageState extends State<SabelHomePage> {
                               ],
                             )),
                           ),
+                          SizedBox(
+                            height: 16,
+                          ),
                           Padding(
                             padding: const EdgeInsets.symmetric(horizontal: 8),
                             child: Text(
@@ -334,6 +337,54 @@ class _SabelHomePageState extends State<SabelHomePage> {
                               child: ListView(
                                 scrollDirection: Axis.horizontal,
                                 children: [
+                                  Container(
+                                    margin: EdgeInsets.only(right: 8),
+                                    width: 240,
+                                    decoration: BoxDecoration(
+                                      color: Colors.grey,
+                                      borderRadius: BorderRadius.circular(12),
+                                    ),
+                                    child: Stack(
+                                      children: [
+                                        Positioned(
+                                          right: 8,
+                                          top: 8,
+                                          child: IconButton(
+                                            onPressed: () {},
+                                            icon: Icon(
+                                              Icons.clear,
+                                            ),
+                                            color: Colors.white,
+                                          ),
+                                        ),
+                                        Positioned(
+                                          left: 16,
+                                          bottom: 16,
+                                          child: Column(
+                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            children: [
+                                              Text(
+                                                "Eat, Play",
+                                                style: TextStyle(
+                                                  fontSize: 24,
+                                                  color: Colors.white,
+                                                ),
+                                              ),
+                                              SizedBox(
+                                                height: 8,
+                                              ),
+                                              Text(
+                                                "Dashboard",
+                                                style: TextStyle(
+                                                  color: Colors.white,
+                                                ),
+                                              ),
+                                            ],
+                                          ),
+                                        )
+                                      ],
+                                    ),
+                                  ),
                                   Container(
                                     margin: EdgeInsets.only(right: 8),
                                     width: 240,
