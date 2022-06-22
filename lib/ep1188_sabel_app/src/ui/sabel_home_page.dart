@@ -256,18 +256,50 @@ class _SabelHomePageState extends State<SabelHomePage> {
                                   child: Column(
                                     mainAxisAlignment: MainAxisAlignment.center,
                                     children: [
-                                      Container(
-                                        height: 64,
-                                        width: 64,
-                                        decoration: BoxDecoration(
-                                          border: Border.all(
+                                      GestureDetector(
+                                        onTap: () {
+                                          // ScaffoldMessenger.of(context).s
+                                          showModalBottomSheet(
+                                            context: context,
+                                            isDismissible: false,
+                                            builder: (context) => SizedBox(
+                                              height: 320,
+                                              child: Container(
+                                                decoration: BoxDecoration(
+                                                  color: Colors.black,
+                                                ),
+                                                child: Column(
+                                                  children: [
+                                                    Row(
+                                                      children: [
+                                                        Text(
+                                                          "Send money",
+                                                          style: TextStyle(
+                                                            color: Colors.white,
+                                                            fontWeight: FontWeight.bold,
+                                                          ),
+                                                        )
+                                                      ],
+                                                    )
+                                                  ],
+                                                ),
+                                              ),
+                                            ),
+                                          );
+                                        },
+                                        child: Container(
+                                          height: 64,
+                                          width: 64,
+                                          decoration: BoxDecoration(
+                                            border: Border.all(
+                                              color: Colors.white,
+                                            ),
+                                            shape: BoxShape.circle,
+                                          ),
+                                          child: Icon(
+                                            Icons.arrow_forward,
                                             color: Colors.white,
                                           ),
-                                          shape: BoxShape.circle,
-                                        ),
-                                        child: Icon(
-                                          Icons.arrow_forward,
-                                          color: Colors.white,
                                         ),
                                       ),
                                       SizedBox(
