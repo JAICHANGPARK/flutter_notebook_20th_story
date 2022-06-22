@@ -331,7 +331,15 @@ class _SabelHomePageState extends State<SabelHomePage> {
                             height: 240,
                             child: ListView(
                               scrollDirection: Axis.horizontal,
-                              children: [],
+                              children: [
+                                Container(
+                                  width: 240,
+                                  decoration: BoxDecoration(
+                                    color: Colors.grey,
+                                    borderRadius: BorderRadius.circular(12),
+                                  ),
+                                )
+                              ],
                             ),
                           ),
                         ],
