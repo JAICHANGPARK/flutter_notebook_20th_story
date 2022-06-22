@@ -82,7 +82,7 @@ class _SabelHomePageState extends State<SabelHomePage> {
                                     itemCount: 8,
                                     scrollDirection: Axis.horizontal,
                                     itemBuilder: (context, index) {
-                                      if(index ==0 ){
+                                      if (index == 0) {
                                         return Padding(
                                           padding: const EdgeInsets.all(8.0),
                                           child: Container(
@@ -144,7 +144,7 @@ class _SabelHomePageState extends State<SabelHomePage> {
                                           ),
                                         );
                                       }
-                                      return  Padding(
+                                      return Padding(
                                         padding: const EdgeInsets.all(8.0),
                                         child: Container(
                                           width: 240,
@@ -158,13 +158,13 @@ class _SabelHomePageState extends State<SabelHomePage> {
                                             mainAxisAlignment: MainAxisAlignment.spaceAround,
                                             children: [
                                               Text(
-                                                "CREDIT CARD",
+                                                "BANKING ACCOUNT",
                                                 style: TextStyle(
                                                   color: Colors.white,
                                                 ),
                                               ),
                                               Text(
-                                                "\$860.00",
+                                                "\$9,510.00",
                                                 style: TextStyle(
                                                   color: Colors.white,
                                                   fontSize: 24,
@@ -172,39 +172,31 @@ class _SabelHomePageState extends State<SabelHomePage> {
                                                 ),
                                               ),
                                               Text(
-                                                "Balance",
+                                                "Available ",
                                                 style: TextStyle(
                                                   color: Colors.white,
                                                 ),
                                               ),
-                                              SizedBox(
-                                                height: 12,
-                                                child: LinearPercentIndicator(
-                                                  backgroundColor: Colors.white.withOpacity(0.2),
-                                                  // fillColor: Colors.cyanAccent,
-                                                  percent: 0.45,
-                                                  lineHeight: 10,
-
-                                                  linearStrokeCap: LinearStrokeCap.roundAll,
-                                                  progressColor: Colors.cyanAccent,
-                                                  barRadius: Radius.circular(16),
-                                                ),
-                                              ),
-                                              Container(
-                                                decoration: BoxDecoration(
-                                                    color: Colors.white.withOpacity(0.3),
-                                                    borderRadius: BorderRadius.circular(8)),
-                                                padding: EdgeInsets.symmetric(horizontal: 8, vertical: 12),
-                                                child: Text(
-                                                  "Payment due in 7 days",
-                                                  style: TextStyle(color: Colors.white, fontSize: 12),
-                                                ),
+                                              Row(
+                                                children: [
+                                                  CircleAvatar(
+                                                    backgroundColor: Colors.deepOrange,
+                                                  ),
+                                                  SizedBox(
+                                                    width: 8,
+                                                  ),
+                                                  Text(
+                                                    "Nike",
+                                                    style: TextStyle(
+                                                      color: Colors.white,
+                                                    ),
+                                                  )
+                                                ],
                                               )
                                             ],
                                           ),
                                         ),
                                       );
-
                                     },
                                   ),
                                 ),
