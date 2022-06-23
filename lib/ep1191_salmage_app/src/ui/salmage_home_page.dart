@@ -50,6 +50,12 @@ class _SalmageHomePageState extends State<SalmageHomePage> {
                         ),
                       ),
                     ),
+                    Positioned(
+                      child: IconButton(
+                        onPressed: () {},
+                        icon: Icons.apps,
+                      ),
+                    )
                   ],
                 ),
               )
