@@ -50,7 +50,7 @@ class _SalmageHomePageState extends State<SalmageHomePage> {
                         height: 4,
                         decoration: BoxDecoration(
                           color: Colors.blue,
-                          borderRadius: BorderRadius.circular(8)
+                          borderRadius: BorderRadius.circular(8),
                         ),
                       ),
                     ),
