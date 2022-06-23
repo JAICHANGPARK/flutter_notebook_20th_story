@@ -16,7 +16,24 @@ class _SalmageHomePageState extends State<SalmageHomePage> {
           height: 72,
           child: Row(
             children: [
-            
+              SizedBox(
+                width: 48,
+                child: Stack(
+                  children: [
+                    Positioned(
+                      bottom: 0,
+                      left: 0,
+                      right: 0,
+                      child: Container(
+                        height: 4,
+                        decoration: BoxDecoration(
+                          color: Colors.blue,
+                        ),
+                      ),
+                    )
+                  ],
+                ),
+              )
             ],
           ),
         ),
