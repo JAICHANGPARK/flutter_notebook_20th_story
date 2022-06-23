@@ -1,6 +1,6 @@
 # flutter_notebook_20th_story
 
-### EP1188
+### EP1188-
 
 - Sable App – Referrals, Money Movement Shortcuts, and more
 - Michal Skvarenina for Sable Card
