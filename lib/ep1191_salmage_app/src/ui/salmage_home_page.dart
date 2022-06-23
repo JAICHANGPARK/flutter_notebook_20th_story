@@ -15,6 +15,7 @@ class _SalmageHomePageState extends State<SalmageHomePage> {
         child: Container(
           height: 72,
           child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               SizedBox(
                 width: 48,
@@ -31,8 +32,10 @@ class _SalmageHomePageState extends State<SalmageHomePage> {
                             begin: Alignment.bottomCenter,
                             end: Alignment.topCenter,
                             colors: [
-                              Colors.blue[200]!,
+                              Colors.blue[100]!,
                               Colors.blue[50]!,
+                              Colors.blue[50]!,
+                              Colors.white,
                               Colors.white,
                             ],
                           ),
