@@ -29,9 +29,11 @@ class _SalmageHomePageState extends State<SalmageHomePage> {
                         decoration: BoxDecoration(
                           gradient: LinearGradient(
                             begin: Alignment.bottomCenter,
+                            end: Alignment.topCenter,
                             colors: [
-                              Colors.blue[300]!,
+                              Colors.blue[200]!,
                               Colors.blue[50]!,
+                              Colors.white,
                             ],
                           ),
                         ),
