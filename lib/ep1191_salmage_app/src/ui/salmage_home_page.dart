@@ -11,7 +11,14 @@ class _SalmageHomePageState extends State<SalmageHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
+      bottomNavigationBar: BottomAppBar(
+        child: Container(
+          height: 82,
+          child: Row(
+            children: [],
+          ),
+        ),
+      ),
     );
   }
 }
