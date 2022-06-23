@@ -13,9 +13,11 @@ class _SalmageHomePageState extends State<SalmageHomePage> {
     return Scaffold(
       bottomNavigationBar: BottomAppBar(
         child: Container(
-          height: 82,
+          height: 72,
           child: Row(
-            children: [],
+            children: [
+            
+            ],
           ),
         ),
       ),
