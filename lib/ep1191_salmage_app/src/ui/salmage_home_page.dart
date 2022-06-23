@@ -21,6 +21,17 @@ class _SalmageHomePageState extends State<SalmageHomePage> {
                 child: Stack(
                   children: [
                     Positioned(
+                      left: 0,
+                      right: 0,
+                      bottom: 0,
+                      top: 0,
+                      child: Container(
+                        decoration: BoxDecoration(
+                          gradient: LinearGradient(colors: []),
+                        ),
+                      ),
+                    ),
+                    Positioned(
                       bottom: 0,
                       left: 0,
                       right: 0,
@@ -30,7 +41,7 @@ class _SalmageHomePageState extends State<SalmageHomePage> {
                           color: Colors.blue,
                         ),
                       ),
-                    )
+                    ),
                   ],
                 ),
               )
