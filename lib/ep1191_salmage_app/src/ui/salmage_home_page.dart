@@ -60,6 +60,17 @@ class _SalmageHomePageState extends State<SalmageHomePage> {
                     )
                   ],
                 ),
+              ),
+              SizedBox(
+                width: 48,
+                child: Padding(
+                  padding: const EdgeInsets.only(bottom: 8),
+                  child: IconButton(
+                    onPressed: () {},
+                    icon: Icon(Icons.apps),
+                    color: Colors.grey,
+                  ),
+                ),
               )
             ],
           ),
