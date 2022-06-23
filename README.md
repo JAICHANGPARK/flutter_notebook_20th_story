@@ -1,6 +1,16 @@
 # flutter_notebook_20th_story
 
-### EP1188-
+### EP1191
+
+- Sales Management Mobile App - Salmage
+- by Ali Husni
+- https://dribbble.com/shots/18558371-Sales-Management-Mobile-App-Salmage/attachments/13756307?mode=media
+
+<img
+src="https://cdn.dribbble.com/users/5324991/screenshots/18558371/media/86861b1cd78de64fa02f1cf8fb57c76a.png"
+width="400px"/>
+
+### EP1188-1190
 
 - Sable App – Referrals, Money Movement Shortcuts, and more
 - Michal Skvarenina for Sable Card
