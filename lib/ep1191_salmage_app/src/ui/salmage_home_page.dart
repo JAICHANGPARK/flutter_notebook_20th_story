@@ -67,7 +67,48 @@ class _SalmageHomePageState extends State<SalmageHomePage> {
                   padding: const EdgeInsets.only(bottom: 8),
                   child: IconButton(
                     onPressed: () {},
-                    icon: Icon(Icons.apps),
+                    icon: Icon(
+                      Icons.bar_chart_outlined,
+                    ),
+                    color: Colors.grey,
+                  ),
+                ),
+              ),
+              SizedBox(
+                width: 48,
+                child: Padding(
+                  padding: const EdgeInsets.only(bottom: 8),
+                  child: IconButton(
+                    onPressed: () {},
+                    icon: Icon(
+                      Icons.chat_outlined,
+                    ),
+                    color: Colors.grey,
+                  ),
+                ),
+              ),
+              SizedBox(
+                width: 48,
+                child: Padding(
+                  padding: const EdgeInsets.only(bottom: 8),
+                  child: IconButton(
+                    onPressed: () {},
+                    icon: Icon(
+                      Icons.view_in_ar,
+                    ),
+                    color: Colors.grey,
+                  ),
+                ),
+              ),
+              SizedBox(
+                width: 48,
+                child: Padding(
+                  padding: const EdgeInsets.only(bottom: 8),
+                  child: IconButton(
+                    onPressed: () {},
+                    icon: Icon(
+                      Icons.settings_outlined,
+                    ),
                     color: Colors.grey,
                   ),
                 ),
