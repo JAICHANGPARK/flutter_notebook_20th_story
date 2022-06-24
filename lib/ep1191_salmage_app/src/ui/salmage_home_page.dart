@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_20th_story/ep1191_salmage_app/src/ui/salmage_products_screen.dart';
 import 'package:flutter_notebook_20th_story/ep1191_salmage_app/src/ui/widgets/salmage_bottom_widget.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -13,7 +14,13 @@ class SalmageHomePage extends ConsumerWidget {
     return Scaffold(
       body: IndexedStack(
         index: index,
-        children: [],
+        children: [
+          Container(),
+          Container(),
+          Container(),
+          SalmageProductScreen(),
+          Container(),
+        ],
       ),
       bottomNavigationBar: SalmageBottomWidget(),
     );
