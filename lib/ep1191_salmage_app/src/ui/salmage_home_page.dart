@@ -12,15 +12,17 @@ class SalmageHomePage extends ConsumerWidget {
   Widget build(BuildContext context, ref) {
     final index = ref.watch(salmageIndex);
     return Scaffold(
-      body: IndexedStack(
-        index: index,
-        children: [
-          Container(),
-          Container(),
-          Container(),
-          SalmageProductScreen(),
-          Container(),
-        ],
+      body: SafeArea(
+        child: IndexedStack(
+          index: index,
+          children: [
+            Container(),
+            Container(),
+            Container(),
+            SalmageProductScreen(),
+            Container(),
+          ],
+        ),
       ),
       bottomNavigationBar: SalmageBottomWidget(),
     );
