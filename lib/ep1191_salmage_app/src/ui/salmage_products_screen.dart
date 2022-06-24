@@ -66,6 +66,9 @@ class SalmageProductScreen extends StatelessWidget {
             )
           ],
         ),
+        SizedBox(
+          height: 16,
+        ),
         Container(
           height: 58,
           margin: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
@@ -78,20 +81,30 @@ class SalmageProductScreen extends StatelessWidget {
                 child: Padding(
                   padding: const EdgeInsets.all(6.0),
                   child: Container(
-                    decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.circular(4)
-                    ),
+                    decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(4)),
                     child: Center(
                       child: Text("Top Sales"),
                     ),
                   ),
                 ),
               ),
-              Expanded(child: Center(child: Text("Stocks", ),))
+              Expanded(
+                  child: Center(
+                child: Text(
+                  "Stocks",
+                ),
+              ))
             ],
           ),
-        )
+        ),
+        Expanded(
+          child: ListView.builder(
+            itemCount: 10,
+            itemBuilder: (context, index) {
+              return Container();
+            },
+          ),
+        ),
       ],
     );
   }
