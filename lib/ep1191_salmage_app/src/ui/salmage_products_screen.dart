@@ -39,6 +39,24 @@ class SalmageProductScreen extends StatelessWidget {
               ),
             ],
           ),
+        ),
+        Column(
+          children: [
+            Text("BALANCE(Overall Sale)"),
+            Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  "\$615,245.00",
+                  style: TextStyle(
+                    fontSize: 24,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                Icon(Icons.visibility_off_outlined)
+              ],
+            )
+          ],
         )
       ],
     );
