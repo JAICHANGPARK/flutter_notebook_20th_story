@@ -40,11 +40,19 @@ class SalmageProductScreen extends StatelessWidget {
             ],
           ),
         ),
+        SizedBox(
+          height: 24,
+        ),
         Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text("BALANCE(Overall Sale)"),
+            SizedBox(
+              height: 16,
+            ),
             Row(
               crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
                   "\$615,245.00",
