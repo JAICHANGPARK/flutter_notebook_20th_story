@@ -67,9 +67,29 @@ class SalmageProductScreen extends StatelessWidget {
           ],
         ),
         Container(
-          height: 64,
+          height: 58,
+          margin: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
           decoration: BoxDecoration(
-            color: Colors.grey,
+            color: Colors.grey[200],
+          ),
+          child: Row(
+            children: [
+              Expanded(
+                child: Padding(
+                  padding: const EdgeInsets.all(6.0),
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(4)
+                    ),
+                    child: Center(
+                      child: Text("Top Sales"),
+                    ),
+                  ),
+                ),
+              ),
+              Expanded(child: Center(child: Text("Stocks", ),))
+            ],
           ),
         )
       ],
