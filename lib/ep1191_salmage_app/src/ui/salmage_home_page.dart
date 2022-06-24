@@ -31,33 +31,37 @@ class _SalmageHomePageState extends State<SalmageHomePage> {
                         right: 0,
                         bottom: 0,
                         top: 0,
-                        child: index == 0 ?Container(
-                          decoration: BoxDecoration(
-                            gradient: LinearGradient(
-                              begin: Alignment.bottomCenter,
-                              end: Alignment.topCenter,
-                              colors: [
-                                Colors.blue[100]!,
-                                Colors.blue[50]!,
-                                Colors.blue[50]!,
-                                Colors.white,
-                                Colors.white,
-                              ],
-                            ),
-                          ),
-                        ) : Container(),
+                        child: index == 0
+                            ? Container(
+                                decoration: BoxDecoration(
+                                  gradient: LinearGradient(
+                                    begin: Alignment.bottomCenter,
+                                    end: Alignment.topCenter,
+                                    colors: [
+                                      Colors.blue[100]!,
+                                      Colors.blue[50]!,
+                                      Colors.blue[50]!,
+                                      Colors.white,
+                                      Colors.white,
+                                    ],
+                                  ),
+                                ),
+                              )
+                            : Container(),
                       ),
                       Positioned(
                         bottom: 0,
                         left: 0,
                         right: 0,
-                        child: Container(
-                          height: 4,
-                          decoration: BoxDecoration(
-                            color: Colors.blue,
-                            borderRadius: BorderRadius.circular(8),
-                          ),
-                        ),
+                        child: index == 0
+                            ? Container(
+                                height: 4,
+                                decoration: BoxDecoration(
+                                  color: Colors.blue,
+                                  borderRadius: BorderRadius.circular(8),
+                                ),
+                              )
+                            : Container(),
                       ),
                       Positioned(
                         bottom: 16,
@@ -66,7 +70,7 @@ class _SalmageHomePageState extends State<SalmageHomePage> {
                             ref.read(salmageIndex.notifier).state = 0;
                           },
                           icon: Icon(Icons.apps),
-                          color: Colors.blue,
+                          color: index == 0 ? Colors.blue : Colors.grey,
                         ),
                       )
                     ],
@@ -74,17 +78,56 @@ class _SalmageHomePageState extends State<SalmageHomePage> {
                 ),
                 SizedBox(
                   width: 48,
-                  child: Padding(
-                    padding: const EdgeInsets.only(bottom: 8),
-                    child: IconButton(
-                      onPressed: () {
-                        ref.read(salmageIndex.notifier).state = 1;
-                      },
-                      icon: Icon(
-                        Icons.bar_chart_outlined,
+                  child: Stack(
+                    children: [
+                      Positioned(
+                        left: 0,
+                        right: 0,
+                        bottom: 0,
+                        top: 0,
+                        child: index == 1
+                            ? Container(
+                                decoration: BoxDecoration(
+                                  gradient: LinearGradient(
+                                    begin: Alignment.bottomCenter,
+                                    end: Alignment.topCenter,
+                                    colors: [
+                                      Colors.blue[100]!,
+                                      Colors.blue[50]!,
+                                      Colors.blue[50]!,
+                                      Colors.white,
+                                      Colors.white,
+                                    ],
+                                  ),
+                                ),
+                              )
+                            : Container(),
                       ),
-                      color: Colors.grey,
-                    ),
+                      Positioned(
+                        bottom: 0,
+                        left: 0,
+                        right: 0,
+                        child: index == 1
+                            ? Container(
+                                height: 4,
+                                decoration: BoxDecoration(
+                                  color: Colors.blue,
+                                  borderRadius: BorderRadius.circular(8),
+                                ),
+                              )
+                            : Container(),
+                      ),
+                      Positioned(
+                        bottom: 16,
+                        child: IconButton(
+                          onPressed: () {
+                            ref.read(salmageIndex.notifier).state = 1;
+                          },
+                          icon: Icon(Icons.bar_chart_outlined),
+                          color: index == 1 ? Colors.blue : Colors.grey,
+                        ),
+                      )
+                    ],
                   ),
                 ),
                 SizedBox(
