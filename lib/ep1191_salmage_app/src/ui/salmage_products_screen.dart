@@ -61,7 +61,13 @@ class SalmageProductScreen extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                   ),
                 ),
-                Icon(Icons.visibility_off_outlined)
+                SizedBox(
+                  width: 4,
+                ),
+                Icon(
+                  Icons.visibility_off_outlined,
+                  size: 14,
+                )
               ],
             )
           ],
@@ -81,7 +87,10 @@ class SalmageProductScreen extends StatelessWidget {
                 child: Padding(
                   padding: const EdgeInsets.all(6.0),
                   child: Container(
-                    decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(4)),
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(4),
+                    ),
                     child: Center(
                       child: Text("Top Sales"),
                     ),
