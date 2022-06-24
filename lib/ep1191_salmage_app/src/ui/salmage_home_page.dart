@@ -4,17 +4,17 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 final salmageIndex = StateProvider((ref) => 0);
 
-class SalmageHomePage extends StatefulWidget {
+class SalmageHomePage extends ConsumerWidget {
   const SalmageHomePage({Key? key}) : super(key: key);
 
   @override
-  State<SalmageHomePage> createState() => _SalmageHomePageState();
-}
-
-class _SalmageHomePageState extends State<SalmageHomePage> {
-  @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, ref) {
+    final index = ref.watch(salmageIndex);
     return Scaffold(
+      body: IndexedStack(
+        index: index,
+        children: [],
+      ),
       bottomNavigationBar: SalmageBottomWidget(),
     );
   }
