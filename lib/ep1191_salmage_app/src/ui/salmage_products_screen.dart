@@ -65,6 +65,12 @@ class SalmageProductScreen extends StatelessWidget {
               ],
             )
           ],
+        ),
+        Container(
+          height: 64,
+          decoration: BoxDecoration(
+            color: Colors.grey,
+          ),
         )
       ],
     );
