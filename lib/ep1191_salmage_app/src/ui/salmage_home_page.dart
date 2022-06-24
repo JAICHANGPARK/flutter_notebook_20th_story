@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_20th_story/ep1191_salmage_app/src/ui/widgets/salmage_bottom_widget.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 final salmageIndex = StateProvider((ref) => 0);
@@ -14,7 +15,7 @@ class _SalmageHomePageState extends State<SalmageHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar:
+      bottomNavigationBar: SalmageBottomWidget(),
     );
   }
 }
