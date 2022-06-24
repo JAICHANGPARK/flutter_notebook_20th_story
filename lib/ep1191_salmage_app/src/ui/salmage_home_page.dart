@@ -31,7 +31,7 @@ class _SalmageHomePageState extends State<SalmageHomePage> {
                         right: 0,
                         bottom: 0,
                         top: 0,
-                        child: Container(
+                        child: index == 0 ?Container(
                           decoration: BoxDecoration(
                             gradient: LinearGradient(
                               begin: Alignment.bottomCenter,
@@ -45,7 +45,7 @@ class _SalmageHomePageState extends State<SalmageHomePage> {
                               ],
                             ),
                           ),
-                        ),
+                        ) : Container(),
                       ),
                       Positioned(
                         bottom: 0,
