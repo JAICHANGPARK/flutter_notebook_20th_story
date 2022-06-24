@@ -41,7 +41,7 @@ class SalmageProductScreen extends StatelessWidget {
           ),
         ),
         SizedBox(
-          height: 24,
+          height: 16,
         ),
         Column(
           mainAxisAlignment: MainAxisAlignment.center,
