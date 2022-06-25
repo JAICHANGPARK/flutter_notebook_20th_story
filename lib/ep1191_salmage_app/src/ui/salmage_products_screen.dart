@@ -222,11 +222,30 @@ class SalmageProductScreen extends StatelessWidget {
                                     ),
                                   )
                                 ],
-                              )
+                              ),
                             ],
+                          ),
+                          Spacer(),
+                          Container(
+                            padding: EdgeInsets.symmetric(
+                              horizontal: 8,
+                              vertical: 12,
+                            ),
+                            decoration: BoxDecoration(
+                              color: Colors.blue[50],
+                            ),
+                            child: Center(
+                              child: Text(
+                                "4.241 Sold out",
+                                style: TextStyle(
+                                  color: Colors.blue,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                            ),
                           )
                         ],
-                      )
+                      ),
                     ],
                   ),
                 ),
