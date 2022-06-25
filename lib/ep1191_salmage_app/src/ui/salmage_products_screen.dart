@@ -101,7 +101,12 @@ class SalmageProductScreen extends StatelessWidget {
                           borderRadius: BorderRadius.circular(4),
                         ),
                         child: Center(
-                          child: Text("Top Sales"),
+                          child: Text(
+                            "Top Sales",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
                         ),
                       ),
                     ),
@@ -120,7 +125,12 @@ class SalmageProductScreen extends StatelessWidget {
                           borderRadius: BorderRadius.circular(4),
                         ),
                         child: Center(
-                          child: Text("Stocks"),
+                          child: Text(
+                            "Stocks",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
                         ),
                       ),
                     ),
@@ -134,7 +144,31 @@ class SalmageProductScreen extends StatelessWidget {
           child: ListView.builder(
             itemCount: 10,
             itemBuilder: (context, index) {
-              return Container();
+              return Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: Container(
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(4)
+                  ),
+                  padding: EdgeInsets.all(8),
+                  child: Column(
+                    children: [
+                      Row(
+                        children: [
+                          Container(
+                            height: 36,
+                            width: 36,
+                            decoration: BoxDecoration(
+                              color: Colors.grey,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+              );
             },
           ),
         ),
