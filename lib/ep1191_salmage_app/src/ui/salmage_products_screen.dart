@@ -97,7 +97,7 @@ class SalmageProductScreen extends StatelessWidget {
                       padding: const EdgeInsets.all(6.0),
                       child: Container(
                         decoration: BoxDecoration(
-                          color: Colors.white,
+                          color: idx == 0 ? Colors.white : Colors.transparent,
                           borderRadius: BorderRadius.circular(4),
                         ),
                         child: Center(
@@ -108,11 +108,24 @@ class SalmageProductScreen extends StatelessWidget {
                   ),
                 ),
                 Expanded(
-                    child: Center(
-                  child: Text(
-                    "Stocks",
+                  child: GestureDetector(
+                    onTap: () {
+                      ref.read(productsTabIndex.notifier).state = 1;
+                    },
+                    child: Padding(
+                      padding: const EdgeInsets.all(6.0),
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: idx == 1 ? Colors.white : Colors.transparent,
+                          borderRadius: BorderRadius.circular(4),
+                        ),
+                        child: Center(
+                          child: Text("Stocks"),
+                        ),
+                      ),
+                    ),
                   ),
-                ))
+                ),
               ],
             );
           }),
