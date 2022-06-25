@@ -140,125 +140,128 @@ class SalmageProductScreen extends StatelessWidget {
             );
           }),
         ),
-        Expanded(
-            child: IndexedStack(
-          children: [
-            ListView.builder(
-              itemCount: 10,
-              itemBuilder: (context, index) {
-                return Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                  child: Container(
-                    decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.circular(4),
-                    ),
-                    padding: EdgeInsets.all(12),
-                    child: Column(
-                      children: [
-                        Row(
-                          children: [
-                            Container(
-                              height: 36,
-                              width: 36,
-                              decoration: BoxDecoration(
-                                color: Colors.grey,
-                              ),
-                            ),
-                            Padding(
-                              padding: const EdgeInsets.all(8.0),
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text(
-                                    "Headsets JPL 200",
-                                    style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 16,
-                                    ),
-                                  ),
-                                  SizedBox(
-                                    height: 8,
-                                  ),
-                                  Text(
-                                    "#JPL20002567TY",
-                                    style: TextStyle(
-                                      color: Colors.grey,
-                                      fontSize: 12,
-                                    ),
-                                  )
-                                ],
-                              ),
-                            ),
-                            Spacer(),
-                            IconButton(
-                              onPressed: () {},
-                              icon: Icon(
-                                Icons.more_horiz,
-                              ),
-                            )
-                          ],
-                        ),
-                        Divider(),
-                        Row(
-                          children: [
-                            Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text(
-                                  "Rating & Review",
-                                  style: TextStyle(
-                                    fontSize: 12,
-                                  ),
+        Expanded(child: Consumer(builder: (context, ref, _) {
+          final idx = ref.watch(productsTabIndex);
+          return IndexedStack(
+            index: idx,
+            children: [
+              ListView.builder(
+                itemCount: 10,
+                itemBuilder: (context, index) {
+                  return Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(4),
+                      ),
+                      padding: EdgeInsets.all(12),
+                      child: Column(
+                        children: [
+                          Row(
+                            children: [
+                              Container(
+                                height: 36,
+                                width: 36,
+                                decoration: BoxDecoration(
+                                  color: Colors.grey,
                                 ),
-                                SizedBox(
-                                  height: 4,
-                                ),
-                                Row(
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    Icon(
-                                      Icons.star,
-                                      color: Colors.yellow,
-                                    ),
                                     Text(
-                                      " 4.5(3,359 Review)",
+                                      "Headsets JPL 200",
                                       style: TextStyle(
                                         fontWeight: FontWeight.bold,
+                                        fontSize: 16,
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      height: 8,
+                                    ),
+                                    Text(
+                                      "#JPL20002567TY",
+                                      style: TextStyle(
+                                        color: Colors.grey,
+                                        fontSize: 12,
                                       ),
                                     )
                                   ],
                                 ),
-                              ],
-                            ),
-                            Spacer(),
-                            Container(
-                              padding: EdgeInsets.symmetric(
-                                horizontal: 8,
-                                vertical: 12,
                               ),
-                              decoration: BoxDecoration(
-                                color: Colors.blue[50],
+                              Spacer(),
+                              IconButton(
+                                onPressed: () {},
+                                icon: Icon(
+                                  Icons.more_horiz,
+                                ),
+                              )
+                            ],
+                          ),
+                          Divider(),
+                          Row(
+                            children: [
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    "Rating & Review",
+                                    style: TextStyle(
+                                      fontSize: 12,
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    height: 4,
+                                  ),
+                                  Row(
+                                    children: [
+                                      Icon(
+                                        Icons.star,
+                                        color: Colors.yellow,
+                                      ),
+                                      Text(
+                                        " 4.5(3,359 Review)",
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      )
+                                    ],
+                                  ),
+                                ],
                               ),
-                              child: Center(
-                                child: Text(
-                                  "4.241 Sold out",
-                                  style: TextStyle(
-                                    color: Colors.blue,
-                                    fontWeight: FontWeight.bold,
+                              Spacer(),
+                              Container(
+                                padding: EdgeInsets.symmetric(
+                                  horizontal: 8,
+                                  vertical: 12,
+                                ),
+                                decoration: BoxDecoration(
+                                  color: Colors.blue[50],
+                                ),
+                                child: Center(
+                                  child: Text(
+                                    "4.241 Sold out",
+                                    style: TextStyle(
+                                      color: Colors.blue,
+                                      fontWeight: FontWeight.bold,
+                                    ),
                                   ),
                                 ),
-                              ),
-                            )
-                          ],
-                        ),
-                      ],
+                              )
+                            ],
+                          ),
+                        ],
+                      ),
                     ),
-                  ),
-                );
-              },
-            ),
-          ],
-        )),
+                  );
+                },
+              ),
+            ],
+          );
+        })),
       ],
     );
   }
