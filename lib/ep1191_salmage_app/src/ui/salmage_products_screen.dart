@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+
+final productsTabIndex = StateProvider<int>((ref) => 0);
 
 class SalmageProductScreen extends StatelessWidget {
   const SalmageProductScreen({Key? key}) : super(key: key);
@@ -81,30 +84,38 @@ class SalmageProductScreen extends StatelessWidget {
           decoration: BoxDecoration(
             color: Colors.grey[200],
           ),
-          child: Row(
-            children: [
-              Expanded(
-                child: Padding(
-                  padding: const EdgeInsets.all(6.0),
-                  child: Container(
-                    decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.circular(4),
-                    ),
-                    child: Center(
-                      child: Text("Top Sales"),
+          child: Consumer(builder: (context, ref, _) {
+            final idx = ref.watch(productsTabIndex);
+            return Row(
+              children: [
+                Expanded(
+                  child: GestureDetector(
+                    onTap: () {
+                      ref.read(productsTabIndex.notifier).state = 0;
+                    },
+                    child: Padding(
+                      padding: const EdgeInsets.all(6.0),
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(4),
+                        ),
+                        child: Center(
+                          child: Text("Top Sales"),
+                        ),
+                      ),
                     ),
                   ),
                 ),
-              ),
-              Expanded(
-                  child: Center(
-                child: Text(
-                  "Stocks",
-                ),
-              ))
-            ],
-          ),
+                Expanded(
+                    child: Center(
+                  child: Text(
+                    "Stocks",
+                  ),
+                ))
+              ],
+            );
+          }),
         ),
         Expanded(
           child: ListView.builder(
