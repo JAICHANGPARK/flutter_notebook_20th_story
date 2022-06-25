@@ -147,10 +147,7 @@ class SalmageProductScreen extends StatelessWidget {
               return Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                 child: Container(
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(4)
-                  ),
+                  decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(4)),
                   padding: EdgeInsets.all(12),
                   child: Column(
                     children: [
@@ -163,6 +160,24 @@ class SalmageProductScreen extends StatelessWidget {
                               color: Colors.grey,
                             ),
                           ),
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                "Headsets JPL 200",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 16,
+                                ),
+                              ),
+                              Text(
+                                "#JPL20002567TY",
+                                style: TextStyle(
+                                  color: Colors.grey,
+                                ),
+                              )
+                            ],
+                          )
                         ],
                       ),
                     ],
