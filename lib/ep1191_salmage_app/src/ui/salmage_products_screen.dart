@@ -194,6 +194,31 @@ class SalmageProductScreen extends StatelessWidget {
                           )
                         ],
                       ),
+                      Divider(),
+                      Row(
+                        children: [
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text("Rating & Review"),
+                              Row(
+                                children: [
+                                  Icon(
+                                    Icons.star,
+                                    color: Colors.yellow,
+                                  ),
+                                  Text(
+                                    " 4.5(3,359 Review)",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  )
+                                ],
+                              )
+                            ],
+                          )
+                        ],
+                      )
                     ],
                   ),
                 ),
