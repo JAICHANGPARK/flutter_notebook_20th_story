@@ -145,13 +145,13 @@ class SalmageProductScreen extends StatelessWidget {
             itemCount: 10,
             itemBuilder: (context, index) {
               return Padding(
-                padding: const EdgeInsets.all(16.0),
+                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                 child: Container(
                   decoration: BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(4)
                   ),
-                  padding: EdgeInsets.all(8),
+                  padding: EdgeInsets.all(12),
                   child: Column(
                     children: [
                       Row(
