@@ -160,23 +160,37 @@ class SalmageProductScreen extends StatelessWidget {
                               color: Colors.grey,
                             ),
                           ),
-                          Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text(
-                                "Headsets JPL 200",
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 16,
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  "Headsets JPL 200",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 16,
+                                  ),
                                 ),
-                              ),
-                              Text(
-                                "#JPL20002567TY",
-                                style: TextStyle(
-                                  color: Colors.grey,
+                                SizedBox(
+                                  height: 8,
                                 ),
-                              )
-                            ],
+                                Text(
+                                  "#JPL20002567TY",
+                                  style: TextStyle(
+                                    color: Colors.grey,
+                                    fontSize: 12,
+                                  ),
+                                )
+                              ],
+                            ),
+                          ),
+                          Spacer(),
+                          IconButton(
+                            onPressed: () {},
+                            icon: Icon(
+                              Icons.more_horiz,
+                            ),
                           )
                         ],
                       ),
