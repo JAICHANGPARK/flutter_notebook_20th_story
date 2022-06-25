@@ -200,7 +200,15 @@ class SalmageProductScreen extends StatelessWidget {
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text("Rating & Review"),
+                              Text(
+                                "Rating & Review",
+                                style: TextStyle(
+                                  fontSize: 12,
+                                ),
+                              ),
+                              SizedBox(
+                                height: 4,
+                              ),
                               Row(
                                 children: [
                                   Icon(
