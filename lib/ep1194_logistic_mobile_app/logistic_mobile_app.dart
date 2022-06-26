@@ -8,7 +8,10 @@ class LogisticMobileApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: LogisticLoginPage(),
+
+      routes: {
+        "/" : (context) =>LogisticLoginPage(),
+      },
     );
   }
 }
