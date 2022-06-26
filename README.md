@@ -1,6 +1,16 @@
 # flutter_notebook_20th_story
 
-### EP1191
+### EP1194
+
+- Logistic Mobile App
+- by Denys A
+- https://dribbble.com/shots/18579967-Logistic-Mobile-App
+
+<img
+src="https://cdn.dribbble.com/userupload/2987639/file/original-b7ef46f578d323a3c50589f8c873552d.png?compress=1&resize=1200x900"
+width="400px"/>
+
+### EP1191-1193
 
 - Sales Management Mobile App - Salmage
 - by Ali Husni
