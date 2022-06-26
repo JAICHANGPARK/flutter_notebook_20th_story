@@ -73,6 +73,9 @@ class LogisticLoginPage extends StatelessWidget {
                   ),
                 ),
               ),
+              SizedBox(
+                height: 16,
+              ),
               Text(
                 "Password",
                 style: TextStyle(
@@ -95,12 +98,14 @@ class LogisticLoginPage extends StatelessWidget {
                   child: TextField(
                     decoration: InputDecoration(
                       icon: Icon(
-                        Icons.account_circle_outlined,
+                        Icons.lock,
                       ),
-                      hintText: "Enter your email",
+                      hintText: "Enter your password",
                       border: InputBorder.none,
                       hintStyle: TextStyle(fontSize: 14),
+
                     ),
+                    obscureText: true,
                   ),
                 ),
               )
