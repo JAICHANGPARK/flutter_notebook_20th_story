@@ -43,13 +43,63 @@ class LogisticLoginPage extends StatelessWidget {
               SizedBox(
                 height: 48,
               ),
-              Text("Email"),
+              Text(
+                "Email",
+                style: TextStyle(
+                  color: Colors.grey,
+                  fontSize: 13,
+                ),
+              ),
               SizedBox(
-                height: 32,
+                height: 4,
+              ),
+              SizedBox(
+                height: 34,
                 child: Container(
                   decoration: BoxDecoration(
                     border: Border.all(
                       color: Colors.grey,
+                    ),
+                  ),
+                  padding: EdgeInsets.symmetric(horizontal: 8),
+                  child: TextField(
+                    decoration: InputDecoration(
+                        icon: Icon(
+                          Icons.account_circle_outlined,
+                        ),
+                        hintText: "Enter your email",
+                        border: InputBorder.none,
+                        hintStyle: TextStyle(fontSize: 14)),
+                  ),
+                ),
+              ),
+              Text(
+                "Password",
+                style: TextStyle(
+                  color: Colors.grey,
+                  fontSize: 13,
+                ),
+              ),
+              SizedBox(
+                height: 4,
+              ),
+              SizedBox(
+                height: 34,
+                child: Container(
+                  decoration: BoxDecoration(
+                    border: Border.all(
+                      color: Colors.grey,
+                    ),
+                  ),
+                  padding: EdgeInsets.symmetric(horizontal: 8),
+                  child: TextField(
+                    decoration: InputDecoration(
+                      icon: Icon(
+                        Icons.account_circle_outlined,
+                      ),
+                      hintText: "Enter your email",
+                      border: InputBorder.none,
+                      hintStyle: TextStyle(fontSize: 14),
                     ),
                   ),
                 ),
