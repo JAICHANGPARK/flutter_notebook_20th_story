@@ -13,7 +13,7 @@ class LogisticLoginPage extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               SizedBox(
-                height: 64,
+                height: 120,
               ),
               Text(
                 "Login",
@@ -25,11 +25,21 @@ class LogisticLoginPage extends StatelessWidget {
               SizedBox(
                 height: 16,
               ),
-              Text("Welcome back!"),
+              Text(
+                "Welcome back!",
+                style: TextStyle(
+                  color: Colors.grey,
+                ),
+              ),
               SizedBox(
                 height: 4,
               ),
-              Text("Please enter your details"),
+              Text(
+                "Please enter your details",
+                style: TextStyle(
+                  color: Colors.grey,
+                ),
+              ),
             ],
           ),
         ),
