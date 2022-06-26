@@ -40,6 +40,20 @@ class LogisticLoginPage extends StatelessWidget {
                   color: Colors.grey,
                 ),
               ),
+              SizedBox(
+                height: 48,
+              ),
+              Text("Email"),
+              SizedBox(
+                height: 32,
+                child: Container(
+                  decoration: BoxDecoration(
+                    border: Border.all(
+                      color: Colors.grey,
+                    ),
+                  ),
+                ),
+              )
             ],
           ),
         ),
