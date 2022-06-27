@@ -146,6 +146,7 @@ class LogisticLoginPage extends StatelessWidget {
                     decoration: BoxDecoration(
                       color: Colors.black,
                     ),
+                    padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
                     child: Row(
                       children: [
                         Text(
