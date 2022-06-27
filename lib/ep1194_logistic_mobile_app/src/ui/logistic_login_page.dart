@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_20th_story/ep1194_logistic_mobile_app/src/ui/logistic_home_page.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 final rememberFlag = StateProvider((ref) => false);
@@ -145,28 +146,37 @@ class LogisticLoginPage extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
-                  Container(
-                    decoration: BoxDecoration(
-                      color: Colors.black,
-                      borderRadius: BorderRadius.circular(24),
-                    ),
-                    padding: EdgeInsets.symmetric(horizontal: 24, vertical: 12),
-                    child: Row(
-                      children: [
-                        Text(
-                          "Sign in",
-                          style: TextStyle(
-                            color: Colors.white,
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (context) => LogisticHomePage(),
+                        ),
+                      );
+                    },
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.black,
+                        borderRadius: BorderRadius.circular(24),
+                      ),
+                      padding: EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+                      child: Row(
+                        children: [
+                          Text(
+                            "Sign in",
+                            style: TextStyle(
+                              color: Colors.white,
+                            ),
                           ),
-                        ),
-                        SizedBox(
-                          width: 8,
-                        ),
-                        Icon(
-                          Icons.arrow_forward,
-                          color: Colors.white,
-                        )
-                      ],
+                          SizedBox(
+                            width: 8,
+                          ),
+                          Icon(
+                            Icons.arrow_forward,
+                            color: Colors.white,
+                          )
+                        ],
+                      ),
                     ),
                   ),
                 ],
@@ -188,7 +198,6 @@ class LogisticLoginPage extends StatelessWidget {
                   ],
                 ),
               ),
-
             ],
           ),
         ),
