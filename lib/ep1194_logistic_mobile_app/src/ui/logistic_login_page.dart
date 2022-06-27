@@ -111,6 +111,9 @@ class LogisticLoginPage extends StatelessWidget {
                   ),
                 ),
               ),
+              SizedBox(
+                height: 16,
+              ),
               Row(
                 children: [
                   Consumer(builder: (context, ref, _) {
@@ -132,11 +135,20 @@ class LogisticLoginPage extends StatelessWidget {
                   TextButton(
                     onPressed: () {},
                     child: Text("Forgot Password?"),
-                    style: TextButton.styleFrom(
-                      primary: Colors.grey
-                    ),
+                    style: TextButton.styleFrom(primary: Colors.grey),
                   )
                 ],
+              ),
+              Container(
+                child: Row(
+                  children: [
+                    Text("Sign in"),
+                    Icon(
+                      Icons.arrow_forward,
+                      color: Colors.white,
+                    )
+                  ],
+                ),
               )
             ],
           ),
