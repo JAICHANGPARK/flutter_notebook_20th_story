@@ -139,19 +139,24 @@ class LogisticLoginPage extends StatelessWidget {
                   )
                 ],
               ),
-              Container(
-                decoration: BoxDecoration(
-                  color: Colors.black,
-                ),
-                child: Row(
-                  children: [
-                    Text("Sign in"),
-                    Icon(
-                      Icons.arrow_forward,
-                      color: Colors.white,
-                    )
-                  ],
-                ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.black,
+                    ),
+                    child: Row(
+                      children: [
+                        Text("Sign in"),
+                        Icon(
+                          Icons.arrow_forward,
+                          color: Colors.white,
+                        )
+                      ],
+                    ),
+                  ),
+                ],
               )
             ],
           ),
