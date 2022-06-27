@@ -127,6 +127,14 @@ class LogisticLoginPage extends StatelessWidget {
                     style: TextStyle(
                       fontWeight: FontWeight.w600,
                     ),
+                  ),
+                  Spacer(),
+                  TextButton(
+                    onPressed: () {},
+                    child: Text("Forgot Password?"),
+                    style: TextButton.styleFrom(
+                      primary: Colors.grey
+                    ),
                   )
                 ],
               )
