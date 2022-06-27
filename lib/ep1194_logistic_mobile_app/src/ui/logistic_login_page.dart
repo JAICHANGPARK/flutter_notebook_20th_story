@@ -113,11 +113,20 @@ class LogisticLoginPage extends StatelessWidget {
               ),
               Row(
                 children: [
-                  Consumer(
-                    builder: (context, ref, _) {
-                      final check = 
-                      return Checkbox(value: value, onChanged: onChanged);
-                    }
+                  Consumer(builder: (context, ref, _) {
+                    final check = ref.watch(rememberFlag);
+                    return Checkbox(
+                      value: check,
+                      onChanged: (b) {
+                        ref.read(rememberFlag.notifier).state = b ?? false;
+                      },
+                    );
+                  }),
+                  Text(
+                    "Remember for 30 days",
+                    style: TextStyle(
+                      fontWeight: FontWeight.w600,
+                    ),
                   )
                 ],
               )
