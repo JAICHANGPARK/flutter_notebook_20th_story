@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+
+final rememberFlag = StateProvider((ref) => false);
 
 class LogisticLoginPage extends StatelessWidget {
   const LogisticLoginPage({Key? key}) : super(key: key);
@@ -103,11 +106,20 @@ class LogisticLoginPage extends StatelessWidget {
                       hintText: "Enter your password",
                       border: InputBorder.none,
                       hintStyle: TextStyle(fontSize: 14),
-
                     ),
                     obscureText: true,
                   ),
                 ),
+              ),
+              Row(
+                children: [
+                  Consumer(
+                    builder: (context, ref, _) {
+                      final check = 
+                      return Checkbox(value: value, onChanged: onChanged);
+                    }
+                  )
+                ],
               )
             ],
           ),
