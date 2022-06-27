@@ -139,14 +139,18 @@ class LogisticLoginPage extends StatelessWidget {
                   )
                 ],
               ),
+              SizedBox(
+                height: 24,
+              ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
                   Container(
                     decoration: BoxDecoration(
                       color: Colors.black,
+                      borderRadius: BorderRadius.circular(24),
                     ),
-                    padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
+                    padding: EdgeInsets.symmetric(horizontal: 24, vertical: 12),
                     child: Row(
                       children: [
                         Text(
@@ -154,6 +158,9 @@ class LogisticLoginPage extends StatelessWidget {
                           style: TextStyle(
                             color: Colors.white,
                           ),
+                        ),
+                        SizedBox(
+                          width: 8,
                         ),
                         Icon(
                           Icons.arrow_forward,
