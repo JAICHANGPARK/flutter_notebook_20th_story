@@ -148,7 +148,12 @@ class LogisticLoginPage extends StatelessWidget {
                     ),
                     child: Row(
                       children: [
-                        Text("Sign in"),
+                        Text(
+                          "Sign in",
+                          style: TextStyle(
+                            color: Colors.white,
+                          ),
+                        ),
                         Icon(
                           Icons.arrow_forward,
                           color: Colors.white,
