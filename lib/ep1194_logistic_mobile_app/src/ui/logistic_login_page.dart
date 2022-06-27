@@ -170,6 +170,19 @@ class LogisticLoginPage extends StatelessWidget {
                     ),
                   ),
                 ],
+              ),
+              Spacer(),
+              Row(
+                children: [
+                  Text("Don't have an account?"),
+                  TextButton(
+                    onPressed: () {},
+                    child: Text("Sign Up"),
+                    style: TextButton.styleFrom(
+                      primary: Colors.grey,
+                    ),
+                  )
+                ],
               )
             ],
           ),
