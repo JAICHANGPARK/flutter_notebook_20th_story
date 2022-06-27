@@ -172,18 +172,23 @@ class LogisticLoginPage extends StatelessWidget {
                 ],
               ),
               Spacer(),
-              Row(
-                children: [
-                  Text("Don't have an account?"),
-                  TextButton(
-                    onPressed: () {},
-                    child: Text("Sign Up"),
-                    style: TextButton.styleFrom(
-                      primary: Colors.grey,
-                    ),
-                  )
-                ],
-              )
+              Padding(
+                padding: const EdgeInsets.only(bottom: 24),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text("Don't have an account?"),
+                    TextButton(
+                      onPressed: () {},
+                      child: Text("Sign Up"),
+                      style: TextButton.styleFrom(
+                        primary: Colors.grey,
+                      ),
+                    )
+                  ],
+                ),
+              ),
+
             ],
           ),
         ),
