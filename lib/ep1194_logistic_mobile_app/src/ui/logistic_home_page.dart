@@ -9,21 +9,28 @@ class LogisticHomePage extends StatelessWidget {
       body: SafeArea(
         child: Column(
           children: [
-            Row(
-              children: [
-                Text("Filter"),
-                CircleAvatar(
-                  radius: 6,
-                  backgroundColor: Colors.black,
-                ),
-                Spacer(),
-                IconButton(
-                  onPressed: () {},
-                  icon: Icon(
-                    Icons.filter_list,
+            Padding(
+              padding: const EdgeInsets.only(left: 16, right: 8),
+              child: Row(
+                children: [
+                  Text("Filter",style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold
+                  ),),
+                  SizedBox(width: 8),
+                  CircleAvatar(
+                    radius: 6,
+                    backgroundColor: Colors.black,
                   ),
-                )
-              ],
+                  Spacer(),
+                  IconButton(
+                    onPressed: () {},
+                    icon: Icon(
+                      Icons.filter_list,
+                    ),
+                  )
+                ],
+              ),
             )
           ],
         ),
