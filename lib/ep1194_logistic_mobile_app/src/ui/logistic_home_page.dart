@@ -17,6 +17,15 @@ class LogisticHomePage extends StatelessWidget {
                   Container(
                     height: 2,
                     color: Colors.black,
+                  ),
+                  IconButton(
+                    onPressed: () {},
+                    icon: Icon(
+                      Icons.home_outlined,
+                    ),
+                  ),
+                  Text(
+                    "Home",
                   )
                 ],
               )),
