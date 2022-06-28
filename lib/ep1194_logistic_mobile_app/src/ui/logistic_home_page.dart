@@ -13,10 +13,10 @@ class LogisticHomePage extends StatelessWidget {
               padding: const EdgeInsets.only(left: 16, right: 8, bottom: 16, top: 16),
               child: Row(
                 children: [
-                  Text("Filter",style: TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.bold
-                  ),),
+                  Text(
+                    "Filter",
+                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                  ),
                   SizedBox(width: 8),
                   CircleAvatar(
                     radius: 6,
@@ -31,7 +31,21 @@ class LogisticHomePage extends StatelessWidget {
                   )
                 ],
               ),
-            )
+            ),
+            Expanded(
+              child: Container(
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                ),
+                child: SingleChildScrollView(
+                  child: Column(
+                    children: [
+                      
+                    ],
+                  ),
+                ),
+              ),
+            ),
           ],
         ),
       ),
