@@ -65,21 +65,44 @@ class LogisticHomePage extends StatelessWidget {
                         child: Column(
                           children: [
                             Row(
+                              // crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 CircleAvatar(
                                   radius: 16,
                                   backgroundColor: Colors.black,
                                 ),
-                                Padding(
-                                  padding: const EdgeInsets.all(8.0),
-                                  child: Column(
-                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                    children: [
-                                      Text("Diesel Undeyed"),
-                                      Text('5000g'),
-                                    ],
+                                Expanded(
+                                  child: Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      children: [
+                                        Row(
+                                          children: [
+                                            Text(
+                                              "Diesel Undeyed",
+                                              style: TextStyle(
+                                                fontWeight: FontWeight.bold,
+                                              ),
+                                            ),
+                                            Spacer(),
+                                            Text(
+                                              "Details",
+                                              style: TextStyle(
+                                                color: Colors.grey,
+                                              ),
+                                            ),
+                                            Icon(
+                                              Icons.keyboard_arrow_right,
+                                              color: Colors.grey,
+                                            )
+                                          ],
+                                        ),
+                                        Text('5000g'),
+                                      ],
+                                    ),
                                   ),
-                                )
+                                ),
                               ],
                             )
                           ],
