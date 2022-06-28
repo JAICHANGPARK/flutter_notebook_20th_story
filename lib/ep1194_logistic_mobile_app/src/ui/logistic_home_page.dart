@@ -15,7 +15,7 @@ class LogisticHomePage extends StatelessWidget {
                   child: Column(
                 children: [
                   Container(
-                    height: 2,
+                    height: 3,
                     color: Colors.black,
                   ),
                   IconButton(
