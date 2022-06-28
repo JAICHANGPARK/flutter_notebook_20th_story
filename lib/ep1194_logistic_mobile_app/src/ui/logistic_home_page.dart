@@ -130,7 +130,24 @@ class LogisticHomePage extends StatelessWidget {
                                     width: 4,
                                     decoration: BoxDecoration(
                                       color: Colors.grey,
+                                      borderRadius: BorderRadius.circular(4),
                                     ),
+                                  ),
+                                  Column(
+                                    children: [
+                                      Text("93 Premium Gas - 1,000g"),
+                                      Row(
+                                        children: [
+                                          Icon(
+                                            Icons.local_gas_station,
+                                            size: 16,
+                                          ),
+                                          Text(
+                                            "Motiva",
+                                          )
+                                        ],
+                                      )
+                                    ],
                                   )
                                 ],
                               ),
