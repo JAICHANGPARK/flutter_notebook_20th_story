@@ -6,6 +6,26 @@ class LogisticHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      body: Column(
+        children: [
+          Row(
+            children: [
+              Text("Filter"),
+              CircleAvatar(
+                radius: 6,
+                backgroundColor: Colors.black,
+              ),
+              Spacer(),
+              IconButton(
+                onPressed: () {},
+                icon: Icon(
+                  Icons.filter_list,
+                ),
+              )
+            ],
+          )
+        ],
+      ),
       bottomNavigationBar: BottomAppBar(
         child: Container(
           height: 76,
