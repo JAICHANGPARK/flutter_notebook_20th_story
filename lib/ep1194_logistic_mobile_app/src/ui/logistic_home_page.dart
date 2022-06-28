@@ -29,12 +29,72 @@ class LogisticHomePage extends StatelessWidget {
                     ),
                     Text(
                       "Home",
+                      style: TextStyle(fontSize: 12),
                     )
                   ],
                 )),
-                Expanded(child: Placeholder()),
-                Expanded(child: Placeholder()),
-                Expanded(child: Placeholder()),
+                Expanded(
+                    child: Column(
+                  children: [
+                    Container(
+                      height: 3,
+                      color: Colors.black,
+                    ),
+                    IconButton(
+                      onPressed: () {},
+                      icon: Icon(
+                        Icons.home_outlined,
+                      ),
+                      iconSize: 32,
+                    ),
+                    Text(
+                      "Orders",
+                      style: TextStyle(
+                        fontSize: 12,
+                      ),
+                    )
+                  ],
+                )),
+                Expanded(
+                    child: Column(
+                  children: [
+                    Container(
+                      height: 3,
+                      color: Colors.transparent,
+                    ),
+                    IconButton(
+                      onPressed: () {},
+                      icon: Icon(
+                        Icons.location_on_outlined,
+                      ),
+                      iconSize: 32,
+                    ),
+                    Text(
+                      "Locations",
+                      style: TextStyle(fontSize: 12),
+                    )
+                  ],
+                )),
+                Expanded(
+                    child: Column(
+                  children: [
+                    Container(
+                      height: 3,
+                      color: Colors.transparent,
+                    ),
+                    IconButton(
+                      onPressed: () {},
+                      icon: Icon(
+                        Icons.settings_outlined,
+                      ),
+                      iconSize: 32,
+                    ),
+                    Text(
+                      "Settings",
+                      style: TextStyle(fontSize: 12),
+                    )
+                  ],
+                )),
               ],
             ),
           ),
