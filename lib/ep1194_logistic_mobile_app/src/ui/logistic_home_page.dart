@@ -38,12 +38,12 @@ class LogisticHomePage extends StatelessWidget {
                   children: [
                     Container(
                       height: 3,
-                      color: Colors.black,
+                      color: Colors.transparent,
                     ),
                     IconButton(
                       onPressed: () {},
                       icon: Icon(
-                        Icons.home_outlined,
+                        Icons.inventory_2_outlined,
                       ),
                       iconSize: 32,
                     ),
