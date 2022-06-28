@@ -63,6 +63,7 @@ class LogisticHomePage extends StatelessWidget {
                         ),
                         padding: EdgeInsets.all(8),
                         child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Row(
                               // crossAxisAlignment: CrossAxisAlignment.start,
@@ -104,6 +105,12 @@ class LogisticHomePage extends StatelessWidget {
                                   ),
                                 ),
                               ],
+                            ),
+                            Text(
+                              "Details",
+                              style: TextStyle(
+                                fontSize: 12,
+                              ),
                             )
                           ],
                         ),
