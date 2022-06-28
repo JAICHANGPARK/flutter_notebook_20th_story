@@ -10,7 +10,7 @@ class LogisticHomePage extends StatelessWidget {
         child: Column(
           children: [
             Padding(
-              padding: const EdgeInsets.only(left: 16, right: 8),
+              padding: const EdgeInsets.only(left: 16, right: 8, bottom: 16, top: 16),
               child: Row(
                 children: [
                   Text("Filter",style: TextStyle(
@@ -37,9 +37,9 @@ class LogisticHomePage extends StatelessWidget {
       ),
       bottomNavigationBar: BottomAppBar(
         child: Container(
-          height: 76,
+          height: 72,
           child: Padding(
-            padding: const EdgeInsets.only(bottom: 8),
+            padding: const EdgeInsets.only(bottom: 4),
             child: Row(
               children: [
                 Expanded(
