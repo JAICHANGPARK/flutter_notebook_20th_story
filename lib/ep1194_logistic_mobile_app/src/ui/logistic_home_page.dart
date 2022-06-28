@@ -15,7 +15,10 @@ class LogisticHomePage extends StatelessWidget {
                 children: [
                   Text(
                     "Filter",
-                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                    style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                   SizedBox(width: 8),
                   CircleAvatar(
@@ -37,10 +40,18 @@ class LogisticHomePage extends StatelessWidget {
                 decoration: BoxDecoration(
                   color: Colors.white,
                 ),
+                padding: EdgeInsets.fromLTRB(16, 16, 16, 0),
                 child: SingleChildScrollView(
                   child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text("Pickups"),
+                      Text(
+                        "Pickups",
+                        style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
                       Container(
                         decoration: BoxDecoration(
                           border: Border.all(
