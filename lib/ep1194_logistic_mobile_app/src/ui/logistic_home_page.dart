@@ -66,12 +66,18 @@ class LogisticHomePage extends StatelessWidget {
                           children: [
                             Row(
                               children: [
-                                CircleAvatar(),
+                                CircleAvatar(
+                                  radius: 16,
+                                  backgroundColor: Colors.black,
+                                ),
                                 Padding(
                                   padding: const EdgeInsets.all(8.0),
                                   child: Column(
                                     crossAxisAlignment: CrossAxisAlignment.start,
-                                    children: [Text("Diesel Undeyed"), Text('5000g')],
+                                    children: [
+                                      Text("Diesel Undeyed"),
+                                      Text('5000g'),
+                                    ],
                                   ),
                                 )
                               ],
