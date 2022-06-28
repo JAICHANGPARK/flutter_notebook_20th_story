@@ -59,7 +59,9 @@ class LogisticHomePage extends StatelessWidget {
                         decoration: BoxDecoration(
                           border: Border.all(
                             color: Colors.grey[200]!,
+                            
                           ),
+                          borderRadius: BorderRadius.circular(4)
                         ),
                         padding: EdgeInsets.all(8),
                         child: Column(
@@ -149,8 +151,14 @@ class LogisticHomePage extends StatelessWidget {
                                               Icons.local_gas_station,
                                               size: 16,
                                             ),
+                                            SizedBox(
+                                              width: 4,
+                                            ),
                                             Text(
                                               "Motiva",
+                                              style: TextStyle(
+                                                fontSize: 12,
+                                              ),
                                             ),
                                           ],
                                         )
