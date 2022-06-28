@@ -106,10 +106,22 @@ class LogisticHomePage extends StatelessWidget {
                                 ),
                               ],
                             ),
+                            SizedBox(
+                              height: 16,
+                            ),
                             Text(
                               "Details",
                               style: TextStyle(
                                 fontSize: 12,
+                              ),
+                            ),
+                            SizedBox(
+                              height: 8,
+                            ),
+                            Container(
+                              height: 58,
+                              decoration: BoxDecoration(
+                                color: Colors.grey[300],
                               ),
                             )
                           ],
