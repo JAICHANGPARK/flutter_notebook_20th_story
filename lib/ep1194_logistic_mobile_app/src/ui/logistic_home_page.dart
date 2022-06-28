@@ -52,11 +52,31 @@ class LogisticHomePage extends StatelessWidget {
                           fontWeight: FontWeight.bold,
                         ),
                       ),
+                      SizedBox(
+                        height: 8,
+                      ),
                       Container(
                         decoration: BoxDecoration(
                           border: Border.all(
                             color: Colors.grey[200]!,
                           ),
+                        ),
+                        padding: EdgeInsets.all(8),
+                        child: Column(
+                          children: [
+                            Row(
+                              children: [
+                                CircleAvatar(),
+                                Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [Text("Diesel Undeyed"), Text('5000g')],
+                                  ),
+                                )
+                              ],
+                            )
+                          ],
                         ),
                       )
                     ],
