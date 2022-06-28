@@ -133,21 +133,29 @@ class LogisticHomePage extends StatelessWidget {
                                       borderRadius: BorderRadius.circular(4),
                                     ),
                                   ),
-                                  Column(
-                                    children: [
-                                      Text("93 Premium Gas - 1,000g"),
-                                      Row(
-                                        children: [
-                                          Icon(
-                                            Icons.local_gas_station,
-                                            size: 16,
-                                          ),
-                                          Text(
-                                            "Motiva",
-                                          )
-                                        ],
-                                      )
-                                    ],
+                                  Padding(
+                                    padding: const EdgeInsets.all(4.0),
+                                    child: Column(
+                                      mainAxisAlignment: MainAxisAlignment.center,
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      children: [
+                                        Text("93 Premium Gas - 1,000g"),
+                                        SizedBox(
+                                          height: 4,
+                                        ),
+                                        Row(
+                                          children: [
+                                            Icon(
+                                              Icons.local_gas_station,
+                                              size: 16,
+                                            ),
+                                            Text(
+                                              "Motiva",
+                                            ),
+                                          ],
+                                        )
+                                      ],
+                                    ),
                                   )
                                 ],
                               ),
