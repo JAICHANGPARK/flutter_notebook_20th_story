@@ -123,6 +123,17 @@ class LogisticHomePage extends StatelessWidget {
                               decoration: BoxDecoration(
                                 color: Colors.grey[300],
                               ),
+                              padding: EdgeInsets.all(4),
+                              child: Row(
+                                children: [
+                                  Container(
+                                    width: 4,
+                                    decoration: BoxDecoration(
+                                      color: Colors.grey,
+                                    ),
+                                  )
+                                ],
+                              ),
                             )
                           ],
                         ),
