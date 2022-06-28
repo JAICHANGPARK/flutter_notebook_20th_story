@@ -40,7 +40,14 @@ class LogisticHomePage extends StatelessWidget {
                 child: SingleChildScrollView(
                   child: Column(
                     children: [
-                      
+                      Text("Pickups"),
+                      Container(
+                        decoration: BoxDecoration(
+                          border: Border.all(
+                            color: Colors.grey[200]!,
+                          ),
+                        ),
+                      )
                     ],
                   ),
                 ),
