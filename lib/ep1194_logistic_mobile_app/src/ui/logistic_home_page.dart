@@ -351,7 +351,12 @@ class LogisticHomePage extends StatelessWidget {
                       Container(
                         decoration: BoxDecoration(
                           color: Colors.black,
+                          borderRadius: BorderRadius.only(
+                            bottomLeft: Radius.circular(8),
+                            bottomRight: Radius.circular(8)
+                          )
                         ),
+                        padding: EdgeInsets.symmetric(vertical: 12),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
@@ -359,6 +364,7 @@ class LogisticHomePage extends StatelessWidget {
                               "Start Ride",
                               style: TextStyle(
                                 color: Colors.white,
+                                fontSize: 12
                               ),
                             ),
                             SizedBox(
