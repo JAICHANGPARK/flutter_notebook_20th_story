@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+
+final isFilterOpen = StateProvider<bool>((ref) => false);
 
 class LogisticHomePage extends StatelessWidget {
   const LogisticHomePage({Key? key}) : super(key: key);
@@ -10,7 +13,12 @@ class LogisticHomePage extends StatelessWidget {
         child: Column(
           children: [
             Padding(
-              padding: const EdgeInsets.only(left: 16, right: 8, bottom: 16, top: 16),
+              padding: const EdgeInsets.only(
+                left: 16,
+                right: 8,
+                bottom: 16,
+                top: 16,
+              ),
               child: Row(
                 children: [
                   Text(
@@ -26,15 +34,77 @@ class LogisticHomePage extends StatelessWidget {
                     backgroundColor: Colors.black,
                   ),
                   Spacer(),
-                  IconButton(
-                    onPressed: () {},
-                    icon: Icon(
-                      Icons.filter_list,
-                    ),
-                  )
+                  Consumer(builder: (context, ref, _) {
+                    final open = ref.watch(isFilterOpen);
+                    return Container(
+                      decoration: BoxDecoration(
+                        color: open ? Colors.white : Colors.transparent,
+                        shape: BoxShape.circle,
+                      ),
+                      child: IconButton(
+                        onPressed: () {
+                          ref.read(isFilterOpen.notifier).state = !open;
+                        },
+                        icon: Icon(
+                          Icons.filter_list,
+                        ),
+                      ),
+                    );
+                  })
                 ],
               ),
             ),
+            Consumer(builder: (context, ref, _) {
+              final open = ref.watch(isFilterOpen);
+              return AnimatedContainer(
+                height: open ? 200 : 0,
+                duration: Duration(milliseconds: 450),
+                curve: Curves.easeInCubic,
+                decoration: BoxDecoration(
+                  color: Colors.grey[50],
+                ),
+                padding: EdgeInsets.symmetric(horizontal: 16),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      "Date",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        color: Colors.grey,
+                        fontSize: 12,
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(vertical: 8),
+                      child: Container(
+                        height: 32,
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                        ),
+                        padding: EdgeInsets.symmetric(horizontal: 8),
+                        child: Row(
+                          children: [
+                            Icon(Icons.calendar_month_outlined),
+                            SizedBox(
+                              width: 4,
+                            ),
+                            Text(
+                              "Jan 6, 2022",
+                              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 13),
+                            ),
+                            Spacer(),
+                            Icon(
+                              Icons.keyboard_arrow_down,
+                            )
+                          ],
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              );
+            }),
             Expanded(
               child: Container(
                 decoration: BoxDecoration(
@@ -57,12 +127,10 @@ class LogisticHomePage extends StatelessWidget {
                       ),
                       Container(
                         decoration: BoxDecoration(
-                          border: Border.all(
-                            color: Colors.grey[200]!,
-                            
-                          ),
-                          borderRadius: BorderRadius.circular(4)
-                        ),
+                            border: Border.all(
+                              color: Colors.grey[200]!,
+                            ),
+                            borderRadius: BorderRadius.circular(4)),
                         padding: EdgeInsets.all(8),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
