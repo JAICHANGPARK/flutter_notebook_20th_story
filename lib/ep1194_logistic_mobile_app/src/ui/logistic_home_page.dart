@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_20th_story/ep1194_logistic_mobile_app/src/ui/logistic_bottom_bar_widget.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 final isFilterOpen = StateProvider<bool>((ref) => false);
@@ -13,12 +14,7 @@ class LogisticHomePage extends StatelessWidget {
         child: Column(
           children: [
             Padding(
-              padding: const EdgeInsets.only(
-                left: 16,
-                right: 8,
-                bottom: 16,
-                top: 16,
-              ),
+              padding: const EdgeInsets.only(left: 16, right: 8, bottom: 16, top: 16),
               child: Row(
                 children: [
                   Text(
@@ -353,8 +349,8 @@ class LogisticHomePage extends StatelessWidget {
                           color: Colors.black,
                           borderRadius: BorderRadius.only(
                             bottomLeft: Radius.circular(8),
-                            bottomRight: Radius.circular(8)
-                          )
+                            bottomRight: Radius.circular(8),
+                          ),
                         ),
                         padding: EdgeInsets.symmetric(vertical: 12),
                         child: Row(
@@ -362,10 +358,7 @@ class LogisticHomePage extends StatelessWidget {
                           children: [
                             Text(
                               "Start Ride",
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 12
-                              ),
+                              style: TextStyle(color: Colors.white, fontSize: 12),
                             ),
                             SizedBox(
                               width: 8,
@@ -386,100 +379,7 @@ class LogisticHomePage extends StatelessWidget {
           ],
         ),
       ),
-      bottomNavigationBar: BottomAppBar(
-        child: Container(
-          height: 72,
-          child: Padding(
-            padding: const EdgeInsets.only(bottom: 4),
-            child: Row(
-              children: [
-                Expanded(
-                    child: Column(
-                  children: [
-                    Container(
-                      height: 3,
-                      color: Colors.black,
-                    ),
-                    IconButton(
-                      onPressed: () {},
-                      icon: Icon(
-                        Icons.home_outlined,
-                      ),
-                      iconSize: 32,
-                    ),
-                    Text(
-                      "Home",
-                      style: TextStyle(fontSize: 12),
-                    )
-                  ],
-                )),
-                Expanded(
-                    child: Column(
-                  children: [
-                    Container(
-                      height: 3,
-                      color: Colors.transparent,
-                    ),
-                    IconButton(
-                      onPressed: () {},
-                      icon: Icon(
-                        Icons.inventory_2_outlined,
-                      ),
-                      iconSize: 32,
-                    ),
-                    Text(
-                      "Orders",
-                      style: TextStyle(
-                        fontSize: 12,
-                      ),
-                    )
-                  ],
-                )),
-                Expanded(
-                    child: Column(
-                  children: [
-                    Container(
-                      height: 3,
-                      color: Colors.transparent,
-                    ),
-                    IconButton(
-                      onPressed: () {},
-                      icon: Icon(
-                        Icons.location_on_outlined,
-                      ),
-                      iconSize: 32,
-                    ),
-                    Text(
-                      "Locations",
-                      style: TextStyle(fontSize: 12),
-                    )
-                  ],
-                )),
-                Expanded(
-                    child: Column(
-                  children: [
-                    Container(
-                      height: 3,
-                      color: Colors.transparent,
-                    ),
-                    IconButton(
-                      onPressed: () {},
-                      icon: Icon(
-                        Icons.settings_outlined,
-                      ),
-                      iconSize: 32,
-                    ),
-                    Text(
-                      "Settings",
-                      style: TextStyle(fontSize: 12),
-                    )
-                  ],
-                )),
-              ],
-            ),
-          ),
-        ),
-      ),
+      bottomNavigationBar: LogisticBottomBarWidget(),
     );
   }
 }
