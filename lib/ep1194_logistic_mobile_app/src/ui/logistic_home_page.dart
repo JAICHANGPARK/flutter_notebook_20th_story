@@ -57,51 +57,139 @@ class LogisticHomePage extends StatelessWidget {
             Consumer(builder: (context, ref, _) {
               final open = ref.watch(isFilterOpen);
               return AnimatedContainer(
-                height: open ? 200 : 0,
+                height: open ? 204 : 0,
                 duration: Duration(milliseconds: 450),
                 curve: Curves.easeInCubic,
                 decoration: BoxDecoration(
                   color: Colors.grey[50],
                 ),
                 padding: EdgeInsets.symmetric(horizontal: 16),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      "Date",
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        color: Colors.grey,
-                        fontSize: 12,
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.symmetric(vertical: 8),
-                      child: Container(
-                        height: 32,
-                        decoration: BoxDecoration(
-                          color: Colors.white,
-                        ),
-                        padding: EdgeInsets.symmetric(horizontal: 8),
-                        child: Row(
-                          children: [
-                            Icon(Icons.calendar_month_outlined),
-                            SizedBox(
-                              width: 4,
-                            ),
-                            Text(
-                              "Jan 6, 2022",
-                              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 13),
-                            ),
-                            Spacer(),
-                            Icon(
-                              Icons.keyboard_arrow_down,
-                            )
-                          ],
+                child: SingleChildScrollView(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        "Date",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: Colors.grey,
+                          fontSize: 12,
                         ),
                       ),
-                    ),
-                  ],
+                      Padding(
+                        padding: const EdgeInsets.symmetric(vertical: 8),
+                        child: Container(
+                          height: 32,
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                          ),
+                          padding: EdgeInsets.symmetric(horizontal: 8),
+                          child: Row(
+                            children: [
+                              Icon(Icons.calendar_month_outlined),
+                              SizedBox(
+                                width: 4,
+                              ),
+                              Text(
+                                "Jan 6, 2022",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 13,
+                                ),
+                              ),
+                              Spacer(),
+                              Icon(
+                                Icons.keyboard_arrow_down,
+                                color: Colors.grey,
+                              )
+                            ],
+                          ),
+                        ),
+                      ),
+                      SizedBox(
+                        height: 8,
+                      ),
+                      Text(
+                        "Tractor ID",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: Colors.grey,
+                          fontSize: 12,
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.symmetric(vertical: 8),
+                        child: Container(
+                          height: 32,
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                          ),
+                          padding: EdgeInsets.symmetric(horizontal: 8),
+                          child: Row(
+                            children: [
+                              Icon(Icons.fire_truck_outlined),
+                              SizedBox(
+                                width: 4,
+                              ),
+                              Text(
+                                "18V",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 13,
+                                ),
+                              ),
+                              Spacer(),
+                              Icon(
+                                Icons.keyboard_arrow_down,
+                                color: Colors.grey,
+                              )
+                            ],
+                          ),
+                        ),
+                      ),
+                      SizedBox(
+                        height: 8,
+                      ),
+                      Text(
+                        "Tractor ID",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: Colors.grey,
+                          fontSize: 12,
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.symmetric(vertical: 8),
+                        child: Container(
+                          height: 32,
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                          ),
+                          padding: EdgeInsets.symmetric(horizontal: 8),
+                          child: Row(
+                            children: [
+                              Icon(Icons.fire_truck_outlined),
+                              SizedBox(
+                                width: 4,
+                              ),
+                              Text(
+                                "18V",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 13,
+                                ),
+                              ),
+                              Spacer(),
+                              Icon(
+                                Icons.keyboard_arrow_down,
+                                color: Colors.grey,
+                              )
+                            ],
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
               );
             }),
@@ -236,6 +324,51 @@ class LogisticHomePage extends StatelessWidget {
                                 ],
                               ),
                             )
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        height: 16,
+                      ),
+                      Text(
+                        "Ship to",
+                        style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      SizedBox(
+                        height: 8,
+                      ),
+                      Container(
+                        decoration: BoxDecoration(
+                          border: Border.all(
+                            color: Colors.grey[200]!,
+                          ),
+                          borderRadius: BorderRadius.circular(4),
+                        ),
+                      ),
+                      Container(
+                        decoration: BoxDecoration(
+                          color: Colors.black,
+                        ),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Text(
+                              "Start Ride",
+                              style: TextStyle(
+                                color: Colors.white,
+                              ),
+                            ),
+                            SizedBox(
+                              width: 8,
+                            ),
+                            Icon(
+                              Icons.car_crash_outlined,
+                              size: 12,
+                              color: Colors.white,
+                            ),
                           ],
                         ),
                       )
