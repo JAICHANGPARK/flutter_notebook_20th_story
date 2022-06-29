@@ -72,13 +72,17 @@ class LogisticFilterWidget extends StatelessWidget {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.symmetric(vertical: 8),
+                padding: const EdgeInsets.symmetric(
+                  vertical: 8,
+                ),
                 child: Container(
                   height: 32,
                   decoration: BoxDecoration(
                     color: Colors.white,
                   ),
-                  padding: EdgeInsets.symmetric(horizontal: 8),
+                  padding: EdgeInsets.symmetric(
+                    horizontal: 8,
+                  ),
                   child: Row(
                     children: [
                       Icon(Icons.fire_truck_outlined),
