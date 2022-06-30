@@ -157,99 +157,100 @@ class LogisticBodyWidget extends StatelessWidget {
             padding: EdgeInsets.symmetric(horizontal: 12, vertical: 12),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
-              children:[
-                Row(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Column(
-                      children: [
-                        Container(
-                          height: 24,
-                          width: 24,
-                          decoration: BoxDecoration(
-                            shape: BoxShape.circle,
-                            border: Border.all(
-                              color: Colors.black,
-                              width: 3,
+              children: [
+                SizedBox(
+                  height: 160,
+                  child: Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Column(
+                        children: [
+                          Container(
+                            height: 24,
+                            width: 24,
+                            decoration: BoxDecoration(
+                              shape: BoxShape.circle,
+                              border: Border.all(
+                                color: Colors.black,
+                                width: 3,
+                              ),
+                            ),
+                            padding: EdgeInsets.all(4),
+                            child: CircleAvatar(
+                              backgroundColor: Colors.black,
                             ),
                           ),
-                          padding: EdgeInsets.all(4),
-                          child: CircleAvatar(
-                            backgroundColor: Colors.black,
+                          Flexible(
+                            child: DottedLine(dashGapLength: 8),
                           ),
-                        ),
-                        Flexible(
-                          child: DottedLine(dashGapLength: 8),
-                        ),
-                      ],
-                    ),
-                    SizedBox(
-                      width: 12,
-                    ),
-                    Expanded(
-                      child: Column(
-                        children: [
-                          Row(
-                            children: [
-                              Container(
-                                height: 28,
-                                width: 28,
-                                decoration: BoxDecoration(
-                                  shape: BoxShape.circle,
-                                  border: Border.all(
-                                    color: Colors.black,
+                        ],
+                      ),
+                      SizedBox(
+                        width: 12,
+                      ),
+                      Expanded(
+                        child: Column(
+                          children: [
+                            Row(
+                              children: [
+                                Container(
+                                  height: 28,
+                                  width: 28,
+                                  decoration: BoxDecoration(
+                                    shape: BoxShape.circle,
+                                    border: Border.all(
+                                      color: Colors.black,
+                                    ),
+                                  ),
+                                  child: Center(
+                                    child: Text("1"),
                                   ),
                                 ),
-                                child: Center(
-                                  child: Text("1"),
+                                SizedBox(
+                                  width: 8,
                                 ),
-                              ),
-                              SizedBox(
-                                width: 8,
-                              ),
-                              Text(
-                                "Ship to: Fedex Freight",
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                ),
-                              )
-                            ],
-                          ),
-                          SizedBox(
-                            height: 16,
-                          ),
-                          Row(
-                            children: [
-                              CircleAvatar(
-                                radius: 16,
-                                backgroundColor: Colors.black,
-                                foregroundColor: Colors.white,
-                                child: Icon(
-                                  Icons.route,
-                                  size: 14,
-                                ),
-                              ),
-                              SizedBox(
-                                width: 8,
-                              ),
-                              Flexible(
-                                child: Text(
-                                  "ROU/260, 5203 Chin Page Road. Durham NC 27730",
+                                Text(
+                                  "Ship to: Fedex Freight",
                                   style: TextStyle(
                                     fontWeight: FontWeight.bold,
                                   ),
+                                )
+                              ],
+                            ),
+                            SizedBox(
+                              height: 16,
+                            ),
+                            Row(
+                              children: [
+                                CircleAvatar(
+                                  radius: 16,
+                                  backgroundColor: Colors.black,
+                                  foregroundColor: Colors.white,
+                                  child: Icon(
+                                    Icons.route,
+                                    size: 14,
+                                  ),
                                 ),
-                              )
-                            ],
-                          )
-                        ],
+                                SizedBox(
+                                  width: 8,
+                                ),
+                                Flexible(
+                                  child: Text(
+                                    "ROU/260, 5203 Chin Page Road. Durham NC 27730",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                )
+                              ],
+                            )
+                          ],
+                        ),
                       ),
-                    ),
-                  ],
-                ),
-              ]
-
-
+                    ],
+                  ),
+                )
+              ],
             ),
           ),
           Container(
