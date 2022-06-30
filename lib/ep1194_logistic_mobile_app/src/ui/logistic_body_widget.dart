@@ -153,6 +153,22 @@ class LogisticBodyWidget extends StatelessWidget {
               ),
               borderRadius: BorderRadius.circular(4),
             ),
+            child: Row(
+              children: [
+                Column(
+                  children: [
+                    Container(
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        border: Border.all(
+                          color: Colors.black,
+                        ),
+                      ),
+                    )
+                  ],
+                )
+              ],
+            ),
           ),
           Container(
             decoration: BoxDecoration(
