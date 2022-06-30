@@ -153,7 +153,7 @@ class LogisticBodyWidget extends StatelessWidget {
               ),
               borderRadius: BorderRadius.circular(4),
             ),
-            padding: EdgeInsets.symmetric(),
+            padding: EdgeInsets.symmetric(horizontal: 12, vertical: 12),
             child: Row(
               children: [
                 Column(
