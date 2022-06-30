@@ -160,6 +160,7 @@ class LogisticBodyWidget extends StatelessWidget {
               children: [
                 SizedBox(
                   height: 160,
+                  width:MediaQuery.of(context).size.width - 32,
                   child: Row(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
