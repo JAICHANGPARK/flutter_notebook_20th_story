@@ -224,10 +224,12 @@ class LogisticBodyWidget extends StatelessWidget {
                           SizedBox(
                             width: 8,
                           ),
-                          Text(
-                            "Ship to: Fedex Freight",
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
+                          Flexible(
+                            child: Text(
+                              "ROU/260, 5203 Chin Page Road. Durham NC 27730",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                              ),
                             ),
                           )
                         ],
