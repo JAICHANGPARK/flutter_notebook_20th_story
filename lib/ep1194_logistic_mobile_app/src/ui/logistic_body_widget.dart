@@ -181,9 +181,9 @@ class LogisticBodyWidget extends StatelessWidget {
                               backgroundColor: Colors.black,
                             ),
                           ),
-                          Flexible(
-                            child: DottedLine(dashGapLength: 8),
-                          ),
+                          // Flexible(
+                          //   child: DottedLine(dashGapLength: 8),
+                          // ),
                         ],
                       ),
                       SizedBox(
