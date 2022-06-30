@@ -260,7 +260,7 @@ class LogisticBodyWidget extends StatelessWidget {
                   ),
                 ),
                 SizedBox(
-                  height: 130,
+                  height: 84,
                   width: MediaQuery.of(context).size.width - 32,
                   child: Row(
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -282,17 +282,17 @@ class LogisticBodyWidget extends StatelessWidget {
                               backgroundColor: Colors.black,
                             ),
                           ),
-                          Flexible(
-                            child: DottedLine(
-                              // dashGapLength: 8,
-                              // lineLength: ,
-                              direction: Axis.vertical,
-                              dashColor: Colors.grey,
-                              lineThickness: 2,
-                              dashGapLength: 4,
-                              dashLength: 8,
-                            ),
-                          ),
+                          // Flexible(
+                          //   child: DottedLine(
+                          //     // dashGapLength: 8,
+                          //     // lineLength: ,
+                          //     direction: Axis.vertical,
+                          //     dashColor: Colors.grey,
+                          //     lineThickness: 2,
+                          //     dashGapLength: 4,
+                          //     dashLength: 8,
+                          //   ),
+                          // ),
                         ],
                       ),
                       SizedBox(
