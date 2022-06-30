@@ -206,6 +206,25 @@ class LogisticBodyWidget extends StatelessWidget {
                             ),
                           )
                         ],
+                      ),
+                      Row(
+                        children: [
+                          CircleAvatar(
+                            radius: 12,
+                            backgroundColor: Colors.black,
+                            foregroundColor: Colors.white,
+                            child: Icon(Icons.route, size: 16,),
+                          ),
+                          SizedBox(
+                            width: 8,
+                          ),
+                          Text(
+                            "Ship to: Fedex Freight",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                            ),
+                          )
+                        ],
                       )
                     ],
                   ),
