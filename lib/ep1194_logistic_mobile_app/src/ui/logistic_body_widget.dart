@@ -207,13 +207,19 @@ class LogisticBodyWidget extends StatelessWidget {
                           )
                         ],
                       ),
+                      SizedBox(
+                        height: 8,
+                      ),
                       Row(
                         children: [
                           CircleAvatar(
-                            radius: 12,
+                            radius: 16,
                             backgroundColor: Colors.black,
                             foregroundColor: Colors.white,
-                            child: Icon(Icons.route, size: 16,),
+                            child: Icon(
+                              Icons.route,
+                              size: 14,
+                            ),
                           ),
                           SizedBox(
                             width: 8,
