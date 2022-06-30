@@ -159,7 +159,7 @@ class LogisticBodyWidget extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 SizedBox(
-                  height: 120,
+                  height: 130,
                   width: MediaQuery.of(context).size.width - 32,
                   child: Row(
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -258,7 +258,108 @@ class LogisticBodyWidget extends StatelessWidget {
                       ),
                     ],
                   ),
-                )
+                ),
+                SizedBox(
+                  height: 130,
+                  width: MediaQuery.of(context).size.width - 32,
+                  child: Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Column(
+                        children: [
+                          Container(
+                            height: 24,
+                            width: 24,
+                            decoration: BoxDecoration(
+                              shape: BoxShape.circle,
+                              border: Border.all(
+                                color: Colors.black,
+                                width: 3,
+                              ),
+                            ),
+                            padding: EdgeInsets.all(4),
+                            child: CircleAvatar(
+                              backgroundColor: Colors.black,
+                            ),
+                          ),
+                          Flexible(
+                            child: DottedLine(
+                              // dashGapLength: 8,
+                              // lineLength: ,
+                              direction: Axis.vertical,
+                              dashColor: Colors.grey,
+                              lineThickness: 2,
+                              dashGapLength: 4,
+                              dashLength: 8,
+                            ),
+                          ),
+                        ],
+                      ),
+                      SizedBox(
+                        width: 12,
+                      ),
+                      Expanded(
+                        child: Column(
+                          children: [
+                            Row(
+                              children: [
+                                Container(
+                                  height: 28,
+                                  width: 28,
+                                  decoration: BoxDecoration(
+                                    shape: BoxShape.circle,
+                                    border: Border.all(
+                                      color: Colors.black,
+                                    ),
+                                  ),
+                                  child: Center(
+                                    child: Text("2"),
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: 8,
+                                ),
+                                Text(
+                                  "Ship to: Sauda Oil",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                )
+                              ],
+                            ),
+                            SizedBox(
+                              height: 16,
+                            ),
+                            Row(
+                              children: [
+                                CircleAvatar(
+                                  radius: 16,
+                                  backgroundColor: Colors.black,
+                                  foregroundColor: Colors.white,
+                                  child: Icon(
+                                    Icons.route,
+                                    size: 14,
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: 8,
+                                ),
+                                Flexible(
+                                  child: Text(
+                                    "ROU/260, 5203 Chin Page Road. Durham NC 27730",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                )
+                              ],
+                            )
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
               ],
             ),
           ),
