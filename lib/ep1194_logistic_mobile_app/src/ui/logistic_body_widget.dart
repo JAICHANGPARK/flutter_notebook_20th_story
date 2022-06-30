@@ -197,7 +197,7 @@ class LogisticBodyWidget extends StatelessWidget {
                             ),
                           ),
                           SizedBox(
-                            width: 4,
+                            width: 8,
                           ),
                           Text(
                             "Ship to: Fedex Freight",
