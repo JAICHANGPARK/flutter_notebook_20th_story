@@ -148,7 +148,24 @@ class _CheckoutAddressScreenState extends State<CheckoutAddressScreen> {
                           ),
                         ),
                         Row(
-                          children: [],
+                          children: [
+                            Container(
+                              decoration: BoxDecoration(
+                                border: Border.all(
+                                  color: Colors.grey,
+                                ),
+                              ),
+                              child: Center(
+                                child: Text(
+                                  "Home",
+                                  style: TextStyle(
+                                    color: Colors.grey,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                              ),
+                            )
+                          ],
                         )
                       ],
                     ),
