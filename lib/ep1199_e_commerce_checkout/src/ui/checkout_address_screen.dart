@@ -121,6 +121,16 @@ class _CheckoutAddressScreenState extends State<CheckoutAddressScreen> {
                             fontSize: 16,
                           ),
                         ),
+                        TextField(),
+                        TextField(),
+                        TextField(),
+                        Row(
+                          children: [
+                            Expanded(child: TextField(),),
+                            Expanded(child: TextField(),),
+                          ],
+                        )
+
                       ],
                     ),
                   ),
