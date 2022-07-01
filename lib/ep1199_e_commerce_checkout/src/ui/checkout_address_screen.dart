@@ -10,6 +10,6 @@ class CheckoutAddressScreen extends StatefulWidget {
 class _CheckoutAddressScreenState extends State<CheckoutAddressScreen> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold();
   }
 }
