@@ -1,6 +1,16 @@
 # flutter_notebook_20th_story
 
-### EP1194
+### EP1199
+
+- E-Commerce - Checkout
+- by Mahima Mahajan
+- https://dribbble.com/shots/18615080-E-Commerce-Checkout
+
+<img
+src="https://cdn.dribbble.com/userupload/3011346/file/original-a572ec3c64087cff565c211be33df369.jpg?compress=1&resize=1200x900"
+width="400px"/>
+
+### EP1194-1198
 
 - Logistic Mobile App
 - by Denys A
