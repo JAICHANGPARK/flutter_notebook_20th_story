@@ -10,6 +10,18 @@ class CheckoutAddressScreen extends StatefulWidget {
 class _CheckoutAddressScreenState extends State<CheckoutAddressScreen> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      bottomNavigationBar: BottomAppBar(
+        child: Container(
+          height: 72,
+          padding: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+          child: Container(
+            decoration: BoxDecoration(
+              color: Colors.purpleAccent,
+            ),
+          ),
+        ),
+      ),
+    );
   }
 }
