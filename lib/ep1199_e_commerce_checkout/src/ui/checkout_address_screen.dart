@@ -14,10 +14,11 @@ class _CheckoutAddressScreenState extends State<CheckoutAddressScreen> {
       bottomNavigationBar: BottomAppBar(
         child: Container(
           height: 72,
-          padding: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+          padding: EdgeInsets.symmetric(horizontal: 16, vertical: 14),
           child: Container(
             decoration: BoxDecoration(
               color: Colors.purpleAccent,
+              borderRadius: BorderRadius.circular(4)
             ),
           ),
         ),
