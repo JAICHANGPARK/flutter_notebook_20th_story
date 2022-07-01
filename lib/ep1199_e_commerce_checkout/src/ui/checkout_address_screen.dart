@@ -17,8 +17,17 @@ class _CheckoutAddressScreenState extends State<CheckoutAddressScreen> {
           padding: EdgeInsets.symmetric(horizontal: 16, vertical: 14),
           child: Container(
             decoration: BoxDecoration(
-              color: Colors.purpleAccent,
-              borderRadius: BorderRadius.circular(4)
+              color: Colors.purple,
+              borderRadius: BorderRadius.circular(4),
+            ),
+            child: Center(
+              child: Text(
+                "CONTUNUE",
+                style: TextStyle(
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
             ),
           ),
         ),
