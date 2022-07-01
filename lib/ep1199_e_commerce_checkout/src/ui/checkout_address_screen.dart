@@ -13,12 +13,29 @@ class _CheckoutAddressScreenState extends State<CheckoutAddressScreen> {
     return Scaffold(
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 16),
+          padding: const EdgeInsets.fromLTRB(16, 24, 16, 0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              IconButton(onPressed: (){}, icon: Icon(Icons.arrow_back)),
-
+              Icon(Icons.arrow_back),
+              SizedBox(
+                height: 16,
+              ),
+              Text(
+                "Address",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              SizedBox(
+                height: 64,
+                child: Stepper(
+                  type: StepperType.horizontal,
+                  steps: [
+                    Step(title: Text("d"), content: Text("a")),
+                  ],
+                ),
+              )
             ],
           ),
         ),
