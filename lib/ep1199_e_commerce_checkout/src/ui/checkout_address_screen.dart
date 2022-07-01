@@ -23,12 +23,10 @@ class _CheckoutAddressScreenState extends State<CheckoutAddressScreen> {
               ),
               Text(
                 "Address",
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                ),
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
               ),
               Padding(
-                padding: const EdgeInsets.symmetric(vertical: 24),
+                padding: const EdgeInsets.symmetric(vertical: 20),
                 child: SizedBox(
                   height: 76,
                   child: Column(
@@ -63,9 +61,9 @@ class _CheckoutAddressScreenState extends State<CheckoutAddressScreen> {
                           Expanded(
                               flex: 5,
                               child: Container(
-                            height: 4,
-                            color: Colors.grey,
-                          )),
+                                height: 4,
+                                color: Colors.grey,
+                              )),
                           CircleAvatar(
                             radius: 12,
                             backgroundColor: Colors.grey,
@@ -91,6 +89,15 @@ class _CheckoutAddressScreenState extends State<CheckoutAddressScreen> {
                           Text("PAYMENT")
                         ],
                       ),
+                    ],
+                  ),
+                ),
+              ),
+              Expanded(
+                child: SingleChildScrollView(
+                  child: Column(
+                    children: [
+                      Text("")
                     ],
                   ),
                 ),
