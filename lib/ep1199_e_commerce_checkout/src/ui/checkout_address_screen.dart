@@ -23,7 +23,10 @@ class _CheckoutAddressScreenState extends State<CheckoutAddressScreen> {
               ),
               Text(
                 "Address",
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 16,
+                ),
               ),
               Padding(
                 padding: const EdgeInsets.symmetric(vertical: 20),
@@ -97,7 +100,13 @@ class _CheckoutAddressScreenState extends State<CheckoutAddressScreen> {
                 child: SingleChildScrollView(
                   child: Column(
                     children: [
-                      Text("")
+                      Text(
+                        "Contact Details",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 16,
+                        ),
+                      )
                     ],
                   ),
                 ),
