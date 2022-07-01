@@ -45,6 +45,7 @@ class _CheckoutAddressScreenState extends State<CheckoutAddressScreen> {
                             ),
                           ),
                           Expanded(
+                            flex: 4,
                             child: Container(
                               height: 4,
                               color: Colors.black,
@@ -60,6 +61,7 @@ class _CheckoutAddressScreenState extends State<CheckoutAddressScreen> {
                             ),
                           ),
                           Expanded(
+                              flex: 5,
                               child: Container(
                             height: 4,
                             color: Colors.grey,
@@ -70,8 +72,24 @@ class _CheckoutAddressScreenState extends State<CheckoutAddressScreen> {
                           ),
                         ],
                       ),
+                      SizedBox(
+                        height: 8,
+                      ),
                       Row(
-                        children: [],
+                        children: [
+                          Text("BAG"),
+                          Expanded(
+                            child: Container(
+                              height: 4,
+                            ),
+                          ),
+                          Text("ADDRESS"),
+                          Expanded(
+                              child: Container(
+                            height: 4,
+                          )),
+                          Text("PAYMENT")
+                        ],
                       ),
                     ],
                   ),
