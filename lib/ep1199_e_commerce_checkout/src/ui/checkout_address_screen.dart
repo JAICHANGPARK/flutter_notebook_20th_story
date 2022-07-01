@@ -27,13 +27,30 @@ class _CheckoutAddressScreenState extends State<CheckoutAddressScreen> {
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              SizedBox(
-                height: 64,
-                child: Stepper(
-                  type: StepperType.horizontal,
-                  steps: [
-                    Step(title: Text("d"), content: Text("a")),
-                  ],
+              Padding(
+                padding: const EdgeInsets.symmetric(vertical: 24),
+                child: SizedBox(
+                  height: 76,
+                  child: Column(
+                    children: [
+                      Row(
+                        children: [
+                          CircleAvatar(
+                            radius: 12,
+                            backgroundColor: Colors.black,
+                          ),
+                          Expanded(
+                              child: Container(
+                            height: 4,
+                            color: Colors.black,
+                          ))
+                        ],
+                      ),
+                      Row(
+                        children: [],
+                      ),
+                    ],
+                  ),
                 ),
               )
             ],
