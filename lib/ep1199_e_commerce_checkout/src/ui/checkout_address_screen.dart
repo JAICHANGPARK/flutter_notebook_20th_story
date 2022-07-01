@@ -127,6 +127,7 @@ class _CheckoutAddressScreenState extends State<CheckoutAddressScreen> {
                         Row(
                           children: [
                             Expanded(child: TextField(),),
+                            SizedBox(width: 8,),
                             Expanded(child: TextField(),),
                           ],
                         )
