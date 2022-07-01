@@ -26,6 +26,7 @@ class _CheckoutAddressScreenState extends State<CheckoutAddressScreen> {
                 style: TextStyle(
                   color: Colors.white,
                   fontWeight: FontWeight.bold,
+                  fontSize: 12
                 ),
               ),
             ),
