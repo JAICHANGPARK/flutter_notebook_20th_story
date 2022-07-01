@@ -43,16 +43,21 @@ class _CheckoutAddressScreenState extends State<CheckoutAddressScreen> {
                               Icons.check,
                               size: 14,
                             ),
-
                           ),
                           Expanded(
-                              child: Container(
-                            height: 4,
-                            color: Colors.black,
-                          )),
+                            child: Container(
+                              height: 4,
+                              color: Colors.black,
+                            ),
+                          ),
                           CircleAvatar(
                             radius: 12,
                             backgroundColor: Colors.black,
+                            foregroundColor: Colors.white,
+                            child: Text(
+                              "2",
+                              style: TextStyle(fontSize: 12),
+                            ),
                           ),
                           Expanded(
                               child: Container(
