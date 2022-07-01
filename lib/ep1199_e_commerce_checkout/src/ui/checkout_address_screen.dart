@@ -150,10 +150,12 @@ class _CheckoutAddressScreenState extends State<CheckoutAddressScreen> {
                         Row(
                           children: [
                             Container(
+                              padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                               decoration: BoxDecoration(
                                 border: Border.all(
                                   color: Colors.grey,
                                 ),
+                                borderRadius: BorderRadius.circular(4)
                               ),
                               child: Center(
                                 child: Text(
