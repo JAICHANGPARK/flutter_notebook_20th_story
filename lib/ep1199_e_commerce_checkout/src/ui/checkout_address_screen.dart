@@ -38,12 +38,31 @@ class _CheckoutAddressScreenState extends State<CheckoutAddressScreen> {
                           CircleAvatar(
                             radius: 12,
                             backgroundColor: Colors.black,
+                            foregroundColor: Colors.white,
+                            child: Icon(
+                              Icons.check,
+                              size: 14,
+                            ),
+
                           ),
                           Expanded(
                               child: Container(
                             height: 4,
                             color: Colors.black,
-                          ))
+                          )),
+                          CircleAvatar(
+                            radius: 12,
+                            backgroundColor: Colors.black,
+                          ),
+                          Expanded(
+                              child: Container(
+                            height: 4,
+                            color: Colors.grey,
+                          )),
+                          CircleAvatar(
+                            radius: 12,
+                            backgroundColor: Colors.grey,
+                          ),
                         ],
                       ),
                       Row(
