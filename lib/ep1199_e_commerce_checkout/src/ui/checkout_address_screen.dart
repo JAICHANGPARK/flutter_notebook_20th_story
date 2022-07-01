@@ -126,12 +126,30 @@ class _CheckoutAddressScreenState extends State<CheckoutAddressScreen> {
                         TextField(),
                         Row(
                           children: [
-                            Expanded(child: TextField(),),
-                            SizedBox(width: 8,),
-                            Expanded(child: TextField(),),
+                            Expanded(
+                              child: TextField(),
+                            ),
+                            SizedBox(
+                              width: 8,
+                            ),
+                            Expanded(
+                              child: TextField(),
+                            ),
                           ],
+                        ),
+                        SizedBox(
+                          height: 16,
+                        ),
+                        Text(
+                          "Save Address As",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 16,
+                          ),
+                        ),
+                        Row(
+                          children: [],
                         )
-
                       ],
                     ),
                   ),
