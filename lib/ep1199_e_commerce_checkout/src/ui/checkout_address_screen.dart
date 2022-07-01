@@ -11,6 +11,18 @@ class _CheckoutAddressScreenState extends State<CheckoutAddressScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      body: SafeArea(
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 16),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              IconButton(onPressed: (){}, icon: Icon(Icons.arrow_back)),
+
+            ],
+          ),
+        ),
+      ),
       bottomNavigationBar: BottomAppBar(
         child: Container(
           height: 72,
@@ -23,11 +35,7 @@ class _CheckoutAddressScreenState extends State<CheckoutAddressScreen> {
             child: Center(
               child: Text(
                 "CONTUNUE",
-                style: TextStyle(
-                  color: Colors.white,
-                  fontWeight: FontWeight.bold,
-                  fontSize: 12
-                ),
+                style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 12),
               ),
             ),
           ),
