@@ -8,6 +8,7 @@ class CheckoutAddressScreen extends StatefulWidget {
 }
 
 class _CheckoutAddressScreenState extends State<CheckoutAddressScreen> {
+  PageController pageController = PageController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -121,7 +122,11 @@ class _CheckoutAddressScreenState extends State<CheckoutAddressScreen> {
             child: Center(
               child: Text(
                 "CONTUNUE",
-                style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 12),
+                style: TextStyle(
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 12,
+                ),
               ),
             ),
           ),
