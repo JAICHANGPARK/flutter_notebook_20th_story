@@ -119,6 +119,7 @@ class _CheckoutAddressScreenState extends State<CheckoutAddressScreen> {
                           child: TextField(
                             decoration: InputDecoration(
                               border: OutlineInputBorder(),
+                              
                             ),
                           ),
                         ),
