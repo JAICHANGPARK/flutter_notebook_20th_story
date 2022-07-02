@@ -141,7 +141,7 @@ class _CheckoutAddressScreenState extends State<CheckoutAddressScreen> {
                                 contentPadding: EdgeInsets.symmetric(horizontal: 16)),
                           ),
                         ),
-                       
+
                         Padding(
                           padding: EdgeInsets.symmetric(vertical: 16),
                           child:  Text(
@@ -167,8 +167,38 @@ class _CheckoutAddressScreenState extends State<CheckoutAddressScreen> {
                             ),
                           ),
                         ),
-                        TextField(),
-                        TextField(),
+                        SizedBox(
+                          height: 16,
+                        ),
+                        SizedBox(
+                          height: 48,
+                          child: TextField(
+                            decoration: InputDecoration(
+                              contentPadding: EdgeInsets.symmetric(horizontal: 16),
+                              border: OutlineInputBorder(),
+                              hintText: "Address (HouseNo. Building Street Area)*",
+                              hintStyle: TextStyle(
+                                color: Colors.grey,
+                              ),
+                            ),
+                          ),
+                        ),
+                        SizedBox(
+                          height: 16,
+                        ),
+                        SizedBox(
+                          height: 48,
+                          child: TextField(
+                            decoration: InputDecoration(
+                              contentPadding: EdgeInsets.symmetric(horizontal: 16),
+                              border: OutlineInputBorder(),
+                              hintText: "Locality / Town*",
+                              hintStyle: TextStyle(
+                                color: Colors.grey,
+                              ),
+                            ),
+                          ),
+                        ),
                         Row(
                           children: [
                             Expanded(
