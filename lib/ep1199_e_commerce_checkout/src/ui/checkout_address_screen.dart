@@ -182,6 +182,12 @@ class _CheckoutAddressScreenState extends State<CheckoutAddressScreen> {
                             title: Text(
                               "Crypto",
                             ),
+                          ),
+                          ExpansionTile(
+                            leading: Icon(Icons.credit_card_rounded),
+                            title: Text(
+                              "EMI / Pay Later",
+                            ),
                           )
                         ],
                       ),
