@@ -118,13 +118,12 @@ class _CheckoutAddressScreenState extends State<CheckoutAddressScreen> {
                           height: 48,
                           child: TextField(
                             decoration: InputDecoration(
-                              border: OutlineInputBorder(),
-                              hintText: "Full Name*",
-                              hintStyle: TextStyle(
-                                color: Colors.grey,
-                              ),
-                              contentPadding: EdgeInsets.symmetric(horizontal: 16)
-                            ),
+                                border: OutlineInputBorder(),
+                                hintText: "Full Name*",
+                                hintStyle: TextStyle(
+                                  color: Colors.grey,
+                                ),
+                                contentPadding: EdgeInsets.symmetric(horizontal: 16)),
                           ),
                         ),
                         SizedBox(
@@ -139,8 +138,7 @@ class _CheckoutAddressScreenState extends State<CheckoutAddressScreen> {
                                 hintStyle: TextStyle(
                                   color: Colors.grey,
                                 ),
-                                contentPadding: EdgeInsets.symmetric(horizontal: 16)
-                            ),
+                                contentPadding: EdgeInsets.symmetric(horizontal: 16)),
                           ),
                         ),
                         SizedBox(
@@ -153,7 +151,19 @@ class _CheckoutAddressScreenState extends State<CheckoutAddressScreen> {
                             fontSize: 16,
                           ),
                         ),
-                        TextField(),
+                        SizedBox(
+                          height: 48,
+                          child: TextField(
+                            decoration: InputDecoration(
+                              contentPadding: EdgeInsets.symmetric(horizontal: 16),
+                              border: OutlineInputBorder(),
+                              hintText: "Pincode*",
+                              hintStyle: TextStyle(
+                                color: Colors.grey,
+                              ),
+                            ),
+                          ),
+                        ),
                         TextField(),
                         TextField(),
                         Row(
