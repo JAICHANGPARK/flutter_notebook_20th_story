@@ -141,10 +141,9 @@ class _CheckoutAddressScreenState extends State<CheckoutAddressScreen> {
                                 contentPadding: EdgeInsets.symmetric(horizontal: 16)),
                           ),
                         ),
-
                         Padding(
                           padding: EdgeInsets.symmetric(vertical: 16),
-                          child:  Text(
+                          child: Text(
                             "Address",
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
@@ -152,8 +151,6 @@ class _CheckoutAddressScreenState extends State<CheckoutAddressScreen> {
                             ),
                           ),
                         ),
-
-
                         SizedBox(
                           height: 48,
                           child: TextField(
