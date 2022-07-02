@@ -131,7 +131,11 @@ class _CheckoutAddressScreenState extends State<CheckoutAddressScreen> {
                               Text("Show More"),
                               Icon(Icons.keyboard_arrow_down_outlined),
                             ],
-                          )
+                          ),
+                          Divider(
+                            color: Colors.grey[400],
+                            thickness: 1.5,
+                          ),
                         ],
                       ),
                     )
