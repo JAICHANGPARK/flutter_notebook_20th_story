@@ -121,7 +121,20 @@ class _CheckoutAddressScreenState extends State<CheckoutAddressScreen> {
                   children: [
                     Container(),
                     CheckoutAddressWidget(),
-                    Container(),
+                    SingleChildScrollView(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text("5% Unlimited Cashback on Citi Bank Credit Card"),
+                          Row(
+                            children: [
+                              Text("Show More"),
+                              Icon(Icons.keyboard_arrow_down_outlined),
+                            ],
+                          )
+                        ],
+                      ),
+                    )
                   ],
                 ),
               )
