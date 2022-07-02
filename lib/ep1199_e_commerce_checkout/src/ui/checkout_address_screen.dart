@@ -126,6 +126,9 @@ class _CheckoutAddressScreenState extends State<CheckoutAddressScreen> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text("5% Unlimited Cashback on Citi Bank Credit Card"),
+                          SizedBox(
+                            height: 8,
+                          ),
                           Row(
                             children: [
                               Text("Show More"),
@@ -135,6 +138,7 @@ class _CheckoutAddressScreenState extends State<CheckoutAddressScreen> {
                           Divider(
                             color: Colors.grey[400],
                             thickness: 1.5,
+                            height: 48,
                           ),
                         ],
                       ),
