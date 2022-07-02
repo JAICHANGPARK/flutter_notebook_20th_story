@@ -10,6 +10,7 @@ class CheckoutAddressScreen extends StatefulWidget {
 
 class _CheckoutAddressScreenState extends State<CheckoutAddressScreen> {
   PageController pageController = PageController();
+  int stepIndex = 0;
 
   @override
   Widget build(BuildContext context) {
@@ -103,6 +104,7 @@ class _CheckoutAddressScreenState extends State<CheckoutAddressScreen> {
               ),
               Expanded(
                 child: PageView(
+                  controller: pageController,
                   children: [
                     Container(),
                     CheckoutAddressWidget(),
@@ -115,31 +117,71 @@ class _CheckoutAddressScreenState extends State<CheckoutAddressScreen> {
         ),
       ),
       bottomNavigationBar: BottomAppBar(
-        child: GestureDetector(
-          onTap: () {
-            pageController.jumpToPage(2);
-          },
-          child: Container(
-            height: 72,
-            padding: EdgeInsets.symmetric(horizontal: 16, vertical: 14),
-            child: Container(
-              decoration: BoxDecoration(
-                color: Colors.purple,
-                borderRadius: BorderRadius.circular(4),
-              ),
-              child: Center(
-                child: Text(
-                  "CONTUNUE",
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontWeight: FontWeight.bold,
-                    fontSize: 12,
+        child: stepIndex == 2
+            ? Container(
+                height: 72,
+                padding: EdgeInsets.symmetric(horizontal: 16, vertical: 0),
+                child: Row(
+                  children: [
+                    Text(
+                      "\$27.0",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 24
+                      ),
+                    ),
+                    Spacer(),
+                    Container(
+                      decoration: BoxDecoration(
+                        color: Colors.purple,
+                        borderRadius: BorderRadius.circular(4),
+                      ),
+                      margin: EdgeInsets.symmetric(horizontal: 0, vertical: 14),
+                      // padding: EdgeInsets.symmetric(horizontal: 16, vertical: 14),
+                      width: 160,
+                      child: Center(
+                        child: Text(
+                          "PAY NOW",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 12,
+                          ),
+                        ),
+                      ),
+                    )
+                  ],
+                ))
+            : GestureDetector(
+                onTap: () {
+                  stepIndex++;
+                  if (stepIndex > 2) {
+                    stepIndex = 2;
+                  }
+                  print(stepIndex);
+                  pageController.jumpToPage(stepIndex);
+                },
+                child: Container(
+                  height: 72,
+                  padding: EdgeInsets.symmetric(horizontal: 16, vertical: 14),
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: Colors.purple,
+                      borderRadius: BorderRadius.circular(4),
+                    ),
+                    child: Center(
+                      child: Text(
+                        "CONTUNUE",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 12,
+                        ),
+                      ),
+                    ),
                   ),
                 ),
               ),
-            ),
-          ),
-        ),
       ),
     );
   }
