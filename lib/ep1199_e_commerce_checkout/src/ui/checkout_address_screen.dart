@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_20th_story/ep1199_e_commerce_checkout/src/ui/checkout_address_widget.dart';
 
 class CheckoutAddressScreen extends StatefulWidget {
   const CheckoutAddressScreen({Key? key}) : super(key: key);
@@ -9,6 +10,7 @@ class CheckoutAddressScreen extends StatefulWidget {
 
 class _CheckoutAddressScreenState extends State<CheckoutAddressScreen> {
   PageController pageController = PageController();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -102,7 +104,9 @@ class _CheckoutAddressScreenState extends State<CheckoutAddressScreen> {
               Expanded(
                 child: PageView(
                   children: [
-                    CheckoutAddressScreen(),
+                    Container(),
+                    CheckoutAddressWidget(),
+                    Container(),
                   ],
                 ),
               )
@@ -111,21 +115,26 @@ class _CheckoutAddressScreenState extends State<CheckoutAddressScreen> {
         ),
       ),
       bottomNavigationBar: BottomAppBar(
-        child: Container(
-          height: 72,
-          padding: EdgeInsets.symmetric(horizontal: 16, vertical: 14),
+        child: GestureDetector(
+          onTap: () {
+            pageController.jumpToPage(2);
+          },
           child: Container(
-            decoration: BoxDecoration(
-              color: Colors.purple,
-              borderRadius: BorderRadius.circular(4),
-            ),
-            child: Center(
-              child: Text(
-                "CONTUNUE",
-                style: TextStyle(
-                  color: Colors.white,
-                  fontWeight: FontWeight.bold,
-                  fontSize: 12,
+            height: 72,
+            padding: EdgeInsets.symmetric(horizontal: 16, vertical: 14),
+            child: Container(
+              decoration: BoxDecoration(
+                color: Colors.purple,
+                borderRadius: BorderRadius.circular(4),
+              ),
+              child: Center(
+                child: Text(
+                  "CONTUNUE",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 12,
+                  ),
                 ),
               ),
             ),
