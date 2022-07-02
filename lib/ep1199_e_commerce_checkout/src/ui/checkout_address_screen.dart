@@ -141,16 +141,19 @@ class _CheckoutAddressScreenState extends State<CheckoutAddressScreen> {
                                 contentPadding: EdgeInsets.symmetric(horizontal: 16)),
                           ),
                         ),
-                        SizedBox(
-                          height: 16,
-                        ),
-                        Text(
-                          "Address",
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 16,
+                       
+                        Padding(
+                          padding: EdgeInsets.symmetric(vertical: 16),
+                          child:  Text(
+                            "Address",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 16,
+                            ),
                           ),
                         ),
+
+
                         SizedBox(
                           height: 48,
                           child: TextField(
