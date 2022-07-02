@@ -60,21 +60,33 @@ class _CheckoutAddressScreenState extends State<CheckoutAddressScreen> {
                             radius: 12,
                             backgroundColor: Colors.black,
                             foregroundColor: Colors.white,
-                            child: Text(
-                              "2",
-                              style: TextStyle(fontSize: 12),
-                            ),
+                            child: stepIndex == 2
+                                ? Icon(
+                                    Icons.check,
+                                    size: 14,
+                                  )
+                                : Text(
+                                    "2",
+                                    style: TextStyle(fontSize: 12),
+                                  ),
                           ),
                           Expanded(
                             flex: 5,
                             child: Container(
                               height: 4,
-                              color: Colors.grey,
+                              color: stepIndex == 2 ? Colors.black : Colors.grey,
                             ),
                           ),
                           CircleAvatar(
                             radius: 12,
-                            backgroundColor: Colors.grey,
+                            backgroundColor: Colors.black,
+                            foregroundColor: Colors.white,
+                            child: stepIndex == 2
+                                ? Text(
+                                    "3",
+                                    style: TextStyle(fontSize: 12),
+                                  )
+                                : Container(),
                           ),
                         ],
                       ),
@@ -125,10 +137,7 @@ class _CheckoutAddressScreenState extends State<CheckoutAddressScreen> {
                   children: [
                     Text(
                       "\$27.0",
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 24
-                      ),
+                      style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
                     ),
                     Spacer(),
                     Container(
