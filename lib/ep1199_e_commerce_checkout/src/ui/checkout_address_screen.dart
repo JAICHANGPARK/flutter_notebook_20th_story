@@ -127,7 +127,22 @@ class _CheckoutAddressScreenState extends State<CheckoutAddressScreen> {
                             ),
                           ),
                         ),
-                        TextField(),
+                        SizedBox(
+                          height: 16,
+                        ),
+                        SizedBox(
+                          height: 48,
+                          child: TextField(
+                            decoration: InputDecoration(
+                                border: OutlineInputBorder(),
+                                hintText: "Mobile No*",
+                                hintStyle: TextStyle(
+                                  color: Colors.grey,
+                                ),
+                                contentPadding: EdgeInsets.symmetric(horizontal: 16)
+                            ),
+                          ),
+                        ),
                         SizedBox(
                           height: 16,
                         ),
