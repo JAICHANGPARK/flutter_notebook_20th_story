@@ -199,16 +199,43 @@ class _CheckoutAddressScreenState extends State<CheckoutAddressScreen> {
                             ),
                           ),
                         ),
+                        SizedBox(
+                          height: 16,
+                        ),
                         Row(
                           children: [
                             Expanded(
-                              child: TextField(),
+                              child: SizedBox(
+                                height: 48,
+                                child: TextField(
+                                  decoration: InputDecoration(
+                                    contentPadding: EdgeInsets.symmetric(horizontal: 16),
+                                    border: OutlineInputBorder(),
+                                    hintText: "City / District*",
+                                    hintStyle: TextStyle(
+                                      color: Colors.grey,
+                                    ),
+                                  ),
+                                ),
+                              ),
                             ),
                             SizedBox(
                               width: 8,
                             ),
                             Expanded(
-                              child: TextField(),
+                              child: SizedBox(
+                                height: 48,
+                                child: TextField(
+                                  decoration: InputDecoration(
+                                    contentPadding: EdgeInsets.symmetric(horizontal: 16),
+                                    border: OutlineInputBorder(),
+                                    hintText: "State*",
+                                    hintStyle: TextStyle(
+                                      color: Colors.grey,
+                                    ),
+                                  ),
+                                ),
+                              ),
                             ),
                           ],
                         ),
