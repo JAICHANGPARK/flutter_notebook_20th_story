@@ -136,7 +136,7 @@ class _CheckoutAddressScreenState extends State<CheckoutAddressScreen> {
                             ],
                           ),
                           Divider(
-                            color: Colors.grey[400],
+                            color: Colors.grey[300],
                             thickness: 1.5,
                             height: 48,
                           ),
@@ -159,6 +159,30 @@ class _CheckoutAddressScreenState extends State<CheckoutAddressScreen> {
                                 ],
                               ),
                               contentPadding: EdgeInsets.zero),
+                          Divider(
+                            color: Colors.grey[300],
+                            thickness: 1.5,
+                            height: 48,
+                          ),
+                          Text("Other Payment Options"),
+                          ExpansionTile(
+                            leading: Icon(Icons.payment),
+                            title: Text(
+                              "Cash On Delivery",
+                            ),
+                          ),
+                          ExpansionTile(
+                            leading: Icon(Icons.credit_card_rounded),
+                            title: Text(
+                              "Debit / Credit Card",
+                            ),
+                          ),
+                          ExpansionTile(
+                            leading: Icon(Icons.credit_card_rounded),
+                            title: Text(
+                              "Crypto",
+                            ),
+                          )
                         ],
                       ),
                     )
