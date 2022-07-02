@@ -116,6 +116,7 @@ class _CheckoutAddressScreenState extends State<CheckoutAddressScreen> {
               ),
               Expanded(
                 child: PageView(
+                  physics: NeverScrollableScrollPhysics(),
                   controller: pageController,
                   children: [
                     Container(),
