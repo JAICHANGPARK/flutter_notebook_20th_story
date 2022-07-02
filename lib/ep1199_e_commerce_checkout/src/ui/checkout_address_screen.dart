@@ -114,9 +114,12 @@ class _CheckoutAddressScreenState extends State<CheckoutAddressScreen> {
                         SizedBox(
                           height: 12,
                         ),
-                        TextField(
-                          decoration: InputDecoration(
-                            border: OutlineInputBorder(),
+                        SizedBox(
+                          height: 48,
+                          child: TextField(
+                            decoration: InputDecoration(
+                              border: OutlineInputBorder(),
+                            ),
                           ),
                         ),
                         TextField(),
