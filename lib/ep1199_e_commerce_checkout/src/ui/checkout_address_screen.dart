@@ -119,7 +119,11 @@ class _CheckoutAddressScreenState extends State<CheckoutAddressScreen> {
                           child: TextField(
                             decoration: InputDecoration(
                               border: OutlineInputBorder(),
-                              
+                              hintText: "Full Name*",
+                              hintStyle: TextStyle(
+                                color: Colors.grey,
+                              ),
+                              contentPadding: EdgeInsets.symmetric(horizontal: 16)
                             ),
                           ),
                         ),
